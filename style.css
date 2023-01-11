@@ -51,6 +51,6 @@ a:hover { color:#3B8686; background-color: #79BD9A; }
 	padding-right: 20PX;
 }
 .bibliography { list-style-type: none; text-indent: -2.2em;}
-.horizontal { text-align: left; padding:15px 0px;}
+.horizontal { text-align: left; padding:25px 0px;}
 .horizontal li{display: inline-block; margin: 0 0.5em;}
 .vert { color: #79BD9A;}
