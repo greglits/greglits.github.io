@@ -20,6 +20,7 @@ blockquote,.signature{
 	margin: 2em 1em}
 
 p,ul,ol { list-style-type: circle;}
+li { margin-bottom: 0.75%;}
 
 a { color:#3B8686; text-decoration:none; padding:0.5em 0;}
 
