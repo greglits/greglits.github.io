@@ -1,12 +1,18 @@
 /*CSS template inspirated by Lionel Dricot's Blog : www.ploum.net*/
 
+@font-face {
+  font-family: Atkinson ;
+  src: url('/AtkinsonHyperlegible-Regular.ttf') format("truetype");
+}
+
 body {margin:40px auto;
 	max-width:750px;
 	line-height:1.4;
 	font-size:18px;
 	color:#444;
 	background-color: #eff3f9;
-	padding:0 10px;}
+	padding:0 10px;
+	font-family:  Atkinson; }
 
 h1{line-height:1.2; font-size:35px; padding-top: 20px; font-weight: lighter; text-align:center; color: #444; font-family: Lucida, Calibri, sans-serif; }
 
