@@ -48,7 +48,7 @@ a:hover { color:#006666; background-color: #AEE0C5; }
 	font-variant: small-caps;
 	font-weight: normal;
 	font-family: Lucida, Calibri, sans-serif;
-	background-color: #F0F0F4;
+	background-color: /*#F0F0F4*/ #FFF;
 	padding-left: 20px;
 	padding-right: 20PX;
 }
