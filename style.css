@@ -29,7 +29,7 @@ blockquote,.signature{
 p,ul,ol { list-style-type: circle;}
 li { margin-bottom: 0.75%;}
 
-a { color:#006666; text-decoration:none; /*padding:0.5em 0;*/}
+a { color:#006666; text-decoration:none; padding:0.2em 0; }
 
 a:hover { color:#006666; background-color: #AEE0C5; }
 
