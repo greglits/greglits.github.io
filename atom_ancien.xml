@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <atom:link href="https://gregoirelits.eu/atom.xml" rel="self" type="application/rss+xml" />
+    <title>Do We Have a Problem? Blog of Grégoire Lits</title>
+    <link>http://gregoirelits.eu</link>
+    <description>Blog of Grégoire Lits, assistant professor in media sociology</description>
+    <language>fr</language>
+
+  <item>
+      <title>Mesuring and defining informational vulnerability</title>
+      <pubDate>Mon, 27 Mar 2023 12:40:21 GMT</pubDate>
+      <link>http://gregoirelits.eu/fr/2023-03-28-mesuring-and-defining-informational-vulnerability.html</link>
+      <description>Three weeks ago I had the chance to be the first guest of the EDMO Belux Lunch Lectures. 
+Edmo Belux is one of the EU-funded platforms that brings together actors from the field (fact-checkers, media and academics) to monitor and fight disinformation in Europe. 
+I presented the current state of my research on how to define and measure &quot;informational vulnerability&quot;, i.e. the risk for a person to be more susceptible to misinformation and disinformation. 
+This presentation has been recorded and is available on the Edmo Belux Youtube account.</description>
+    </item>
+
+    <item>
+      <title>Publication du second rapport du projet CoviCom : Analyse de l’infodémie Covid-19 en Belgique francophone</title>
+      <pubDate>Mon, 14 Jun 2021 12:40:21 GMT</pubDate>
+      <link>http://gregoirelits.eu/fr/2021-06-14-Publication-du-second-rapport-du-projet-covicom.html</link>
+      <description>Un premier constat que nous pouvons tirer de l’analyse des quatre vagues de l’enquête est que le phénomène infodémique, pointé dès mars 2020 par l’OMS comme un des problèmes principaux à prendre en compte pour développer une réponse efficace face à la pandémie, s’est bien développé en Belgique francophone.</description>
+    </item>
+
+	<item>
+      <title>Analyse de l’espace décisionnel de la gestion des déchets radioactifs belges</title>
+      <pubDate>Wed, 22 Jul 2020 12:40:21 GMT</pubDate>
+      <link>http://gregoirelits.eu/fr/2020-06-22-Analyse-de-lespace-decisionnel-de-la-gestion-des-dechets-radioactifs-belges.html</link>
+      <description>Pour comprendre le débat actuel sur la gestion des déchets radioactifs en Belgique, il est utile de décrire l’évolution des controverses et des acteurs qui sont impliqués dans son “espace décisionnel”.</description>
+    </item>
+
+	<item>
+      <title>Analyse de « l’infodémie » de Covid-19 en Belgique francophone - Grégoire Lits Personal Web Page</title>
+      <pubDate>Wed, 20 May 2020 12:40:21 GMT</pubDate>
+      <link>http://gregoirelits.eu/fr/2020-05-09-Analyse-de-linfodemie-de-covid-19-en-belgique-vague-1.html</link>
+      <description>Le premier rapport de notre recherche sur l’infodémie de Covid-19 en Belgique est disponible</description>
+    </item>
+
+
+  </channel>
+
+</rss>
