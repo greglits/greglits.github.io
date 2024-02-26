@@ -44,7 +44,7 @@ a:hover { color:#006666; background-color: #fff5d7; }
 	display: block;
 	width:100%;
 }
-.subtitle {padding-bottom: 10px; text-align: center; line-height: 1.2; font-weight: lighter; font-style: italic; font-family: Atkinson, Calibri, sans-serif; color:#444;}
+.subtitle {padding-bottom: 20px; text-align: center; line-height: 1.2; font-weight: lighter; font-style: italic; font-family: Atkinson, Calibri, sans-serif; color:#444;}
 .navbar{
 	display: flex;
 	align-items: center;
