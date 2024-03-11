@@ -25,7 +25,7 @@ import os
 
 
 
-############## Scripte resize image
+############## Script resize image
 
 
 
@@ -65,7 +65,7 @@ for file in files:
 
 
 
-########################### Converter MD-HTML
+########################### Script Converter MD-HTML
 
 
 # Étape 4 : Définir les chemins de base
@@ -120,7 +120,7 @@ for md_file in os.listdir(md_path):
 
 
 
-#############   Scipte création Blog et index.html
+#############   Scipt création Blog et index.html
 
 
 
@@ -196,7 +196,7 @@ print("Le fichier index.html a été créé avec succès, avec les éléments cl
 
 
 
-################ Scipte création atom.xml
+################ Scipt création atom.xml
 
 
 
