@@ -1,0 +1,9 @@
+-@media (prefers-color-scheme: light) {
+-	body{color:#444;background:#fdf6e3;}
+-	pre,blockquote,.signature{background:#eee8d5;}
+-	a{color:#169}
+-}
+-@media (prefers-color-scheme: dark) {
+-	body{color:#f3EEc3;background:#0D1016;}
+-	pre,blockquote,.signature{background:#2A2931;}
+-	a{color:#8079C7}
