@@ -52,21 +52,27 @@
 
 <h1>Et si j'automatisais l'ensemble du blog ?</h1>
 
-<p>Vu la rapidité du processus, j'ai poussé l'expérience plus loin. Je me suis plongé dans le code source du blog de <a href="https://git.sr.ht/~lioploum/ploum.net/tree/master/item/publish.py">Ploum.net</a> pour voir l'ensemble des étapes qu'il réalise et j'ai tenté de répliquer toutes ces étapes avec des scriptes séparés permettant de : 
-- réduire la largeur des images du site, présentes dans le dossier /files du blog à maximum 600px. 
-- de convertir mon texte rédigé au format markdown en une page HTML utilisant un template préexistant.
-- d'éditer les pages index.html et blog.html pour les mettre à jour et intégrer le lien vers le nouveau post de blog créé. 
-- de créer le flux RSS. 
-- d'exporter sur mon ordinateur depuis Google Drive les quatre nouveaux fichiers créés : index.html, blog.html, nouveau-post.html et atom.rss. </p>
+<p>Vu la rapidité du processus, j'ai poussé l'expérience plus loin. Je me suis plongé dans le code source du blog de <a href="https://git.sr.ht/~lioploum/ploum.net/tree/master/item/publish.py">Ploum.net</a> pour voir l'ensemble des étapes qu'il réalise et j'ai tenté de répliquer toutes ces étapes avec des scriptes séparés permettant de : </p>
+
+<ul>
+<li>réduire la largeur des images du site, présentes dans le dossier /files du blog à maximum 600px. </li>
+<li>de convertir mon texte rédigé au format markdown en une page HTML utilisant un template préexistant.</li>
+<li>d'éditer les pages index.html et blog.html pour les mettre à jour et intégrer le lien vers le nouveau post de blog créé. </li>
+<li>de créer le flux RSS. </li>
+<li>d'exporter sur mon ordinateur depuis Google Drive les quatre nouveaux fichiers créés : index.html, blog.html, nouveau-post.html et atom.rss. </li>
+</ul>
 
 <p>Au final, il m'aura fallu à peu près quatre heures de travail pour avoir quatre scriptes en python réalisant l'ensemble de ces tâches (dont au moins deux heures pour faire trois versions du script du flux RSS pour qu'il soit de plus en plus simple). </p>
 
-<p>Le workflow de ce site est maintenant le suivant : 
-- Rédiger l'article du blog en markdown sur Obsidian. 
-- Enregistrer le fichier .md dans un dossier particulier de mon Google Drive. 
-- Ouvrir le Google Collab où j'ai placé ces quatre scriptes en Python.
-- Faire fonctionner les scripts pour obtenir directement les quartes fichiers (le post de blog au format html, la page d'accueil du site mise à jour, la page blog mise à jour et le fichier atom.rss pour le flux rss)
-- Importer ces quartes fichiers sur le site (hébergé sur Github). </p>
+<p>Le workflow de ce site est maintenant le suivant : </p>
+
+<ul>
+<li>Rédiger l'article du blog en markdown sur Obsidian. </li>
+<li>Enregistrer le fichier .md dans un dossier particulier de mon Google Drive. </li>
+<li>Ouvrir le Google Collab où j'ai placé ces quatre scriptes en Python.</li>
+<li>Faire fonctionner les scripts pour obtenir directement les quartes fichiers (le post de blog au format html, la page d'accueil du site mise à jour, la page blog mise à jour et le fichier atom.rss pour le flux rss)</li>
+<li>Importer ces quartes fichiers sur le site (hébergé sur Github). </li>
+</ul>
 
 <p>Il reste quelques petites choses que je pourrais corriger dans le script qui crée le fichier atom.rss, mais à part cela, l'ensemble fonctionne très bien.</p>
 
@@ -89,17 +95,21 @@
 
 <h1>Une dernière interrogation...</h1>
 
-<p>Les scripts que j'ai rédigés avec ChatGPT sont ici. 
-- script : <a href="http://gregoirelits.eu/script/publish.py">publish.py</a>
-- script : <a href="http://gregoirelits.eu/script/RSS.py">RSS.py</a></p>
+<p>Les scripts que j'ai rédigés avec ChatGPT sont ici. </p>
+
+<ul>
+<li>script : <a href="http://gregoirelits.eu/script/publish.py">publish.py</a></li>
+<li>script : <a href="http://gregoirelits.eu/script/RSS.py">RSS.py</a></li>
+</ul>
 
 <p>Je suis parfaitement incapable de savoir s'il s'agit de "bons" scripts ou non, le code est-il "beau" ? Va-t-il durer dans le temps ou boguer dans deux semaines ? Aucune idée... Si des spécialistes veulent y jeter un œil, je suis preneur :-)</p>
 
+<p>#code #python</p>
 
 
 </article>
 <p class="signature">Mon nom est Grégoire Lits. Je suis sociologue des médias à l&#39;<a href="https://uclouvain.be/fr/index.html">UCLouvain</a> où je dirige l&#39;Observatoire de recherche sur les médias et le journalisme (<a href="https://sites.uclouvain.be/orm/">ORM</a>). Je poste sur ce blog des billets au sujet des recherches que je mène et qui portent principalement sur la circulation de l&#39;information dans la société en période de crise, mais aussi sur d&#39;autres sujets en lien avec l&#39;évolution et la place des médias d&#39;information dans la société.</p>	
-<p class="hashtag">#code #python</p>
+<p class="hashtag"></p>
 <hr><p><small>
 Permalink:<br>
 <a href="http://gregoirelits.eu/fr/2024-04-24-Apprendre-a-coder.html">http://gregoirelits.eu/fr/2024-04-24-Apprendre-a-coder.html</a><br>
