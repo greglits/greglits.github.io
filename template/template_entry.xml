@@ -1,0 +1,18 @@
+<entry xml:lang="fr">
+	<author>
+		<name>Grégoire Lits</name>
+		<uri>https://gregoirelits.eu</uri>
+	</author>
+
+	<title type="html">$H1</title>
+	<link rel="alternate" type="text/html" href="https://gregoirelits.eu/fr/$HTML_LINK"/>
+	<id>https://gregoirelits.eu/fr/$HTML_LINK</id>
+	<updated>$DATE_UPDATE</updated>
+
+	<content type="html">
+
+		$CONTEN_HTML
+
+
+	</content>
+</entry>
