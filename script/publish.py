@@ -16,14 +16,12 @@ from datetime import datetime
 import bs4
 
 
-############## effacer vieille version de atom.xlm
+##############   Effacer vieille version de atom.xlm (car sinon script RSS bug)   ############## 
 
 os.remove("/content/drive/MyDrive/greglits.github.io/Entry_xml/atom.xml")
 
 
-############## Scripte resize image
-
-
+##############  Script resize image  ############## 
 
 # Chemin vers le dossier sur Google Drive
 folder_path = '/content/drive/MyDrive/greglits.github.io/files'
@@ -61,7 +59,7 @@ for file in files:
 
 
 
-########################### Converter MD-HTML
+###########################   Converter fichier .MD en fichier .HTML   ############## 
 
 
 # Étape 4 : Définir les chemins de base
@@ -116,7 +114,7 @@ for md_file in os.listdir(md_path):
 
 
 
-#############   Scipte création Blog et index.html
+#############   Script création blog.html et et préparation création index.html    ############## 
 
 
 
@@ -171,7 +169,7 @@ print("Le fichier blog.html a été créé avec succès, avec les éléments cla
 
 
 
-################ CREATION de INDEX.HTML
+################ Création de index.html sur base du template "template_index.html" ############## 
 
 # Chemin vers le fichier template pour index.html
 template_index_path = "/content/drive/MyDrive/greglits.github.io/template_index.html"
@@ -194,10 +192,7 @@ print("Le fichier index.html a été créé avec succès, avec les éléments cl
 
 
 
-
-
-
-########## télécharger les fihciers modifiés
+##########    télécharger les fichiers modifiés    ############## 
 
 from google.colab import files
 
@@ -231,13 +226,13 @@ if most_recent_file_path is not None:
 
 
 
-################ Scipte création atom.xml
+################ Script création atom.xml   ############## 
 
 
 from bs4 import BeautifulSoup
 from dateutil import tz
 
-#### Partie 1 du code : création des fichiers "entry"
+##############  Partie 1 du code : création des fichiers "entry" ############## 
 
 # Montez votre Google Drive pour accéder aux fichiers
 drive.mount('/content/drive')
@@ -288,7 +283,7 @@ for html_file in os.listdir(html_folder_path):
 
 print("Conversion terminée. Les fichiers XML ont été enregistrés dans", xml_folder_path)
 
-######## Partie  2 du code : création du "bloc"
+########   Partie  2 du code : création du "bloc"   ############## 
 
 # Création du fichier "bloc.xml"
 xml_files = sorted(os.listdir(xml_folder_path), reverse=True)  # Liste des fichiers XML ordonnée Z-A
@@ -307,7 +302,9 @@ with open(bloc_xml_path, "w") as bloc_xml_file:
 
 print("Le fichier 'bloc.xml' a été créé avec succès dans", xml_folder_path)
 
-######## Partie  3 du code intégration du "bloc" dans le tempalte final atom.rss
+
+
+######## Partie  3 du code intégration du "bloc" dans le tempalte final atom.rss ############## 
 
 # Chemin du dossier où enregistrer les fichiers XML
 xml_folder_path = "/content/drive/MyDrive/greglits.github.io/Entry_xml"
@@ -344,7 +341,9 @@ with open(atom_xml_path, "w") as atom_xml_file:
 
 print("Le fichier 'atom.xml' a été créé avec succès dans", xml_folder_path)
 
-######### Partie 4 : télécharger le fichier
+
+
+#########   Partie 4 : télécharger le fichier  ############## 
 
 from google.colab import files
 
@@ -359,7 +358,9 @@ for file_path in files_to_download:
 
 print("Le fichier 'atom.xml' a été téléchargé avec succès")
 
-######## Partie 5  : vider le dossier entre_xml
+
+
+######## Partie 5  : vider le dossier entre_xml sauf atom.xml  ############## 
 
 # Chemin du dossier
 folder_path_entry = "/content/drive/MyDrive/greglits.github.io/Entry_xml"
