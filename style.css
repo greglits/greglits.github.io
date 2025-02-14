@@ -76,6 +76,13 @@ a:hover {
 }
 
 .bibliography { list-style-type: none; text-indent: -2.2em;}
-.horizontal { text-align: center; padding:25px 0px;}
+.horizontal { 
+		text-align: center; 
+		padding:25px 0px;
+		font-family:  Atkinson;  
+		font-size: 16px;
+		text-transform: uppercase;
+}
+
 .horizontal li{display: inline-block; margin: 0 0.5em;}
 .hashtag { color: #fdf6e3;}
