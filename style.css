@@ -10,7 +10,7 @@ body {margin:40px auto;
 	line-height:1.4;
 	font-size:16px;
 	color:#444;
-	background-color: #fefaf6;
+	background-color: /*#fefaf6*/#fff;
 	padding:0 10px;
 	font-family:  Atkinson; }
 
@@ -47,7 +47,7 @@ a:hover {
 	display: block;
 	width:100%;
 }
-.subtitle {padding-bottom: 20px; text-align: center; line-height: 1.2; font-weight: lighter; font-style: italic; font-family: Atkinson, Calibri, sans-serif; color:#444;}
+.subtitle {font-size:18px; padding-bottom: 20px; text-align: center; line-height: 1.2; font-weight: lighter; font-style: italic; font-family: Atkinson, Calibri, sans-serif; color:#444;}
 .navbar{
 	display: flex;
 	align-items: center;
