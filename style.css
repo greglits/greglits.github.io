@@ -61,7 +61,7 @@ a:hover {
 	font-family: Atkinson, Calibri, sans-serif;
 	background-color: /*#F0F0F4*/ /*#fff5d7*/ /*#f3e7e7*/ #fefaf6;
 	padding: 2px 25px;
-	border-bottom: 2px /*solid*/ #fefaf6;
+	border-bottom: 2px solid #ccc;
 }
 
 .navbar a {
