@@ -6,7 +6,7 @@
 }
 
 body {margin:40px auto;
-	max-width:775px;
+	max-width:675px;
 	line-height:1.4;
 	font-size:16px;
 	color:#444;
@@ -14,8 +14,7 @@ body {margin:40px auto;
 	padding:0 10px;
 	font-family:  Atkinson; }
 
-h1{line-height:1.2; font-size:30px; padding-top: 20px; font-weight: bold; text-align:center; color: #444; font-family: Atkinson, Calibri, sans-serif; }
-h1.index{text-align:left; line-height:0.8;}
+h1{line-height:1.2; font-size:35px; padding-top: 20px; font-weight: bold; text-align:center; color: #444; font-family: Atkinson, Calibri, sans-serif; }
 
 h2,h3{ font-weight: bold; border-bottom: 1px solid; line-height:1.2; color: #444; font-family: Atkinson, Calibri, sans-serif;}
 
@@ -30,7 +29,7 @@ blockquote,.signature{
 p,ul,ol { list-style-type: circle;}
 li { margin-bottom: 0.75%;}
 
-a { color:#000; text-decoration:none; padding:0.2em 0; }
+a { color:#007b7b; text-decoration:none; padding:0.2em 0; }
 
 a:hover {
   color: #005757;
@@ -49,19 +48,18 @@ a:hover {
 	width:100%;
 }
 .subtitle {font-size:18px; padding-bottom: 20px; text-align: center; line-height: 1.2; font-weight: lighter; font-style: italic; font-family: Atkinson, Calibri, sans-serif; color:#444;}
-.subtitle-index {font-size:18px; padding-bottom: 20px; text-align: left; line-height: 1; font-weight: lighter; font-style: italic; font-family: Atkinson, Calibri, sans-serif; color:#444;}
 .navbar{
 	display: flex;
 	align-items: center;
-	justify-content: flex-end;
+	justify-content: space-between;
 	flex-direction: row;
-	text-align: right;
+	text-align: center;
 	/*font-variant: small-caps;*/
 	font-weight: normal;
 	font-family: Atkinson, Calibri, sans-serif;
-	background-color: /*#F0F0F4*/ /*#fff5d7*/ /*#f3e7e7*/ #fefaf6;
-	padding: 2px 25px;
-	border-bottom: 2px /*solid*/ #fefaf6;
+	background-color: /*#F0F0F4*/ /*#fff5d7*/ /*#f3e7e7*/ #f7ecec;
+	padding: 10px 25px;
+	border-bottom: 2px solid #ccc;
 }
 
 .navbar a {
