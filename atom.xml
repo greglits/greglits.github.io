@@ -7,7 +7,7 @@
 
 <subtitle type="text">Blog of Grégoire Lits, assistant professor in media sociology</subtitle>
 
-<updated>2025-05-21T12:41:16.985852</updated>
+<updated>2025-06-16T13:34:21.218864</updated>
 
 <link rel="alternate" type="text/html" href="https://gregoirelits.eu/" />
 
@@ -21,10 +21,77 @@
 		<uri>https://gregoirelits.eu</uri>
 	</author>
 
+	<title type="html">IA et dispersion des expertises</title>
+	<link rel="alternate" type="text/html" href="https://gregoirelits.eu/fr/2025-06-17-IA-et-dispersion-des-expertises.html"/>
+	<id>https://gregoirelits.eu/fr/2025-06-17-IA-et-dispersion-des-expertises.html</id>
+	<updated>2025-06-16T13:34:16+00:00</updated>
+
+	<content type="html"><![CDATA[
+
+		
+ <p>
+  Un des questionnements liés au développement des IA conversationnelles - qu'il serait sans doute plus opportun de définir comme des
+  <strong>
+   banques centralisées de connaissances et d'expertises
+  </strong>
+  - est qu'il contredit le mécanisme de dispersion des expertises au sein de la société.
+ </p>
+ <p>
+  Aujourd'hui, si vous avez un problème juridique, vous pouvez consulter un avocat qui a travaillé de très nombreuses années pour construire une expertise particulière et qui vous aidera à résoudre le problème.
+ </p>
+ <p>
+  Comme il n'y a pas qu'un seul avocat mettant à disposition ces services, d'une part, vous avez le choix entre une diversité de personnes et donc d'expertises, mais aussi, et surtout, d'un point de vue sociologique, l'expertise juridique est dispersée dans toute la société (même si bien sûr certains cabinets d'avocat centralisent certaines expertises et acquièrent des positions dominantes dans le marché de l'expertise juridique).
+ </p>
+ <p>
+  Sociologiquement, l'expertise juridique existe de façon redondante au sein d'une société dans la pratique d'une multitude d'avocat.e.s, de magistrat.e.s, d'assistant.e.s juridiques et de juristes. C'est le cas également pour d'autres types d'expertise (économique, comptable, médicale, etc.)
+ </p>
+ <p>
+  Cette dispersion est une des bases du fonctionnement (organisationnel et démocratique) de nos sociétés. Ce mécanisme de dispersion des expertises (ou de spécialisation des individus) est d'ailleurs souvent au cœur de la manière dont nous créons nos identités sociales (on se définit comme avocat.e,  infirmier.e,  instituteur.rise, nutritionniste, agent de voyage, etc.). Il est également au cœur de la manière dont nous organisons les hiérarchies symbolique et économique constitutives de la société.
+ </p>
+ <p>
+  La dispersion des expertises est un principe organisationnel central de nos sociétés et de nos vies en tant qu'individu.
+ </p>
+ <p>
+  La promesse des banques centralisées d'expertises et de connaissances (aka IA conversationnelles) est d'offrir un
+  <strong>
+   guichet numérique unique
+  </strong>
+  (pour le moment détenu par une entreprise privée souvent basée en Californie) pour la consultation de
+  <strong>
+   toutes les expertises
+  </strong>
+  , par
+  <strong>
+   tout le monde
+  </strong>
+  , dans
+  <strong>
+   toutes les sociétés
+  </strong>
+  . Une expertise qui, qui plus est, s'adapte instantanément à nos spécificités individuelles sur base des traces collectées au préalable sur nos préférences, comportements et opinions.
+ </p>
+ <p>
+  Si le recours aux
+  <strong>
+   banques centralisées de connaissances et d'expertises
+  </strong>
+  devait se généraliser, nos sociétés pourraient être reconfigurées profondément, car le principe de centralisation de l'expertise qui est à leur racine est opposé au principe de dispersion qui préside aujourd'hui à notre fonctionnement collectif.
+ </p>
+
+
+
+
+	]]></content>
+</entry><entry xml:lang="fr">
+	<author>
+		<name>Grégoire Lits</name>
+		<uri>https://gregoirelits.eu</uri>
+	</author>
+
 	<title type="html">L'automatisation comme indice de facticité (ou comment ma tentative de me remettre au sport a échoué)</title>
 	<link rel="alternate" type="text/html" href="https://gregoirelits.eu/fr/2025-05-21-L-automatisation-d-un-media-comme-indice-de-facticite.html"/>
 	<id>https://gregoirelits.eu/fr/2025-05-21-L-automatisation-d-un-media-comme-indice-de-facticite.html</id>
-	<updated>2025-05-21T12:41:11+00:00</updated>
+	<updated>2025-05-22T07:29:41+00:00</updated>
 
 	<content type="html"><![CDATA[
 
@@ -32,9 +99,9 @@
  <p>
   Dans ce post, je vais raconter une petite anecdote qui m'est arrivée cette semaine alors que je tentais avec quelques amis de me (re)mettre au sport et comment cette anecdote est illustrative d'une possible modification rapide de notre capacité à faire confiance aux informations qui circulent aujourd'hui dans les environnements informationnels numériques.
  </p>
- <h1>
-  Un peu de contexte 1 - IA, et colonisation des environnements numériques par des médias automatisés
- </h1>
+ <h2>
+  IA et colonisation des environnements numériques par des médias automatisés
+ </h2>
  <p>
   Pour tirer les fils de cette anecdote, quelques préalables sont nécessaires.
  </p>
@@ -83,11 +150,11 @@
   </li>
  </ul>
  <p>
-  Bref, la colonisation en cours de l'environnement numérique par un nouveau type de médias - les médias automatisés - pourrait bien déstabiliser le fonctionnement de cet environnement dans sa qualité d'environnement informationnel, c'est-à-dire comme espace collectif où nous formons notre rapport au monde via l'acquisition de connaissances et d'informations que nous jugeons fiables.
+  Bref, la colonisation en cours de l'environnement numérique par un nouveau type de médias - les médias automatisés - pourrait bien déstabiliser le fonctionnement de cet environnement dans sa qualité d'environnement informationnel, c'est-à-dire d'espace collectif où nous formons notre rapport au monde via l'acquisition de connaissances et d'informations que nous jugeons fiables.
  </p>
- <h1>
-  Un peu de contexte 2 - Réception et confiance dans les environnements informationnels
- </h1>
+ <h2>
+  Réception et confiance dans les environnements informationnels
+ </h2>
  <p>
   Le second préalable à poser est que l'effet d'un nouveau média et de ses contenus sur la société et les individus, n'est jamais direct. Si cet effet est mesurable, il se mesure en grande partie en prenant en compte les activités de réception des contenus de ce média par les personnes qui l'utilisent pour communiquer.
  </p>
@@ -110,7 +177,7 @@
   Une fois cette confiance acquise, stabilisée, plus besoin de la ré-évaluer à chaque nouvelle interaction avec la source. Cette stabilité de la confiance médiatique est sans doute une des conditions de possibilité d'un environnement informationnel fonctionnel. L'existence d'un environnement informationnel fonctionnel et relativement stable est sans doute une des conditions de possibilités de la vie dans les sociétés démocratiques au XXIe siècle.
  </p>
  <p>
-  De ce point de vue, la numérisation des environnements informationnels causée par le développement du web dans les années 1990, puis surtout du web 2.0. de 2000 à 2020 a eu des conséquences importantes. De nouveau type de sources médiatiques sont apparues telles que des encyclopédies écrites par des non professionnels (Wikipédia), des journaux en ligne, des blogs, des comptes de réseaux sociaux, etc. Ces sources numériques ont presque toutes comme point commun d'être produites par des non professionnels aux compétences très diverses et leur fiabilité ne pouvait donc plus être automatiquement déduite du caractère spécialisé (journalistes, scientifiques, experts) de leur auteur. La centralité de l'activité d'évaluation de la fiabilité des sources s'en est trouvée renforcée et sans doute aussi la centralité de processus collectifs d'attribution de confiance à certaines sources, jugées plus fiables que d'autres.
+  De ce point de vue, la numérisation des environnements informationnels causée par le développement du web dans les années 1990, puis surtout du web 2.0. de 2000 à 2020 a eu des conséquences importantes. De nouveaux types de source médiatique sont apparus tels que des encyclopédies écrites par des non professionnels (Wikipédia), des journaux en ligne, des blogs, des comptes de réseaux sociaux, etc. Ces sources numériques ont presque toutes comme point commun d'être produites par des non professionnels aux compétences très diverses et leur fiabilité ne pouvait donc plus être automatiquement déduite du caractère spécialisé (journalistes, scientifiques, experts) de leur auteur. La centralité de l'activité d'évaluation de la fiabilité des sources s'en est trouvée renforcée et sans doute aussi la centralité de processus collectifs d'attribution de confiance à certaines sources, jugées plus fiables que d'autres.
  </p>
  <p>
   Ce qui est intéressant c'est que nous avons petit à petit appris collectivement, cela à pris presque 30 ans, si et comment nous pouvions (ou non) faire confiance à ces nouvelles sources et comment elles pouvaient participer à la composition de notre mix informationnel. Ce processus à pris du temps, n'est toujours pas terminé et suscite de nombreux débats.
@@ -118,9 +185,9 @@
  <p>
   Une fois ces préalables posés, je peux en venir à ma tentative avortée de faire du sport et montrer en quoi elle est un bon exemple d'une possible déstabilisation en cours des structures de confiance des environnements informationnels numériques et comment cette déstabilisation peut poser des problèmes très concrets dans notre vie de tous les jours.
  </p>
- <h1>
+ <h2>
   Ma (non)participation à un trail et débat entre amis sur la facticité d'un email
- </h1>
+ </h2>
  <p>
   Il y a quelques semaines je me suis donc inscrit avec trois amis à un trail qui devait se passer fin mai dans une ville proche de Bruxelles. Rien de bien particulier. L'événement était organisé pour la première fois par une entreprise expérimentée et de manière très professionnelle. Site web parfait en français et flamand propulsé par Odoo, comptes de réseaux sociaux nickels : Facebook, Instagram et Tik Tok proposant des vidéos promotionnelles léchées, etc.
  </p>
@@ -138,10 +205,10 @@
    l'adresse d'envoi de l'email était une adresse de type "info@45698122.xxx.com". Pas de doute, l'expéditeur du mail n'avait rien à voir avec l'organisateur de la course. Le domaine de l'adresse n'était pas celui du site web de l'événement et l'adresse n'était d'ailleurs pas la même que celle utilisée dans les précédents emails reçus. Surtout, la série de chiffres dans l'adresse mail était un indice certain d'automatisation de l'envoi. Un robot avait dû participer d'une manière ou d'une autre à cet envoi.
   </li>
   <li>
-   Le mail mentionnait la phrase suivante : "Nous reviendrons rapidement vers vous concernant les modalités de remboursement de votre inscription." Signe de possible arnaque destinée à collecter nos données bancaires.
+   Le mail mentionnait la phrase suivante : "Nous reviendrons rapidement vers vous concernant les modalités de remboursement de votre inscription." Signe d'une possible arnaque destinée à collecter nos données bancaires.
   </li>
   <li>
-   Enfin, après vérification, aucun des autres canaux de communication de l'évènement (site web, comptes Facebook, Instagram ou Tik Tok) ne mentionnait l'annulation de l'événement.
+   Enfin, après vérification, aucun des autres canaux de communication de l'événement (site web, comptes Facebook, Instagram ou Tik Tok) ne mentionnait son annulation.
   </li>
  </ul>
  <p>
@@ -155,10 +222,10 @@
    Il était rédigé en français et en néerlandais de manière parfaite, sans faute et de manière très concise, pas de trace de traduction automatisée approximative.
   </li>
   <li>
-   Surtout il ne demandait aucune action directe de notre part. Pas de lien sur lequel cliquer qui nous ferait sortir des médias connus de l'évènement, ou qui nous demanderait d'encoder quelque part nos données bancaires.
+   Surtout il ne demandait aucune action directe de notre part. Pas de lien sur lequel cliquer qui nous ferait sortir des médias connus de l'événement, ou qui nous demanderait d'encoder quelque part nos données bancaires.
   </li>
   <li>
-   De plus l'email avait clairement été envoyé uniquement aux personnes inscrites à l'évènement. S'il s'agissait d'un spam, cela aurait voulu dire que les pirates auraient eu accès à la base de données des organisateurs, ce qui n'est pas impossible mais quand même assez peu probable, et surtout beaucoup d'énergie dépensée de la part des pirates pour un événement de si petite taille. Bref pas de raison de douter de son authenticité.
+   De plus l'email avait clairement été envoyé uniquement aux personnes inscrites à l'événement. S'il s'agissait d'un spam, cela aurait voulu dire que les pirates auraient eu accès à la base de données des organisateurs, ce qui n'est pas impossible mais quand même assez peu probable, et surtout beaucoup d'énergie dépensée de la part des pirates pour un événement de si petite taille. Bref pas de raison de douter de son authenticité.
   </li>
  </ul>
  <p>
@@ -177,7 +244,7 @@
   À cette automatisation des médias, pourrait donc correspondre une automatisation du doute dans le processus de réception des contenus médiatiques et cette automatisation du doute pourrait être un problème en soi.
  </p>
  <p>
-  Heureusement, au final, ce n'est pas ce petit évènement communicationnel qui nous a empêchés de nous remettre au sport et de sortir nos têtes des environnements numériques dans lesquels nous sommes plongés une grande partie de nos journées.
+  Heureusement, au final, ce n'est pas ce petit événement communicationnel qui nous a empêchés de nous remettre au sport et de sortir nos têtes des environnements numériques dans lesquels nous sommes plongés une grande partie de nos journées.
  </p>
 
 
