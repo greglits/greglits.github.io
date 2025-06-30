@@ -10,30 +10,48 @@ body {margin:40px auto;
 	line-height:1.4;
 	font-size:16px;
 	color:#444;
-	background-color: #fefaf6;
+	background-color: #f2efec;
 	padding:0 10px;
-	font-family:  Atkinson; }
+	font-family:  Atkinson, Inter, Calibri, sans-serif; 
+	}
 
-h1{line-height:1.2; font-size:35px; padding-top: 20px; font-weight: bold; text-align:center; color: #444; font-family: Atkinson, Calibri, sans-serif; }
+h1{line-height:1.2; 
+	font-size:35px; 
+	padding-top: 20px; 
+	font-weight: bold; 
+	text-align:center; 
+	color: #444; 
+	font-family: Atkinson, Inter, Calibri, sans-serif; 
+	}
 
-h2,h3{ font-weight: bold; border-bottom: 1px solid; line-height:1.2; color: #444; font-family: Atkinson, Calibri, sans-serif;}
+h2,h3{ font-weight: bold; 
+	border-bottom: 1px solid #ccc; 
+	line-height:1.2; 
+	color: #444; 
+	font-family: Atkinson, Inter, Calibri, sans-serif; 
+	}
 
 pre,blockquote,.signature {
 	background: #f4f1eb;
-	padding: 1em}
+	padding: 1em
+	}
 
 blockquote,.signature{
 	font-style: italic;
 	margin: 2em 1em}
 
 p,ul,ol { list-style-type: circle;}
+
 li { margin-bottom: 0.75%;}
 
-a { color:#007b7b; text-decoration:none; padding:0.2em 0; }
+a { color:#3a6fa0; 
+	text-decoration:none; 
+	padding:0.2em 0; 
+	}
 
 a:hover {
-  color: #005757;
-  background-color: #e3f4f4;
+  color: #3a6fa0;
+  text-decoration: underline;
 }
 
 .center {
@@ -42,12 +60,21 @@ a:hover {
   margin-right: auto;
   width: 60%;
 }
+
 .header{
 	margin: 1em 0;
 	display: block;
 	width:100%;
 }
-.subtitle {font-size:18px; padding-bottom: 20px; text-align: center; line-height: 1.2; font-weight: lighter; font-style: italic; font-family: Atkinson, Calibri, sans-serif; color:#444;}
+.subtitle {font-size:18px; 
+	padding-bottom: 20px; 
+	text-align: center; 
+	line-height: 1.5; 
+	font-style: italic; 
+	font-family: Atkinson, Inter, Calibri, sans-serif; 
+	color:#444;
+	}
+	
 .navbar{
 	display: flex;
 	align-items: center;
@@ -56,33 +83,40 @@ a:hover {
 	text-align: center;
 	/*font-variant: small-caps;*/
 	font-weight: normal;
-	font-family: Atkinson, Calibri, sans-serif;
-	background-color: /*#F0F0F4*/ /*#fff5d7*/ /*#f3e7e7*/ #f7ecec;
-	padding: 10px 25px;
-	border-bottom: 2px solid #ccc;
+	font-family: Atkinson, Inter, Calibri, sans-serif; 
+	background-color: /*#F0F0F4*/ /*#fff5d7*/ /*#f3e7e7*/ #f2efec;
+	padding: 0px 80px;
+	border-bottom: 1px #ccc;
 }
 
 .navbar a {
   padding: 0.8em 1em;
   color: #444;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-size: 14px;
 }
 
 .navbar a:hover {
   color: #fff;
-  background-color: #007b7b;
+  background-color: #3a6fa0;
   border-radius: 5px;
+  text-decoration: none;
 }
 
-.bibliography { list-style-type: none; text-indent: -2.2em;}
+.bibliography { list-style-type: none; 
+	text-indent: -2.2em;
+	}
+
 .horizontal { 
 		text-align: center; 
-		padding:25px 0px;
-		font-family:  Atkinson;  
+		padding:15px 40px 15px;
+		font-family:  Atkinson, Inter, Calibri, sans-serif; 
 		font-size: 14px;
-		text-transform: uppercase;
+		/*text-transform: uppercase;*/
 }
 
-.horizontal li{display: inline-block; margin: 0 0.5em;}
-.hashtag { color: #fdf6e3;}
+.horizontal li{display: inline-block; 
+				margin: 0 0.5em;
+	}
+
+.hashtag { color: #f2efec;}
