@@ -66,7 +66,7 @@ a:hover {
 	display: block;
 	width:100%;
 }
-.subtitle {font-size:18px; 
+.subtitle {font-size:20px; 
 	padding-bottom: 20px; 
 	text-align: center; 
 	line-height: 1.5; 
@@ -93,7 +93,7 @@ a:hover {
   padding: 0.8em 1em;
   color: #444;
   /*text-transform: uppercase;*/
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .navbar a:hover {
@@ -111,7 +111,7 @@ a:hover {
 		text-align: center; 
 		padding:15px 40px 15px;
 		font-family:  Atkinson, Inter, Calibri, sans-serif; 
-		font-size: 14px;
+		font-size: 16px;
 		/*text-transform: uppercase;*/
 }
 
