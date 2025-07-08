@@ -121,3 +121,14 @@ a:hover {
 	}
 
 .hashtag { color: #f2efec;}
+
+.photo {
+  display: flex;
+  align-items: center; /* pour aligner verticalement l'image et le texte */
+  gap: 1rem; /* espace entre l'image et le texte */
+}
+
+.photo img {
+  width: 150px; /* taille de l'image */
+  height: auto;
+}
