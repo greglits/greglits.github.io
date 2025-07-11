@@ -5,10 +5,12 @@
   padding: 0;
 }
 
-@font-face {
+/*@font-face {
   font-family: Atkinson ;
   src: url('/AtkinsonHyperlegible-Regular.ttf') format("truetype");
-}
+}*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 
 body {
   font-family: sans-serif;
@@ -16,7 +18,7 @@ body {
   color:#444;
   font-size:16px;
   background-color: #f2efec;
-  font-family:  Atkinson, Inter, Calibri, sans-serif; 
+  font-family:  'Inter', Atkinson, Inter, Calibri, sans-serif; 
 }
 
 h2,h3{ 
