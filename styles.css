@@ -88,7 +88,9 @@ li { margin-bottom: 1rem;
 }
 
 
-.navbar a {
+
+
+.header a {
   margin-left: 1rem;
   text-decoration: none;
    color: #444;
@@ -96,7 +98,7 @@ li { margin-bottom: 1rem;
 
 }
 
-.navbar a:hover {
+.header a:hover {
   color: #fff;
   background-color: #3a6fa0;
   border-radius: 5px;
