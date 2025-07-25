@@ -1,0 +1,236 @@
+@font-face {
+  font-family: Atkinson ;
+  src: url('AtkinsonHyperlegible-Regular.ttf') format("truetype");
+}
+
+
+body {
+	color: #333;
+	background-color: #fff;
+	min-height: 100%;
+	margin: 0;
+	font-family: Atkinson, Verdana, Open sans, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+  
+ }
+ 
+ a {
+	 color: #004c36;
+	 text-decoration: none;
+ }
+ 
+  a:hover {
+	 color: green;
+	 text-decoration: underline;
+	
+ }
+ 
+p,ul,ol { list-style-type: none;}
+
+li { margin-bottom: 1.25%;}
+
+li a {
+	 font-weight: bold;
+}
+ 
+ .navbar {
+	z-index: 999;
+	background-color: #fff;
+	position: sticky;
+	top: 0;
+ }
+ 
+ .container-navbar {
+	max-width: 1320px;
+	padding: 16px 15px;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+	background-color: #fff;
+	display: flex;
+	align-items: center;           /* Verticalement centré */
+	justify-content: space-between;/* Left à gauche, Right à droite */
+	gap: 1rem;
+ }
+ 
+ .bloc-navbar-left,
+.bloc-navbar-right {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+
+
+
+.section-hero {
+	width: 100%;
+	padding: 80px 15px;
+	width: 100%;
+	padding: 15px 15px;
+	line-height: 29px;
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	background-color: #fff;
+   
+  }
+  
+ .container-section {
+  max-width: 1320px;
+	padding: 16px 16px;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+	background-color: #bfb84f;
+	display: flex;
+	align-items: center;           
+	justify-content: space-between;
+	gap: 1rem;
+	border-radius: 12px;
+	background-image: url("files/chalet.png"); /* lien vers l'image sur pixabay : https://pixabay.com/fr/photos/%C3%AEle-lac-%C3%A9glise-for%C3%AAt-des-arbres-7660016/*/
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+ }
+
+
+
+.content-hero {
+	padding: 20px 24px;
+	color: #262c2e;
+	background-color: #ffffffe6;
+	border-radius: 12px;
+	line-height: 29px;
+	width: 100%; /* Par défaut, il prend toute la largeur */
+}
+
+.english {text-align: right}
+
+.english button {
+	color: #fff;
+	background-color: #004c36;
+	border-radius: 60px;
+	padding: 12px 18px;
+	font-size: 16px;
+	line-height: 1.2em;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	border: none;
+}
+
+ .container-blog {
+  max-width: 1320px;
+	padding: 16px 16px;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+	background-color: #f0deca;
+	display: flex;
+	align-items: center;         /* Verticalement centré */
+	justify-content: space-between;/* Left à gauche, Right à droite */
+	gap: 1rem;
+	border-radius: 12px;
+	
+ }
+ 
+ .content-blog {
+	padding: 20px 24px;
+	color: #262c2e;
+	background-color: #ffffffe6;
+	border-radius: 12px;
+	line-height: 29px;
+	width: 100%; /* Par défaut, il prend toute la largeur */
+
+}
+
+.footerg {
+	z-index: 999;
+	background-color: #fff;
+	position: sticky;
+	top: 0;
+ }
+ 
+ .container-footer {
+	max-width: 1320px;
+	padding: 32px 15px;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+	background-color: #fff;
+	display: flex;
+	align-items: center;           /* Verticalement centré */
+	justify-content: space-between;/* Left à gauche, Right à droite */
+	gap: 1rem;
+	border-top: 1px solid #ddd;
+ }
+ 
+ .bloc-footer-left,
+.bloc-footer-right {
+	display: flex;
+	align-items: center;
+	gap: .75rem;
+}
+
+button {
+	color: #fff;
+	background-color: black;
+	border-radius: 60px;
+	padding: 12px 18px;
+	font-size: 16px;
+	line-height: 1.2em;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	border: none;
+}
+
+button:hover {
+  background-color: #04AA6D; /* Green */
+  color: white;
+}
+
+
+
+
+
+/* Responsive : empile les blocs sur petit écran */
+@media (max-width: 330px) {
+  .container-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .bloc-navbar-right {
+    margin-left: 0;
+    width: 100%;
+    justify-content: flex-end; /* ou flex-start selon ton besoin */
+  }
+}
+
+@media (min-width: 1000px) {
+  .content-hero {
+    max-width: 50%;
+  }
+  
+    .content-blog {
+    max-width: 50%;
+  }
+   .container-section {
+	padding: 24px 24px;
+  
+	}
+	
+	.container-blog {
+	padding: 24px 24px;
+  
+	}
+
+
+	button {
+		padding: 16px 32px;
+	}
+	
+	 .container-navbar {
+	padding: 16px 0px 16px 24px;
+	 }
+
+}
