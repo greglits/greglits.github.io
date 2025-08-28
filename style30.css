@@ -16,30 +16,47 @@ body {
  }
  
  a {
-	 color: #004c36;
+	 color: #3a6fa0;
 	 text-decoration: none;
  }
  
   a:hover {
-	 color: green;
+	 color: #3a6fa0;
 	 text-decoration: underline;
 	
  }
  
 p,ul,ol { list-style-type: none;}
 
-li { margin-bottom: 1.25%;}
+li { margin-bottom: 0.75%;}
 
 li a {
-	 font-weight: bold;
+	 font-weight: normal;
 }
- 
+
+.smallcaps {
+	font-variant: small-caps;
+}
+
  .navbar {
 	z-index: 999;
 	background-color: #fff;
 	position: sticky;
 	top: 0;
  }
+ 
+ .navbar2 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	text-align: center;
+	font-variant: small-caps;
+	font-weight: normal;
+	font-family: Atkinson, Inter, Calibri, sans-serif; 
+	padding: 10px 25px;
+	border-bottom: 1px #ccc;
+}
  
  .container-navbar {
 	max-width: 1320px;
@@ -82,7 +99,7 @@ li a {
 	margin-left: auto;
 	margin-right: auto;
 	box-sizing: border-box;
-	background-color: #bfb84f;
+	background-color: #f2efec;
 	display: flex;
 	align-items: center;           
 	justify-content: space-between;
@@ -134,6 +151,15 @@ li a {
 	
  }
  
+  .content-book {
+	padding: 20px 24px;
+	color: #262c2e;
+	border-radius: 12px;
+	line-height: 29px;
+	width: 100%; /* Par défaut, il prend toute la largeur */
+
+}
+ 
  .content-blog {
 	padding: 20px 24px;
 	color: #262c2e;
@@ -174,7 +200,7 @@ li a {
 
 button {
 	color: #fff;
-	background-color: black;
+	background-color: #04AA6D;
 	border-radius: 60px;
 	padding: 12px 18px;
 	font-size: 16px;
@@ -185,43 +211,50 @@ button {
 }
 
 button:hover {
-  background-color: #04AA6D; /* Green */
+  background-color: #3a6fa0; /* Green */
   color: white;
 }
 
 
-
+.bibliography { list-style-type: none; 
+	text-indent: -2.2em;
+	}
 
 
 /* Responsive : empile les blocs sur petit écran */
-@media (max-width: 330px) {
-  .container-navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .bloc-navbar-right {
-    margin-left: 0;
-    width: 100%;
-    justify-content: flex-end; /* ou flex-start selon ton besoin */
-  }
+@media (max-width: 540px) {
+
+  
+.navbar2 {
+		flex-direction: column;
+		gap: 10px; /* petit espace entre les éléments */
+	}
+	
+
+
 }
 
+
+
+
 @media (min-width: 1000px) {
+	
+
+	
   .content-hero {
     max-width: 50%;
   }
   
-    .content-blog {
+  .content-blog {
     max-width: 50%;
   }
+  
    .container-section {
 	padding: 24px 24px;
-  
 	}
 	
 	.container-blog {
 	padding: 24px 24px;
-  
 	}
 
 
@@ -232,5 +265,17 @@ button:hover {
 	 .container-navbar {
 	padding: 16px 0px 16px 24px;
 	 }
+	 
+	   .content-book {
+	padding: 24px 24px;
+	line-height: 29px;
+	width: 100%; /* Par défaut, il prend toute la largeur */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	text-align: center;
+
+}
 
 }
