@@ -6,7 +6,7 @@
 
 body {
 	color: #333;
-	background-color: #fff;
+	background-color: /* #fff;*/ #f2efec;
 	min-height: 100%;
 	margin: 0;
 	font-family: Atkinson, Verdana, Open sans, Arial, sans-serif;
@@ -15,9 +15,30 @@ body {
   
  }
  
+h1 {
+	line-height: 40px;
+}
+
+h1 {line-height:1.2; 
+	font-size:35px; 
+	padding-top: 20px; 
+	font-weight: bold; 
+	text-align:center; 
+	font-family: Atkinson, Inter, Calibri, sans-serif; 
+	}
+
+
+
+
+h2 a {
+	color: #333;
+	text-decoration: none;
+}
+
+
  a {
-	 color: #3a6fa0; /* bleu clair */
-	 text-decoration: none;
+	 color: blue; /* bleu clair */
+	 /*text-decoration: none;*/
  }
  
   a:hover {
@@ -26,13 +47,14 @@ body {
 	
  }
  
-p,ul,ol { list-style-type: none;}
+p,ul,ol { list-style-type: circle;}
 
 li { margin-bottom: 0.75%;}
 
 
 .bibliography { 
 	text-indent: -2.2em; /* pour donner un style bibliographique aux listes*/
+	list-style-type: none;
 	}
 
 
@@ -40,14 +62,34 @@ li { margin-bottom: 0.75%;}
 	font-variant: small-caps; /*pour mettre du texte en small caps via des span*/
 } 
 
+
+
+.signature {
+	background: #f4f1eb;
+	padding: 1em
+	}
+	
+.hashtag { color: #f2efec;}
+
+.subtitle {font-size:20px; 
+	padding-bottom: 20px; 
+	text-align: center; 
+	line-height: 1.5; 
+	font-style: italic; 
+	font-family: Atkinson, Inter, Calibri, sans-serif; 
+	color:#444;
+	}
+
 /* ////////// stylage menus de navigation //////// */
 
 .navbar {
 	z-index: 999;
-	background-color: #fff;
-	position: sticky;
+	background-color: #eee8d5;
+	/*position: sticky;*/
 	top: 0;
  }
+ 
+
  
 .container-navbar {
 	max-width: 1320px;
@@ -55,7 +97,7 @@ li { margin-bottom: 0.75%;}
 	margin-left: auto;
 	margin-right: auto;
 	box-sizing: border-box;
-	background-color: #fff;
+	background-color: #eee8d5;
 	display: flex;
 	align-items: center;           /* Verticalement centré */
 	justify-content: space-between;/* Left à gauche, Right à droite */
@@ -69,6 +111,7 @@ li { margin-bottom: 0.75%;}
   align-items: center;
   gap: .75rem;
 }
+
 
  
 .navbar2 {
@@ -96,12 +139,15 @@ li { margin-bottom: 0.75%;}
 	position: relative;
 	display: block;
 	box-sizing: border-box;
-	background-color: #fff;
+	background-color: #eee8d5;
    
   }
    
  
 /*pour styler les container dans les sections*/ 
+  
+
+
   
  .container-hero {
 	max-width: 1320px;
@@ -127,7 +173,7 @@ li { margin-bottom: 0.75%;}
 	margin-left: auto;
 	margin-right: auto;
 	box-sizing: border-box;
-	background-color: #f2efec;
+	background-color: /*#f2efec*/ #eee8d5;
 	display: flex;
 	align-items: center;         /* Verticalement centré */
 	justify-content: space-between;/* Left à gauche, Right à droite */
@@ -167,6 +213,26 @@ li { margin-bottom: 0.75%;}
 
 }
 
+.content-static {
+	margin:0px auto;
+	padding: 0px 16px;
+	color: #262c2e;
+	/*background-color: #ffffffe6;*/
+	border-radius: 12px;
+	line-height: 29px;
+	max-width:675px;/* Par défaut, il prend toute la largeur, ! 50% dans média queries pour grands écrans */
+	line-height:1.4;
+	font-size:16px;
+
+}
+
+.content-static h2,h3{ font-weight: bold; 
+	border-bottom: 1px solid #ccc; 
+	line-height:1.2; 
+	color: #444; 
+	padding: 10px 0px 0px 0px;
+	}
+
 /*Pour styler le footer*/
 
 .footer {
@@ -196,12 +262,15 @@ li { margin-bottom: 0.75%;}
 	align-items: center;
 	gap: .75rem;
 }
+.bloc-footer-right {
+	text-align: right;
+}
 
 /* Pour styler les boutons*/
 
 button {
 	color: #fff;
-	background-color: #04AA6D; /* vert */
+	background-color: #04AA6D; /*vert */
 	border-radius: 60px;
 	padding: 12px 18px;
 	font-size: 16px;
@@ -235,6 +304,26 @@ button:hover {
 	.button-right {
 		text-align: center} /* Pour que les boutons dans les container se centrent sur petit écran */
 
+
+	h1 {
+		line-height:1.2; 
+		font-size:27px; 
+		padding-top: 20px; 
+		font-weight: bold; 
+		text-align:center; 
+	}
+	
+	h2 {
+		line-height:1.2; 
+	}
+
+	.subtitle {font-size:16px; 
+		padding-bottom: 20px; 
+		text-align: center; 
+		line-height: 1.5; 
+		font-style: italic; 
+		}
+
 }
 
 
@@ -243,11 +332,11 @@ button:hover {
 @media (min-width: 1000px) {
 	
 
-	.content-hero, .content-publication {
+	.content-hero {
     max-width: 50%;
 	}
   
-	.content-blog {
+	.content-blog, .content-publication {
     max-width: 100%;
 	}
 	
@@ -273,5 +362,9 @@ button:hover {
 	flex-direction: row;
 	text-align: center;
 	}
+	
+
+	
+
 
 }
