@@ -16,7 +16,7 @@ body {
  }
  
  a {
-	 color: #3a6fa0;
+	 color: #3a6fa0; /* bleu clair */
 	 text-decoration: none;
  }
  
@@ -30,22 +30,48 @@ p,ul,ol { list-style-type: none;}
 
 li { margin-bottom: 0.75%;}
 
-li a {
-	 font-weight: normal;
-}
+
+.bibliography { 
+	text-indent: -2.2em; /* pour donner un style bibliographique aux listes*/
+	}
+
 
 .smallcaps {
-	font-variant: small-caps;
-}
+	font-variant: small-caps; /*pour mettre du texte en small caps via des span*/
+} 
 
- .navbar {
+/* ////////// stylage menus de navigation //////// */
+
+.navbar {
 	z-index: 999;
 	background-color: #fff;
 	position: sticky;
 	top: 0;
  }
  
- .navbar2 {
+.container-navbar {
+	max-width: 1320px;
+	padding: 16px 15px;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+	background-color: #fff;
+	display: flex;
+	align-items: center;           /* Verticalement centré */
+	justify-content: space-between;/* Left à gauche, Right à droite */
+	gap: 1rem;
+ } 
+ 
+ 
+ .bloc-navbar-left,
+.bloc-navbar-right {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+
+ 
+.navbar2 {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -58,31 +84,12 @@ li a {
 	border-bottom: 1px #ccc;
 }
  
- .container-navbar {
-	max-width: 1320px;
-	padding: 16px 15px;
-	margin-left: auto;
-	margin-right: auto;
-	box-sizing: border-box;
-	background-color: #fff;
-	display: flex;
-	align-items: center;           /* Verticalement centré */
-	justify-content: space-between;/* Left à gauche, Right à droite */
-	gap: 1rem;
- }
+
  
- .bloc-navbar-left,
-.bloc-navbar-right {
-  display: flex;
-  align-items: center;
-  gap: .75rem;
-}
 
+/* //////////  Pour styler les Div containers  /////////// */
 
-
-.section-hero {
-	width: 100%;
-	padding: 80px 15px;
+.section-hero, .section-blog, .section-publication {
 	width: 100%;
 	padding: 15px 15px;
 	line-height: 29px;
@@ -92,9 +99,12 @@ li a {
 	background-color: #fff;
    
   }
+   
+ 
+/*pour styler les container dans les sections*/ 
   
- .container-section {
-  max-width: 1320px;
+ .container-hero {
+	max-width: 1320px;
 	padding: 16px 16px;
 	margin-left: auto;
 	margin-right: auto;
@@ -111,33 +121,8 @@ li a {
 	background-size: cover;
  }
 
-
-
-.content-hero {
-	padding: 20px 24px;
-	color: #262c2e;
-	background-color: #ffffffe6;
-	border-radius: 12px;
-	line-height: 29px;
-	width: 100%; /* Par défaut, il prend toute la largeur */
-}
-
-.english {text-align: right}
-
-.english button {
-	color: #fff;
-	background-color: #004c36;
-	border-radius: 60px;
-	padding: 12px 18px;
-	font-size: 16px;
-	line-height: 1.2em;
-	transition-duration: 0.4s;
-	cursor: pointer;
-	border: none;
-}
-
- .container-blog {
-  max-width: 1320px;
+ .container-blog, .container-publication {
+	max-width: 1320px;
 	padding: 16px 16px;
 	margin-left: auto;
 	margin-right: auto;
@@ -150,27 +135,41 @@ li a {
 	border-radius: 12px;
 	
  }
- 
-  .content-book {
-	padding: 20px 24px;
-	color: #262c2e;
-	border-radius: 12px;
-	line-height: 29px;
-	width: 100%; /* Par défaut, il prend toute la largeur */
 
-}
- 
- .content-blog {
+/*pour styler le conetnu dans les containers*/ 
+
+.content-hero {
 	padding: 20px 24px;
 	color: #262c2e;
 	background-color: #ffffffe6;
 	border-radius: 12px;
 	line-height: 29px;
 	width: 100%; /* Par défaut, il prend toute la largeur */
+}
+
+
+.content-book {
+	padding: 20px 24px;
+	color: #262c2e;
+	border-radius: 12px;
+	line-height: 29px;
+	width: 100%; /* Par défaut, il prend toute la largeur, ! 50% dans média queries pour grands écrans */
+
+}
+ 
+.content-blog, .content-publication {
+	padding: 20px 24px;
+	color: #262c2e;
+	background-color: #ffffffe6;
+	border-radius: 12px;
+	line-height: 29px;
+	width: 100%; /* Par défaut, il prend toute la largeur, ! 50% dans média queries pour grands écrans */
 
 }
 
-.footerg {
+/*Pour styler le footer*/
+
+.footer {
 	z-index: 999;
 	background-color: #fff;
 	position: sticky;
@@ -198,9 +197,11 @@ li a {
 	gap: .75rem;
 }
 
+/* Pour styler les boutons*/
+
 button {
 	color: #fff;
-	background-color: #04AA6D;
+	background-color: #04AA6D; /* vert */
 	border-radius: 60px;
 	padding: 12px 18px;
 	font-size: 16px;
@@ -211,62 +212,58 @@ button {
 }
 
 button:hover {
-  background-color: #3a6fa0; /* Green */
+  background-color: #3a6fa0; /* bleu lien */
   color: white;
 }
 
 
-.bibliography { list-style-type: none; 
-	text-indent: -2.2em;
-	}
+.button-right {text-align: right} /* pour aligner les boutons dans les div content à droite*/
 
 
-/* Responsive : empile les blocs sur petit écran */
+
+
+/* ////////////////  Responsive : empile les blocs sur petit écran plus petit que 540 px ///////////*/
+
 @media (max-width: 540px) {
 
   
-.navbar2 {
-		flex-direction: column;
+	.navbar2 {
+		flex-direction: column; /* Pour que le menu 2 s'empile sur petit écran */
 		gap: 10px; /* petit espace entre les éléments */
-	}
-	
-
+		}
+		
+	.button-right {
+		text-align: center} /* Pour que les boutons dans les container se centrent sur petit écran */
 
 }
 
 
-
+/* ////////////////  Responsive : pour les écrans plus grands que 1000px ///////////*/
 
 @media (min-width: 1000px) {
 	
 
-	
-  .content-hero {
+	.content-hero, .content-publication {
     max-width: 50%;
-  }
+	}
   
-  .content-blog {
-    max-width: 50%;
-  }
-  
-   .container-section {
-	padding: 24px 24px;
+	.content-blog {
+    max-width: 100%;
 	}
 	
-	.container-blog {
+	.container-blog, .container-publication, .container-hero {
 	padding: 24px 24px;
 	}
-
 
 	button {
 		padding: 16px 32px;
 	}
 	
-	 .container-navbar {
+	.container-navbar {
 	padding: 16px 0px 16px 24px;
 	 }
 	 
-	   .content-book {
+	.content-book {
 	padding: 24px 24px;
 	line-height: 29px;
 	width: 100%; /* Par défaut, il prend toute la largeur */
@@ -275,7 +272,6 @@ button:hover {
 	justify-content: space-between;
 	flex-direction: row;
 	text-align: center;
-
-}
+	}
 
 }
