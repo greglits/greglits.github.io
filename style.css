@@ -10,30 +10,23 @@ body {margin:40px auto;
 	line-height:1.4;
 	font-size:16px;
 	color:#444;
-	background-color: #eee8d5; 
+	background-color: #fdf6e3; 
 	padding:0 10px;
 	font-family:  Atkinson, Inter, Calibri, sans-serif; 
 	}
 
 h1{line-height:1.2; 
-	font-size:35px; 
-	padding-top: 20px; 
-	font-weight: bold; 
 	text-align:center; 
-	color: #444; 
-	font-family: Atkinson, Inter, Calibri, sans-serif; 
 	}
 
 h2,h3{ font-weight: bold; 
 	border-bottom: 1px solid #ccc; 
 	line-height:1.2; 
-	color: #444; 
-	font-family: Atkinson, Inter, Calibri, sans-serif; 
 	padding: 10px 0px 0px 0px;
 	}
 
 pre,blockquote,.signature {
-	background: #f4f1eb;
+	background: #eee8d5;
 	padding: 1em
 	}
 
@@ -47,7 +40,7 @@ li { margin-bottom: 0.75%;}
 
 a { color:#3a6fa0; 
 	text-decoration:none; 
-	padding:0.2em 0; 
+	padding:0.5em 0; 
 	}
 
 a:hover {
@@ -70,10 +63,7 @@ a:hover {
 .subtitle {font-size:20px; 
 	padding-bottom: 20px; 
 	text-align: center; 
-	line-height: 1.5; 
 	font-style: italic; 
-	font-family: Atkinson, Inter, Calibri, sans-serif; 
-	color:#444;
 	}
 	
 .navbar{
@@ -82,18 +72,14 @@ a:hover {
 	justify-content: space-between;
 	flex-direction: row;
 	text-align: center;
-	/*font-variant: small-caps;*/
-	font-weight: normal;
-	font-family: Atkinson, Inter, Calibri, sans-serif; 
-	background-color: /*#F0F0F4*/ /*#fff5d7*/ /*#f3e7e7*/ #f2efec;
+	font-variant: small-caps;
 	padding: 10px 25px;
-	border-bottom: 1px #ccc;
+
 }
 
 .navbar a {
   padding: 0.8em 1em;
   color: #444;
-  /*text-transform: uppercase;*/
   font-size: 16px;
 }
 
@@ -111,7 +97,6 @@ a:hover {
 .horizontal { 
 		text-align: center; 
 		padding:15px 40px 15px;
-		font-family:  Atkinson, Inter, Calibri, sans-serif; 
 		font-size: 16px;
 		/*text-transform: uppercase;*/
 }
@@ -131,4 +116,33 @@ a:hover {
 .photo img {
   width: 150px; /* taille de l'image */
   height: auto;
+}
+
+/* ////////////////  Responsive :   écrans plus petits que 540 px ///////////*/
+
+@media (max-width: 540px) {
+
+  
+
+
+	h1 {
+		line-height:1.2; 
+		font-size:30px; 
+	}
+	
+
+
+	.subtitle {font-size:18px; 
+		padding-bottom: 20px; 
+		text-align: center; 
+		line-height: 1.5; 
+		font-style: italic; 
+		}
+		
+	body {
+	line-height:1.6;
+	font-size:18px;
+	padding:0 30px;
+	}
+
 }
