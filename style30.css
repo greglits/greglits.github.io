@@ -5,12 +5,12 @@
 
 
 body {
-	color: #333;
-	background-color: /* #fff;*/ #fdf6e3;
+	color: #17181E;
+	background-color: #fff; /* #fdf6e3;*/
 	min-height: 100%;
 	margin: 0;
 	font-family: Atkinson, Verdana, Open sans, Arial, sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 20px;
   
  }
@@ -22,27 +22,25 @@ h1 {
 h1 {line-height:1.2; 
 	font-size:35px; 
 	padding-top: 20px; 
-	font-weight: bold; 
-	text-align:center; 
-	font-family: Atkinson, Inter, Calibri, sans-serif; 
+	text-align:center;
 	}
 
 
 
 
 h2 a {
-	color: #333;
 	text-decoration: none;
 }
 
 
  a {
-	 color: blue; /* bleu clair */
+	 color: #101585; /* bleu clair */
 	 text-decoration: none;
+
  }
  
   a:hover {
-	 color: #3a6fa0;
+	 color: #136f63; 
 	 text-decoration: underline;
 	
  }
@@ -84,7 +82,6 @@ li { margin-bottom: 0.75%;}
 
 .navbar {
 	z-index: 999;
-	background-color: #fdf6e3;
 	/*position: sticky;*/
 	top: 0;
  }
@@ -97,7 +94,7 @@ li { margin-bottom: 0.75%;}
 	margin-left: auto;
 	margin-right: auto;
 	box-sizing: border-box;
-	background-color: #fdf6e3;
+	background-color: #fff; /* #fdf6e3;*/
 	display: flex;
 	align-items: center;           /* Verticalement centré */
 	justify-content: space-between;/* Left à gauche, Right à droite */
@@ -139,7 +136,7 @@ li { margin-bottom: 0.75%;}
 	position: relative;
 	display: block;
 	box-sizing: border-box;
-	background-color: #fdf6e3;
+	background-color: #fff; /* #fdf6e3;*/
    
   }
    
@@ -186,7 +183,7 @@ li { margin-bottom: 0.75%;}
 
 .content-hero {
 	padding: 20px 24px;
-	color: #262c2e;
+	color: #17181E;
 	background-color: #ffffffe6;
 	border-radius: 12px;
 	line-height: 29px;
@@ -196,7 +193,6 @@ li { margin-bottom: 0.75%;}
 
 .content-book {
 	padding: 20px 24px;
-	color: #262c2e;
 	border-radius: 12px;
 	line-height: 29px;
 	width: 100%; /* Par défaut, il prend toute la largeur, ! 50% dans média queries pour grands écrans */
@@ -205,7 +201,6 @@ li { margin-bottom: 0.75%;}
  
 .content-blog, .content-publication {
 	padding: 20px 24px;
-	color: #262c2e;
 	background-color: #ffffffe6;
 	border-radius: 12px;
 	line-height: 29px;
@@ -216,7 +211,6 @@ li { margin-bottom: 0.75%;}
 .content-static {
 	margin:0px auto;
 	padding: 0px 16px;
-	color: #262c2e;
 	/*background-color: #ffffffe6;*/
 	border-radius: 12px;
 	line-height: 29px;
@@ -229,7 +223,6 @@ li { margin-bottom: 0.75%;}
 .content-static h2,h3{ font-weight: bold; 
 	border-bottom: 1px solid #ccc; 
 	line-height:1.2; 
-	color: #444; 
 	padding: 10px 0px 0px 0px;
 	}
 
