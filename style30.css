@@ -124,7 +124,9 @@ li { margin-bottom: 0.75%;}
 	border-bottom: 1px #ccc;
 }
  
-
+.navbar2 a {
+	font-weight: bold;
+}
  
 
 /* //////////  Pour styler les Div containers  /////////// */
@@ -158,7 +160,7 @@ li { margin-bottom: 0.75%;}
 	justify-content: space-between;
 	gap: 1rem;
 	border-radius: 12px;
-	background-image: url("files/chalet.png"); /* lien vers l'image sur pixabay : https://pixabay.com/fr/photos/%C3%AEle-lac-%C3%A9glise-for%C3%AAt-des-arbres-7660016/*/
+	background-image: url("files/chalet.png");
 	background-position: 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -282,7 +284,16 @@ button:hover {
 .button-right {text-align: right} /* pour aligner les boutons dans les div content à droite*/
 
 
+.photo {
+  display: flex;
+  align-items: center; /* pour aligner verticalement l'image et le texte */
+  gap: 1rem; /* espace entre l'image et le texte */
+}
 
+.photo img {
+  width: 150px; /* taille de l'image */
+  height: auto;
+}
 
 /* ////////////////  Responsive : empile les blocs sur petit écran plus petit que 540 px ///////////*/
 
