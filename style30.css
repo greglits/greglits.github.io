@@ -215,7 +215,6 @@ li { margin-bottom: 0.75%;}
 	padding: 0px 16px;
 	/*background-color: #ffffffe6;*/
 	border-radius: 12px;
-	line-height: 29px;
 	max-width:675px;/* Par défaut, il prend toute la largeur, ! 50% dans média queries pour grands écrans */
 	line-height:1.4;
 	font-size:16px;
@@ -327,6 +326,18 @@ button:hover {
 		line-height: 1.5; 
 		font-style: italic; 
 		}
+		
+	.content-static {
+	line-height:29px;
+	font-size:18px;
+
+}
+
+	.content-static li {
+padding-bottom: 10px;
+
+}
+
 
 }
 
