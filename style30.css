@@ -160,7 +160,7 @@ li { margin-bottom: 0.75%;}
 	justify-content: space-between;
 	gap: 1rem;
 	border-radius: 12px;
-	background-image: url("files/chalet.png");
+	/*background-image: url("files/chalet.png");*/
 	background-position: 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
