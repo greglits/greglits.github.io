@@ -88,6 +88,8 @@ header h1{
 	margin: 2px;
 	padding-bottom: 5px;
 	padding-top: 10px;	
+	max-width: 42rem;
+	margin: auto;
 }
 
 
