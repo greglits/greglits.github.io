@@ -28,6 +28,10 @@ body {
 	margin: 0;
  }
  
+ p, ul { 
+	font-size: 1.1rem;
+ } 
+ 
  
  a {
 	 color: var(--link-color);
