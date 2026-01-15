@@ -85,11 +85,10 @@ header {
 header h1{
 	font-family: Alegreya, serif;
 	text-align: center;
-	margin: 2px;
 	padding-bottom: 5px;
 	padding-top: 10px;	
 	max-width: 42rem;
-	margin: auto;
+	margin: 2px auto 0 auto;
 }
 
 
@@ -162,6 +161,7 @@ button:hover {
 	
 blockquote,.signature {
 	background: var(--bg-color-contrast);
+	font-size: 1rem;
 	padding: 1em
 	}
 
