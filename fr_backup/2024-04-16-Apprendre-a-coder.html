@@ -1,17 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr"><head>
 <meta charset="UTF-8">
-<meta name="description" content="Sur le code qui génère ce site / Est-il encore utile d'apprendre à coder ? par Grégoire Lits" >
+<meta name="description" content="Super_resume" >
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="fediverse:creator" content="@Glits@mamot.fr" >
-<meta property="og:title" content="Sur le code qui génère ce site / Est-il encore utile d'apprendre à coder ?" >
-<meta property="og:url" content="http://gregoirelits.eu/fr/2024-04-16-Apprendre-a-coder.html" >
-<meta property="og:type" content="article" >
-<meta property="og:article:author" content="Grégoire Lits" >
-<meta property="og:article:published_time" content="2024-04-16" >
-<meta property="og:image" content="http://gregoirelits.eu/files/$IMAGE" >
 <title>Sur le code qui génère ce site / Est-il encore utile d'apprendre à coder ? - Grégoire Lits</title>
-<link rel="stylesheet" type="text/css" href="/stylenv.css">
+<link rel="stylesheet" type="text/css" href="/style.css">
 <link href="atom.xml" type="application/atom+xml" rel="alternate" title="Gregoirelits.eu (all posts)" >
 <!-- <link href="atom_en.xml" type="application/atom+xml" rel="alternate" title="Gregoirelits.eu (EN only)" >-->
 <!-- <link href="atom_fr.xml" type="application/atom+xml" rel="alternate" title="Gregoirelits.eu (en français)" >-->
@@ -22,29 +15,17 @@
 </head>
 <body>  
 
-<nav class="navbar">
-		
-			<div class="container-navbar">
-			
-				<div class="bloc-navbar-left">
-					<a href="menu.html" aria-label="Menu"></a>
-					<h2><a href="index.html">Grégoire Lits</a></h2>
-				</div>
-				
-				<div class="bloc-navbar-right">
-					<p><a href="index_en.html"><span class="smallcaps">english</span></a></p>   
-				</div>
-				
-			</div>
-	</nav>
-	
+<div class="navbar">
+	<a href="/index.html">Blog</a>
+	<!-- <a href="/publications.html">Publications</a> -->
+	<a href="/research.html">Research</a>
+	<a href="/teaching.html">Teaching</a>
+	<a href="/about.html">About</a>
+</div>
 
-<main>
-		
-<header>
+
 <h1>Sur le code qui génère ce site / Est-il encore utile d'apprendre à coder ?</h1>
 <p class="subtitle">By <a href="/index.html">Grégoire Lits</a> 2024-04-16<p>
-</header>
 <article>
 
 <p>Dans un souci de sobriété numérique, j'ai construit ce blog en reprenant le template de <a href="https://ploum.net/">Ploum.net</a> (merci à lui pour le partage !). Ce site est donc un site statique composé uniquement de pages simples écrites au langage HTML (le contenu n'est pas stocké dans une base de données et affiché sur une page web grâce à un script, le site n'utilise pas de PHP, pas de JavaScript, ce qui limite les ressources utilisées pour son affichage). </p>
@@ -59,7 +40,7 @@
 
 <p>Mais pour automatiser ce processus (convertir le texte en html. Intégrer le texte dans le template d'un post de blog. Modifier la page d'accueil du site et celle du blog, et surtout créer le flux RSS), il faut savoir coder dans un langage de programmation tel que Python.</p>
 
-<p>Le problème, c'est que malgré le fait que j'ai inscrit "apprendre à coder en python" sur ma <em>to-do list</em> depuis au moins 5 ans, je n'ai jamais pris le temps de m'y mettre. Il serait bien possible de reprendre des scriptes existants et de les adapter, mais même cela est au-dessus de mes capacités à ce stade. </p>
+<p>Le problème, c'est que malgré le fait que j'ai inscrit "apprendre à coder en python" sur ma <em>to-do list</em> depuis au moins 5 ans, je n'ai jamais pris le temps de m'y mettre. Il serait bien possible de reprendre des scripts existants et de les adapter, mais même cela est au-dessus de mes capacités à ce stade. </p>
 
 <p>C'est là que les IA génératives entrent en jeu. Et si je demandais à ChatGPT de réaliser ce code pour moi ? </p>
 
@@ -69,9 +50,9 @@
 
 <p>À ma grande surprise, après une petite heure d'allers-retours avec ChatGPT (surtout pour résoudre un problème lié à la manière dont le script Python pouvait accéder aux fichiers de mon blog stockés sur Google Drive), j'avais un code qui fonctionnait et qui en un clic générait un fichier RSS fonctionnel (même si clairement pas parfait.)</p>
 
-<h1>Et si j'automatisais l'ensemble du blog ?</h1>
+<h2>Et si j'automatisais l'ensemble du blog ?</h2>
 
-<p>Vu la rapidité du processus, j'ai poussé l'expérience plus loin. Je me suis plongé dans le code source du blog de <a href="https://git.sr.ht/~lioploum/ploum.net/tree/master/item/publish.py">Ploum.net</a> pour voir l'ensemble des étapes qu'il réalise et j'ai tenté de répliquer toutes ces étapes avec des scriptes séparés permettant de : </p>
+<p>Vu la rapidité du processus, j'ai poussé l'expérience plus loin. Je me suis plongé dans le code source du blog de <a href="https://git.sr.ht/~lioploum/ploum.net/tree/master/item/publish.py">Ploum.net</a> pour voir l'ensemble des étapes qu'il réalise et j'ai tenté de répliquer toutes ces étapes avec des scripts séparés permettant de : </p>
 
 <ul>
 <li>réduire la largeur des images du site, présentes dans le dossier /files du blog à maximum 600px. </li>
@@ -95,7 +76,7 @@
 
 <p>Il reste quelques petites choses que je pourrais corriger dans le script qui crée le fichier atom.rss, mais à part cela, l'ensemble fonctionne très bien.</p>
 
-<h1>Quelques réflexions suite à cette expérience</h1>
+<h2>Quelques réflexions suite à cette expérience</h2>
 
 <ul>
 <li><p>Cette expérience est assez perturbante et précisément, ce qui est perturbant, c'est que si je comprends globalement les grandes lignes de ce qu'il y a dans les codes, je suis bien incapable de comprendre pourquoi et comment ça fonctionne et que lorsque cela bug, souvent je ne comprends pas pourquoi... </p></li>
@@ -106,7 +87,7 @@
 
 <h2>Est-il donc encore utile d'apprendre à coder ?</h2>
 
-<p>Cet exercice me renvoie à ma <em>to-do list</em>. Devrais-je y garder la ligne "apprendre le python" ? De manière plus générale, cela rejoint des débats que nous avons avec quelques collègues sur une réforme des programmes du bac en communication que nous sommes en train de mener. Devrions-nous inclure dans la formation de Bac en communication et information un cours de programmation à ce langage ?? </p>
+<p>Cet exercice me renvoie à ma <em>to-do list</em>. Devrais-je y garder la ligne "apprendre le python" ? De manière plus générale, cela rejoint des débats que nous avons avec quelques collègues sur une réforme des programmes du bac en communication que nous sommes en train de mener. Devrions-nous inclure dans la formation de Bac en communication et information un cours d'introduction à ce langage ?? </p>
 
 <p>Ma réponse est oui, cela reste intéressant, ne fut-ce que parce que la génération de code sans compréhension par l'IA nous rend complètement dépendants de l'outil, mais surtout parce que si je n'avais pas eu cette connaissance et expérience préalable en informatique (fonctionnement d'un ordinateur, qu'est ce qu'un fichier .txt, comment fonctionne un site web, comment coder en HTML, base générale de programmation, etc.) je n'aurais pas su construire des prompts efficaces.</p>
 
@@ -123,41 +104,18 @@
 
 <p>Je suis parfaitement incapable de savoir s'il s'agit de "bons" scripts ou non. Vont-ils durer dans le temps ou boguer dans deux semaines ? Aucune idée... Si des spécialistes veulent y jeter un œil, je suis preneur :-)</p>
 
-<h1>Quelques ressources intéressantes</h1>
-
+<h2 id="quelques-ressources-interessantes">Quelques ressources intéressantes</h2>
 <ul>
-<li><a href="https://www.nytimes.com/2024/04/16/podcasts/the-daily/ai-data.html?rref=vanity">A.I.'s Original Sin</a> (podcast du NYT, 16 avril 2024). Enquête sur les données qui ont servi à entrainer les IA Gen. Explique notamment comment Open AI à créé Whisper pour convertir en texte des millions d'heures de vidéo YouTube en texte pour entrainer GPT (en scrappant de manière sans doute illégale le contenu de YouTube)</li>
+<li><a href="https://www.nytimes.com/2024/04/16/podcasts/the-daily/ai-data.html?rref=vanity">A.I.&#39;s Original Sin</a> (podcast du NYT, 16 avril 2024). Enquête sur les données qui ont servi à entrainer les IA Gen. Explique notamment comment Open AI a créé Whisper pour convertir en texte des millions d&#39;heures de vidéo YouTube en texte pour entrainer GPT (en scrappant de manière sans doute illégale le contenu de YouTube)</li>
 </ul>
 
-
+</article>
 <p class="signature">Mon nom est Grégoire Lits. Je suis sociologue des médias à l&#39;<a href="https://uclouvain.be/fr/index.html">UCLouvain</a> où je dirige l&#39;Observatoire de recherche sur les médias et le journalisme (<a href="https://sites.uclouvain.be/orm/">ORM</a>). Je poste sur ce blog des billets au sujet des recherches que je mène et qui portent principalement sur la circulation de l&#39;information dans la société en période de crise, mais aussi sur d&#39;autres sujets en lien avec l&#39;évolution et la place des médias d&#39;information dans la société.</p>	
 <p class="hashtag">#code #python</p>
-</article>
-</main>
-<footer class="footer">
-		
-		<div class="container-footer">
-		
-			<div class="bloc-footer-left">
-				<small>
-				Permalink : <a href="http://gregoirelits.eu/fr/2024-04-16-Apprendre-a-coder.html">http://gregoirelits.eu/fr/2024-04-16-Apprendre-a-coder.html</a><br>
-				Textes mis à disposition sous licence : <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC by-nc</a>.<br>
-				Dernière mise à jour : 2024-04-16.
-				</small>
-			</div>
-			
-			<div class="bloc-footer-right">
-				<small>
-				<a href="http://gregoirelits.eu/atom.xml">RSS</a><br>
-				<a href="http://gregoirelits.eu/about.html">A propos de ce site</a><br>
-				Mastodon : <a rel="me" href="https://mamot.fr/@Glits">@Glits</a>
-				</small>
-			</div>
-				
-		</div>
-		
-	</footer>
-	
+<hr><p><small>
+Permalink:<br>
+<a href="http://gregoirelits.eu/fr/2024-04-16-Apprendre-a-coder.html">http://gregoirelits.eu/fr/2024-04-16-Apprendre-a-coder.html</a><br>
+</small>
+</p>
 </body>
-	
 </html>

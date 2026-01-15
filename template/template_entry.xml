@@ -9,10 +9,10 @@
 	<id>https://gregoirelits.eu/fr/$HTML_LINK</id>
 	<updated>$DATE_UPDATE</updated>
 
-	<content type="html">
+	<content type="html"><![CDATA[
 
 		$CONTEN_HTML
 
 
-	</content>
+	]]></content>
 </entry>

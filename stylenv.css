@@ -1,0 +1,321 @@
+/*CSS template inspirated by Lionel Dricot's Blog : https://www.ploum.net and Thierry Crouzet : https://tcrouzet.com/*/
+
+@font-face {
+  font-family: Alegreya ;
+  src: url('Alegreya-Regular.otf') format("truetype");
+}
+
+@font-face {
+  font-family: Atkinson ;
+  src: url('AtkinsonHyperlegible-Regular.ttf') format("truetype");
+}
+
+:root {
+  --bg-color: #fdf6e3;
+  --bg-color-contrast: #eee8d5;
+  --txt-color: #17181E;
+  --link-color: /*#2215b2;*/ #3a6fa0;
+  --link-color-hover: #6c8fe3;
+  --gris: #839496;
+}
+
+body {
+	color: var(--txt-color);
+	background-color: var(--bg-color);
+	font-family: /*system-ui, sans-serif;*/ Atkinson;
+	font-size: 1.rem;
+	line-height: 1.6;
+	margin: 0;
+ }
+ 
+ 
+ a {
+	 color: var(--link-color);
+	 text-decoration: none;
+ }
+ 
+ 
+  a:hover {
+	 color: var(--link-color-hover); 	
+ }
+ 
+ 
+ a[aria-label="Menu"]::after {
+  content: "≡";
+  font-size: 1.8em;
+  font-weight: bold;
+  color: var(--gris)
+}
+
+
+	
+ul,ol { 
+	list-style-type: circle;
+	}
+
+li {
+	margin-bottom: 0.75%;
+	}
+
+ 
+article {
+	max-width:40rem;
+	margin:40px auto;
+	padding:0 15px;	
+	}
+	
+.menu {
+	max-width: 100rem;
+		padding: 0px 15px;
+		margin-left: auto;
+		margin-right: auto;
+	padding:0 15px;	
+	}
+	
+	
+header {
+		background-color: var(--bg-color-contrast);
+}
+
+
+header h1{
+	font-family: Alegreya, serif;
+	text-align: center;
+	margin: 2px;
+	padding-bottom: 5px;
+	padding-top: 10px;	
+}
+
+
+
+main h2 {
+		font-weight: bold; 
+		border-bottom: 1px solid #ccc; 
+		line-height:1.2; 
+		padding: 10px 0px 0px 0px;
+	 	font-family: Alegreya, serif;
+ }
+ 
+ 
+ button {
+	color: #fff;
+	background-color: #04AA6D; /*vert */
+	border-radius: 60px;
+	padding: 12px 18px;
+	font-size: 16px;
+	line-height: 1.2em;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	border: none;
+
+}
+
+button:hover {
+  background-color: #3a6fa0; /* bleu lien */
+  color: white;
+}
+
+
+.smallcaps {
+	font-variant: small-caps; /*pour mettre du texte en small caps via des span*/
+} 
+
+
+.subtitle {
+	padding-bottom: 20px; 
+	text-align: center; 
+	line-height: 1.5; 
+	font-style: italic; 
+	color: var(--gris)
+}
+
+
+.bibliography { 
+	list-style-type: none; 
+	text-indent: -2.2em;
+	margin-bottom: 0.75%;
+
+	}
+	
+
+.bibliography a { 
+	font-weight: normal;
+	}
+
+
+.horizontal { 
+		text-align: center; 
+		padding:15px 40px 15px;
+		font-size: 16px;
+		/*text-transform: uppercase;*/
+}
+
+.horizontal li{display: inline-block; 
+				margin: 0 0.5em;
+	}
+
+/* ////////// stylage du bloc quote //////// */
+
+.quote {
+		background-color: var(--bg-color-contrast);
+		text-align: center;
+		padding: 10px 20px;
+	}
+
+
+/* ////////// photo page contact mise à gauche au regard du texte //////// */
+
+.photo {
+  display: flex;
+  align-items: center; /* pour aligner verticalement l'image et le texte */
+  gap: 1rem; /* espace entre l'image et le texte */
+}
+
+.photo img {
+  width: 150px; /* taille de l'image */
+  height: auto;
+}
+
+
+/* ////////// stylage du bloc de navigation central de la page d'accueil avec la classe .center//////// */
+
+	.center {
+		text-align: center;
+		font-size: 1.1rem;
+	}
+
+	.center p {
+		margin-top: 10px;
+		color: var(--gris);
+		/*font-family: Alegreya, serif;*/
+		font-size: 1.3rem;
+		
+	}
+
+	.center a {
+		text-decoration: none;
+		font-weight: normal;
+		color: var(--link-color);
+	}
+
+	.center a:hover {
+		color: var(--link-color-hover);
+	}
+
+	.center h2 { 
+		padding-top: 30px;
+		margin-bottom: 0px;
+		border-bottom: 0px; 
+		font-family: system-ui, sans-serif;
+
+	}
+
+	.center h2 a { 
+		color: var(--txt-color);
+		font-weight: normal;
+	}
+
+	.center h2 a:hover { 
+		color: var(--gris);
+	}
+	
+	.center ul,ol { 
+	list-style-type: none;
+	}
+
+
+
+
+/* ////////// stylage menus de navigation de toute les pages //////// */
+
+	.navbar {
+
+		background-color: var(--bg-color-contrast);
+	 }
+	 
+
+	.container-navbar {
+		max-width: 100rem;
+		padding: 0px 15px;
+		margin-left: auto;
+		margin-right: auto;
+		box-sizing: border-box;
+		display: flex;
+		align-items: center;           /* Verticalement centré */
+		justify-content: space-between;/* Left à gauche, Right à droite */
+		gap: 1rem;
+	 } 
+	 
+	 .bloc-navbar-left,
+	.bloc-navbar-right {
+	  display: flex;
+	  align-items: center;
+	  gap: .75rem;
+	}
+
+	.bloc-navbar-left a {
+		color: var(--txt-color);
+	}
+
+	.bloc-navbar-right a {
+		color: var(--gris);
+	}
+	 
+ 
+/*Pour styler le footer*/
+
+	.footer {
+		z-index: 999;
+		background-color: var(--bg-color);
+		padding: 24px 15px;
+		color: var(--gris);
+	 }
+	 
+	 .container-footer {
+		max-width: 100rem;
+		padding: 24px 0px;
+		margin-left: auto;
+		margin-right: auto;
+		box-sizing: border-box;
+		display: flex;
+		align-items: center;           /* Verticalement centré */
+		justify-content: space-between;/* Left à gauche, Right à droite */
+		gap: 1rem;
+		border-top: 1px solid #ddd;
+	 }
+	 
+	 .bloc-footer-left,
+	.bloc-footer-right {
+		display: flex;
+		align-items: center;
+		gap: .75rem;
+	}
+	.bloc-footer-right {
+		text-align: right;
+	}
+
+
+/* ////////////////  Responsive : pour les écrans plus grands que 1000px ///////////*/
+
+@media (min-width: 1000px) {
+	
+
+	.navbar {
+		top: 0;
+		position: sticky;
+
+	 }
+	
+
+	
+}
+
+@media (max-width: 540px) {
+
+
+
+.footer a {
+  padding: .25rem .5rem;
+}
+
+}
