@@ -159,6 +159,17 @@ button:hover {
 .horizontal li{display: inline-block; 
 				margin: 0 0.5em;
 	}
+	
+blockquote,.signature {
+	background: var(--bg-color-contrast);
+	padding: 1em
+	}
+
+blockquote,.signature{
+	font-style: italic;
+	margin: 2em 1em}
+
+.hashtag { color: var(--bg-color);}
 
 /* ////////// stylage du bloc quote //////// */
 
