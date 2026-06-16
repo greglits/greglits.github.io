@@ -1,0 +1,51 @@
+/* ============================================================
+   tokens.css — identité visuelle du site (source unique)
+   Palette inspirée de Solarized, ajustée pour le contraste WCAG AA.
+   Changer une valeur ici se répercute sur tout le site.
+   ============================================================ */
+
+:root {
+  /* — Couleurs — */
+  --bg:        #fdf6e3;  /* fond ivoire chaud (Solarized base3) */
+  --bg-soft:   #f4ecd8;  /* fond légèrement plus marqué (encarts) */
+  --ink:       #3a3a32;  /* encre principale, contraste ~10:1 sur --bg */
+  --ink-soft:  #5c5c52;  /* texte secondaire (dates, légendes) */
+  --accent:    #cb4b16;  /* orange Solarized, liens — passe AA */
+  --accent-2:  #1c6a93;  /* cyan-bleu assombri, liens visités/secondaires */
+  --rule:      #ddd3b8;  /* filets et bordures discrètes */
+
+  /* — Bandeau signature (les 6 teintes Solarized) — */
+  --sol-yellow:  #b58900;
+  --sol-orange:  #cb4b16;
+  --sol-red:     #dc322f;
+  --sol-magenta: #d33682;
+  --sol-cyan:    #2aa198;
+  --sol-blue:    #268bd2;
+
+  /* — Typographie — */
+  /* Corps : Atkinson Hyperlegible (chargée en local, voir base.css),
+     repli sur la pile système si absente. */
+  --font-body: "Atkinson Hyperlegible", system-ui, -apple-system, sans-serif;
+  /* Titres : monospace système — clin d'œil terminal, zéro fichier à charger. */
+  --font-head: ui-monospace, "SF Mono", "Cascadia Mono", "DejaVu Sans Mono", monospace;
+
+  /* — Échelle typographique (base 1rem = 16px, modulaire ~1.25) — */
+  --text-sm:   0.8rem;
+  --text-base: 1rem;
+  --text-lg:   1.25rem;
+  --text-xl:   1.6rem;
+  --text-2xl:  2rem;
+
+  --leading: 1.6;          /* interligne du corps */
+
+  /* — Espacements (rythme vertical) — */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-5: 4rem;
+
+  /* — Mise en page — */
+  --measure: 38rem;        /* largeur de lecture max (~70 caractères) */
+  --pad: var(--space-3);   /* marge latérale */
+}
