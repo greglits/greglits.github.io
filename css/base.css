@@ -221,6 +221,9 @@ article.post figcaption {
 .refs h2 { margin-top: var(--space-4); }
 
 /* — Pages publication et index  */
+/* Mise en forme propre à la page Publications : l'année en gouttière à
+       gauche, le texte de la référence aligné à droite. À reporter dans
+       base.css si l'on souhaite réutiliser ce motif ailleurs. */
 
   .pubs { list-style: none; padding: 0; margin: 0 0 var(--space-4); }
     .pubs li {
