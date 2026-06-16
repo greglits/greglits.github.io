@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fr">
+  <title>Grégoire Lits — Blog</title>
+  <link href="https://gregoirelits.eu/fr/blog.html"/>
+  <link rel="self" href="https://gregoirelits.eu/atom-fr.xml"/>
+  <id>https://gregoirelits.eu/fr/</id>
+  <updated>2026-06-16T09:25:21.000918+00:00</updated>
+  <author><name>Grégoire Lits</name></author>
+  <entry>
+    <title>IA et dispersion des expertises</title>
+    <link href="https://gregoirelits.eu/fr/2025-06-17-IA-et-dispersion-des-expertises.html"/>
+    <id>https://gregoirelits.eu/fr/2025-06-17-IA-et-dispersion-des-expertises.html</id>
+    <updated>2025-06-17T00:00:00+00:00</updated>
+    <published>2025-06-17T00:00:00+00:00</published>
+    <summary>Comment les outils génératifs redistribuent l&#x27;autorité épistémique.</summary>
+    <content type="html">&lt;p&gt;Un des questionnements liés au développement des IA conversationnelles - qu&#x27;il serait sans doute plus opportun de définir comme des &lt;strong&gt;banques centralisées de connaissances et d&#x27;expertises&lt;/strong&gt; - est qu&#x27;il contredit le mécanisme de dispersion des expertises au sein de la société. &lt;/p&gt;
+
+&lt;p&gt;Mise à jour du 15/06/2026 : c&#x27;est effectivement comme cela que le définit :&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;What is at stake is not some digital tool or system and its use, but how organizations continue to learn, build IP, differentiate, and thrive in a world where AI models can continuously absorb the expertise of humans and organizations and commoditize it. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&#x27;Satya Nadella, sur son blog le 14 juin 2026&#x27;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Source :  https://snscratchpad.com/posts/frontier-ecosystem/ &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Aujourd&#x27;hui, si vous avez un problème juridique, vous pouvez consulter un avocat qui a travaillé de très nombreuses années pour construire une expertise particulière et qui vous aidera à résoudre le problème. &lt;/p&gt;
+
+&lt;p&gt;Comme il n&#x27;y a pas qu&#x27;un seul avocat mettant à disposition ces services, d&#x27;une part, vous avez le choix entre une diversité de personnes et donc d&#x27;expertises, mais aussi, et surtout, d&#x27;un point de vue sociologique, l&#x27;expertise juridique est dispersée dans toute la société (même si bien sûr certains cabinets d&#x27;avocat centralisent certaines expertises et acquièrent des positions dominantes dans le marché de l&#x27;expertise juridique). &lt;/p&gt;
+
+&lt;p&gt;Sociologiquement, l&#x27;expertise juridique existe de façon redondante au sein d&#x27;une société dans la pratique d&#x27;une multitude d&#x27;avocat.e.s, de magistrat.e.s, d&#x27;assistant.e.s juridiques et de juristes. C&#x27;est le cas également pour d&#x27;autres types d&#x27;expertise (économique, comptable, médicale, etc.)&lt;/p&gt;
+
+&lt;p&gt;Cette dispersion est une des bases du fonctionnement (organisationnel et démocratique) de nos sociétés. Ce mécanisme de dispersion des expertises (ou de spécialisation des individus) est d&#x27;ailleurs souvent au cœur de la manière dont nous créons nos identités sociales (on se définit comme avocat.e,  infirmier.e,  instituteur.rise, nutritionniste, agent de voyage, etc.). Il est également au cœur de la manière dont nous organisons les hiérarchies symbolique et économique constitutives de la société. &lt;/p&gt;
+
+&lt;p&gt;La dispersion des expertises est un principe organisationnel central de nos sociétés et de nos vies en tant qu&#x27;individu. &lt;/p&gt;
+
+&lt;p&gt;La promesse des banques centralisées d&#x27;expertises et de connaissances (aka IA conversationnelles) est d&#x27;offrir un &lt;strong&gt;guichet numérique unique&lt;/strong&gt; (pour le moment détenu par une entreprise privée souvent basée en Californie) pour la consultation de &lt;strong&gt;toutes les expertises&lt;/strong&gt;, par &lt;strong&gt;tout le monde&lt;/strong&gt;, dans &lt;strong&gt;toutes les sociétés&lt;/strong&gt;. Une expertise qui, qui plus est, s&#x27;adapte instantanément à nos spécificités individuelles sur base des traces collectées au préalable sur nos préférences, comportements et opinions. &lt;/p&gt;
+
+&lt;p&gt;Si le recours aux &lt;strong&gt;banques centralisées de connaissances et d&#x27;expertises&lt;/strong&gt; devait se généraliser, nos sociétés pourraient être reconfigurées profondément, car le principe de centralisation de l&#x27;expertise qui est à leur racine est opposé au principe de dispersion qui préside aujourd&#x27;hui à notre fonctionnement collectif.&lt;/p&gt;
+</content>
+  </entry>
+</feed>

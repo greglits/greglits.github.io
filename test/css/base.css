@@ -188,6 +188,13 @@ article.post pre {
   border-radius: 3px;
 }
 article.post code { font-family: var(--font-head); font-size: 0.9em; }
+/* Mention de mise à jour, en pied d'article (discrète) */
+article.post .post-updated {
+  margin-top: var(--space-3);
+  font-family: var(--font-head);
+  font-size: var(--text-sm);
+  color: var(--ink-soft);
+}
 article.post figure { margin: var(--space-3) 0; }
 article.post figcaption {
   font-size: var(--text-sm);

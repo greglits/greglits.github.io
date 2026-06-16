@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="$LANG">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>$TITLE — Grégoire Lits</title>
+  <meta name="description" content="$DESCRIPTION">
+  <link rel="canonical" href="$CANONICAL">
+$HREFLANG
+  <meta property="og:type" content="$OG_TYPE">
+  <meta property="og:title" content="$TITLE">
+  <meta property="og:description" content="$DESCRIPTION">
+  <meta property="og:url" content="$CANONICAL">
+  <meta property="og:image" content="https://gregoirelits.eu/files/chalet.png">
+  <meta property="og:locale" content="$OG_LOCALE">
+$OG_LOCALE_ALT
+  <meta property="og:site_name" content="Grégoire Lits">
+$ARTICLE_META
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="fediverse:creator" content="@Glits@mamot.fr">
+
+  <link rel="alternate" type="application/atom+xml" title="Flux RSS" href="https://gregoirelits.eu/atom.xml">
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/base.css">
+</head>
+<body>
+  <a class="skip" href="#main">$SKIP_LABEL</a>
+  <header class="site-head">
+    <div>
+      <p class="name"><a href="/$LANG/index.html">Grégoire Lits</a></p>
+      <p class="role">$ROLE</p>
+    </div>
+    <nav class="lang" aria-label="$LANG_NAV_LABEL">
+$LANG_TOGGLE
+    </nav>
+  </header>
+  <nav class="site-nav" aria-label="$NAV_LABEL">
+$NAV_LINKS
+  </nav>
+  <main id="main">
+$MAIN
+  </main>
+  <ul class="signature" aria-hidden="true">
+    <li class="y"></li><li class="o"></li><li class="r"></li>
+    <li class="m"></li><li class="c"></li><li class="b"></li>
+  </ul>
+  <footer class="site-foot">
+    <p><a href="/$LANG/about.html">$FOOT_ABOUT</a> · <a href="https://gregoirelits.eu/atom.xml">RSS</a> · <a href="https://mamot.fr/@Glits" rel="me">Mastodon</a> · <a href="https://scholar.google.com/citations?user=EwVIe_4AAAAJ">Google Scholar</a></p>
+$FOOT_UPDATED
+  </footer>
+</body>
+</html>
