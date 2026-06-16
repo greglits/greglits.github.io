@@ -25,6 +25,42 @@
   <link rel="alternate" type="application/atom+xml" title="Flux RSS" href="https://gregoirelits.eu/atom-fr.xml">
   <link rel="stylesheet" href="/css/tokens.css">
   <link rel="stylesheet" href="/css/base.css">
+  <style>
+  /* — Grille de projets de recherche : cartes en liste sémantique — */
+.cards {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-2) 0 var(--space-4);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: var(--space-2);
+}
+.cards li {
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: var(--space-2);
+}
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--space-1);
+  margin-bottom: var(--space-1);
+  font-family: var(--font-head);
+  font-size: var(--text-sm);
+}
+.card-status {
+  background: var(--bg-soft);
+  color: var(--ink-soft);
+  padding: 0.1em 0.6em;
+  border-radius: 2px;
+}
+.card-status.live { color: var(--accent); }   /* projet en cours */
+.card-date { color: var(--ink-soft); }
+.cards h3 { margin: 0 0 0.3em; font-size: var(--text-base); }
+.cards p { margin: 0; color: var(--ink-soft); font-size: var(--text-sm); line-height: 1.5; }
+.card-org { color: var(--ink-soft); }
+</style>
 </head>
 <body>
   <a class="skip" href="#main">Aller au contenu</a>
@@ -56,18 +92,56 @@
       envers la science.
     </p>
 
-    <h2>Projets et terrains récents</h2>
-    <ul class="list-bullets">
-      <li>Analyse de l'utilisation des outils d'IA par les journalistes francophones (recherche IHECS/ORM).</li>
-      <li>Analyse de la couverture médiatique de la campagne électorale fédérale belge de 2024.</li>
-      <li>Analyse de la couverture médiatique du changement climatique et de ses conséquences en Belgique.</li>
-      <li>Analyse de la diversité des profils de journalistes dans les rédactions belges (projet ORM/AJP).</li>
-      <li>Développement d'Automémo, plateforme de collecte et de traitement automatisé de grands corpus de données médiatiques.</li>
-      <li>Participation à l'équipe belge du projet <a href="https://projects.iq.harvard.edu/manylabstrustinscience">Trust in Science and Science-Related Populism (TISP) Many Labs Studies</a>, coordonné par Viktoria Cologna (Harvard University) et Niels G. Mede (University of Zurich) — confiance envers la science, populisme, mentalité conspirationniste (2022-2024).</li>
-      <li>Analyse prospective de la gestion des futures pandémies à Bruxelles sous l'angle de la communication et de la promotion de la santé (projet financé par Innoviris, 2021-2024).</li>
-      <li>Analyse de l'acceptabilité sociale des dispositifs de <i>smart home</i> utilisés pour le maintien à domicile de personnes âgées dépendantes (projet financé par Innoviris, 2021-2023).</li>
-      <li>Analyse de « l'infodémie », de la désinformation et de la vulnérabilité informationnelle liées à la pandémie de Covid-19 (2019-2023).</li>
-    </ul>
+   <h2>Projets et terrains récents</h2>
+<ul class="cards">
+  <li>
+    <p class="card-head"><span class="card-status live">En cours</span><span class="card-date">2025→</span></p>
+    <h3>Usages et pratiques de la presse locale</h3>
+    <p>Analyse de l'évolution du rapport à la presse locale en Belgique. <span class="card-org">ORM</span></p>
+  <p>Avec Olivier Standeart, Benoit Grevisse, Justine Havelange et Antonin Descampe</p>
+  </li>
+  <li>
+    <p class="card-head"><span class="card-status live">En cours</span><span class="card-date">2024→</span></p>
+    <h3>IA et journalisme francophone</h3>
+    <p>Usages des outils d'IA dans les rédactions francophones. <span class="card-org">IHECS / ORM</span></p>
+    <p>Avec Antonin Descampe, Amandine Degand et Esthère Durin</p>
+  </li>
+  <li>
+    <p class="card-head"><span class="card-status live">En cours</span><span class="card-date">2024→</span></p>
+    <h3>Automémo</h3>
+    <p>Plateforme de collecte et de traitement automatisé de grands corpus de données médiatiques.</p>
+  </li>
+  <li>
+    <p class="card-head"><span class="card-status live">En cours</span><span class="card-date">2024→</span></p>
+    <h3>Couverture médiatique de la campagne éléctorale de 2024</h3>
+    <p>Analyse de la couverture médiatique de la campagne électorale.</p>
+  </li>
+    <li>
+    <p class="card-head"><span class="card-status">Terminé</span><span class="card-date">2023–24</span></p>
+    <h3>Anquête AJP - diversité des profils en rédaction</h3>
+    <p>Analyse de la diversité des profils de journalistes dans les rédactions belges<san class="card-org">AJP - ORM</span></p>
+  </li>
+  <li>
+    <p class="card-head"><span class="card-status">Terminé</span><span class="card-date">2022–24</span></p>
+    <h3>Trust in Science — TISP Many Labs</h3>
+    <p>Équipe belge du projet coordonné par V. Cologna (Harvard) et N. G. Mede (Zurich). <span class="card-org">Confiance, populisme, conspirationnisme.</span></p>
+  </li>
+  <li>
+    <p class="card-head"><span class="card-status">Terminé</span><span class="card-date">2021–24</span></p>
+    <h3>Projet PANDORIX</h3>
+    <p>Gestion prospective des pandémies à Bruxelles. Communication et promotion de la santé. <span class="card-org">Financé par Innoviris.</span></p>
+  </li>
+  <li>
+    <p class="card-head"><span class="card-status">Terminé</span><span class="card-date">2021–23</span></p>
+    <h3>Smart and Social Home Care</h3>
+    <p>Analyse de l'acceptabilité sociale des dispositifs de smart home utilisés pour le maintien à domicile de personnes âgées dépendantes <span class="card-org">Financé par Innoviris.</span></p>
+  </li>
+  <li>
+    <p class="card-head"><span class="card-status">Terminé</span><span class="card-date">2019–23</span></p>
+    <h3>Infodémie & Covid-19</h3>
+    <p>Analyse de « l'infodémie », de la désinformation et de la vulnérabilité informationnelle liées à la pandémie de Covid-19.</p>
+  </li>
+</ul>
 
     <h2>Encadrement doctoral et postdoctoral</h2>
     <ul class="list-bullets">
