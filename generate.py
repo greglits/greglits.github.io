@@ -43,7 +43,7 @@ LANGS         = ("fr", "en")
 # Libellés dépendant de la langue (un seul endroit pour les traduire)
 I18N = {
     "fr": {
-        "role":        "Sociologue des médias · UCLouvain",
+        "role":        "Sociologue des médias et du numérique · UCLouvain",
         "skip":        "Aller au contenu",
         "lang_nav":    "Langue",
         "nav_label":   "Navigation principale",
@@ -62,7 +62,7 @@ I18N = {
                    "juillet", "août", "septembre", "octobre", "novembre", "décembre"],
     },
     "en": {
-        "role":        "Media sociologist · UCLouvain",
+        "role":        "Media and digital sociologist · UCLouvain",
         "skip":        "Skip to content",
         "lang_nav":    "Language",
         "nav_label":   "Main navigation",
