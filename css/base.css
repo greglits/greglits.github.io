@@ -219,3 +219,20 @@ article.post figcaption {
 .refs { padding-left: 1.2em; }
 .refs li { margin-bottom: var(--space-2); }
 .refs h2 { margin-top: var(--space-4); }
+
+/* — Pages publication et index  */
+
+  .pubs { list-style: none; padding: 0; margin: 0 0 var(--space-4); }
+    .pubs li {
+      display: flex;
+      gap: var(--space-2);
+      padding: var(--space-1) 0;
+      border-top: 1px solid var(--rule);
+    }
+    .pubs li:last-child { border-bottom: 1px solid var(--rule); }
+    .pubs .year {
+      flex: 0 0 3rem;
+      font-family: var(--font-head);
+      font-size: var(--text-sm);
+      color: var(--ink-soft);
+    }
