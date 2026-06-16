@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fr">
+  <title>Grégoire Lits — Blog</title>
+  <link href="https://gregoirelits.eu/fr/blog.html"/>
+  <link rel="self" href="https://gregoirelits.eu/atom-fr.xml"/>
+  <id>https://gregoirelits.eu/fr/</id>
+  <updated>2026-06-16T10:06:09.969846+00:00</updated>
+  <author><name>Grégoire Lits</name></author>
+  <entry>
+    <title>Recension de notre livre Transition en tension</title>
+    <link href="https://gregoirelits.eu/fr/2026-01-26-recension-transition-en-tension.html"/>
+    <id>https://gregoirelits.eu/fr/2026-01-26-recension-transition-en-tension.html</id>
+    <updated>2026-01-15T00:00:00+00:00</updated>
+    <published>2026-01-15T00:00:00+00:00</published>
+    <summary>Comment les outils génératifs redistribuent l&#x27;autorité épistémique.</summary>
+    <content type="html">&lt;p&gt;Il y a un peu plus d&#x27;un an paraissait &lt;em&gt;Transition en tension&lt;/em&gt;, ouvrage issu d&#x27;un colloque que nous avions organisé avec Andréa Catellani à Louvain-la-Neuve. Le livre vient de faire l&#x27;objet d&#x27;une belle recension signée Alessia Lo Porto-Lefébure dans le dernier numéro de la revue &lt;em&gt;Questions de communication&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Lien vers la recension : &lt;a href=&quot;https://shs.cairn.info/revue-questions-de-communication-2025-2-page-580?lang=fr&quot;&gt;https://shs.cairn.info/revue-questions-de-communication-2025-2-page-580?lang=fr&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>IA et dispersion des expertises</title>
+    <link href="https://gregoirelits.eu/fr/2025-06-17-IA-et-dispersion-des-expertises.html"/>
+    <id>https://gregoirelits.eu/fr/2025-06-17-IA-et-dispersion-des-expertises.html</id>
+    <updated>2025-06-17T00:00:00+00:00</updated>
+    <published>2025-06-17T00:00:00+00:00</published>
+    <summary>Comment les outils génératifs redistribuent l&#x27;autorité épistémique.</summary>
+    <content type="html">&lt;p&gt;Un des questionnements liés au développement des IA conversationnelles - qu&#x27;il serait sans doute plus opportun de définir comme des &lt;strong&gt;banques centralisées de connaissances et d&#x27;expertises&lt;/strong&gt; - est qu&#x27;il contredit le mécanisme de dispersion des expertises au sein de la société. &lt;/p&gt;
+
+&lt;p&gt;Mise à jour du 15/06/2026 : c&#x27;est effectivement comme cela que le définit :&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;What is at stake is not some digital tool or system and its use, but how organizations continue to learn, build IP, differentiate, and thrive in a world where AI models can continuously absorb the expertise of humans and organizations and commoditize it. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&#x27;Satya Nadella, sur son blog le 14 juin 2026&#x27;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Source :  https://snscratchpad.com/posts/frontier-ecosystem/ &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Aujourd&#x27;hui, si vous avez un problème juridique, vous pouvez consulter un avocat qui a travaillé de très nombreuses années pour construire une expertise particulière et qui vous aidera à résoudre le problème. &lt;/p&gt;
+
+&lt;p&gt;Comme il n&#x27;y a pas qu&#x27;un seul avocat mettant à disposition ces services, d&#x27;une part, vous avez le choix entre une diversité de personnes et donc d&#x27;expertises, mais aussi, et surtout, d&#x27;un point de vue sociologique, l&#x27;expertise juridique est dispersée dans toute la société (même si bien sûr certains cabinets d&#x27;avocat centralisent certaines expertises et acquièrent des positions dominantes dans le marché de l&#x27;expertise juridique). &lt;/p&gt;
+
+&lt;p&gt;Sociologiquement, l&#x27;expertise juridique existe de façon redondante au sein d&#x27;une société dans la pratique d&#x27;une multitude d&#x27;avocat.e.s, de magistrat.e.s, d&#x27;assistant.e.s juridiques et de juristes. C&#x27;est le cas également pour d&#x27;autres types d&#x27;expertise (économique, comptable, médicale, etc.)&lt;/p&gt;
+
+&lt;p&gt;Cette dispersion est une des bases du fonctionnement (organisationnel et démocratique) de nos sociétés. Ce mécanisme de dispersion des expertises (ou de spécialisation des individus) est d&#x27;ailleurs souvent au cœur de la manière dont nous créons nos identités sociales (on se définit comme avocat.e,  infirmier.e,  instituteur.rise, nutritionniste, agent de voyage, etc.). Il est également au cœur de la manière dont nous organisons les hiérarchies symbolique et économique constitutives de la société. &lt;/p&gt;
+
+&lt;p&gt;La dispersion des expertises est un principe organisationnel central de nos sociétés et de nos vies en tant qu&#x27;individu. &lt;/p&gt;
+
+&lt;p&gt;La promesse des banques centralisées d&#x27;expertises et de connaissances (aka IA conversationnelles) est d&#x27;offrir un &lt;strong&gt;guichet numérique unique&lt;/strong&gt; (pour le moment détenu par une entreprise privée souvent basée en Californie) pour la consultation de &lt;strong&gt;toutes les expertises&lt;/strong&gt;, par &lt;strong&gt;tout le monde&lt;/strong&gt;, dans &lt;strong&gt;toutes les sociétés&lt;/strong&gt;. Une expertise qui, qui plus est, s&#x27;adapte instantanément à nos spécificités individuelles sur base des traces collectées au préalable sur nos préférences, comportements et opinions. &lt;/p&gt;
+
+&lt;p&gt;Si le recours aux &lt;strong&gt;banques centralisées de connaissances et d&#x27;expertises&lt;/strong&gt; devait se généraliser, nos sociétés pourraient être reconfigurées profondément, car le principe de centralisation de l&#x27;expertise qui est à leur racine est opposé au principe de dispersion qui préside aujourd&#x27;hui à notre fonctionnement collectif.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>L&#x27;automatisation comme indice de facticité</title>
+    <link href="https://gregoirelits.eu/fr/2025-05-21-L-automatisation-d-un-media-comme-indice-de-facticite.html"/>
+    <id>https://gregoirelits.eu/fr/2025-05-21-L-automatisation-d-un-media-comme-indice-de-facticite.html</id>
+    <updated>2025-05-21T00:00:00+00:00</updated>
+    <published>2025-05-21T00:00:00+00:00</published>
+    <summary>l&#x27;ia donne une première impression de facticité.</summary>
+    <content type="html">&lt;p&gt;Dans ce post, je vais raconter une petite anecdote qui m&#x27;est arrivée cette semaine alors que je tentais avec quelques amis de me (re)mettre au sport et comment cette anecdote est illustrative d&#x27;une possible modification rapide de notre capacité à faire confiance aux informations qui circulent aujourd&#x27;hui dans les environnements informationnels numériques. &lt;/p&gt;
+
+&lt;h2&gt;IA et colonisation des environnements numériques par des médias automatisés&lt;/h2&gt;
+
+&lt;p&gt;Pour tirer les fils de cette anecdote, quelques préalables sont nécessaires. &lt;/p&gt;
+
+&lt;p&gt;Le premier est que le développement des IA conversationnelles et autres outils de génération automatique de contenu mais surtout la démocratisation très rapide de leurs usages par différents acteurs plus ou moins bien intentionnés amène tout une série de questions et de craintes liées au bon fonctionnement des environnements informationnels.  &lt;/p&gt;
+
+&lt;p&gt;Une de ces craintes est que le web, et plus généralement les environnements informationnels numériques, sont petit à petit en train de se remplir de &lt;a href=&quot;https://fr.wikipedia.org/wiki/Slop_(intelligence_artificielle)&quot;&gt;slop&lt;/a&gt;, c&#x27;est-à-dire d&#x27;informations fausses ou de mauvaise qualité générées automatiquement au moyen d&#x27;outils d&#x27;IA.  En corollaire, il est possible de penser que devoir naviguer quotidiennement dans un environnement numérique saturé de slop pourrait accentuer les &lt;a href=&quot;https://www.coe.int/fr/web/freedom-expression/information-disorder&quot;&gt;désordres informationnels&lt;/a&gt; déjà identifiés : désinformation, mal-information, mésinformation, ect. &lt;/p&gt;
+
+&lt;p&gt;Une seconde dimension de cette crainte est que dans un environnement informationnel numérique où les contenus sont de plus en plus produits par ce que mes collègues Jerry Jacques et Antonin Descampe appellent des &quot;&lt;a href=&quot;https://www.acfas.ca/sites/default/files/2025-01/aac-acfas-2025-medias-automatises_1.pdf&quot;&gt;médias automatisés&lt;/a&gt;&quot;, il deviendra de plus en plus difficile d&#x27;évaluer tant la fiabilité des sources que la facticité des contenus auxquels nous sommes confrontés. &lt;/p&gt;
+
+&lt;p&gt;Avec la généralisation des médias automatisés, c&#x27;est en effet les notions mêmes d&#x27;auteur et de source qui se transforment. L&#x27;automatisation croissante de la production de contenus médiatiques numériques pourrait alors non seulement accentuer les phénomènes de désordres informationnels, mais surtout, et c&#x27;est, je pense, ce que va montrer mon anecdote de cette semaine, remodeler notre rapport à l&#x27;information jugée comme fiable ou de qualité. &lt;/p&gt;
+
+&lt;p&gt;Pour naviguer dans un environnement numérique rempli de &quot;slop&quot;, nous devons (ou du moins devrions) en effet en permanence nous poser les questions suivantes : &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;l&#x27;article de presse ou du journal scientifique que je consulte a-t-il bien été publié dans le journal qui m&#x27;intéresse ou bien s&#x27;agit-il d&#x27;une copie factice destinée à me tromper ? &lt;/li&gt;
+&lt;li&gt;L&#x27;email que je reçois provient-il bien de mon patron ou est-il une tentative de phishing très réaliste imitant un message de mon patron ? &lt;/li&gt;
+&lt;li&gt;L&#x27;émetteur de ce message sur Instagram est-il une vraie personne, ou bien un bot ? &lt;/li&gt;
+&lt;li&gt;La réponse à la question que j&#x27;ai posée à Grok ou Gemini est-elle bien valide, ou repose-t-elle sur des informations inexactes voire sur une vision idéologiquement tronquée de la réalité ? &lt;/li&gt;
+&lt;li&gt;Le blog de jardinage que je consulte (oui, à 40 ans on consulte des blogs de jardinage...) a-t-il été rédigé par un expert du sujet ou bien a-t-il été généré en deux minutes par une IA qui dit n&#x27;importe quoi... &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Bref, la colonisation en cours de l&#x27;environnement numérique par un nouveau type de médias - les médias automatisés - pourrait bien déstabiliser le fonctionnement de cet environnement dans sa qualité d&#x27;environnement informationnel, c&#x27;est-à-dire d&#x27;espace collectif où nous formons notre rapport au monde via l&#x27;acquisition de connaissances et d&#x27;informations que nous jugeons fiables. &lt;/p&gt;
+
+&lt;h2&gt;Réception et confiance dans les environnements informationnels&lt;/h2&gt;
+
+&lt;p&gt;Le second préalable à poser est que l&#x27;effet d&#x27;un nouveau média et de ses contenus sur la société et les individus, n&#x27;est jamais direct. Si cet effet est mesurable, il se mesure en grande partie en prenant en compte les activités de réception des contenus de ce média par les personnes qui l&#x27;utilisent pour communiquer. &lt;/p&gt;
+
+&lt;p&gt;Si l&#x27;on s&#x27;intéresse à l&#x27;effet de la colonisation en cours des environnements numériques par des médias automatisés, il est donc pertinent de poser la question de la modification possible des pratiques de réception qu&#x27;ils vont peut-être provoquer. &lt;/p&gt;
+
+&lt;p&gt;Face à une production médiatique, nous ne sommes en effet jamais passifs, mais dans une posture interprétative active. Nous essayons de faire sens des messages reçus, des contenus lus ou visionnés et c&#x27;est dans cette activité interprétative continue (souvent très rapide, voire inconsciente) que se constitue finalement le sens des contenus diffusés et par là leur possible &quot;effet&quot; sur nos perceptions, attitudes ou activités. &lt;/p&gt;
+
+&lt;p&gt;Nous pouvons poser comme hypothèse que dans un environnement informationnel fonctionnel il est relativement facile (quels que soient les critères utilisés par la personne qui y participe) d&#x27;évaluer la qualité et la fiabilité tant d&#x27;une source que d&#x27;une information. Dans tous les cas, il doit être possible de savoir si oui ou non nous pouvons faire confiance à la source de l&#x27;information. &lt;/p&gt;
+
+&lt;p&gt;En 2025, notre environnement informationnel est constitué de différentes sources tant physiques ou analogiques que numériques : des amis, des parents, des collègues, des enseignants, des livres, des médias d&#x27;information traditionnels (presse, TV, radio), des blogs, des influenceurs sur les réseaux sociaux, des revues scientifiques, des newsletters professionnelles, des journaux locaux, etc. &lt;/p&gt;
+
+&lt;p&gt;Ces sources sont relativement stables dans le temps et nous avons appris que nous pouvions leur faire confiance ou au contraire qu&#x27;elles n&#x27;étaient pas fiables. Cette opération est principalement personnelle et le résultat d&#x27;un acte interprétatif. Par exemple une personne pourra juger que le journal de la RTBF est extrêmement fiable et une autre qu&#x27;il s&#x27;agit d&#x27;une accumulation de mensonge, en fonction de cette première évaluation, son contenu ne sera pas interprété de la même manière et il n&#x27;aura pas le même &quot;effet&quot; sur nous. Cette activité comporte cependant également une dimension sociale importante, il est par exemple généralement admis en Belgique que la RTBF (média public belge audiovisuel) est une source de qualité à laquelle on peut se fier.&lt;/p&gt;
+
+&lt;p&gt;Une fois cette confiance acquise, stabilisée, plus besoin de la ré-évaluer à chaque nouvelle interaction avec la source. Cette stabilité de la confiance médiatique est sans doute une des conditions de possibilité d&#x27;un environnement informationnel fonctionnel. L&#x27;existence d&#x27;un environnement informationnel fonctionnel et relativement stable est sans doute une des conditions de possibilités de la vie dans les sociétés démocratiques au XXIe siècle. &lt;/p&gt;
+
+&lt;p&gt;De ce point de vue, la numérisation des environnements informationnels causée par le développement du web dans les années 1990, puis surtout du web 2.0. de 2000 à 2020 a eu des conséquences importantes. De nouveaux types de source médiatique sont apparus tels que des encyclopédies écrites par des non professionnels (Wikipédia), des journaux en ligne, des blogs, des comptes de réseaux sociaux, etc. Ces sources numériques ont presque toutes comme point commun d&#x27;être produites par des non professionnels aux compétences très diverses et leur fiabilité ne pouvait donc plus être automatiquement déduite du caractère spécialisé (journalistes, scientifiques, experts) de leur auteur. La centralité de l&#x27;activité d&#x27;évaluation de la fiabilité des sources s&#x27;en est trouvée renforcée et sans doute aussi la centralité de processus collectifs d&#x27;attribution de confiance à certaines sources, jugées plus fiables que d&#x27;autres. &lt;/p&gt;
+
+&lt;p&gt;Ce qui est intéressant c&#x27;est que nous avons petit à petit appris collectivement, cela à pris presque 30 ans, si et comment nous pouvions (ou non) faire confiance à ces nouvelles sources et comment elles pouvaient participer à la composition de notre mix informationnel. Ce processus à pris du temps, n&#x27;est toujours pas terminé et suscite de nombreux débats.&lt;/p&gt;
+
+&lt;p&gt;Une fois ces préalables posés, je peux en venir à ma tentative avortée de faire du sport et montrer en quoi elle est un bon exemple d&#x27;une possible déstabilisation en cours des structures de confiance des environnements informationnels numériques et comment cette déstabilisation peut poser des problèmes très concrets dans notre vie de tous les jours. &lt;/p&gt;
+
+&lt;h2&gt;Ma (non)participation à un trail et débat entre amis sur la facticité d&#x27;un email&lt;/h2&gt;
+
+&lt;p&gt;Il y a quelques semaines je me suis donc inscrit avec trois amis à un trail qui devait se passer fin mai dans une ville proche de Bruxelles. Rien de bien particulier. L&#x27;événement était organisé pour la première fois par une entreprise expérimentée et de manière très professionnelle. Site web parfait en français et flamand propulsé par Odoo, comptes de réseaux sociaux nickels : Facebook, Instagram et Tik Tok proposant des vidéos promotionnelles léchées, etc. &lt;/p&gt;
+
+&lt;p&gt;La semaine dernière, de manière surprenante, nous avons tous les quatre reçu un email annonçant que, faute d&#x27;inscriptions suffisantes, l&#x27;événement allait être annulé et que nous allions donc être recontactés pour le remboursement des frais d&#x27;inscription. Grosse déception de notre part, mais surtout, grosse surprise. &lt;/p&gt;
+
+&lt;p&gt;Les réactions à cet email au sein de notre groupe ont été très diverses. Pour deux d&#x27;entre nous, il n&#x27;y avait aucun doute, cet email était un spam, une tentative de phishing destinée à récupérer nos données bancaires. L&#x27;événement allait bien avoir lieu et il fallait continuer à s&#x27;y préparer. Le troisième à l&#x27;inverse y voyait un mail authentique et donc une simple annonce d&#x27;annulation et la quatrième personne n&#x27;arrivait pas à se prononcer mais penchait davantage pour le spam que pour l&#x27;email authentique. Pas moyen de nous mettre d&#x27;accord donc. &lt;/p&gt;
+
+&lt;p&gt;Les éléments utilisés pour justifier le fait que cet email ne pouvait pas être jugé comme fiable étaient les suivants : &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;l&#x27;adresse d&#x27;envoi de l&#x27;email était une adresse de type &quot;info@45698122.xxx.com&quot;. Pas de doute, l&#x27;expéditeur du mail n&#x27;avait rien à voir avec l&#x27;organisateur de la course. Le domaine de l&#x27;adresse n&#x27;était pas celui du site web de l&#x27;événement et l&#x27;adresse n&#x27;était d&#x27;ailleurs pas la même que celle utilisée dans les précédents emails reçus. Surtout, la série de chiffres dans l&#x27;adresse mail était un indice certain d&#x27;automatisation de l&#x27;envoi. Un robot avait dû participer d&#x27;une manière ou d&#x27;une autre à cet envoi. &lt;/li&gt;
+&lt;li&gt;Le mail mentionnait la phrase suivante : &quot;Nous reviendrons rapidement vers vous concernant les modalités de remboursement de votre inscription.&quot; Signe d&#x27;une possible arnaque destinée à collecter nos données bancaires. &lt;/li&gt;
+&lt;li&gt;Enfin, après vérification, aucun des autres canaux de communication de l&#x27;événement (site web, comptes Facebook, Instagram ou Tik Tok) ne mentionnait son annulation. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A l&#x27;inverse, pour le troisième d&#x27;entre nous, pas de doute : &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;l&#x27;email était formaté avec un logiciel de type Mailchimp très professionnel ce qui était consistant avec les autres outils de communication utilisés par les organisateurs. &lt;/li&gt;
+&lt;li&gt;Il était rédigé en français et en néerlandais de manière parfaite, sans faute et de manière très concise, pas de trace de traduction automatisée approximative. &lt;/li&gt;
+&lt;li&gt;Surtout il ne demandait aucune action directe de notre part. Pas de lien sur lequel cliquer qui nous ferait sortir des médias connus de l&#x27;événement, ou qui nous demanderait d&#x27;encoder quelque part nos données bancaires. &lt;/li&gt;
+&lt;li&gt;De plus l&#x27;email avait clairement été envoyé uniquement aux personnes inscrites à l&#x27;événement. S&#x27;il s&#x27;agissait d&#x27;un spam, cela aurait voulu dire que les pirates auraient eu accès à la base de données des organisateurs, ce qui n&#x27;est pas impossible mais quand même assez peu probable, et surtout beaucoup d&#x27;énergie dépensée de la part des pirates pour un événement de si petite taille. Bref pas de raison de douter de son authenticité. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Au final, après cinq jours de débats entre nous, et lassés d&#x27;attendre la publication d&#x27;informations parallèles sur le site web ou les RS de l&#x27;événement qui n&#x27;arrivaient pas (soit l&#x27;événement était annulé et ils auraient dû publier l&#x27;information, soit leur base de données avait été corrompue et ils auraient dû nous en informer), nous avons trouvé une adresse mail de contact à laquelle nous adresser et une personne de l&#x27;entreprise organisatrice nous a bien confirmé que l&#x27;événement était annulé. Fin du suspense. &lt;/p&gt;
+
+&lt;p&gt;L&#x27;élément déclencheur du doute dans notre cas a été l&#x27;identification d&#x27;un processus d&#x27;automatisation de l&#x27;envoi de l&#x27;email  (l&#x27;adresse mail constituée de numéros étant un indice d&#x27;automatisation, et donc de possible facticité que nous avons appris à reconnaître). Ce qui m&#x27;a le plus intrigué est le caractère extrêmement rapide et stable de cette évaluation pour deux d&#x27;entre nous (et par après d&#x27;une troisième personne externe à notre groupe à qui nous avons demandé un avis). Il n&#x27;y avait aucun doute, il s&#x27;agissait d&#x27;un spam (alors même que les filtres antispam de nos boîtes mail ne l&#x27;avait pas flagué comme tel). Le fait que le travail de vérification n&#x27;ait pas non plus pu aboutir (l&#x27;information n&#x27;était pas disponible de manière redondante sur les autres médias de l&#x27;entreprise, ce qui est pourtant une des caractéristiques de la communication numérique que, là aussi, nous avons appris à reconnaître au fil du temps) était la confirmation claire de la facticité. Malgré un travail critique de recherche, nous ne pouvions pas lever le doute qui nous avait assailli. &lt;/p&gt;
+
+&lt;p&gt;Je pense qu&#x27;il y a un ou deux ans, avant l&#x27;accélération du développement des médias automatisés et de leur colonisation des environnements numériques, nous n&#x27;aurions pas eu le réflexe presque automatique de douter de la fiabilité de cet email. &lt;/p&gt;
+
+&lt;p&gt;Ce petit épisode est illustratif du fait que cette mutation rapide des environnements informationnels numériques a peut-être comme conséquence une transformation rapide de notre rapport à l&#x27;information et de notre capacité à discerner les sources numériques fiables des sources non fiables. Il est possible que ces nouveaux médias automatisés, davantage que les précédents, compliquent les activités de réception des contenus et donc déstabilise, peut-être fortement, le fonctionnement de nos espaces informationnels par la complication du travail interprétatif qu&#x27;ils nous imposent. &lt;/p&gt;
+
+&lt;p&gt;À cette automatisation des médias, pourrait donc correspondre une automatisation du doute dans le processus de réception des contenus médiatiques et cette automatisation du doute pourrait être un problème en soi. &lt;/p&gt;
+
+&lt;p&gt;Heureusement, au final, ce n&#x27;est pas ce petit événement communicationnel qui nous a empêchés de nous remettre au sport et de sortir nos têtes des environnements numériques dans lesquels nous sommes plongés une grande partie de nos journées.&lt;/p&gt;
+
+&lt;p&gt;#GenIA #media_automatisé #confiance&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Sur le code qui génère ce site / Est-il encore utile d&#x27;apprendre à coder ?</title>
+    <link href="https://gregoirelits.eu/fr/2024-04-16-Apprendre-a-coder.html"/>
+    <id>https://gregoirelits.eu/fr/2024-04-16-Apprendre-a-coder.html</id>
+    <updated>2024-04-16T00:00:00+00:00</updated>
+    <published>2024-04-16T00:00:00+00:00</published>
+    <summary>Résultat d&#x27;une expérience de codage assisté par IA.</summary>
+    <content type="html">&lt;p&gt;Sur le code qui génère ce site / Est-il encore utile d&#x27;apprendre à coder ?&lt;/p&gt;
+
+&lt;p&gt;Dans un souci de sobriété numérique, j&#x27;ai construit ce blog en reprenant le template de &lt;a href=&quot;https://ploum.net/&quot;&gt;Ploum.net&lt;/a&gt; (merci à lui pour le partage !). Ce site est donc un site statique composé uniquement de pages simples écrites au langage HTML (le contenu n&#x27;est pas stocké dans une base de données et affiché sur une page web grâce à un script, le site n&#x27;utilise pas de PHP, pas de JavaScript, ce qui limite les ressources utilisées pour son affichage). &lt;/p&gt;
+
+&lt;p&gt;Dans un premier temps, je voulais continuer de rédiger et coder en html l&#x27;ensemble des pages &quot;à la main&quot;.  Je rédigeais les postes du blog dans un éditeur de texte markdown (Obsidian ou Zetllr en fonction de mon humeur du moment), puis je convertissais ce texte au format html grâce à un &lt;a href=&quot;https://markdowntohtml.com/&quot;&gt;convertisseur disponible en ligne&lt;/a&gt;. Une fois cela réalisé, il me suffisait d&#x27;intégrer manuellement mon texte codé en html dans mon template de post de blog réalisé au préalable, puis d&#x27;ajouter dans la page d&#x27;accueil (index.html) du site et dans la page blog.html une ligne de code avec le lien vers le nouveau post. &lt;/p&gt;
+
+&lt;p&gt;J&#x27;aime faire cela à la main car cela me donne un sentiment de maitrise technique et de simplicité. De plus ça ne prend vraiment pas beaucoup de temps (quelques minutes tout au plus). &lt;/p&gt;
+
+&lt;p&gt;Par contre, le processus est un peu répétitif et très clairement, il pourrait être automatisé facilement. Autre problème, je voulais que mon site soit doté d&#x27;un flux RSS (qui est &lt;a href=&quot;https://gregoirelits.eu/atom.xml&quot;&gt;ici&lt;/a&gt;) et coder un flux RSS à la main est, après expérience, quelque chose d&#x27;assez fastidieux, pas sûr d&#x27;avoir envie de consacrer du temps à cela...&lt;/p&gt;
+
+&lt;h1&gt;Apprendre à coder en python ?&lt;/h1&gt;
+
+&lt;p&gt;Mais pour automatiser ce processus (convertir le texte en html. Intégrer le texte dans le template d&#x27;un post de blog. Modifier la page d&#x27;accueil du site et celle du blog, et surtout créer le flux RSS), il faut savoir coder dans un langage de programmation tel que Python.&lt;/p&gt;
+
+&lt;p&gt;Le problème, c&#x27;est que malgré le fait que j&#x27;ai inscrit &quot;apprendre à coder en python&quot; sur ma &lt;em&gt;to-do list&lt;/em&gt; depuis au moins 5 ans, je n&#x27;ai jamais pris le temps de m&#x27;y mettre. Il serait bien possible de reprendre des scriptes existants et de les adapter, mais même cela est au-dessus de mes capacités à ce stade. &lt;/p&gt;
+
+&lt;p&gt;C&#x27;est là que les IA génératives entrent en jeu. Et si je demandais à ChatGPT de réaliser ce code pour moi ? &lt;/p&gt;
+
+&lt;p&gt;C&#x27;est ce que j&#x27;ai fait. Je lui ai d&#x27;abord demandé de réaliser un script en python permettant de créer le fichier atom.rss de mon blog. En gros lui demandant d&#x27;aller visiter le dossier contenant l&#x27;ensemble des fichiers HTML qui composent le blog du site, de classer les pages dans l&#x27;ordre chronologique, puis d&#x27;écrire un fichier intitulé atom.xml qui reprend la liste des articles de manière lisible par un lecteur de flux RSS. &lt;/p&gt;
+
+&lt;p&gt;Je lui ai aussi demandé que ce scripte puisse fonctionner sur &lt;a href=&quot;https://colab.research.google.com/&quot;&gt;Google Collab&lt;/a&gt;, un service de Google qui permet d&#x27;exécuter du code en python.&lt;/p&gt;
+
+&lt;p&gt;À ma grande surprise, après une petite heure d&#x27;allers-retours avec ChatGPT (surtout pour résoudre un problème lié à la manière dont le script Python pouvait accéder aux fichiers de mon blog stockés sur Google Drive), j&#x27;avais un code qui fonctionnait et qui en un clic générait un fichier RSS fonctionnel (même si clairement pas parfait.)&lt;/p&gt;
+
+&lt;h1&gt;Et si j&#x27;automatisais l&#x27;ensemble du blog ?&lt;/h1&gt;
+
+&lt;p&gt;Vu la rapidité du processus, j&#x27;ai poussé l&#x27;expérience plus loin. Je me suis plongé dans le code source du blog de &lt;a href=&quot;https://git.sr.ht/~lioploum/ploum.net/tree/master/item/publish.py&quot;&gt;Ploum.net&lt;/a&gt; pour voir l&#x27;ensemble des étapes qu&#x27;il réalise et j&#x27;ai tenté de répliquer toutes ces étapes avec des scriptes séparés permettant de : &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;réduire la largeur des images du site, présentes dans le dossier /files du blog à maximum 600px. &lt;/li&gt;
+&lt;li&gt;de convertir mon texte rédigé au format markdown en une page HTML utilisant un template préexistant.&lt;/li&gt;
+&lt;li&gt;d&#x27;éditer les pages index.html et blog.html pour les mettre à jour et intégrer le lien vers le nouveau post de blog créé. &lt;/li&gt;
+&lt;li&gt;de créer le flux RSS. &lt;/li&gt;
+&lt;li&gt;d&#x27;exporter sur mon ordinateur depuis Google Drive les quatre nouveaux fichiers créés : index.html, blog.html, nouveau-post.html et atom.rss. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Au final, il m&#x27;aura fallu à peu près quatre heures de travail pour avoir quatre scriptes en python réalisant l&#x27;ensemble de ces tâches (dont au moins deux heures pour faire trois versions du script du flux RSS pour qu&#x27;il soit de plus en plus simple). &lt;/p&gt;
+
+&lt;p&gt;Le workflow de ce site est maintenant le suivant : &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Rédiger l&#x27;article du blog en markdown sur Obsidian. &lt;/li&gt;
+&lt;li&gt;Enregistrer le fichier .md dans un dossier particulier de mon Google Drive. &lt;/li&gt;
+&lt;li&gt;Ouvrir le Google Collab où j&#x27;ai placé ces quatre scriptes en Python.&lt;/li&gt;
+&lt;li&gt;Faire fonctionner les scripts pour obtenir directement les quartes fichiers (le post de blog au format html, la page d&#x27;accueil du site mise à jour, la page blog mise à jour et le fichier atom.rss pour le flux rss)&lt;/li&gt;
+&lt;li&gt;Importer ces quartes fichiers sur le site (hébergé sur Github). &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Il reste quelques petites choses que je pourrais corriger dans le script qui crée le fichier atom.rss, mais à part cela, l&#x27;ensemble fonctionne très bien.&lt;/p&gt;
+
+&lt;h1&gt;Quelques réflexions suite à cette expérience&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Cette expérience est assez perturbante et précisément, ce qui est perturbant, c&#x27;est que si je comprends globalement les grandes lignes de ce qu&#x27;il y a dans les codes, je suis bien incapable de comprendre pourquoi et comment ça fonctionne et que lorsque cela bug, souvent je ne comprends pas pourquoi... &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Ce qui est très étonnant également est que chatGPT en plus d&#x27;avoir fabriqué le code que je voulais a spontanément adopté une démarche pédagogique avec moi.  En me proposant le code, il m&#x27;explique presque ligne par ligne (sans doute a-t-il déduit mon niveau d&#x27;incompétence en interprétant la &lt;em&gt;prompt&lt;/em&gt; que je lui ai soumise) ce que fait le code. Quand je souhaite avoir plus de détail sur une ligne, je lui demande de m&#x27;expliquer ce qu&#x27;elle fait et il me l&#x27;explique clairement. Quand quelque chose ne marche pas, il est également capable très rapidement d&#x27;identifier le problème et de m&#x27;expliquer pourquoi ça ne marche pas.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Ce processus m&#x27;a au final permis d&#x27;apprendre très rapidement beaucoup de choses sur la manière dont un code en python fonctionne, beaucoup de choses dont je n&#x27;avais presque aucune connaissance avant cela. &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Si j&#x27;ai pu réaliser cela, c&#x27;est cependant par ce que j&#x27;avais déjà quelques connaissances. Je comprends bien comment fonctionne un ordinateur (j&#x27;ai encore connu les ordinateurs fonctionnant sous DOS ou tout se passait dans le terminal). Je sais donc ce qu&#x27;est un chemin d&#x27;accès d&#x27;un fichier. Je sais aussi c&#x27;est qu&#x27;est le XML ou le HTML. Je comprends bien comment fonctionne un site web et sais coder de manière basique en HTML et CSS. J&#x27;ai également quelques petites bases en programmation acquises durant mes études de sociologie (un peu de SQL, un peu de SAS et de SPSS) et de programmation orientée objet (en gros je savais ce qu&#x27;était un IDE, un objet et un package), ayant suivi il y a quelques années un cours d&#x27;introduction au langage R. Je savais donc comment rédiger des prompts qui  permettent à l&#x27;IA de comprendre ce dont j&#x27;avais besoin en la guidant étape par étape. Le fait de reproduire les étapes du code source du blog de Ploum m&#x27;a également largement facilité la tâche évidement. &lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1&gt;Est-il donc encore utile d&#x27;apprendre à coder ?&lt;/h1&gt;
+
+&lt;p&gt;Cet exercice me renvoie à ma &lt;em&gt;to-do list&lt;/em&gt;. Devrais-je y garder la ligne &quot;apprendre le python&quot; ? De manière plus générale, cela rejoint des débats que nous avons avec quelques collègues sur une réforme des programmes du bac en communication que nous sommes en train de mener. Devrions-nous inclure dans la formation de Bac en communication et information un cours de programmation à ce langage ?? &lt;/p&gt;
+
+&lt;p&gt;Ma réponse est oui, cela reste intéressant, ne fut-ce que parce que la génération de code sans compréhension par l&#x27;IA nous rend complètement dépendants de l&#x27;outil, mais surtout parce que si je n&#x27;avais pas eu cette connaissance et expérience préalable en informatique (fonctionnement d&#x27;un ordinateur, qu&#x27;est ce qu&#x27;un fichier .txt, comment fonctionne un site web, comment coder en HTML, base générale de programmation, etc.) je n&#x27;aurais pas su construire des prompts efficaces.&lt;/p&gt;
+
+&lt;p&gt;Cela étant dit, et cela a été la surprise de l&#x27;exercice, l&#x27;utilisation d&#x27;une IA générative pour réaliser un premier projet en Python s&#x27;est révélée pour moi une très bonne aide à l&#x27;apprentissage.  Parce qu&#x27;elle fonctionne de manière assez didactique, mais aussi parce que j&#x27;ai pu lui poser au fil du projet toutes les questions qui me passaient par la tête (ce qui n&#x27;est par exemple pas le cas sur les plateformes d&#x27;auto-apprentissage comme CodeAcademy). &lt;/p&gt;
+
+&lt;h1&gt;Une dernière interrogation...&lt;/h1&gt;
+
+&lt;p&gt;Les scripts que j&#x27;ai rédigés avec ChatGPT sont ici. &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;script de production des pages HTML : &lt;a href=&quot;https://github.com/greglits/greglits.github.io/blob/main/script/publish.py&quot;&gt;publish.py&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;script de création du flux RSS : &lt;a href=&quot;https://github.com/greglits/greglits.github.io/blob/main/script/RSS.py&quot;&gt;RSS.py&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Je suis parfaitement incapable de savoir s&#x27;il s&#x27;agit de &quot;bons&quot; scripts ou non. Vont-ils durer dans le temps ou boguer dans deux semaines ? Aucune idée... Si des spécialistes veulent y jeter un œil, je suis preneur :-)&lt;/p&gt;
+
+&lt;h1&gt;Quelques ressources intéressantes&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.nytimes.com/2024/04/16/podcasts/the-daily/ai-data.html?rref=vanity&quot;&gt;A.I.&#x27;s Original Sin&lt;/a&gt; (podcast du NYT, 16 avril 2024). Enquête sur les données qui ont servi à entrainer les IA Gen. Explique notamment comment Open AI à créé Whisper pour convertir en texte des millions d&#x27;heures de vidéo YouTube en texte pour entrainer GPT (en scrappant de manière sans doute illégale le contenu de YouTube)&lt;/p&gt;
+
+&lt;h1&gt;code #python&lt;/h1&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Une presse écrite belge toujours peu diversifiée</title>
+    <link href="https://gregoirelits.eu/fr/2024-03-15-une-presse-ecrite-peu-diversifiee.html"/>
+    <id>https://gregoirelits.eu/fr/2024-03-15-une-presse-ecrite-peu-diversifiee.html</id>
+    <updated>2024-03-15T00:00:00+00:00</updated>
+    <published>2024-03-15T00:00:00+00:00</published>
+    <summary>Synthèse de l&#x27;étude ORM sur l&#x27;évolution de la diversité dans les rédactions belges.</summary>
+    <content type="html">&lt;p&gt;L&#x27;AJP a publié hier la quatrième édition de son enquête sur la diversité dans la presse quotidienne belge. &lt;/p&gt;
+
+&lt;p&gt;Cette étude procède au comptage et à l&#x27;encodage dans une base de données de l&#x27;ensemble des personnes présentes dans les articles de presse écrite (sont identifiés par exemple, les auteurs des textes, les personnes dont on parle, les personnes à qui on donne la parole, les personnes prises en photo, etc.). &lt;/p&gt;
+
+&lt;p&gt;Il n&#x27;est pas possible évidemment d&#x27;encoder ces données pour l&#x27;ensemble des journaux belges publiés au cours d&#x27;une année. L&#x27;étude procède donc à un échantillonnage (18 journaux choisis au cours de trois journées en 2022). Au total 1.323 articles ont été analysés et 14.659 personnes encodées (identification du genre, de l&#x27;âge, de l&#x27;origine perçue, du handicap, de la CSP, etc.).&lt;/p&gt;
+
+&lt;p&gt;Quelques constats issus de l&#x27;étude : &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;La proportion de femmes dans les articles de presse écrite (21,8%, 30% si on ne prend pas en compte l&#x27;actualité sportive) reste stable depuis 2011 (l&#x27;étude pointe une légère augmentation, mais à mon sens vu la méthodologie mise en œuvre, il est difficile de savoir si les variations peuvent être attribuées à une véritable évolution ou au hasard de l&#x27;actualité qui se déroule au cours des journées choisies). &lt;/li&gt;
+&lt;li&gt;La proportion de personnes perçues comme issues de la diversité semble en légère baisse. De manière étonnante, ce n&#x27;est plus dans l&#x27;actualité sportive que la diversité d&#x27;origine est la plus élevée. Ce qui était le cas dans bon nombre d&#x27;études auparavant. À nouveau cela est peut-être davantage dû aux caractéristiques de l&#x27;actualité sportive des jours choisis pour l&#x27;analyse qu&#x27;à une réelle évolution.&lt;/li&gt;
+&lt;li&gt;Les femmes de plus de 65 ans et les personnes porteuses d&#x27;un handicap sont (très) fortement invisibilisés par la presse écrite.&lt;/li&gt;
+&lt;li&gt;Si on compare avec les chiffres des études du CSA qui réalisent les mêmes analyses pour les contenus audiovisuels, la presse écrite quotidienne apparait comme moins diversifiée du point de vue de personnes présentes dans ses contenus. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ces constats ne sont pas surprenants. Ce qui l&#x27;est davantage c&#x27;est la non-évolution de ces proportions depuis que des études sont menées sur le sujet en Belgique. Pour comprendre cette stabilité, il est possible de lier cette étude à celles qui s&#x27;intéressent à la diversité des profils des journalistes et qui montrent que c&#x27;est également au sein des rédactions de presse écrite quotidienne que la diversité des profils des journalistes est la plus faible (notamment du point de vue du genre). &lt;/p&gt;
+
+&lt;p&gt;Certaines recherches tendent en effet à montrer qu&#x27;il existe un lien entre la diversité des profils des journalistes au sein d&#x27;une rédaction et leur capacité à diversifier les contenus proposés aux lecteurs. &lt;/p&gt;
+
+&lt;p&gt;J&#x27;ai eu l&#x27;occasion hier de commenter les résultats de cette étude de manière plus détaillée pour la chaine de télévision locale bruxelloise BX1. L&#x27;interview se trouve ci-dessous. &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;BX1, journal de 12h30, 14 mars 2024 - &lt;a href=&quot;https://bx1.be/categories/news/les-femmes-restent-sous-representees-dans-la-presse-belge/&quot;&gt;Les femmes restent sous-représentées dans la presse belge&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Lien vers l&#x27;étude - &lt;a href=&quot;https://www.ajp.be/wp-content/uploads/2024/03/diversite-2022SiteLight.pdf&quot;&gt;AJP (2024). Étude de la diversité et de l’égalité dans la presse quotidienne belge francophone&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Quand deux projets se croisent... et quelques ressources sur la gestion des futures crises (sanitaire et environnementale)</title>
+    <link href="https://gregoirelits.eu/fr/2024-03-07-Quand-deux-projets-se-croisent.html"/>
+    <id>https://gregoirelits.eu/fr/2024-03-07-Quand-deux-projets-se-croisent.html</id>
+    <updated>2024-03-03T00:00:00+00:00</updated>
+    <published>2024-03-03T00:00:00+00:00</published>
+    <summary>Comment les outils génératifs redistribuent l&#x27;autorité épistémique.</summary>
+    <content type="html">&lt;p&gt;Pour le moment je travaille en parallèle sur trois projets. Une étude de la diversité des profils parmi les journalistes belges francophones. La préparation d&#x27;un nouveau cours intitulé &lt;a href=&quot;https://uclouvain.be/cours-2023-lcomu2126&quot;&gt;&lt;em&gt;journalisme et enjeux environnementaux&lt;/em&gt;&lt;/a&gt; et enfin, dans le cadre du projet &lt;a href=&quot;https://www.pandorix.be/&quot;&gt;Pandorix&lt;/a&gt; je travaille, avec mes collègues, à la rédaction de différents scénarios prospectifs imaginant les différents aspects de la gestion d&#x27;une nouvelle pandémie qui pourrait toucher la ville de Bruxelles en 2040. &lt;/p&gt;
+
+&lt;p&gt;A première vue, ces trois projets sont très différents les uns des autres, mais parfois ils s&#x27;entrecroisent. C&#x27;est ce qui est arrivé cette semaine en tout cas pour deux d&#x27;entre eux. &lt;/p&gt;
+
+&lt;p&gt;Ce lundi, c&#x27;était en effet la deuxième séance du cours &lt;em&gt;Enjeux environnement&lt;/em&gt;. L&#x27;objectif était de donner une séance de deux heures à nos étudiant.e.s consacrée à la compréhension scientifique du changement climatique. Nous avons eu la chance de pouvoir inviter François Massonnet, un de nos collègues &quot;du haut de la ville&quot; (appellation commune des collègues de l&#x27;UCLouvain actif dans les champs des STEM et dont les bureaux et auditoires sont justement placés dans la partie haute de Louvain-la-Neuve). Climatologue rompu à la vulgarisation scientifique des aspects techniques du changement climatique, il nous a donné une réponse très éclairante à la question &quot;Pourquoi le climat se réchauffe-t-il ?&quot;. Il a aussi passé pas mal de temps à &quot;débunker&quot; quatre discours très fréquemment portés par les climatosceptiques. &lt;/p&gt;
+
+&lt;p&gt;Pour terminer sa présentation, et c&#x27;est là que le premier projet de cours sur l&#x27;environnement rejoint par magie le second projet de prospective pandémique. Il a conseillé à nos étudiant.e.s les deux ressources suivantes qui sont justement des exercices de vulgarisation scientifique prospective qui nous raconte se que serait la vie, dans quelques années, dans un monde à +2 degrés...&lt;/p&gt;
+
+&lt;p&gt;Comme nos scénarios de pandémie intègrent évidement dans les variables contextuelles le réchauffement climatique et ses conséquences, je ne pouvais être plus heureux ☺ car il me donnait en même temps des ressources pour mon projet #pandémie et des exemples bien construits de formats narratifs (&lt;em&gt;podcast&lt;/em&gt; et &lt;em&gt;scrollytelling&lt;/em&gt;) visant la diffusion de scénarios prospectifs vers le &quot;grand public&quot;. &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;La première ressource est le long format web intitulé &lt;a href=&quot;https://unseenheat.com/&quot;&gt;Unseen Heat&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;La seconde est un épisode du podcast Le Tournant produit par le journaliste Arnaud Ryussen (par ailleurs cotitulaire du cours &quot;enjeux environnementaux&quot;, j&#x27;aurais pu trouver celle-là par moi même...) intitulé &lt;a href=&quot;https://auvio.rtbf.be/media/declic-le-tournant-declic-le-tournant-3025852&quot;&gt;Un monde à +2° ça ressemble à quoi&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Heureux hasard (ou efficacité des algorithmes de recommandation et du capitalisme de surveillance si on n&#x27;est pas adèpte de la pensée magique...) Le lendemain mon flux LinkedIn me proposait les deux liens suivants parfaitement en lien avec les deux premiers et tout aussi intéressants : 
+- Un série de podcasts publiés par le média local bruxellois BX1 intitulé : &quot;&lt;a href=&quot;https://bx1.be/radio-emission/bruxelles-4-degres-episode-4/&quot;&gt;Bruxelles +4°C&lt;/a&gt;&quot;. Avec le grand avantage d&#x27;être ciblé sur la ville de Bruxelles comme notre projet Pandorix. 
+- Ainsi qu&#x27;un épisode du podcast Exergie ou Marius Gilbert est interrogé sur le thème &quot;&lt;a href=&quot;https://www.podcastics.com/podcast/episode/enseignements-du-covid-pour-contrer-le-dereglement-climatique-role-de-lexpert-durant-les-crises-283560/&quot;&gt;Enseignements du COVID pour contrer le dérèglement climatique; Rôle de l&#x27;expert durant les crises&lt;/a&gt;&quot;&lt;/p&gt;
+
+&lt;p&gt;Pour la suite je vais essayer de compléter la liste de ressources qui sont à la fois des ressources et exemple utile pour un exercice de prospective de gestion de future pandémie et de contenus de vulgarisation sur les conséquences (et la gestion) de la (future) crise climatique. &lt;/p&gt;
+
+&lt;h2&gt;Liste de liens vers les ressources :&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;https://unseenheat.com/&lt;/li&gt;
+&lt;li&gt;https://auvio.rtbf.be/media/declic-le-tournant-declic-le-tournant-3025852&lt;/li&gt;
+&lt;li&gt;https://bx1.be/radio-emission/bruxelles-4-degres-episode-4/&lt;/li&gt;
+&lt;li&gt;https://www.podcastics.com/podcast/episode/enseignements-du-covid-pour-contrer-le-dereglement-climatique-role-de-lexpert-durant-les-crises-283560/&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Un peu de promo pour l&#x27;ORM</title>
+    <link href="https://gregoirelits.eu/fr/2024-02-27-Un-peu-de-promo-ORM.html"/>
+    <id>https://gregoirelits.eu/fr/2024-02-27-Un-peu-de-promo-ORM.html</id>
+    <updated>2024-02-27T00:00:00+00:00</updated>
+    <published>2024-02-27T00:00:00+00:00</published>
+    <summary>Un peu de promo pour l&#x27;ORM.</summary>
+    <content type="html">&lt;p&gt;Depuis quelques mois j’ai la chance de coordonner les activités de recherche de l’Observatoire de recherche sur les médias et le journalisme de l&#x27;UCLouvain et de travailler au quotidien avec une équipe exceptionnelle de chercheurs et chercheuses issu.e.s de diverses disciplines scientifiques telles que la sociologie, les computer sciences ou les sciences de la communication.&lt;/p&gt;
+
+&lt;p&gt;Notre Objectif ? Explorer les dynamiques complexes qui façonnent le paysage médiatique et journalistique actuel et leur impact sur la société. Une aventure intellectuelle pleine de défis et particulièrement actuelle !\&lt;/p&gt;
+
+&lt;p&gt;🔍  Notre équipe mène par exemple pour le moment des recherches sur :
+- L&#x27;impact transformateur des IA génératives sur les écosystèmes médiatiques.
+- Les tendances évolutives dans le métier de journaliste, en mettant l&#x27;accent sur la diversité au sein de la profession en Belgique.
+- Les défis liés aux violences envers les journalistes belges.
+- L&#x27;avancement technique dans la numérisation et l&#x27;analyse multimodale (texte-image) de vastes corpus de données médiatiques.
+- L&#x27;analyse critique des efforts pour combattre la désinformation et les fake news en Europe.
+- L&#x27;évolution du journalisme environnemental.
+- Et bien plus encore…&lt;/p&gt;
+
+&lt;p&gt;👉 Si vous êtes curieux de découvrir nos travaux ou souhaitez engager une conversation sur ces sujets passionnants, je vous invite à visiter notre site. N&#x27;hésitez pas non plus à me contacter directement si nos activités vous intéressent !&lt;/p&gt;
+
+&lt;p&gt;Lien vers notre site -&gt; https://sites.uclouvain.be/orm/&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Publication du second rapport du projet CoviCom : Analyse de l’infodémie Covid-19 en Belgique francophone</title>
+    <link href="https://gregoirelits.eu/fr/2021-06-14-Publication-du-second-rapport-du-projet-covicom.html"/>
+    <id>https://gregoirelits.eu/fr/2021-06-14-Publication-du-second-rapport-du-projet-covicom.html</id>
+    <updated>2021-06-14T00:00:00+00:00</updated>
+    <published>2021-06-14T00:00:00+00:00</published>
+    <summary>Publication du second rapport du projet COVICOM.</summary>
+    <content type="html">&lt;p&gt;Dans ce second rapport, nous analysons quatre vagues d’enquête visant à réaliser un suivi de l’évolution de l’infodémie liée à la pandémie de Covid-19 en Belgique Francophone.&lt;/p&gt;
+
+&lt;p&gt;Lien vers le rapport complet : https://doi.org/10.31235/osf.io/e98gm&lt;/p&gt;
+
+&lt;h2&gt;Principales conclusions&lt;/h2&gt;
+
+&lt;p&gt;Un premier constat que nous pouvons tirer de l’analyse des quatre vagues de l’enquête est que le phénomène infodémique, pointé dès mars 2020 par l’OMS comme un des problèmes principaux à prendre en compte pour développer une réponse efficace face à la pandémie, s’est bien développé en Belgique francophone.&lt;/p&gt;
+
+&lt;p&gt;Sa mesure la plus évidente est l’existence d’une partie de la population qui adhère à des théories conspirationnistes liées au Covid-19. En mars 2021, 11,7% de nos répondants estiment par exemple que « l’industrie pharmaceutique est impliquée dans la propagation du coronavirus ». Nous avons montré que la proportion de personnes adhérant à des théories de ce type est beaucoup plus importante parmi les utilisateurs actifs des réseaux sociaux et de Facebook en particulier (l’utilisation active étant mesurée par la participation à un groupe Facebook en lien avec le coronavirus). À titre d’exemple, les proportions liées à la question « j’estime que l’industrie pharmaceutique est impliquée dans la propagation du coronavirus » sont respectivement de 5,3% (non-membres de groupes Facebook) et 27% (membres de groupes Facebook).&lt;/p&gt;
+
+&lt;p&gt;Notons que parmi nos répondants, la propension à croire dans ces théories a augmenté au fil des vagues. Nous avons donc pu trouver de plus en plus de personnes porteuses de ce type de croyances prêtes à répondre à notre enquête, sans modifier significativement le mode de recrutement au fil des vagues. Comme nous l’avons dit cependant cela ne signifie pas que cette proportion augmente de manière générale dans la société belge.&lt;/p&gt;
+
+&lt;p&gt;CoviCom ne permet pas de mesurer précisément la proportion de personnes concernées par l’adhésion à ces théories en Belgique francophone. Notons, pour interpréter les chiffres donnés, que, d’une part, nous avons volontairement recruté des répondants qui utilisent activement Facebook pour s’informer sur le Covid-19 (ce qui tend donc à surreprésenter les profils vulnérables dans l’infodémie), mais, d’autre part, que nos répondants sont très largement surdiplômés (essentiellement études supérieures) par rapport à la population belge francophone (ce qui tend à réduire la vulnérabilité informationnelle de nos répondants par rapport à la population générale).&lt;/p&gt;
+
+&lt;p&gt;Un des apports importants de ce rapport est de montrer que la simple mesure de la diffusion de fake news et de théories conspirationnistes ne suffit pas pour mesurer l’évolution de l’infodémie liée au Covid-19. Deux de ses dimensions centrales sont l’évolution des pratiques d’information et l’évolution du niveau de confiance dans les sources d’informations officielles (experts, gouvernement) et dans les médias traditionnels (télévision, radio, presse). Notre enquête permet de montrer que le développement de l’infodémie se manifeste par un évitement croissant des médias dits traditionnels par une part de la population ainsi que par une baisse très importante des niveaux de confiance envers les médias traditionnels, les experts et les gouvernements pour certaines personnes, notamment celles qui s’informent activement davantage sur Facebook.&lt;/p&gt;
+
+&lt;p&gt;Du point de vue des pratiques d’information, au mois de mars 2021, 30,7% des Wallons parmi nos répondants disent être régulièrement gênés par une incapacité à s’informer. Ce chiffre s’élevait à 12,4% au début de l’épidémie. D’une manière similaire, la proportion de nos répondants qui disent ne pas s’informer via au moins un média traditionnel passe de 19,4% en début d’épidémie à 30,2% en mars 2021. Le développement de l’épidémie va de pair avec l’accroissement d’un phénomène d’évitement informationnel pour une partie de la population, ce qui caractérise particulièrement un des profils de vulnérabilité informationnelle mis en évidence.&lt;/p&gt;
+
+&lt;p&gt;Du point de vue de la confiance dans les sources d’information, toutes les mesures sont fortement en baisse parmi nos répondants et cette diminution est confirmée par l’analyse longitudinale présentée en annexe 1.&lt;/p&gt;
+
+&lt;p&gt;A l’opposé, les niveaux de défiance (personnes qui disent ne pas faire confiance) envers les médias traditionnels, les experts et les gouvernements ont très fortement augmenté. Le taux de défiance envers les journaux télévisés parmi nos répondants passe par exemple de 6% en avril 2020 à 32% en mars 2020.&lt;/p&gt;
+
+&lt;p&gt;Une fois ces trois constats posés, nous avons mis en évidence l’existence de trois profils de vulnérabilité dans l’infodémie et montré que ces trois profils : la vulnérabilité informationnelle (perte de confiance envers les médias traditionnels et évitement de ces médias), la boulimie informationnelle (perte de confiance envers les médias traditionnels, mais pratiques d’information élevées en multipliant toutes les sources disponibles) et l’évitement informationnel  (maintien de la confiance envers les médias traditionnels mais non utilisation de ces médias) étaient en augmentation et cette augmentation se donne également à voir dans l’analyse longitudinale (c’est-à-dire où nous avons pu suivre l’évolution des pratiques de 640 répondants identiques entre les vagues 2 et 4).&lt;/p&gt;
+
+&lt;p&gt;Nous avons également montré que l’hésitation vaccinale, le respect des mesures de lutte contre l’épidémie, la perception des risques, la croyance dans de théories conspirationnistes ainsi que le niveau d’anxiété étaient fortement associés à ces trois profils qui représentent entre 45 et 56% de nos répondants selon la manière de les mesurer.&lt;/p&gt;
+
+&lt;p&gt;De ce point de vue, notons que c’est au niveau de l’hésitation et du refus vaccinal que les différences entre profils de risque sont les plus importantes. Dans le groupe de forte vulnérabilité infodémique ainsi que dans celui des boulimiques informationnels, le refus et l’hésitation vaccinale ont augmenté depuis le début de la crise et se situent à des niveaux beaucoup plus élevés que dans le groupe de faible vulnérabilité infodémique (maintien de la confiance envers les médias traditionnels et utilisation de ces médias). La proportion d’hésitants se situaient en mars 2021 à un niveau de 18,1% dans le groupe de faible vulnérabilité et à 78,4% dans le groupe de forte vulnérabilité.&lt;/p&gt;
+
+&lt;p&gt;Au regard des différences en termes de pratiques informationnelles des trois groupes de vulnérabilité informationnelle, il semble important de développer des stratégies de communication ciblées pour chaque groupe visant à lutter contre l’infodémie et à augmenter les niveaux d’adhésion à la vaccination.&lt;/p&gt;
+
+&lt;p&gt;Une stratégie utilisant le contact et l’interaction directe avec des professionnels de la santé ou des proches ainsi que le partage d’informations valides par des proches sur les réseaux sociaux, ou encore, la publication d’articles de blog rédigés par des experts en épidémiologie ou virologie, mais diffusés en dehors des médias traditionnels (chaine YouTube, blog personnel, groupe Facebook, etc.) pourrait avoir un impact sur la campagne de vaccination plus important que la diffusion de campagnes d’information via les médias traditionnels en touchant le groupe de forte vulnérabilité informationnelle ainsi que celui des boulimiques infodémiques.&lt;/p&gt;
+
+&lt;p&gt;La montée de la vulnérabilité informationnelle que nous observons, si elle se confirme dans d’autres études et sur la longue durée, pourrait être un indicateur de la transformation du contexte médiatique belge francophone. Elle pourrait le rendre moins résilient à la diffusion de désinformation et de mésinformation, ce qui pourrait avoir des conséquences politiques à long terme, au-delà de la crise du Covid-19, sur le fonctionnement de la démocratie dans son ensemble, si cette vulnérabilité informationnelle venait à se stabiliser, voire si elle continuait à progresser. Il est important pour cette raison de développer dans le temps un effort de monitoring des niveaux de vulnérabilité informationnelle dans la société belge francophone.&lt;/p&gt;
+
+&lt;p&gt;Un dernier apport de l’enquête se situe sur un plan méthodologique. CoviCom permet de montrer l’importance du canal de recrutement des répondants à des enquêtes liées au coronavirus. En raison de l’existence d’une infodémie liée au Covid-19, les utilisateurs de réseaux sociaux et essentiellement de Facebook n’ont pas la même perception ni le même vécu de la crise que des personnes qui n’utilisent pas ce média pour s’informer. Nous avons pu montrer que les variables liées aux « pratiques d’information » sont associées à des profils de vulnérabilité informationnelle différents, eux-mêmes associés à des perceptions, des états psychologiques et des comportements différents.&lt;/p&gt;
+
+&lt;p&gt;Une étude qui recourrait massivement, ou uniquement, au recrutement de répondants via les réseaux sociaux (ce qui est en grande partie le cas de CoviCom), ou via des médias uniquement numériques, touchera donc un profil de vulnérabilité informationnelle particulier. Ce qui peut ne pas être problématique pour des études portant sur des sujets génériques, mais qui a sans doute un impact plus grand pour l’analyse de l’évolution du vécu d’une épidémie qui se double d’une infodémie et dont une des dimensions est d’être une crise informationnelle en plus d’une crise sanitaire. Pour l’analyse de ces évolutions des études longitudinales capables de suivre des répondants identiques de vagues en vagues doivent être privilégiées.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Analyse de l’espace décisionnel de la gestion des déchets radioactifs belges</title>
+    <link href="https://gregoirelits.eu/fr/2020-06-22-Analyse-de-lespace-decisionnel-de-la-gestion-des-dechets-radioactifs-belges.html"/>
+    <id>https://gregoirelits.eu/fr/2020-06-22-Analyse-de-lespace-decisionnel-de-la-gestion-des-dechets-radioactifs-belges.html</id>
+    <updated>2020-06-22T00:00:00+00:00</updated>
+    <published>2020-06-22T00:00:00+00:00</published>
+    <summary>comprendre la prise de décision sur la gestion des déchets radioactifs belges.</summary>
+    <content type="html">&lt;p&gt;Pour comprendre le débat actuel sur la gestion des déchets radioactifs en Belgique, il est utile de décrire l’évolution des controverses et des acteurs qui sont impliqués dans son “espace décisionnel”.&lt;/p&gt;
+
+&lt;p&gt;C’est ce que j’ai tenté de réaliser dans ma thèse de doctorat qui analyse de manière sociologique l’évolution des prises de décision liées à la gestion des déchets radioactifs en Belgique entre 1915 et 2015.&lt;/p&gt;
+
+&lt;p&gt;-&amp;gt; Télécharger le document :&lt;br /&gt;
+2015, Lits G., &lt;strong&gt;&lt;em&gt;&lt;a href=&quot;https://dial.uclouvain.be/pr/boreal/fr/object/boreal%3A158738/datastream/PDF_01/view&quot;&gt;La gestion des déchets hautement radioactifs belges à l’épreuve de la démocratie : contribution à une sociologie des activités décisionnelles&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;, Thèse de doctorat en sciences politiques et sociales, Université catholique de Louvain. 463 pages.&lt;/p&gt;
+
+&lt;h2&gt;Résumé&lt;/h2&gt;
+
+&lt;p&gt;Après avoir réalisé pendant une trentaine d’années des recherches scientifiques sur les capacités de l’argile dite « de Boom » à isoler de l’environnement les radioéléments contenus dans les déchets radioactifs provenant des centrales nucléaires belges, l’ONDRAF (Organisme national belge des déchets radioactifs et des matières fissiles enrichies) a décidé, en 2009, de fournir au gouvernement fédéral belge un « Plan déchets » dans lequel il recommande la solution technique de l’enfouissement des déchets radioactifs en couche géologique profonde comme solution définitive aux problèmes des déchets radioactifs.&lt;/p&gt;
+
+&lt;p&gt;Mon travail de doctorat a consisté en l’analyse compréhensive de l’espace de décision au sein duquel ce plan technique de gestion a été produit. Au moyen de méthodes de collecte de données qualitatives (observations, entretiens, analyse documentaire), j’ai pu analyser les différents « instruments de décision » mobilisés par les acteurs actifs dans cet espace décisionnel pour produire le Plan déchets. Parmi ces instruments (méthode d’analyse de risque, rapport d’analyse d’impacts environnementaux…), je me suis particulièrement intéressé à la systématisation, à partir des années 2000, du recours à des dispositifs ayant pour objectif la participation du public dans la construction des solutions techniques de gestion des déchets radioactifs ainsi qu’à leur usage dans le cas de la production du « Plan déchets » belge.&lt;/p&gt;
+
+&lt;p&gt;D’une manière générale, la littérature sociologique portant sur la gestion des déchets radioactifs en Europe a mis en évidence l’apparition d’un « tournant participatif » dans les modes de prises de décision liés à cette question. Selon les analyses réalisées à partir d’une perspective de sociologie des sciences, ce tournant participatif serait la manifestation d’une sortie de la logique technocratique qui prévalait jusque-là ainsi que le signe d’une « démocratisation » des problèmes techniques dans nos sociétés.&lt;/p&gt;
+
+&lt;p&gt;L’analyse empirique que j’ai réalisée me permet de nuancer cette conclusion de trois manières. &lt;/p&gt;
+
+&lt;p&gt;Premièrement, l’analyse historique de l’évolution des formes des espaces de décision nucléaire belges permet de mettre en évidence que, si le recours à des dispositifs participatifs est bien une nouveauté et que la participation du public à la prise de décision a bien augmenté, la logique technocratique des décisions (donnant un pouvoir important aux experts ainsi qu’au pouvoir exécutif, par opposition à un système donnant beaucoup de marge de manœuvre au pouvoir législatif) n’a, quant à elle, que très peu évolué. &lt;/p&gt;
+
+&lt;p&gt;Dans un deuxième temps, si l’on étudie les lieux où ces dispositifs participatifs ont été conçus, on observe que leur premier objectif est de résoudre ce que les ingénieurs nucléaires appellent le problème des « aspects sociaux » du nucléaire, c’est-à-dire l’émergence de contestations locales et nationales opposées aux développements industriels nucléaires. Les dispositifs participatifs ont alors principalement pour objectif, non pas l’accroissement de la légitimité des processus décisionnels, mais bien la construction de la confiance du public envers des acteurs actifs dans l’espace de décision. &lt;/p&gt;
+
+&lt;p&gt;Troisièmement, l’analyse de la mise en œuvre effective de la participation citoyenne par l’ONDRAF entre 2009 et 2012 permet d’affirmer que le recours aux outils participatifs ne peut se comprendre qu’au regard d’une autre innovation décisionnelle destinée à gérer le temps long des processus décisionnels nucléaires (près d’une centaine d’années pour la gestion des déchets) : la construction des prises de décision par étapes (&lt;em&gt;stepwise decision making&lt;/em&gt;). Dans ce nouveau schéma de décision, la participation citoyenne apparaît davantage comme une extension du domaine de la technocratie (qui a d’ailleurs recours à une nouvelle source d’expertise -celle des sciences humaines- pour résoudre le problème des aspects sociaux du nucléaire) que comme une démocratisation des décisions à caractère technique.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Analyse de l’espace décisionnel de la gestion des déchets radioactifs belges</title>
+    <link href="https://gregoirelits.eu/fr/2020-06-22-Analyse-de-lespace-decisionnel-de-la-gestion-des-dechets-radioactifs-belges.html"/>
+    <id>https://gregoirelits.eu/fr/2020-06-22-Analyse-de-lespace-decisionnel-de-la-gestion-des-dechets-radioactifs-belges.html</id>
+    <updated>2020-06-22T00:00:00+00:00</updated>
+    <published>2020-06-22T00:00:00+00:00</published>
+    <summary>comprendre la prise de décision sur la gestion des déchets radioactifs belges.</summary>
+    <content type="html">&lt;p&gt;Pour comprendre le débat actuel sur la gestion des déchets radioactifs en Belgique, il est utile de décrire l’évolution des controverses et des acteurs qui sont impliqués dans son “espace décisionnel”.&lt;/p&gt;
+
+&lt;p&gt;C’est ce que j’ai tenté de réaliser dans ma thèse de doctorat qui analyse de manière sociologique l’évolution des prises de décision liées à la gestion des déchets radioactifs en Belgique entre 1915 et 2015.&lt;/p&gt;
+
+&lt;p&gt;-&amp;gt; Télécharger le document :&lt;br /&gt;
+2015, Lits G., &lt;strong&gt;&lt;em&gt;&lt;a href=&quot;https://dial.uclouvain.be/pr/boreal/fr/object/boreal%3A158738/datastream/PDF_01/view&quot;&gt;La gestion des déchets hautement radioactifs belges à l’épreuve de la démocratie : contribution à une sociologie des activités décisionnelles&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;, Thèse de doctorat en sciences politiques et sociales, Université catholique de Louvain. 463 pages.&lt;/p&gt;
+
+&lt;h2&gt;Résumé&lt;/h2&gt;
+
+&lt;p&gt;Après avoir réalisé pendant une trentaine d’années des recherches scientifiques sur les capacités de l’argile dite « de Boom » à isoler de l’environnement les radioéléments contenus dans les déchets radioactifs provenant des centrales nucléaires belges, l’ONDRAF (Organisme national belge des déchets radioactifs et des matières fissiles enrichies) a décidé, en 2009, de fournir au gouvernement fédéral belge un « Plan déchets » dans lequel il recommande la solution technique de l’enfouissement des déchets radioactifs en couche géologique profonde comme solution définitive aux problèmes des déchets radioactifs.&lt;/p&gt;
+
+&lt;p&gt;Mon travail de doctorat a consisté en l’analyse compréhensive de l’espace de décision au sein duquel ce plan technique de gestion a été produit. Au moyen de méthodes de collecte de données qualitatives (observations, entretiens, analyse documentaire), j’ai pu analyser les différents « instruments de décision » mobilisés par les acteurs actifs dans cet espace décisionnel pour produire le Plan déchets. Parmi ces instruments (méthode d’analyse de risque, rapport d’analyse d’impacts environnementaux…), je me suis particulièrement intéressé à la systématisation, à partir des années 2000, du recours à des dispositifs ayant pour objectif la participation du public dans la construction des solutions techniques de gestion des déchets radioactifs ainsi qu’à leur usage dans le cas de la production du « Plan déchets » belge.&lt;/p&gt;
+
+&lt;p&gt;D’une manière générale, la littérature sociologique portant sur la gestion des déchets radioactifs en Europe a mis en évidence l’apparition d’un « tournant participatif » dans les modes de prises de décision liés à cette question. Selon les analyses réalisées à partir d’une perspective de sociologie des sciences, ce tournant participatif serait la manifestation d’une sortie de la logique technocratique qui prévalait jusque-là ainsi que le signe d’une « démocratisation » des problèmes techniques dans nos sociétés.&lt;/p&gt;
+
+&lt;p&gt;L’analyse empirique que j’ai réalisée me permet de nuancer cette conclusion de trois manières. &lt;/p&gt;
+
+&lt;p&gt;Premièrement, l’analyse historique de l’évolution des formes des espaces de décision nucléaire belges permet de mettre en évidence que, si le recours à des dispositifs participatifs est bien une nouveauté et que la participation du public à la prise de décision a bien augmenté, la logique technocratique des décisions (donnant un pouvoir important aux experts ainsi qu’au pouvoir exécutif, par opposition à un système donnant beaucoup de marge de manœuvre au pouvoir législatif) n’a, quant à elle, que très peu évolué. &lt;/p&gt;
+
+&lt;p&gt;Dans un deuxième temps, si l’on étudie les lieux où ces dispositifs participatifs ont été conçus, on observe que leur premier objectif est de résoudre ce que les ingénieurs nucléaires appellent le problème des « aspects sociaux » du nucléaire, c’est-à-dire l’émergence de contestations locales et nationales opposées aux développements industriels nucléaires. Les dispositifs participatifs ont alors principalement pour objectif, non pas l’accroissement de la légitimité des processus décisionnels, mais bien la construction de la confiance du public envers des acteurs actifs dans l’espace de décision. &lt;/p&gt;
+
+&lt;p&gt;Troisièmement, l’analyse de la mise en œuvre effective de la participation citoyenne par l’ONDRAF entre 2009 et 2012 permet d’affirmer que le recours aux outils participatifs ne peut se comprendre qu’au regard d’une autre innovation décisionnelle destinée à gérer le temps long des processus décisionnels nucléaires (près d’une centaine d’années pour la gestion des déchets) : la construction des prises de décision par étapes (&lt;em&gt;stepwise decision making&lt;/em&gt;). Dans ce nouveau schéma de décision, la participation citoyenne apparaît davantage comme une extension du domaine de la technocratie (qui a d’ailleurs recours à une nouvelle source d’expertise -celle des sciences humaines- pour résoudre le problème des aspects sociaux du nucléaire) que comme une démocratisation des décisions à caractère technique.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Analyse de « l’infodémie » de Covid-19 en Belgique francophone – Rapport de recherche vague 1 : 30 mars – 10 avril</title>
+    <link href="https://gregoirelits.eu/fr/2020-05-09-Analyse-de-linfodemie-de-covid-19-en-belgique-vague-1.html"/>
+    <id>https://gregoirelits.eu/fr/2020-05-09-Analyse-de-linfodemie-de-covid-19-en-belgique-vague-1.html</id>
+    <updated>2020-05-09T00:00:00+00:00</updated>
+    <published>2020-05-09T00:00:00+00:00</published>
+    <summary>l&#x27;ia donne une première impression de facticité.</summary>
+    <content type="html">&lt;p&gt;Le premier rapport de notre recherche sur l’infodémie de Covid-19 en Belgique est disponible : &lt;a href=&quot;https://osf.io/xvhk3/&quot;&gt;&lt;/a&gt;https://osf.io/preprints/socarxiv/wsuj3/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Titre complet du rapport :&lt;/strong&gt;&lt;br /&gt;
+Analyse de « l’infodémie » de Covid-19 en Belgique francophone. Perceptions du coronavirus, mésinformation, anxiété et confiance dans les sources d’information et le gouvernement en période de confinement en Belgique francophone.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Référence&lt;/strong&gt; : Lits, Grégoire, Louise-Amélie Cougnon, Alexandre Heeren, Bernard Hanseeuw, et Nathan Gurnet. 2020. &lt;em&gt;Analyse de « L’infodémie » de Covid-19 En Belgique Francophone&lt;/em&gt;. OSF. May 9. doi:&lt;a href=&quot;https://doi.org/10.31235/osf.io/wsuj3&quot;&gt;10.31235/osf.io/wsuj3&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Résumé&lt;/h2&gt;
+
+&lt;p&gt;Selon l’OMS, l’épidémie de Covid-19 est accompagnée d’une « infodémie », c’est-à-dire un flux énorme et incessant d’informations, vraies et fausses, difficiles à gérer pour les individus. Cette infodémie est un problème car elle peut générer une incompréhension du virus ainsi que de l’anxiété et empêcher l’adoption de pratiques efficaces de lutte contre la pandémie. Cette étude, réalisée entre le 30 mars et le 10 avril auprès de 1.817 Belges francophones par l’Observatoire de Recherche sur les Médias et le Journalisme (ORM – UCLouvain), mesure l’ampleur de l’infodémie en Belgique francophone.&lt;/p&gt;
+
+&lt;h2&gt;Conclusions principales :&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;La majorité de la population s’informe principalement par le canal des médias traditionnels (90%). Les sources d’information des médecins, en particulier, se distinguent de cette tendance : ils sont 87% à considérer les discussions avec d’autres professionnels de la santé comme une de leurs sources d’information principale.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Il existe également des différences importantes entre les générations du point de vue des sources d’information principales sur l’épidémie. Les moins de 26 ans sont les plus nombreux à combiner médias traditionnels et réseaux sociaux (24%). Ils sont 42% à considérer les réseaux sociaux comme une source principale (comparé à 24% en moyenne, pour la population belge francophone dans son ensemble, toutes classes d’âge confondues).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Un Belge francophone sur deux (50%) a partagé des informations relatives au coronavirus sur les réseaux sociaux. Proportionnellement, les plus nombreux à partager des informations sont les adultes entre 26-65 ans (62%, comparé à 35% pour les 16-25 ans et 38% pour les 66 ans et plus). Parmi les Belges qui ont partagé de l’information sur le coronavirus, 10,4% reconnaissent avoir partagé par inadvertance de fausses informations (ce qui représente environ 214.000 personnes).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Si les jeunes sont plus nombreux que les générations plus âgées à accorder le statut de source d’information principale aux réseaux sociaux, ils ne sont cependant pas le groupe le plus à risque dans l’infodémie. En effet, ils sont en proportion plus nombreux à avoir conscience d’avoir été exposés à de fausses informations (62%, comparé à 49% pour l’ensemble de la population et seulement 18% pour les 66 ans et plus). Les moins de 26 ans sont moins nombreux à partager de l’information sur le coronavirus et moins nombreux à s’être rendu compte d’avoir partagé de fausses informations. Ils sont également moins nombreux à croire la théorie selon laquelle le coronavirus est issu d’un laboratoire (8% contre 12% des 26 à 65 ans). S’ils Les moins de 26 ans s’informent davantage que les autres classes d’âge sur les réseaux sociaux, ils semblent en faire une utilisation plus critique et y partagent moins d’information relative à l’épidémie.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Le groupe le plus à risque dans l’infodémie est le même que celui le plus exposé à l’épidémie de Covid-19, il s’agit des 66 ans et plus. Quatre seniors sur dix (38%) ont partagé de l’information sur les réseaux sociaux et ils sont proportionnellement plus nombreux à reconnaitre avoir partagé des contenus faux sur les réseaux sociaux (25% des seniors ayant partagé de l’information reconnaissent avoir partagé une mauvaise information).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;De manière générale, les experts et professionnels de la santé sont la source d’information à laquelle les Belges francophones font le plus confiance au sujet du coronavirus (entre 93% et 83% de confiance, selon la source d’expertise). De manière surprenante, en Belgique francophone, le gouvernement fédéral est jugé comme une source d’information plus fiable (81% de confiance) que l’ensemble des médias traditionnels (entre 78% et 67% selon les médias). Les articles de blog (21%) et les influenceurs sur les réseaux sociaux (14%) sont les sources les moins créditées de confiance.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Au début de la période de confinement, plus d’un Belge sur deux (57%) pense qu’en cette période de crise nous devrions uniquement faire confiance aux experts pour prendre des décisions et que le gouvernement devrait simplement les appliquer sans les questionner. Seul un belge francophones sur cinq (19,7%) n’est pas d’accord avec cette affirmation. Le lancement d’une seconde vague d’enquête la semaine du 11 mai (qui coïncidera au démarrage de la deuxième étape du plan de déconfinement) permettra d’évaluer l’évolution de ce chiffre.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Après deux à trois semaines de confinement, un Belge sur quatre éprouve un niveau d’anxiété élevé ou très élevé. Cette proportion est la plus élevée chez les moins de 26 ans (un jeune sur trois). Le niveau d’anxiété est également plus élevé chez les femmes et chez les personnes qui perçoivent le virus comme une menace importante à leur intégrité physique ou psychologique. Inversement, une plus grande confiance dans les mesures prises par le gouvernement pour faire face à l’épidémie, ou la croyance selon laquelle le virus est le fruit d’un complot politique est associée à un plus faible niveau d’anxiété.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+</feed>
