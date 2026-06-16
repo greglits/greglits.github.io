@@ -1,7 +1,7 @@
 ---
 title: IA et dispersion des expertises
 date: 2025-06-17
-update: 2026-02-10
+update: 2026-06-15
 lang: fr
 description: Comment les outils génératifs redistribuent l'autorité épistémique.
 slug: 2025-06-17-IA-et-dispersion-des-expertises
@@ -17,9 +17,7 @@ Un des questionnements liés au développement des IA conversationnelles - qu'il
 Mise à jour du 15/06/2026 : c'est effectivement comme cela que le définit :
 
 > What is at stake is not some digital tool or system and its use, but how organizations continue to learn, build IP, differentiate, and thrive in a world where AI models can continuously absorb the expertise of humans and organizations and commoditize it. 
-
 > 'Satya Nadella, sur son blog le 14 juin 2026'
-
 > Source :  https://snscratchpad.com/posts/frontier-ecosystem/ 
 
 Aujourd'hui, si vous avez un problème juridique, vous pouvez consulter un avocat qui a travaillé de très nombreuses années pour construire une expertise particulière et qui vous aidera à résoudre le problème. 
