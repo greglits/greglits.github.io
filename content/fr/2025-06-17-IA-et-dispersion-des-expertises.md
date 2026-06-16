@@ -14,11 +14,11 @@ reading_time: 6
 ---
 Un des questionnements liés au développement des IA conversationnelles - qu'il serait sans doute plus opportun de définir comme des **banques centralisées de connaissances et d'expertises** - est qu'il contredit le mécanisme de dispersion des expertises au sein de la société. 
 
-Mise à jour du 15/06/2026 : c'est effectivement comme cela que le définit :
+Mise à jour du 15/06/2026 : c'est effectivement comme cela que le définit Satya Nadella, CEO de Microsoft :
 
 > What is at stake is not some digital tool or system and its use, but how organizations continue to learn, build IP, differentiate, and thrive in a world where AI models can continuously absorb the expertise of humans and organizations and commoditize it. 
-> 'Satya Nadella, sur son blog le 14 juin 2026'
-> Source :  https://snscratchpad.com/posts/frontier-ecosystem/ 
+
+> Satya Nadella, sur son blog le 14 juin 2026. Source :  [https://snscratchpad.com/posts/frontier-ecosystem/](https://snscratchpad.com/posts/frontier-ecosystem/)
 
 Aujourd'hui, si vous avez un problème juridique, vous pouvez consulter un avocat qui a travaillé de très nombreuses années pour construire une expertise particulière et qui vous aidera à résoudre le problème. 
 
