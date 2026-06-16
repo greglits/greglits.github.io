@@ -407,15 +407,13 @@ def build_index_and_blog(posts):
         write(os.path.join(OUT_DIRS[lang], "index.html"),
               render_page(lang, "index", "Grégoire Lits",
                           I18N[lang]["role"], index_main,
-                          og_type="website", is_index=True,
-                          translation_slug="index", updated=today))
+                          og_type="website", is_index=True, updated=today))
         # blog.html
         blog_main = fill(read(os.path.join(TEMPLATE_DIR, f"blog.{lang}.html")),
                          {"LISTE_POST": post_list_items(posts[lang], lang)})
         write(os.path.join(OUT_DIRS[lang], "blog.html"),
               render_page(lang, "blog", "Blog", I18N[lang]["role"],
-                          blog_main, og_type="website", is_index=True,
-                          translation_slug="blog"))
+                          blog_main, og_type="website", is_index=True))
     print("✅ index.html et blog.html générés (fr + en)")
 
 
