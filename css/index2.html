@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Grégoire Lits — Grégoire Lits</title>
+  <title>Grégoire Lits - Sociologie des médias et du numérique UCLouvain</title>
   <meta name="description" content="Sociologue des médias et du numérique · UCLouvain">
   <link rel="canonical" href="https://gregoirelits.eu/fr/index.html">
   <link rel="alternate" hreflang="fr" href="https://gregoirelits.eu/fr/index.html">
@@ -20,11 +20,35 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="fediverse:creator" content="@Glits@mamot.fr">
   
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
   <link rel="alternate" type="application/atom+xml" title="Flux RSS" href="https://gregoirelits.eu/atom-fr.xml">
-  <link rel="stylesheet" href="/css/tokens.css">
-  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="base.css">
+  <!-- Styles propres à l'accueil : élargissement + intro 2 colonnes.
+       À reporter dans base.css si réutilisé ailleurs. -->
+  <style>
+    /* Largeur "page" plus généreuse, limitée à l'accueil.
+       La largeur de lecture (--measure) reste la référence ailleurs. */
+    body { max-width: 52rem; }
+
+    /* Intro : texte à gauche, portrait à droite. */
+    .intro {
+      display: grid;
+      grid-template-columns: 1fr minmax(11rem, 14rem);
+      gap: var(--space-3);
+      align-items: start;
+    }
+    .intro h1 { margin-top: 0; }
+    .intro figure { margin: 0; }
+    .intro img { border-radius: 3px; }
+
+    /* Sous 640px : une seule colonne, photo sous le texte. */
+    @media (max-width: 640px) {
+      .intro { grid-template-columns: 1fr; }
+      .intro figure { max-width: 14rem; }
+    }
+  </style>
 </head>
 <body>
   <a class="skip" href="#main">Aller au contenu</a>
@@ -46,15 +70,19 @@
     <a href="/fr/about.html">À propos</a>
   </nav>
   <main id="main">
-    <!-- 1. Qui je suis -->
-    <h1>Bienvenue !</h1>
-    <p>
-      Je suis professeur de sociologie des médias et du numérique à l'Université catholique
-      de Louvain, où je dirige l'Observatoire de recherche sur les médias et
-      le journalisme. Mes recherches portent sur les dynamiques de circulation de l’information dans l’espace public, avec un intérêt particulier pour la désinformation, les représentations médiatiques des crises environnementales et sanitaires, ainsi que les facteurs qui façonnent la confiance du public dans la science et les médias d’information.
-    </p>
 
-    <!-- 2. Recherches en cours -->
+   <!-- 1. Qui je suis -->
+    <div class="intro">
+      <div>
+        <h1>Bienvenue !</h1>
+        <p>
+          Je suis professeur de sociologie des médias à l'Université catholique
+          de Louvain, où je dirige l'Observatoire de recherche sur les médias et
+          le journalisme. Mes travaux portent sur la circulation de l'information
+          dans l'espace public : désinformation, couverture médiatique des crises
+          environnementales et sanitaires, et confiance envers la science.
+        </p>
+		  <!-- 2. Recherches en cours -->
     <h2>Recherches en cours</h2>
     <p>
       Mes recherches actuelles explorent trois directions complémentaires :
@@ -63,6 +91,14 @@
     </p>
     <p><a href="/fr/recherche.html">Voir l'ensemble de mes recherches →</a></p>
 
+      </div>
+      <figure>
+        <img src="gregoire-lits.jpg" width="600" height="900"
+             alt="Portrait de Grégoire Lits" loading="lazy">
+      </figure>
+    </div>
+
+  
     <!-- 3. Blog / vulgarisation -->
     <h2>Derniers billets</h2>
     <ul class="list-bullets">
@@ -124,7 +160,7 @@
   </ul>
   <footer class="site-foot">
     <p><a href="/fr/about.html">À propos de ce site</a> · <a href="https://gregoirelits.eu/atom-fr.xml">RSS</a> · <a href="https://mamot.fr/@Glits" rel="me">Mastodon</a> · <a href="https://scholar.google.com/citations?user=EwVIe_4AAAAJ">Google Scholar</a></p>
-    <p>Dernière mise à jour : 2026-07-28.</p>
+    <p>Dernière mise à jour : 2026-06-20.</p>
   </footer>
 </body>
 </html>
