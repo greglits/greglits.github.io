@@ -100,9 +100,9 @@ h3 { font-size: var(--text-base); margin: var(--space-3) 0 var(--space-1); }
 /* — Texte courant — */
 p { margin: 0 0 var(--space-2); }
 
-a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+a { color: var(--accent-2); text-decoration: underline; text-underline-offset: 2px; }
 a:hover { text-decoration: none; }
-a:visited { color: var(--accent-2); }
+a:visited { color: var(--accent); }
 
 /* Lien d'évitement pour l'accessibilité clavier */
 .skip {
