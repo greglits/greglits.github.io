@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Grégoire Lits - Sociologie des médias et du numérique UCLouvain</title>
+  <title>Grégoire Lits — Grégoire Lits</title>
   <meta name="description" content="Sociologue des médias et du numérique · UCLouvain">
   <link rel="canonical" href="https://gregoirelits.eu/fr/index.html">
   <link rel="alternate" hreflang="fr" href="https://gregoirelits.eu/fr/index.html">
@@ -25,30 +25,6 @@
   <link rel="alternate" type="application/atom+xml" title="Flux RSS" href="https://gregoirelits.eu/atom-fr.xml">
   <link rel="stylesheet" href="/css/tokens.css">
   <link rel="stylesheet" href="/css/base.css">
-  <!-- Styles propres à l'accueil : élargissement + intro 2 colonnes.
-       À reporter dans base.css si réutilisé ailleurs. -->
-  <style>
-    /* Largeur "page" plus généreuse, limitée à l'accueil.
-       La largeur de lecture (--measure) reste la référence ailleurs. */
-    body { max-width: 52rem; }
-
-    /* Intro : texte à gauche, portrait à droite. */
-    .intro {
-      display: grid;
-      grid-template-columns: 1fr minmax(11rem, 14rem);
-      gap: var(--space-3);
-      align-items: start;
-    }
-    .intro h1 { margin-top: 0; }
-    .intro figure { margin: 0; }
-    .intro img { border-radius: 3px; }
-
-    /* Sous 640px : une seule colonne, photo sous le texte. */
-    @media (max-width: 640px) {
-      .intro { grid-template-columns: 1fr; }
-      .intro figure { max-width: 14rem; }
-    }
-  </style>
 </head>
 <body>
   <a class="skip" href="#main">Aller au contenu</a>
@@ -70,32 +46,25 @@
     <a href="/fr/about.html">À propos</a>
   </nav>
   <main id="main">
+    <!-- 1. Qui je suis -->
+    <h1>Bienvenue !</h1>
+    <p>
+      Je suis professeur de sociologie des médias et du numérique à l'Université catholique
+      de Louvain, où je dirige l'Observatoire de recherche sur les médias et
+      le journalisme. Mes recherches portent sur les dynamiques de circulation de l’information dans l’espace public, avec un intérêt particulier pour la désinformation, les représentations médiatiques des crises environnementales et sanitaires, ainsi que les facteurs qui façonnent la confiance du public dans la science et les médias d’information.
+    </p>
 
-   <!-- 1. Qui je suis -->
-    <div class="intro">
-      <div>
-        <p>
-          🏠 Bienvenue sur mon espace numérique personnel 🏠</p>
-        <p>Je suis professeur de sociologie des médias et du numérique à l'Université catholique
-          de Louvain où je dirige l'Observatoire de recherche sur les médias et
-          le journalisme (<a href="https://sites.uclouvain.be/orm">ORM</a>).</p>
-		<p>Mes recherches portent sur la circulation de l'information
-          dans l'espace public. Mes focus pour le moment : désinformation, couverture médiatique des crises
-          environnementales et sanitaires, confiance envers la science et les médias d'information, transition numérique de la presse locale.</p>
-		<p>Ce site me sert à partager différentes ressources et textes liés à mes cours et recherches. Il héberge également un  <a href="/fr/blog.html">carnet</a> sur lequel je publie de courtes réflexions sur la transition numérique en cours.</p>
-   
-		<p><a href="/fr/recherche.html">Voir l'ensemble de mes recherches →</a></p>
+    <!-- 2. Recherches en cours -->
+    <h2>Recherches en cours</h2>
+    <p>
+      Mes recherches actuelles explorent trois directions complémentaires :
+      la médiatisation des transitions écologiques, la vulnérabilité à la
+      désinformation, et la place de l'expertise dans le débat public.
+    </p>
+    <p><a href="/fr/recherche.html">Voir l'ensemble de mes recherches →</a></p>
 
-      </div>
-      <figure>
-        <img src="/files/optimized/gregoire-lits.jpg" width="600" height="900"
-             alt="Portrait de Grégoire Lits" loading="lazy">
-      </figure>
-    </div>
-
-  
-    <!-- 2. Blog / vulgarisation -->
-    <h2>Dernières notes du carnet</h2>
+    <!-- 3. Blog / vulgarisation -->
+    <h2>Derniers billets</h2>
     <ul class="list-bullets">
       <li>
         <a href="/fr/2026-01-26-recension-transition-en-tension.html">Recension de notre livre Transition en tension</a>
@@ -118,9 +87,9 @@
         <span class="meta"> — 15 mars 2024</span>
       </li>
     </ul>
-    <p><a href="/fr/blog.html">Toutes les notes →</a></p>
+    <p><a href="/fr/blog.html">Tous les billets →</a></p>
 
-    <!-- 3. Publications récentes -->
+    <!-- 4. Publications récentes -->
     <h2>Publications récentes</h2>
 	
 	<ul class="pubs">
@@ -155,7 +124,7 @@
   </ul>
   <footer class="site-foot">
     <p><a href="/fr/about.html">À propos de ce site</a> · <a href="https://gregoirelits.eu/atom-fr.xml">RSS</a> · <a href="https://mamot.fr/@Glits" rel="me">Mastodon</a> · <a href="https://scholar.google.com/citations?user=EwVIe_4AAAAJ">Google Scholar</a></p>
-    <p>Dernière mise à jour : 2026-06-20.</p>
+    <p>Dernière mise à jour : 2026-07-28.</p>
   </footer>
 </body>
 </html>
