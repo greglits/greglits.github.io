@@ -239,3 +239,20 @@ article.post figcaption {
       font-size: var(--text-sm);
       color: var(--ink-soft);
     }
+	
+    /* Intro : texte à gauche, portrait à droite. */
+    .intro {
+      display: grid;
+      grid-template-columns: 1fr minmax(11rem, 14rem);
+      gap: var(--space-3);
+      align-items: start;
+    }
+    .intro h1 { margin-top: 0; }
+    .intro figure { margin: 0; }
+    .intro img { border-radius: 3px; }
+
+    /* Sous 640px : une seule colonne, photo sous le texte. */
+    @media (max-width: 640px) {
+      .intro { grid-template-columns: 1fr; }
+      .intro figure { max-width: 14rem; }
+    }
