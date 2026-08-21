@@ -46,6 +46,6 @@
   --space-5: 4rem;
 
   /* — Mise en page — */
-  --measure: 46rem;        /* largeur de lecture max (~70 caractères) */
+  --measure: 50rem;        /* largeur de lecture max (~70 caractères) 46rem original */
   --pad: var(--space-3);   /* marge latérale */
 }
