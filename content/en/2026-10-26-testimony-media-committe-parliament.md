@@ -40,7 +40,7 @@ As my colleague Antonin, who specialises in this question, points out: AI does n
 
 - **Greater technological dependence.** The large American tech companies, which already controlled the distribution of news, now also control a growing share of the means of producing it (Simon, 2022). The printing presses were in Nivelles; the servers are in the United States.
 - **Media becoming invisible.** Journalistic content becomes a raw material, absorbed and rephrased by AI assistants, then detached from its source. 28% of people who see an AI summary rarely or never click through to the sources (Simon, Nielsen & Fletcher, 2025), while 45% of these assistants' answers about the news contain at least one significant issue (EBU & BBC, 2025).
-- **The industrialisation of disinformation.** It is now possible to produce anything and deliver it to anyone. The risk is not only that people believe what is false, but also that they stop believing what is true: this is known as the "liar's dividend". I see it as an extension of what I described, in an [earlier post](https://gregoirelits.eu/fr/2025-05-21-L-automatisation-d-un-media-comme-indice-de-facticite.html), as a form of automated doubt.
+- **The industrialisation of disinformation.** It is now possible to produce anything and deliver it to anyone. The risk is not only that people believe what is false, but also that they stop believing what is true: this is known as the "liar's dividend". I see it as an extension of what I described, in an [earlier post](https://gregoirelits.eu/en/2025-05-21-Automation-of-a-medium-as-a-cue-of-factitiousness), as a form of automated doubt.
 
 ## What can be done?
 
