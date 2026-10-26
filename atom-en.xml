@@ -4,7 +4,7 @@
   <link href="https://gregoirelits.eu/en/blog.html"/>
   <link rel="self" href="https://gregoirelits.eu/atom-en.xml"/>
   <id>https://gregoirelits.eu/en/</id>
-  <updated>2026-10-26T12:20:47.894580+00:00</updated>
+  <updated>2026-10-26T13:06:31.277196+00:00</updated>
   <author><name>Grégoire Lits</name></author>
   <entry>
     <title>Is our information ecosystem still robust? Notes from a parliamentary hearing</title>
@@ -21,6 +21,8 @@
 
 &lt;p&gt;The first problem is structural. Over the past thirty years, successive technological waves (the web, search engines, social media, mobile, and now AI) have placed &lt;strong&gt;infomediaries&lt;/strong&gt; between news organisations and their audiences. These intermediaries capture attention and, with it, advertising revenue. In Belgium, &lt;strong&gt;58.8% of digital advertising investment goes to international platforms&lt;/strong&gt; (UMA, 2026). What remains must be shared among publishers in a market that, unlike France or the United States, is too small for a few titles to thrive on subscriptions: only &lt;strong&gt;14% of Belgians pay for online news&lt;/strong&gt; (Picone, 2026).&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;https://gregoirelits.eu/files/optimized/infomediaire.png&quot; alt=&quot;Les infomédiaires captent la rente publicitaire&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;On top of this comes an unprecedented wave of concentration. Since the Rossel–IPM merger, approved with conditions on 3 July 2026, &lt;strong&gt;all six French-language daily newspapers are published or co-published by a single group&lt;/strong&gt;, which amounts to 94% of the daily print press according to RSF. The landscape remains diverse if you look further (the mapping carried out by C. Petit and Olivier Standaert for the ORM and CRISP counts 118 periodicals and around sixty digital-native outlets), but these are often non-profit, volunteer-run or niche organisations whose survival is far from guaranteed.&lt;/p&gt;
 
 &lt;p&gt;Finally, we should not forget that producing news takes media groups, but also journalists. Their working conditions are deteriorating: a large share of freelancers (between 25% and 50%, depending on the estimate), many of whom work for a single outlet; an income gap of around 30% compared with salaried staff; and 71.5% who report a heavier workload in recent years (AJP, 2023; Labourie, 2024).&lt;/p&gt;
@@ -36,7 +38,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Greater technological dependence.&lt;/strong&gt; The large American tech companies, which already controlled the distribution of news, now also control a growing share of the means of producing it (Simon, 2022). The printing presses were in Nivelles; the servers are in the United States.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Media becoming invisible.&lt;/strong&gt; Journalistic content becomes a raw material, absorbed and rephrased by AI assistants, then detached from its source. 28% of people who see an AI summary rarely or never click through to the sources (Simon, Nielsen &amp;amp; Fletcher, 2025), while 45% of these assistants&#x27; answers about the news contain at least one significant issue (EBU &amp;amp; BBC, 2025).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;The industrialisation of disinformation.&lt;/strong&gt; It is now possible to produce anything and deliver it to anyone. The risk is not only that people believe what is false, but also that they stop believing what is true: this is known as the &quot;liar&#x27;s dividend&quot;. I see it as an extension of what I described, in an &lt;a href=&quot;2025-05-21-L-automatisation-d-un-media-comme-indice-de-facticite.html&quot;&gt;earlier post&lt;/a&gt;, as a form of automated doubt.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The industrialisation of disinformation.&lt;/strong&gt; It is now possible to produce anything and deliver it to anyone. The risk is not only that people believe what is false, but also that they stop believing what is true: this is known as the &quot;liar&#x27;s dividend&quot;. I see it as an extension of what I described, in an &lt;a href=&quot;https://gregoirelits.eu/fr/2025-05-21-L-automatisation-d-un-media-comme-indice-de-facticite.html&quot;&gt;earlier post&lt;/a&gt;, as a form of automated doubt.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2&gt;What can be done?&lt;/h2&gt;

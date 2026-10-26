@@ -22,6 +22,8 @@ Our starting point fits in one sentence: **public-interest news has almost no vi
 
 The first problem is structural. Over the past thirty years, successive technological waves (the web, search engines, social media, mobile, and now AI) have placed **infomediaries** between news organisations and their audiences. These intermediaries capture attention and, with it, advertising revenue. In Belgium, **58.8% of digital advertising investment goes to international platforms** (UMA, 2026). What remains must be shared among publishers in a market that, unlike France or the United States, is too small for a few titles to thrive on subscriptions: only **14% of Belgians pay for online news** (Picone, 2026).
 
+![Les infomédiaires captent la rente publicitaire](https://gregoirelits.eu/files/optimized/infomediaire.png)
+
 On top of this comes an unprecedented wave of concentration. Since the Rossel–IPM merger, approved with conditions on 3 July 2026, **all six French-language daily newspapers are published or co-published by a single group**, which amounts to 94% of the daily print press according to RSF. The landscape remains diverse if you look further (the mapping carried out by C. Petit and Olivier Standaert for the ORM and CRISP counts 118 periodicals and around sixty digital-native outlets), but these are often non-profit, volunteer-run or niche organisations whose survival is far from guaranteed.
 
 Finally, we should not forget that producing news takes media groups, but also journalists. Their working conditions are deteriorating: a large share of freelancers (between 25% and 50%, depending on the estimate), many of whom work for a single outlet; an income gap of around 30% compared with salaried staff; and 71.5% who report a heavier workload in recent years (AJP, 2023; Labourie, 2024).
@@ -36,7 +38,7 @@ As my colleague Antonin, who specialises in this question, points out: AI does n
 
 - **Greater technological dependence.** The large American tech companies, which already controlled the distribution of news, now also control a growing share of the means of producing it (Simon, 2022). The printing presses were in Nivelles; the servers are in the United States.
 - **Media becoming invisible.** Journalistic content becomes a raw material, absorbed and rephrased by AI assistants, then detached from its source. 28% of people who see an AI summary rarely or never click through to the sources (Simon, Nielsen & Fletcher, 2025), while 45% of these assistants' answers about the news contain at least one significant issue (EBU & BBC, 2025).
-- **The industrialisation of disinformation.** It is now possible to produce anything and deliver it to anyone. The risk is not only that people believe what is false, but also that they stop believing what is true: this is known as the "liar's dividend". I see it as an extension of what I described, in an [earlier post](2025-05-21-L-automatisation-d-un-media-comme-indice-de-facticite.html), as a form of automated doubt.
+- **The industrialisation of disinformation.** It is now possible to produce anything and deliver it to anyone. The risk is not only that people believe what is false, but also that they stop believing what is true: this is known as the "liar's dividend". I see it as an extension of what I described, in an [earlier post](https://gregoirelits.eu/fr/2025-05-21-L-automatisation-d-un-media-comme-indice-de-facticite.html), as a form of automated doubt.
 
 ## What can be done?
 
