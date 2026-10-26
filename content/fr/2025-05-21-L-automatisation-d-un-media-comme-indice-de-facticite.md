@@ -5,7 +5,7 @@ update: 2025-05-21
 lang: fr
 description: l'ia donne une première impression de facticité.
 slug: 2025-05-21-L-automatisation-d-un-media-comme-indice-de-facticite
-translation: 
+translation: 2025-05-21-Automation-of-a-medium-as-a-cue-of-factitiousness
 tags:
   - IA
   - facticité
