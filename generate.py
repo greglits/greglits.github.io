@@ -44,6 +44,7 @@ LANGS         = ("fr", "en")
 I18N = {
     "fr": {
         "role":        "Sociologue des médias et du numérique · UCLouvain",
+        "home_title":  "Sociologie des médias et du numérique",
         "skip":        "Aller au contenu",
         "lang_nav":    "Langue",
         "nav_label":   "Navigation principale",
@@ -63,6 +64,7 @@ I18N = {
     },
     "en": {
         "role":        "Media and digital sociologist · UCLouvain",
+        "home_title":  "Media and digital sociology",
         "skip":        "Skip to content",
         "lang_nav":    "Language",
         "nav_label":   "Main navigation",
@@ -273,9 +275,12 @@ def nav_links(lang):
 
 
 def render_page(lang, slug, title, description, main, og_type,
-                translation_slug="", article_meta="", updated=None, is_index=False):
+                translation_slug="", article_meta="", updated=None, is_index=False,
+                page_title=None):
     """Assemble une page complète à partir de base.html."""
     t = I18N[lang]
+    # Titre de l'onglet : « Titre — Grégoire Lits » par défaut ; l'accueil fournit le sien.
+    page_title = page_title or f"{title} — Grégoire Lits"
     other = "en" if lang == "fr" else "fr"
     canonical = f"{SITE_URL}/{lang}/{slug}.html"
 
@@ -301,6 +306,7 @@ def render_page(lang, slug, title, description, main, og_type,
     return fill(base, {
         "LANG":            lang,
         "TITLE":           html.escape(title),
+        "PAGE_TITLE":      html.escape(page_title),
         "DESCRIPTION":     html.escape(description),
         "CANONICAL":       canonical,
         "HREFLANG":        "\n".join(hreflang),
@@ -408,7 +414,8 @@ def build_index_and_blog(posts):
               render_page(lang, "index", "Grégoire Lits",
                           I18N[lang]["role"], index_main,
                           og_type="website", is_index=True,
-                          translation_slug="index", updated=today))
+                          translation_slug="index", updated=today,
+                          page_title=f"Grégoire Lits — {I18N[lang]['home_title']}"))
         # blog.html
         blog_main = fill(read(os.path.join(TEMPLATE_DIR, f"blog.{lang}.html")),
                          {"LISTE_POST": post_list_items(posts[lang], lang)})
