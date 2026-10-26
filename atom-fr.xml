@@ -4,8 +4,76 @@
   <link href="https://gregoirelits.eu/fr/blog.html"/>
   <link rel="self" href="https://gregoirelits.eu/atom-fr.xml"/>
   <id>https://gregoirelits.eu/fr/</id>
-  <updated>2026-08-21T13:36:35.803443+00:00</updated>
+  <updated>2026-10-26T12:20:47.894580+00:00</updated>
   <author><name>Grégoire Lits</name></author>
+  <entry>
+    <title>Notre écosystème informationnel est-il encore robuste ? Retour sur une audition au Parlement</title>
+    <link href="https://gregoirelits.eu/fr/2026-10-26-Un-ecosysteme-informationnel-sous-pression.html"/>
+    <id>https://gregoirelits.eu/fr/2026-10-26-Un-ecosysteme-informationnel-sous-pression.html</id>
+    <updated>2026-10-26T00:00:00+00:00</updated>
+    <published>2026-10-26T00:00:00+00:00</published>
+    <summary>Notre écosystème informationnel est-il encore robuste ? Retour sur une audition au Parlement</summary>
+    <content type="html">&lt;p&gt;Le 20 octobre dernier, nous avons eu l&#x27;occasion, avec mon collègue de l&#x27;ORM Antonin Descampe d&#x27;être auditionné par la &lt;strong&gt;Commission des médias du Parlement de la Fédération Wallonie-Bruxelles&lt;/strong&gt;. L&#x27;exercice est particulier : il faut résumer en peu de temps des années de recherche, et surtout passer du constat à des propositions concrètes. Je reprends ici les grandes lignes de ce que nous avons présenté.&lt;/p&gt;
+
+&lt;p&gt;Notre point de départ tient en une phrase : &lt;strong&gt;l&#x27;information d&#x27;intérêt général n&#x27;a presque plus de modèle économique viable en Belgique francophone&lt;/strong&gt;, alors qu&#x27;un écosystème informationnel robuste est plus nécessaire que jamais pour la démocratie. Autrement dit, ce qui ressemble à une crise économique du secteur est en train de devenir une crise démocratique.&lt;/p&gt;
+
+&lt;h2&gt;Un petit marché sous pression&lt;/h2&gt;
+
+&lt;p&gt;Le premier problème est structurel. Depuis trente ans, les vagues technologiques successives (le web, les moteurs de recherche, les réseaux sociaux, le mobile, et aujourd&#x27;hui l&#x27;IA) ont installé entre les médias et leurs publics des &lt;strong&gt;infomédiaires&lt;/strong&gt; qui captent l&#x27;attention et, avec elle, la rente publicitaire. En Belgique, &lt;strong&gt;58,8 % des investissements publicitaires numériques vont aux plateformes internationales&lt;/strong&gt; (UMA, 2026). Ce qui reste doit être partagé entre les éditeurs d&#x27;un marché qui, contrairement à la France ou aux États-Unis, est trop petit pour permettre à quelques titres de « tirer leur épingle du jeu » par l&#x27;abonnement : seuls &lt;strong&gt;14 % des Belges paient pour de l&#x27;information en ligne&lt;/strong&gt; (Picone, 2026).&lt;/p&gt;
+
+&lt;p&gt;À cela s&#x27;ajoute un mouvement de concentration inédit. Depuis la fusion Rossel–IPM, validée sous conditions le 3 juillet 2026, &lt;strong&gt;les six quotidiens francophones sont édités ou coédités par un même groupe&lt;/strong&gt;, soit 94 % de la presse quotidienne écrite selon RSF. Le paysage reste diversifié si l&#x27;on regarde plus loin (la cartographie réalisée par C. Petit et Olivier Standaert pour l&#x27;ORM et le CRISP recense 118 périodiques et une soixantaine de pure players), mais il s&#x27;agit souvent de structures associatives, voire bénévoles ou de niche, dont la pérennité est loin d&#x27;être assurée.&lt;/p&gt;
+
+&lt;p&gt;Enfin, il ne faut pas oublier que pour produire de l&#x27;information, il faut des groupes de presse, mais aussi des journalistes. Or leurs conditions de travail se dégradent : une part importante d&#x27;indépendants (entre 25 et 50 % selon les estimations), dont beaucoup travaillent pour un seul média, un écart de revenus d&#x27;environ 30 % avec les salariés, et le sentiment d&#x27;une charge de travail accrue ces dernières années pour 71,5 % d&#x27;entre eux (AJP, 2023 ; Labourie, 2024).&lt;/p&gt;
+
+&lt;h2&gt;Des publics qui se détournent&lt;/h2&gt;
+
+&lt;p&gt;Du côté des publics, les tendances sont connues mais méritent d&#x27;être rappelées. En Belgique, 41 % des personnes s&#x27;informent via les réseaux sociaux (+4 points cette année, un chiffre en hausse continue), contre 49 % via la télévision et 18 % via la presse papier (deux chiffres qui diminuent d&#x27;année en année). Surtout, &lt;strong&gt;42 % des francophones évitent parfois ou souvent l&#x27;information&lt;/strong&gt;, et seuls &lt;strong&gt;28 % lui font confiance la plupart du temps&lt;/strong&gt; (Digital News Report, 2026). Ces chiffres ne sont pas une surprise pour qui suit ces questions, mais leur persistance devrait davantage inquiéter.&lt;/p&gt;
+
+&lt;h2&gt;L&#x27;IA comme accélérateur&lt;/h2&gt;
+
+&lt;p&gt;Comme le note mon collègue Antonin, spécialiste de cette questions : L&#x27;IA ne crée pas ces fragilités, elle les &lt;strong&gt;accélère&lt;/strong&gt;. Trois mécanismes nous semblent particulièrement importants :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Une dépendance technologique accrue.&lt;/strong&gt; Les grandes entreprises technologiques américaines, qui contrôlaient déjà la distribution de l&#x27;information, contrôlent désormais aussi une partie croissante de ses moyens de production (Simon, 2022). Les rotatives étaient à Nivelles, les serveurs sont aux États-Unis.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;L&#x27;invisibilisation des médias.&lt;/strong&gt; Le contenu journalistique devient une matière première, absorbée et reformulée par les assistants IA, puis détachée de sa source. 28 % des personnes qui voient un résumé IA cliquent rarement ou jamais vers les sources (Simon, Nielsen &amp;amp; Fletcher, 2025), alors que 45 % des réponses de ces assistants sur l&#x27;actualité contiennent au moins un problème significatif (EBU &amp;amp; BBC, 2025).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;L&#x27;industrialisation de la désinformation.&lt;/strong&gt; On peut désormais produire n&#x27;importe quoi et le faire parvenir à n&#x27;importe qui. Le risque n&#x27;est pas seulement de croire au faux, mais aussi de ne plus croire au vrai : c&#x27;est ce qu&#x27;on appelle le « dividende du menteur ». J&#x27;y vois un prolongement de ce que j&#x27;appelais, dans un &lt;a href=&quot;2025-05-21-L-automatisation-d-un-media-comme-indice-de-facticite.html&quot;&gt;billet précédent&lt;/a&gt;, une forme d&#x27;automatisation du doute.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Que faire ?&lt;/h2&gt;
+
+&lt;p&gt;Nous avons défendu l&#x27;idée qu&#x27;il faut viser un &lt;strong&gt;écosystème informationnel local robuste et résilient&lt;/strong&gt;, adapté au « petit marché » de la Belgique francophone. C&#x27;est une question économique, mais pas seulement. Concrètement, plusieurs pistes ont été proposées :&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Objectiver.&lt;/strong&gt; On manque cruellement de données consolidées sur l&#x27;emploi, les statuts, les revenus des journalistes ou l&#x27;efficacité des aides. Un outil de gouvernance des politiques publiques dans les médias permettrait d&#x27;en suivre l&#x27;évolution.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Repenser (et augmenter) les financements&lt;/strong&gt;, avec des aides différenciées entre petites structures et grands groupes, et un accompagnement responsable du déclin du papier.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stabiliser les revenus&lt;/strong&gt;, en facilitant les abonnements et en réorientant la publicité publique vers les acteurs locaux.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Favoriser la « coopétition »&lt;/strong&gt; : mutualiser certaines infrastructures (outils d&#x27;IA, plateformes de diffusion) et négocier ensemble face aux acteurs de l&#x27;IA. Le service public pourrait y jouer un rôle d&#x27;infrastructure de robustesse plutôt que de simple concurrent.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Protéger la profession&lt;/strong&gt;, notamment en luttant contre les faux statuts d&#x27;indépendant et en conditionnant les aides publiques à des standards d&#x27;emploi et en modifiant les modalités de taxation des droits d&#x27;auteur des journalistes. &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Éduquer les publics&lt;/strong&gt; aux médias et à la littératie algorithmique.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Appliquer réellement le cadre européen&lt;/strong&gt; (EMFA, DSA, DMA, AI Act). Leur portée dépendra moins de leur adoption que des moyens d&#x27;enquête et d&#x27;accès aux données qui accompagneront leur mise en œuvre.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Aucune de ces mesures ne suffira seule, et elles relèvent de niveaux de pouvoir différents (Fédération Wallonie-Bruxelles, Régions, fédéral, Union européenne). C&#x27;est peut-être là la principale difficulté (comme souvent en Belgique) : le problème est systémique, alors que les leviers sont dispersés.&lt;/p&gt;
+
+&lt;h2&gt;Et maintenant ?&lt;/h2&gt;
+
+&lt;p&gt;Ce n&#x27;est pas la première fois que des chercheurs alertent sur ces questions, et ce ne sera pas la dernière. Mais nous avons le sentiment que le moment est particulier : la concentration de la presse, la fin annoncée de certaines aides et l&#x27;arrivée massive de l&#x27;IA dans la chaîne de production de l&#x27;information se combinent en très peu de temps.&lt;/p&gt;
+
+&lt;p&gt;C&#x27;est aussi pour cela que nous préparons, à l&#x27;ORM, un site grand public qui rassemblera les résultats de nos enquêtes sur les pratiques d&#x27;information, la défiance envers les médias, la diversité des rédactions et la cartographie de la presse en Belgique francophone. J&#x27;en reparlerai ici prochainement.&lt;/p&gt;
+
+&lt;p&gt;En résumé : &lt;strong&gt;un écosystème informationnel robuste ne se maintient pas tout seul, il se construit, et cela demande une action publique urgente et coordonnée.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;em&gt;Les slides de l&#x27;audition et la liste complète des références sont disponibles sur demande.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Lien vers l&#x27;enregistrement de notre présentation (sur &lt;a href=&quot;https://www.youtube.com/watch?v=qxrHF9yx-6M&amp;list=PLsKGapS9VLZKgjW-mpcxJ6-Ip_o_rMqDE&amp;index=1&quot;&gt;Youtube&lt;/a&gt; )&lt;/p&gt;
+
+&lt;p&gt;Références principales : Picone, Digital News Report 2026 (Reuters Institute) ; Petit &amp;amp; Standaert, &lt;em&gt;Cartographie des médias d&#x27;information en Belgique francophone&lt;/em&gt; (CRISP, 2025) ; RSF (2026) ; UMA, via X. Degraux (2026) ; EBU &amp;amp; BBC, &lt;em&gt;News Integrity in AI Assistants&lt;/em&gt; (2025) ; Simon, Nielsen &amp;amp; Fletcher, &lt;em&gt;Generative AI and News Report&lt;/em&gt; (2025).&lt;/p&gt;
+
+&lt;p&gt;#médias #journalisme #IA #démocratie #Belgique&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Recension de notre livre Transition en tension</title>
     <link href="https://gregoirelits.eu/fr/2026-01-26-recension-transition-en-tension.html"/>
