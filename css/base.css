@@ -196,6 +196,8 @@ article.post .post-updated {
   color: var(--ink-soft);
 }
 article.post figure { margin: var(--space-3) 0; }
+article.post img { display: block; margin-inline: auto; }
+article.post figcaption { text-align: center; }
 article.post figcaption {
   font-size: var(--text-sm);
   color: var(--ink-soft);
