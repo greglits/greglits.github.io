@@ -272,11 +272,67 @@ body.wall #cb-heard{font-size:18px}
 </div>
 <div id="modal" hidden><div class="sheet" id="sheet"></div></div>
 
+<style>
+/* Apprentissage : carte de conseils (parchemin) en haut à gauche, main qui montre où cliquer */
+#tuto{position:fixed;left:12px;user-select:none;-webkit-user-select:none;top:calc(var(--topH) + 10px);width:min(340px,calc(100% - 24px));z-index:45;background:var(--paper);color:var(--ink);border-radius:3px;
+  box-shadow:0 12px 34px rgba(0,0,0,.55),inset 0 0 0 1px #c9b689,inset 0 0 0 5px var(--paper),inset 0 0 0 6px #cdb98d;padding:13px 16px 14px;transition:box-shadow .3s}
+#tuto.ok{box-shadow:0 12px 34px rgba(0,0,0,.55),inset 0 0 0 1px #6f9a45,inset 0 0 0 5px var(--paper),inset 0 0 0 6px #93c26d}
+#tuto .eyebrow{color:var(--ink-soft);font-size:11.5px}
+#tuto h3{font-family:var(--display);font-weight:400;font-size:24px;margin:2px 0 6px;color:#6b2b23;line-height:1.1}
+#tuto p{margin:0 0 8px;font-size:15px;line-height:1.45}
+#tuto p.tt-do{font-size:17px;font-weight:600;line-height:1.35;min-height:2.7em}
+.tt-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.tt-v{background:none;border:1px solid var(--ink-rule);border-radius:3px;cursor:pointer;font-size:15px;line-height:1;padding:3px 6px;opacity:.6}
+.tt-v.on{opacity:1;background:#e6d6b2}
+.tt-bar{height:4px;background:#d8c69e;border-radius:2px;overflow:hidden;margin:6px 0 4px}.tt-bar b{display:block;height:100%;background:#6b2b23;transition:width .4s}
+.tt-acts{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+#tuto .btn{background:#e6d6b2;color:var(--ink);border-color:var(--ink-rule);font-size:13px;padding:5px 10px}
+#tuto .btn:hover{background:#dccaa1}
+#tuto .btn.primary{background:#6b2b23;color:#f6ead0;border-color:#4e1d17;font-size:15px;padding:8px 16px}
+#thand{position:fixed;left:0;top:0;z-index:80;pointer-events:none;will-change:transform}
+#thand .th-rot{position:absolute;left:0;top:0;transform-origin:0 0}
+#thand svg{position:absolute;left:-17px;top:-3px;filter:drop-shadow(0 4px 5px rgba(0,0,0,.55));animation:thtap 1.1s ease-in-out infinite}
+#thand .th-ring{position:absolute;left:-14px;top:-14px;width:28px;height:28px;border-radius:50%;border:3px solid #f0cd6e;animation:thring 1.1s ease-out infinite}
+#thand.foe .th-ring{border-color:#ff7a6b}
+#thand .th-lab{position:absolute;left:30px;top:44px;white-space:nowrap;font-family:var(--label);font-size:13px;letter-spacing:.04em;color:#21190e;background:#f0cd6e;border-radius:10px;padding:2px 9px;box-shadow:0 2px 6px rgba(0,0,0,.45)}
+#thand .th-lab:empty{display:none}
+#thand.drag svg{animation:thdrag 1.8s ease-in-out infinite}#thand.drag .th-ring{display:none}
+#thand.far svg{animation:thfar 1s ease-in-out infinite}#thand.far .th-ring{display:none}
+@keyframes thtap{0%,100%{transform:translate(8px,14px)}45%{transform:translate(0,0) scale(.94)}60%{transform:translate(0,0) scale(.94)}}
+@keyframes thring{0%,40%{transform:scale(.3);opacity:0}50%{opacity:1}100%{transform:scale(1.7);opacity:0}}
+@keyframes thdrag{0%{transform:translate(-70px,-40px);opacity:0}12%{opacity:1}75%{transform:translate(60px,34px);opacity:1}100%{transform:translate(60px,34px);opacity:0}}
+@keyframes thfar{0%,100%{transform:translate(0,14px)}50%{transform:translate(0,2px)}}
+.btn.tuto{border-color:var(--gold);color:var(--gold)}
+@media (prefers-reduced-motion:reduce){#thand svg,#thand .th-ring{animation:none}}
+@media (max-width:820px){#tuto{width:calc(100% - 180px);min-width:220px;padding:10px 12px}#tuto p.tt-do{font-size:15px}#tuto h3{font-size:20px}}
+#tstory{position:fixed;inset:0;z-index:58;display:flex;align-items:flex-end;justify-content:center;padding:24px 16px calc(40px + env(safe-area-inset-bottom,0px));
+  background:radial-gradient(ellipse at 50% 38%,rgba(15,13,10,0) 0%,rgba(15,13,10,.35) 45%,rgba(15,13,10,.88) 100%)}
+.st-card{position:relative;width:min(640px,100%);background:var(--paper);color:var(--ink);border-radius:3px;padding:24px 30px 20px 128px;min-height:200px;
+  box-shadow:0 20px 60px rgba(0,0,0,.65),inset 0 0 0 1px #c9b689,inset 0 0 0 7px var(--paper),inset 0 0 0 8px #cdb98d}
+.st-card svg{position:absolute;left:26px;top:26px;width:80px;height:92px;filter:drop-shadow(0 3px 4px rgba(0,0,0,.35))}
+.st-card .eyebrow{color:#8a3b2f;letter-spacing:.16em;font-size:12px}
+.st-card h2{font-family:var(--display);font-weight:400;font-size:34px;margin:2px 0 8px;line-height:1.05;color:#3b1d16}
+.st-card p{font-size:17px;line-height:1.55;margin:0 0 14px;max-width:56ch}
+.st-card p::first-letter{font-family:var(--display);font-size:2.3em;float:left;line-height:.9;margin:4px 6px 0 0;color:#6b2b23}
+.st-anim{animation:stin .6s ease-out}
+@keyframes stin{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.st-foot{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.st-dots{display:flex;gap:6px;margin-right:auto}.st-dots i{width:8px;height:8px;border-radius:50%;background:#d0bd92}.st-dots i.on{background:#6b2b23}
+.st-card .btn{background:#e6d6b2;color:var(--ink);border-color:var(--ink-rule)}
+.st-card .btn.primary{background:#6b2b23;color:#f6ead0;border-color:#4e1d17;font-size:16px;padding:9px 18px}
+.st-card .tt-v{position:absolute;right:14px;top:14px}
+@media (max-width:620px){.st-card{padding:18px 18px 16px}.st-card svg{position:static;width:54px;height:62px;float:right;margin:0 0 6px 10px}.st-card h2{font-size:27px}.st-card p{font-size:15.5px}}
+@media (prefers-reduced-motion:reduce){.st-anim{animation:none}}
+</style>
+<div id="tstory" hidden></div>
+<section id="tuto" hidden aria-live="polite"></section>
+<div id="thand" hidden aria-hidden="true"><div class="th-rot"><div class="th-ring"></div><svg width="44" height="56" viewBox="0 0 44 56"><path d="M17 3c2.5 0 4.5 2 4.5 4.5V24l1.2-.1v-3.5c0-2.3 1.9-4.1 4.2-4.1s4.1 1.8 4.1 4.1v3.9c.6-1.6 2.1-2.7 3.9-2.7 2.3 0 4.1 1.8 4.1 4.1v2.6c.6-1 1.7-1.6 3-1.6 1.9 0 3.3 1.5 3.3 3.4V40c0 8-6.4 14.5-14.4 14.5h-6c-4.6 0-8.8-2.3-11.3-6.1L3.2 36.5c-1.3-1.9-.8-4.5 1.1-5.8 1.8-1.2 4.2-.9 5.6.7l2.6 3V7.5C12.5 5 14.5 3 17 3z" fill="#fff4dc" stroke="#2b2219" stroke-width="2.3" stroke-linejoin="round"/><path d="M22.7 24v7M31 24v7M39.2 28.5v5" stroke="#2b2219" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg></div><span class="th-lab"></span></div>
+
 <div id="title">
   <div class="t-card">
     <div class="eyebrow">LA GUERRE DES DEUX COURONNES</div>
     <h1>Arenseuille <em>contre</em> Cartacan</h1>
-    <p>Le roi <b>Élior</b> d’Arenseuille veut soumettre le royaume voisin. Mais à l’est, derrière les montagnes, <b>Haz-kan</b> de Cartacan prépare la même guerre. Prenez ses camps un à un, franchissez les cols, assiégez sa citadelle et abattez-le avant qu’il n’abatte votre château.</p>
+    <p>Le roi <b>Gabor</b> d’Arenseuille veut soumettre le royaume voisin. Mais à l’est, derrière les montagnes, <b>Haz-kan</b> de Cartacan prépare la même guerre. Prenez ses camps un à un, franchissez les cols, assiégez sa citadelle et abattez-le avant qu’il n’abatte votre château.</p>
     <p>Chaque régiment se commande séparément : archers sur la colline, piquiers au gué, chevaliers sur le flanc. Le temps s’écoule sans pause, l’ennemi frappe quand il veut, souvent la nuit.</p>
     <div class="opts">
       <label>DIFFICULTÉ</label>
@@ -288,6 +344,7 @@ body.wall #cb-heard{font-size:18px}
     </div>
     <div class="t-acts">
       <button class="btn primary" id="t-new">Nouvelle campagne</button>
+      <button class="btn tuto" id="t-tuto" title="Dix minutes pour apprendre à jouer, avec une main qui montre où cliquer">Apprentissage (10 min)</button>
       <button class="btn" id="t-load" hidden>Reprendre la campagne</button>
       <button class="btn" id="t-online">Jouer en ligne à deux</button>
       <button class="btn" id="t-help">Règles du jeu</button>
@@ -1038,7 +1095,7 @@ function purgeArmies(){
   if(sel&&sel.kind==='regs'){sel.ids=sel.ids.filter(id=>armyById(id));if(!sel.ids.length)setSel(null)}
 }
 function eliorWounded(){state.elior={status:'wounded',until:state.time+24*8};
-  log("Élior est grièvement blessé ! Ses gardes le ramènent au château. Il ne pourra commander avant huit jours.",'bad');toast("Élior est blessé !",'war')}
+  log("Gabor est grièvement blessé ! Ses gardes le ramènent au château. Il ne pourra commander avant huit jours.",'bad');toast("Gabor est blessé !",'war')}
 
 /* =========================================================================
    SIMULATION
@@ -1149,8 +1206,8 @@ function daily(){
   }
   for(const t of state.structures){if(t.type!=='infirm'||!stDone(t))continue;for(const a of state.armies)if(a.fac===t.owner&&cheb(a,t)<=3&&now-a.combatT>6&&a.routUntil<=now&&count(a.units)){a.morale=Math.min(100,a.morale+10);const n=count(a.units),mx=a.max||n;if(n<mx)a.units[a.k]+=Math.min(mx-n,Math.ceil(mx*.03))}}
   purgeArmies();
-  if(state.elior.status==='wounded'&&state.time>=state.elior.until){state.elior={status:'castle',until:0};log("Élior est rétabli et attend au château. Sélectionnez un régiment au château pour qu’il en prenne la tête.",'good')}
-  hzDaily();luckDaily();if(state.merchant&&state.merchant.until<=state.time)state.merchant=null;aiRecruit();autosave();
+  if(state.elior.status==='wounded'&&state.time>=state.elior.until){state.elior={status:'castle',until:0};log("Gabor est rétabli et attend au château. Sélectionnez un régiment au château pour qu’il en prenne la tête.",'good')}
+  if(!state.tuto){hzDaily();luckDaily()}if(state.merchant&&state.merchant.until<=state.time)state.merchant=null;aiRecruit();autosave();
 }
 function monthly(){
   for(const fac of['A','C']){
@@ -1186,6 +1243,7 @@ function aiRecruit(){
 }
 function aiThink(){
   if(state.preview||state.over||(NET.on&&NET.mode==='duel'))return;
+  if(state.tuto){purgeArmies();return}
   const D=DIFF[state.diff],day=dayNum(),now=state.time;
   for(const g of state.aiGroups)g.members=g.members.filter(id=>{const a=armyById(id);return a&&count(a.units)&&a.group===g.id&&a.routUntil<=now});
   state.aiGroups=state.aiGroups.filter(g=>g.members.length);
@@ -1409,14 +1467,14 @@ function updateVision(){
 }
 function armyVisible(a){
   if(a.aboard)return false;
-  if(a.fac===ME||state.preview)return true;if(!vis)return false;
+  if(a.fac===ME||state.preview)return true;if(!vis)return false;if(a.tuto&&state.tuto)return true;
   if(a.ambush&&!nearFac(ME,a,1))return false;
   if(state.time-a.combatT<1.5&&state.armies.some(o=>o.fac===ME&&cheb(o,a)<=3))return true;
   if(!vis[idx(a.x,a.y)])return false;
   if(terr(a.x,a.y)===3)return state.armies.some(o=>o.fac===ME&&cheb(o,a)<=2)||state.settlements.some(s=>s.owner===ME&&cheb(s,a)<=2)||state.structures.some(t=>t.owner===ME&&t.type==='guet'&&stDone(t)&&cheb(t,a)<=9)||state.armies.some(o=>o.fac===ME&&o.k==='eclair'&&count(o.units)&&cheb(o,a)<=6);
   return true;
 }
-function alarm(msg,pos){if(!state||state.preview)return;toastLocal(msg,'war');if(NET.on&&NET.role==='host'&&NET.mode==='alliance'){NET.alq=NET.alq||[];NET.alq.push(String(msg))}if(autoPause&&!NET.on&&state.time-state.lastAlert>2)setSpeed(0);state.lastAlert=state.time}
+function alarm(msg,pos){if(!state||state.preview)return;toastLocal(msg,'war');if(NET.on&&NET.role==='host'&&NET.mode==='alliance'){NET.alq=NET.alq||[];NET.alq.push(String(msg))}if(autoPause&&!NET.on&&!state.tuto&&state.time-state.lastAlert>2)setSpeed(0);state.lastAlert=state.time}
 function alerts(){
   for(const g of state.aiGroups){if(g.mode!=='march'&&g.mode!=='wait')continue;const s=setById(g.target);if(!s||s.owner!=='A'||g.alerted===g.target)continue;
     const M=g.members.map(armyById).filter(Boolean);const seen=M.find(armyVisible);if(!seen)continue;g.alerted=g.target;
@@ -1436,7 +1494,7 @@ function loadState(json){
   o.explored=Uint8Array.from(String(o.explored),c=>c==='1'?1:0);if(!o.decrees)o.decrees={A:{},C:{}};if(!o.hazards)o.hazards=[];if(!o.ash)o.ash={};
   state=o;fx=[];scars.clear();rebuildIndex();hzRebuild();vis=new Uint8Array(N*N);visionDirty=true;updateVision();chunkCache.clear();overview=null;buildMinimapBase();
 }
-function autosave(){if(!state||state.preview||state.over||NET.role==='guest')return;try{localStorage.setItem(SAVE_KEY,serialize())}catch(e){}}
+function autosave(){if(!state||state.preview||state.over||state.tuto||NET.role==='guest')return;try{localStorage.setItem(SAVE_KEY,serialize())}catch(e){}}
 function hasSave(){try{return!!localStorage.getItem(SAVE_KEY)}catch(e){return false}}
 
 /* =========================================================================
@@ -2206,6 +2264,7 @@ function render(tm){
     if(l.mor!=null&&z>=.62){const r=l.mor/100;ctx.fillStyle='rgba(0,0,0,.6)';ctx.fillRect(sx-w/2,sy+h/2,w,3);ctx.fillStyle=r<.25?'#de5c50':r<.5?'#e3a842':'#93c26d';ctx.fillRect(sx-w/2,sy+h/2,w*r,3)}}
   if(WALL&&running&&!state.preview){const[tx,ty]=hereTile();const[wx,wy]=tileWorld(tx,ty);const[cx,cy]=w2s(wx,wy);const hw=TW/2*z,hh=TH/2*z;ctx.save();ctx.strokeStyle='rgba(240,205,110,.95)';ctx.lineWidth=2.5;ctx.beginPath();ctx.moveTo(cx,cy-hh);ctx.lineTo(cx+hw,cy);ctx.lineTo(cx,cy+hh);ctx.lineTo(cx-hw,cy);ctx.closePath();ctx.stroke();
     ctx.lineWidth=2;ctx.beginPath();for(const[dx,dy]of[[1,0],[-1,0],[0,1],[0,-1]]){ctx.moveTo(cx+dx*(hw+6),cy+dy*(hh+6));ctx.lineTo(cx+dx*(hw+22),cy+dy*(hh+22))}ctx.stroke();ctx.font='600 15px "Alegreya Sans SC", sans-serif';ctx.textAlign='center';ctx.lineWidth=3;ctx.strokeStyle='rgba(20,16,12,.8)';ctx.strokeText('ici',cx,cy-hh-28);ctx.fillStyle='#f0cd6e';ctx.fillText('ici',cx,cy-hh-28);ctx.restore()}
+  tutoDraw(tm);
   if(selBox){const x0=Math.min(selBox.x0,selBox.x1),y0=Math.min(selBox.y0,selBox.y1),w=Math.abs(selBox.x1-selBox.x0),h=Math.abs(selBox.y1-selBox.y0);ctx.fillStyle='rgba(240,205,110,.1)';ctx.fillRect(x0,y0,w,h);ctx.strokeStyle='rgba(240,205,110,.9)';ctx.lineWidth=1;ctx.strokeRect(x0+.5,y0+.5,w,h)}
 }
 
@@ -2286,14 +2345,14 @@ function renderPanel(){
 function regPanel(a){
   const t=terr(a.x,a.y),k=a.k,u=U[k],mine=a.fac===ME,now=state.time;const sw=strongWeak(k);
   let h=`<div class="pstack"><div><div class="eyebrow fac-${a.fac}">RÉGIMENT ${a.fac==='A'?'D’ARENSEUILLE':'DE CARTACAN'} · ${u.n.toUpperCase()}</div><h2>${esc(a.name)}</h2>
-    <p class="note">${a.elior?'<b>Le roi Élior chevauche avec eux</b> : +15 % de force, +10 % aux régiments à 3 cases. ':''}${esc(regState(a))} — ${TERR[t].n.toLowerCase()}, ${esc(nearestPlace(a.x,a.y))}.</p></div>`;
+    <p class="note">${a.elior?'<b>Le roi Gabor chevauche avec eux</b> : +15 % de force, +10 % aux régiments à 3 cases. ':''}${esc(regState(a))} — ${TERR[t].n.toLowerCase()}, ${esc(nearestPlace(a.x,a.y))}.</p></div>`;
   const swH=`<p class="note">Efficace contre : <b>${sw.strong.join(', ')||'—'}</b>. Vulnérable à : <b>${sw.weak.join(', ')||'—'}</b>.</p>`;
   if(!mine){h+=`<dl class="kv"><dt>EFFECTIF</dt><dd>${isShip(k)?`${count(a.units)} navire${count(a.units)>1?'s':''}`:`≈ ${fmt(Math.max(10,Math.round(count(a.units)/10)*10))} hommes`}</dd><dt>MORAL</dt><dd>${a.routUntil>now?'en déroute':a.morale>60?'ferme':a.morale>35?'ébranlé':'chancelant'}</dd>${u.range?`<dt>PORTÉE</dt><dd>${rangeOf(a,a.x,a.y)} cases</dd>`:''}</dl><p class="note">${esc(u.d)}</p>${swH}`;
     if(!selectedOwn().length)h+=`<p class="note">Sélectionnez vos régiments puis clic droit sur celui-ci pour l’attaquer.</p>`;return h+'</div>'}
   const pct=terrPct(k,a.x,a.y);
   if(isShip(k)){const C=cargoOf(a),used=C.reduce((t,p)=>t+placesOf(p),0),coast=C.length&&C.some(p=>landTiles(a,p).length);
     h+=`<dl class="kv"><dt>FLOTTE</dt><dd>${count(a.units)} navire${count(a.units)>1?'s':''} · ${fmt(count(a.units)*u.men)} marins</dd><dt>MORAL</dt><dd>${Math.round(a.morale)} / 100${bar(a.morale,100)}</dd><dt>À BORD</dt><dd>${used} / ${capOf(a)} places${bar(used,Math.max(1,capOf(a)))}</dd><dt>VITESSE</dt><dd>${(armySpeed(a)*24).toFixed(1)} cases / jour${isNight()?' (nuit)':''}</dd>${u.range?`<dt>PORTÉE</dt><dd>2 cases</dd>`:''}</dl>
-      ${C.length?`<div class="glist">${C.map(p=>`<div class="grow"><span class="gname">${esc(p.name)}${p.elior?' · Élior':''}</span><span class="gn">${fmt(count(p.units))}</span><span class="gst">${esc(U[p.k].s)} · ${placesOf(p)} places</span><span class="gm">${bar(p.morale,100)}</span></div>`).join('')}</div>`:''}
+      ${C.length?`<div class="glist">${C.map(p=>`<div class="grow"><span class="gname">${esc(p.name)}${p.elior?' · Gabor':''}</span><span class="gn">${fmt(count(p.units))}</span><span class="gst">${esc(U[p.k].s)} · ${placesOf(p)} places</span><span class="gm">${bar(p.morale,100)}</span></div>`).join('')}</div>`:''}
       <p class="note">${esc(u.d)}</p><div class="acts"><button class="btn ${moveMode?'on':''}" data-act="move">${moveMode?'Choisissez la destination…':'Naviguer'}</button>${a.path.length||a.order?`<button class="btn" data-act="stop">Jeter l’ancre</button>`:''}${C.length?`<button class="btn primary" data-act="unload" ${coast?'':'disabled title="Approchez la flotte d’une plage ou d’un de vos ports"'}>Débarquer les troupes</button>`:''}${count(a.units)>1?`<button class="btn" data-act="split">Diviser</button>`:''}</div>
       <p class="note">Pour embarquer : sélectionnez des régiments à terre, puis clic droit sur cette flotte ; ils marchent jusqu’au rivage et montent à bord. Clic droit sur la mer : naviguer. ${u.range?'Sur un navire ou une troupe ennemie de la côte : attaquer.':'Escortez les nefs : elles ne se défendent presque pas.'}</p>`;
     return h+'</div>'}
@@ -2313,9 +2372,9 @@ function regPanel(a){
   if(s&&s.owner===ME&&!isShip(k))acts.push(`<button class="btn" data-act="garrison">Entrer en garnison</button>`);
   if(count(a.units)>1)acts.push(`<button class="btn" data-act="split">Diviser</button>`);
   for(const o of state.armies)if(o!==a&&o.fac===ME&&o.k===a.k&&cheb(o,a)<=1&&count(o.units)&&o.routUntil<=now)acts.push(`<button class="btn" data-act="merge" data-id="${o.id}">Fusionner avec ${esc(o.name)}</button>`);
-  const e=ME==='A'&&eliorReg();if(e&&e!==a&&cheb(e,a)<=1)acts.push(`<button class="btn" data-act="ejoin">Élior rejoint ce régiment</button>`);
+  const e=ME==='A'&&eliorReg();if(e&&e!==a&&cheb(e,a)<=1)acts.push(`<button class="btn" data-act="ejoin">Gabor rejoint ce régiment</button>`);
   const ac=state.settlements.find(q=>q.owner===ME&&q.type==='chateau');
-  if(ME==='A'&&!a.elior&&state.elior.status==='castle'&&ac&&a.x===ac.x&&a.y===ac.y)acts.push(`<button class="btn primary" data-act="etake">Élior prend le commandement</button>`);
+  if(ME==='A'&&!a.elior&&state.elior.status==='castle'&&ac&&a.x===ac.x&&a.y===ac.y)acts.push(`<button class="btn primary" data-act="etake">Gabor prend le commandement</button>`);
   h+=`<div class="acts">${acts.join('')}</div>`+tacticsHTML([a])+`<p class="note">Clic droit : marcher. Sur une place ennemie : l’encercler. Sur un régiment ennemi : l’attaquer${isRanged(k)?' (vos tireurs s’arrêtent à portée)':''}.</p>`;
   return h+'</div>';
 }
@@ -2330,13 +2389,13 @@ function tacticsHTML(L){const now=state.time,a=L[0],one=L.length===1,k=a.k;const
     else if(rs&&!['siege','canon'].includes(k)){const rv=(rs.ravagedUntil||0)>now;B.push(`<button class="btn" data-act="raid" data-sid="${rs.id}" ${rv||count(a.units)<8?'disabled':''} title="${rv?'Déjà ravagé':'Vole vivres, or ou chevaux ; la place produit bien moins pendant 10 jours'}">Piller ${esc(rs.name)}${rv?' (ravagé)':''}</button>`)}}
   if(one&&k==='eclair'){const ss=sabTarget(a);if(ss){const cd=(a.sabCD||0)-now,wall=ss.type==='chateau'||ss.type==='fort'||ss.type==='camp';const ti=cd>0?`Prochaine tentative dans ${Math.ceil(cd)} h`:`Réussite ${isNight()?'75':'45'} % ${isNight()?'(nuit)':'(de jour : tentez plutôt la nuit)'} ; en cas d’échec, la plupart des éclaireurs périssent`;
     if(wall)B.push(`<button class="btn" data-act="sabw" data-sid="${ss.id}" ${cd>0?'disabled':''} title="${ti}">Saboter les murailles</button>`);B.push(`<button class="btn" data-act="sabf" data-sid="${ss.id}" ${cd>0?'disabled':''} title="${ti}">Incendier les greniers</button>`)}}
-  if(one&&a.elior&&ME==='A'){const cd=(state.elior.harT||0)-now;B.push(`<button class="btn primary" data-act="harangue" ${cd>0?'disabled':''} title="${cd>0?`Prochaine harangue dans ${Math.ceil(cd)} h`:'+25 de moral aux régiments à 4 cases ; rallie ceux qui fuient'}">Harangue d’Élior${cd>0?` (${Math.ceil(cd)} h)`:''}</button>`)}
+  if(one&&a.elior&&ME==='A'){const cd=(state.elior.harT||0)-now;B.push(`<button class="btn primary" data-act="harangue" ${cd>0?'disabled':''} title="${cd>0?`Prochaine harangue dans ${Math.ceil(cd)} h`:'+25 de moral aux régiments à 4 cases ; rallie ceux qui fuient'}">Harangue de Gabor${cd>0?` (${Math.ceil(cd)} h)`:''}</button>`)}
   if(B.length)h+=`<div class="eyebrow" style="margin-top:8px">RUSES ET COUPS DE MAIN</div><div class="acts">${B.join('')}</div>`;
   return h+'</div>'}
 function groupPanel(L){
   const men=L.reduce((t,a)=>t+count(a.units),0),force=L.reduce((t,a)=>t+strength(a.units),0);const slow=Math.min(...L.map(baseSpd))*24*(isNight()?.75:1);
   let h=`<div class="pstack"><div><div class="eyebrow fac-${ME}">${L.length} RÉGIMENTS SÉLECTIONNÉS</div><h2>Votre ost</h2><p class="note">${fmt(men)} hommes · force ${fmt(force)} · au pas du plus lent : ${slow.toFixed(1)} cases / jour.</p></div>`;
-  h+=`<div class="glist">${L.map(a=>`<div class="grow" data-act="only" data-id="${a.id}" role="button" tabindex="0"><span class="gname">${esc(a.name)}${a.elior?' · Élior':''}</span><span class="gn">${fmt(count(a.units))}</span><span class="gst">${esc(U[a.k].s)} · ${shortState(a)}</span><span class="gm">${bar(a.morale,100)}</span><button class="gx" data-act="drop" data-id="${a.id}" aria-label="Retirer ${esc(a.name)} de la sélection">×</button></div>`).join('')}</div>`;
+  h+=`<div class="glist">${L.map(a=>`<div class="grow" data-act="only" data-id="${a.id}" role="button" tabindex="0"><span class="gname">${esc(a.name)}${a.elior?' · Gabor':''}</span><span class="gn">${fmt(count(a.units))}</span><span class="gst">${esc(U[a.k].s)} · ${shortState(a)}</span><span class="gm">${bar(a.morale,100)}</span><button class="gx" data-act="drop" data-id="${a.id}" aria-label="Retirer ${esc(a.name)} de la sélection">×</button></div>`).join('')}</div>`;
   const acts=[`<button class="btn ${moveMode?'on':''}" data-act="move">${moveMode?'Choisissez la destination…':'Déplacer'}</button>`,`<button class="btn" data-act="stopall">Arrêter</button>`];
   if(L.some(a=>a.siege&&!isRanged(a.k)&&!a.assault))acts.push(`<button class="btn primary" data-act="assaultall">Lancer l’assaut</button>`);
   if(L.some(a=>a.assault))acts.push(`<button class="btn" data-act="unassaultall">Cesser l’assaut</button>`);
@@ -2477,7 +2536,7 @@ function doRaid(a,s){const F=state.fac[a.fac],E=state.fac[s.owner];const loot={v
   if(a.fac==='A')log(`${Les(a)} ravagent les environs de ${s.name} : ${got.join(', ')}. La place produira bien moins pendant 10 jours.`,'good',s);
   else if(s.owner==='A'){log(`Des pillards de Cartacan ont ravagé les environs de ${s.name} : il produira bien moins pendant 10 jours.`,'bad',s);alarm(`${s.name} est pillé !`,s)}}
 function decreeExec(fac,k,s){const d=DECREES[k],F=state.fac[fac];if(!d||!s||s.owner!==fac||s.type!=='chateau')return null;
-  if(decReady(fac,k)>0||!canAfford(d.c,F))return null;pay(d.c,F);state.decrees[fac]=state.decrees[fac]||{};state.decrees[fac][k]=state.time+d.cd*24;const who=fac==='A'?'Élior':'Haz-kan';let r=null;
+  if(decReady(fac,k)>0||!canAfford(d.c,F))return null;pay(d.c,F);state.decrees[fac]=state.decrees[fac]||{};state.decrees[fac][k]=state.time+d.cd*24;const who=fac==='A'?'Gabor':'Haz-kan';let r=null;
   if(k==='levee'){s.gar.milice=(s.gar.milice||0)+60;s.gar.piquiers=(s.gar.piquiers||0)+20;for(const q of state.settlements)if(q.owner===fac&&q.type==='village')q.morale=Math.max(0,q.morale-10);log(`${who} décrète la levée en masse : 80 hommes rejoignent ${s.name}.`,'good',s)}
   else if(k==='merc'){const pos=spotsAround(s.x,s.y,['arbal','cavl'],fac,false);const nm=fac==='A'?['Arbalétriers de la Compagnie Grise','Lances de la Compagnie Grise']:['Arbalétriers des Sables','Cavaliers des Sables'];
     const A1=newReg(fac,pos[0][0],pos[0][1],'arbal',30,nm[0]),A2=newReg(fac,pos[1][0],pos[1][1],'cavl',20,nm[1]);A1.morale=A2.morale=75;log(`Des mercenaires se présentent devant ${s.name} : ${A1.name} et ${A2.name}.`,'good',s);r={sel:{kind:'regs',ids:[A1.id,A2.id]}}}
@@ -2537,23 +2596,24 @@ function actExec(fac,c){
     else{s.food=Math.floor(s.food*.4);const E=state.fac[s.owner];if(E&&s.type==='chateau')E.food=Math.round(E.food*.85);tell(fac,`${Les(a)} incendient les greniers de ${s.name} : la place n’a plus que ${s.food} jours de réserves.`,'good',s);tell(s.owner,`Les greniers de ${s.name} brûlent : œuvre de saboteurs !`,'bad',s);if(s.owner===ME)alarm(`Les greniers de ${s.name} brûlent !`,s)}}
   else if(act==='harangue'){if(fac!=='A'||!a.elior||(state.elior.harT||0)>now)return null;state.elior.harT=now+48;let n=0;
     for(const r of state.armies)if(r.fac===fac&&count(r.units)&&cheb(r,a)<=4){if(r.routUntil>now){r.routUntil=now;r.path=[];r.morale=Math.max(r.morale,45)}else r.morale=Math.min(100,r.morale+25);n++}
-    log(`Élior harangue ses troupes : « Pour Arenseuille ! » ${n} régiment${n>1?'s reprennent':' reprend'} courage.`,'good',a)}
+    log(`Gabor harangue ses troupes : « Pour Arenseuille ! » ${n} régiment${n>1?'s reprennent':' reprend'} courage.`,'good',a)}
   else if(act==='explore'){if(a.k!=='eclair')return null;a.explore=!a.explore;if(a.explore){a.order=null;a.siege=null;a.dest=null;a.path=[];const t=findUnexplored(a);const p=t&&findArmyPath(a,t[0],t[1]);if(p&&p.length){a.path=p;log(`${Les(a)} partent en exploration.`,'info',a)}else{a.explore=false;toast('Aucune terre inconnue accessible à proximité.')}}}
   else if(act==='assault'||act==='assaultall'){let n=0;for(const r of L)if(r.siege&&!isRanged(r.k)&&r.routUntil<=now){r.assault=true;n++}if(n){const s=setById(L.find(r=>r.assault).siege);log(`Assaut lancé contre ${s?s.name:'la place'} (${n} régiment${n>1?'s':''}).`,'war',s)}}
   else if(act==='unassault'||act==='unassaultall'){for(const r of L)r.assault=false}
   else if(act==='camp'){const t=terr(a.x,a.y);if(!settlementAt(a.x,a.y)&&t!==0&&t!==8&&t!==7&&!a.build&&a.k!=='siege'&&a.k!=='canon'&&state.fac[fac].gold>=150){state.fac[fac].gold-=150;a.build={h:20};a.path=[];log(`${Les(a)} commencent à dresser un camp.`,'info',a)}}
-  else if(act==='garrison'){const s=settlementAt(a.x,a.y);if(!s||s.owner!==fac)return null;if(a.elior&&s.type!=='chateau'){toast("Élior ne s’installe qu’au château.");return null}
-    addUnits(s.gar,a.units);a.units={};if(a.elior){a.elior=false;state.elior={status:'castle',until:0};log("Élior s’installe au château.",'info')}log(`${Les(a)} rejoignent la garnison de ${s.name}.`,'info',s);purgeArmies();return{sel:{kind:'set',id:s.id}}}
+  else if(act==='garrison'){const s=settlementAt(a.x,a.y);if(!s||s.owner!==fac)return null;if(a.elior&&s.type!=='chateau'){toast("Gabor ne s’installe qu’au château.");return null}
+    addUnits(s.gar,a.units);a.units={};if(a.elior){a.elior=false;state.elior={status:'castle',until:0};log("Gabor s’installe au château.",'info')}log(`${Les(a)} rejoignent la garnison de ${s.name}.`,'info',s);purgeArmies();return{sel:{kind:'set',id:s.id}}}
   else if(act==='split'){const tot=a.units[a.k]||0,r=Math.min(tot-1,Math.floor(+(c.Ru&&c.Ru[a.k])||0));if(r<1)return null;a.units={[a.k]:tot-r};const p=spotsAround(a.x,a.y,[a.k],fac,false)[0];const n=newReg(fac,p[0],p[1],a.k,r);n.morale=a.morale;n.vivres=a.vivres;a.max=tot-r;log(`${Les(n)} se détachent des ${a.name}.`,'info',a);return{sel:{kind:'regs',ids:[a.id,n.id]}}}
   else if(act==='merge'){const o=armyById(+c.id);if(o&&o!==a&&o.fac===fac&&o.k===a.k&&cheb(o,a)<=1&&count(o.units)&&o.routUntil<=now)mergeInto(a,o)}
   else if(act==='mergeall'){const groups=new Map();for(const r of L){if(!groups.has(r.k))groups.set(r.k,[]);groups.get(r.k).push(r)}
     for(const[,G]of groups){G.sort((p,q)=>count(q.units)-count(p.units));for(let i=1;i<G.length;i++)if(count(G[i].units)&&cheb(G[0],G[i])<=1)mergeInto(G[0],G[i])}}
-  else if(act==='ejoin'){if(fac!=='A')return null;const e2=eliorReg();if(e2&&e2!==a&&cheb(e2,a)<=1){e2.elior=false;a.elior=true;log(`Élior rejoint ${les(a)}.`,'info',a)}}
-  else if(act==='etake'){if(fac!=='A')return null;const ac=state.settlements.find(q=>q.owner===fac&&q.type==='chateau');if(!a.elior&&state.elior.status==='castle'&&ac&&a.x===ac.x&&a.y===ac.y){a.elior=true;state.elior={status:'army',until:0};a.morale=Math.min(100,a.morale+10);log(`Élior prend la tête des ${a.name}.`,'good',a)}}
+  else if(act==='ejoin'){if(fac!=='A')return null;const e2=eliorReg();if(e2&&e2!==a&&cheb(e2,a)<=1){e2.elior=false;a.elior=true;log(`Gabor rejoint ${les(a)}.`,'info',a)}}
+  else if(act==='etake'){if(fac!=='A')return null;const ac=state.settlements.find(q=>q.owner===fac&&q.type==='chateau');if(!a.elior&&state.elior.status==='castle'&&ac&&a.x===ac.x&&a.y===ac.y){a.elior=true;state.elior={status:'army',until:0};a.morale=Math.min(100,a.morale+10);log(`Gabor prend la tête des ${a.name}.`,'good',a)}}
   return null}
 function execCmd(fac,c){
   if(!state||state.preview||state.over||!c||typeof c!=='object')return null;
   try{
+    if(state.tuto&&fac==='A')tutoEv(c);
     if(c.c==='order')return orderExec(fac,c);
     if(c.c==='build'){const k=String(c.k);if(!ST[k]||!Array.isArray(c.tiles))return null;return buildExec(fac,k,c.tiles.slice(0,24))}
     if(c.c==='speed'){const v=+c.s;if([0,1,2,4,8].includes(v)){setSpeed(v);if(NET.remote)toastLocal(v?`Votre allié règle le temps sur ${v}×.`:'Votre allié a mis le jeu en pause.')}return null}
@@ -2606,7 +2666,7 @@ function helpHTML(){
   <li><b>Nuit</b> (20 h – 6 h) : tireurs −45 %, cavalerie −20 %, marche −25 %, vision réduite. Un régiment au repos attaqué de nuit est <b>surpris</b> : il subit 25 % de plus et frappe 20 % de moins pendant 3 heures.</li>
   <li><b>Éclaireurs</b> : ils voient à 11 cases (8 la nuit), débusquent les régiments cachés en forêt à 6 cases, ne sont jamais arrêtés au contact et peuvent « Explorer seuls » les terres inconnues en évitant l’ennemi. Ils ne valent rien au combat.</li>
   <li><b>Canons</b> : portée 4 cases (5 depuis une hauteur, 2 la nuit). Chaque boulet touche aussi à 35 % les régiments ennemis voisins de la cible et fait chuter leur moral bien plus vite. Contre une place, ils abattent les murailles même sans assaut ; contre un ouvrage, ils démolissent mieux que tout. Il faut une fonderie pour les recruter, et une escorte pour les protéger.</li>
-  <li><b>Élior</b> donne +15 % de force à son régiment et +10 % aux régiments à 3 cases. Si son régiment est anéanti, il est blessé et ramené au château pour huit jours.</li></ul>
+  <li><b>Gabor</b> donne +15 % de force à son régiment et +10 % aux régiments à 3 cases. Si son régiment est anéanti, il est blessé et ramené au château pour huit jours.</li></ul>
   <h3>Sièges</h3><ul>
   <li>Les murailles multiplient la résistance des défenseurs (château ×2,6, fort ×1,9, camp ×1,4). Les archers d’une garnison tirent sur les ennemis à 2 cases.</li>
   <li>Les engins de siège abattent les murs chaque jour ; un blocus affame la garnison quand ses réserves sont épuisées. « Lancer l’assaut » envoie vos régiments de mêlée voisins contre la place ; les tireurs à portée continuent de tirer. Une garnison sans moral se rend.</li></ul>
@@ -2646,7 +2706,7 @@ function helpHTML(){
   <li><b>Charger</b> (chevau-légers, chevaliers) : fond sur l’ennemi visible le plus proche, entre 2 et 5 cases ; charge +50 %, vitesse +35 %, choc sur le moral. Une fois par jour.</li>
   <li><b>Flèches enflammées</b> (archers) : ×2 contre une place, ×10 contre les ouvrages de bois (palissades, portes, fermes, tours de guet) ; −15 % contre les troupes, mais elles paniquent davantage.</li>
   <li><b>Piller</b> un village, une mine ou un haras ennemi voisin (4 à 6 heures) : vous emportez vivres, or ou chevaux, et la place produit bien moins pendant 10 jours. <b>Saboter</b> (éclaireurs, à 2 cases d’une place) : murailles −30 % ou greniers en feu ; 75 % de réussite la nuit, 45 % le jour.</li>
-  <li><b>Harangue d’Élior</b> : +25 de moral aux régiments à 4 cases et ralliement de ceux qui fuient, tous les deux jours. <b>Villages neutres</b> : avec un régiment à 3 cases, négociez leur ralliement contre de l’or.</li>
+  <li><b>Harangue de Gabor</b> : +25 de moral aux régiments à 4 cases et ralliement de ceux qui fuient, tous les deux jours. <b>Villages neutres</b> : avec un régiment à 3 cases, négociez leur ralliement contre de l’or.</li>
   <li><b>Décrets</b> (panneau du château) : levée en masse, mercenaires, impôt exceptionnel, grande fête — chacun avec son prix et son délai. Haz-kan s’en sert aussi.</li>
   <li>Vos ouvrages abîmés se réparent seuls sur vos terres, et bien plus vite avec un régiment au repos à côté.</li></ul>
   <h3>Jouer en ligne</h3><ul>
@@ -2669,7 +2729,7 @@ function showMenu(){
   if($('#m-online'))$('#m-online').onclick=()=>{closeModal();openLobby(true)};
   if(NET.role==='guest'){$('#m-save').disabled=true;$('#m-save').title='Seul l’hôte peut sauvegarder.'}
   $('#m-ap').onchange=e=>{autoPause=e.target.checked;try{localStorage.setItem('arenseuille.autopause',autoPause?'1':'0')}catch(err){}};
-  $('#m-save').onclick=()=>{autosave();$('#m-msg').textContent=hasSave()?`Campagne sauvegardée (jour ${dayNum()}).`:"Ce navigateur refuse la sauvegarde (navigation privée ?)."};
+  $('#m-save').onclick=()=>{if(state.tuto){$('#m-msg').textContent='L’apprentissage ne se sauvegarde pas.';return}autosave();$('#m-msg').textContent=hasSave()?`Campagne sauvegardée (jour ${dayNum()}).`:"Ce navigateur refuse la sauvegarde (navigation privée ?)."};
   $('#m-load').onclick=()=>{try{loadState(localStorage.getItem(SAVE_KEY));setSel(null);logDirty=true;closeModal();toast("Sauvegarde chargée.")}catch(e){$('#m-msg').textContent="Sauvegarde illisible."}};
   $('#m-new').onclick=()=>{$('#m-msg').innerHTML=`La campagne en cours sera perdue si elle n’est pas sauvegardée. <button class="btn primary" id="m-new2">Retour à l’écran titre</button>`;$('#m-new2').onclick=()=>{closeModal();if(NET.on)leaveNet(true);showTitle()}};
 }
@@ -2678,10 +2738,10 @@ function showEnd(){
   if(!NET.on)setSpeed(0);const w=!!state.over.win;const st=NET.on||ME!=='A'?`Régiments de Cartacan mis en déroute : ${state.stats.won} ; régiments d’Arenseuille : ${state.stats.lost}. Lieux pris par Arenseuille : ${state.stats.taken}.`:`Régiments ennemis mis en déroute : ${state.stats.won} ; des nôtres : ${state.stats.lost}. Lieux conquis : ${state.stats.taken}.`;
   const btns=`<div class="row"><button class="btn primary" id="e-new">${NET.on?'Retour à l’écran titre':'Nouvelle campagne'}</button><button class="btn" data-m="close">Contempler la carte</button></div>`;
   let html;
-  if(ME==='A')html=w?`<div class="eyebrow">JOUR ${state.over.day} · VICTOIRE</div><h2>Haz-kan est tombé</h2><p>La Citadelle de Cartacan est prise. Haz-kan a péri dans sa dernière tour, et les bannières d’Arenseuille flottent sur ses remparts. Le royaume d’Élior s’étend désormais des côtes de l’ouest aux sables de l’est.</p><p>${st}</p>${btns}`
+  if(ME==='A')html=w?`<div class="eyebrow">JOUR ${state.over.day} · VICTOIRE</div><h2>Haz-kan est tombé</h2><p>La Citadelle de Cartacan est prise. Haz-kan a péri dans sa dernière tour, et les bannières d’Arenseuille flottent sur ses remparts. Le royaume de Gabor s’étend désormais des côtes de l’ouest aux sables de l’est.</p><p>${st}</p>${btns}`
     :`<div class="eyebrow">JOUR ${state.over.day} · DÉFAITE</div><h2>Arenseuille est tombée</h2><p>Les troupes de Haz-kan ont forcé les portes du château. La bannière d’Arenseuille est à terre.</p><p>${st}</p>${btns}`;
   else html=w?`<div class="eyebrow">JOUR ${state.over.day} · DÉFAITE</div><h2>La Citadelle est tombée</h2><p>Les bannières d’Arenseuille flottent sur la Citadelle. Haz-kan a péri dans sa dernière tour, et Cartacan n’a plus de roi.</p><p>${st}</p>${btns}`
-    :`<div class="eyebrow">JOUR ${state.over.day} · VICTOIRE</div><h2>Arenseuille est à vous</h2><p>Vos troupes ont forcé les portes du château d’Élior. La bannière noire de Cartacan flotte sur ses tours, et tout l’ouest s’incline devant Haz-kan.</p><p>${st}</p>${btns}`;
+    :`<div class="eyebrow">JOUR ${state.over.day} · VICTOIRE</div><h2>Arenseuille est à vous</h2><p>Vos troupes ont forcé les portes du château de Gabor. La bannière noire de Cartacan flotte sur ses tours, et tout l’ouest s’incline devant Haz-kan.</p><p>${st}</p>${btns}`;
   openModal(html);
   $('#e-new').onclick=()=>{closeModal();if(NET.on)leaveNet(true);showTitle()};
   if(NET.role!=='guest'){try{localStorage.removeItem(SAVE_KEY)}catch(e){}}
@@ -2820,7 +2880,7 @@ async function initNet(){
 const nameCache=new Map();
 async function nameOf(by){if(!by||!userApi||!userApi.profiles)return'';if(nameCache.has(by))return nameCache.get(by);
   try{const ps=await userApi.profiles([by]);const n=(ps&&ps[by]&&ps[by].name)||'';nameCache.set(by,n);return n}catch(e){return''}}
-function otherLabel(){return NET.mode==='duel'?(ME==='A'?'Haz-kan (votre ami)':'Élior (votre ami)'):'Votre allié'}
+function otherLabel(){return NET.mode==='duel'?(ME==='A'?'Haz-kan (votre ami)':'Gabor (votre ami)'):'Votre allié'}
 function netBadge(){const el=$('#net');if(!el)return;$('#chatf').hidden=!NET.on;
   $('#top .brand').innerHTML=ME==='C'?'Cartacan<small>CONTRE ARENSEUILLE</small>':'Arenseuille<small>CONTRE CARTACAN</small>';
   if(!NET.on){el.hidden=true;return}el.hidden=false;
@@ -2840,7 +2900,7 @@ function renderLobby(){
     ${cur?'':`<h3>Parties ouvertes</h3><div id="lb-list"></div>`}
     <h3>${cur?'Ouvrir la campagne en cours':'Créer une partie'}</h3>
     <div class="lb-modes">
-      <button class="lb-mode" data-lb="duel"><b>Duel</b><span>Vous menez Arenseuille et Élior ; votre ami mène Cartacan et Haz-kan. L’ordinateur ne joue plus.</span></button>
+      <button class="lb-mode" data-lb="duel"><b>Duel</b><span>Vous menez Arenseuille et Gabor ; votre ami mène Cartacan et Haz-kan. L’ordinateur ne joue plus.</span></button>
       <button class="lb-mode" data-lb="alliance"><b>Alliance</b><span>Vous commandez ensemble les régiments d’Arenseuille contre Cartacan, mené par l’ordinateur${cur?'':` (difficulté : ${DIFF[titleOpts.diff].n.toLowerCase()})`}.</span></button>
     </div>
     ${cur?'':`<p class="note" style="color:var(--ink-soft);margin-top:8px">Carte n° ${titleOpts.seed}, ${titleOpts.size===104?'immense':'vaste'} : réglez-la sur l’écran titre avant de créer la partie.</p>
@@ -2872,7 +2932,7 @@ async function hostGame(mode,cur){
   let g;try{g=await roomApi.join('g-'+code)}catch(e){lbMsg('Impossible d’ouvrir une partie en ligne pour l’instant.');return}
   lobbyOpen=false;closeModal();
   if(!cur){newGame(titleOpts.seed,titleOpts.size,mode==='duel'?'normal':titleOpts.diff,false);LOGN=0;
-    log("Élior rassemble ses régiments autour du château. À l’est, derrière les montagnes, Haz-kan lève ses armées. Trois cols franchissent la chaîne ; une plage longe la mer au sud.",'info');}
+    log("Gabor rassemble ses régiments autour du château. À l’est, derrière les montagnes, Haz-kan lève ses armées. Trois cols franchissent la chaîne ; une plage longe la mer au sud.",'info');}
   Object.assign(NET,{on:true,role:'host',mode,game:g,code,guestPeer:null,guestBy:null,guestName:'',guestFac:mode==='duel'?'C':'A',seq:0,lastFxT:state.time,lastLogN:LOGN,sendT:0,tick:0,full:true,ruinsK:'',endShown:false,alq:[],leftT:null});
   ME='A';
   if(mode==='duel'){state.duel=true;state.aiGroups=[];for(const a of state.armies){a.group=null;a.ai=null}const C=state.fac.C;C.wood=Math.max(C.wood||0,300);C.stone=Math.max(C.stone||0,250)}
@@ -2964,8 +3024,8 @@ function startGuest(g,code,d,hostPeer,hostBy){
       $('#hg-t').onclick=()=>{closeModal();showTitle()}},4000)}});
   nameOf(hostBy).then(n=>{NET.hostName=n});
   startPlaying();setSpeed(0);
-  if(ME==='C')log("Haz-kan vous confie les armées de Cartacan. À l’ouest, derrière les montagnes, Élior rassemble ses régiments. Prenez le château d’Arenseuille et tenez votre Citadelle.",'info');
-  else log("Vous rejoignez Élior : vous commandez ensemble les régiments d’Arenseuille. Partagez-vous les fronts et parlez-vous sous la chronique.",'info');
+  if(ME==='C')log("Haz-kan vous confie les armées de Cartacan. À l’ouest, derrière les montagnes, Gabor rassemble ses régiments. Prenez le château d’Arenseuille et tenez votre Citadelle.",'info');
+  else log("Vous rejoignez Gabor : vous commandez ensemble les régiments d’Arenseuille. Partagez-vous les fronts et parlez-vous sous la chronique.",'info');
   toastLocal('Connexion à la partie…');netBadge();
 }
 function netApply(d){
@@ -3088,7 +3148,7 @@ const CANON=[
   [/\b(fantassin|fantassins)\b/g,'fantassins'],
   [/\b(arbaletrier|arbaletriers)\b/g,'arbaletriers'],
   [/\b(canon|canons)\b/g,'canons'],
-  [/\b(eliot|elliot|eliott|helior|heliot|elio|lior|et lior|e lior|elior|eliore|eleor)\b/g,'elior'],
+  [/\b(eliot|elliot|eliott|helior|heliot|elio|lior|et lior|e lior|elior|eliore|eleor|gabor|gabore|gabord|gabort|gabbor|gabors|ga bor|ga bord|gab or|gabeur|gabo|garbor)\b/g,'elior'],
   [/\b(alte|halt|hallte)\b/g,'halte'],
   [/\b(a tac|atac|attac|attak|atak)\b/g,'attaque'],
   [/\b(construit|construi|construie|construisent|constuis|construise)\b/g,'construis'],
@@ -3144,7 +3204,7 @@ function nearTile(r,L){const land=L.length&&!L.every(a=>isShip(a.k));if(r.reg&&(
     for(let y=1;y<N-1;y++)for(let x=1;x<N-1;x++){const t=world.T[y*N+x];if(t===0||t===5)continue;let w=false;for(let d=0;d<4&&!w;d++)if(R.id[(y+DY[d])*N+x+DX[d]]===r.reg.id)w=true;if(!w)continue;const dd=Math.hypot(x-cx,y-cy);if(dd<bd){bd=dd;b=[x,y]}}if(b)return b}
   if(r.near||!r.reg||!r.reg.tiles.length)return[r.x,r.y];const cx=L.length?L.reduce((s,a)=>s+a.x,0)/L.length:r.x,cy=L.length?L.reduce((s,a)=>s+a.y,0)/L.length:r.y;let b=r.reg.tiles[0],bd=1e9;for(const i of r.reg.tiles){const d=Math.hypot(i%N-cx,((i/N)|0)-cy);if(d<bd){bd=d;b=i}}return[b%N,(b/N)|0]}
 function numIn(t){const m=t.match(/\b(\d+)\b/);if(m)return+m[1];for(const w in NUMW)if(new RegExp('\\b'+w+'\\b').test(t))return NUMW[w];return 0}
-function grp(L){const by={};let el=false;for(const a of L){if(a.elior){el=true;continue}by[a.k]=(by[a.k]||0)+1}if(el&&!Object.keys(by).length)return'Élior et sa garde';return(el?'Élior, ':'')+Object.entries(by).map(([k,n])=>`${n>1?n+' ':''}${RNOUN[k].toLowerCase()}`).join(', ')}
+function grp(L){const by={};let el=false;for(const a of L){if(a.elior){el=true;continue}by[a.k]=(by[a.k]||0)+1}if(el&&!Object.keys(by).length)return'Gabor et sa garde';return(el?'Gabor, ':'')+Object.entries(by).map(([k,n])=>`${n>1?n+' ':''}${RNOUN[k].toLowerCase()}`).join(', ')}
 function cmdShown(){const b=document.getElementById('cmdbar');return b&&!b.hidden}
 function regNum(a){if(REGNUM.has(a.id))return REGNUM.get(a.id);const live=new Set(state.armies.filter(x=>x.fac===ME&&count(x.units)).map(x=>x.id));for(const[id]of REGNUM)if(!live.has(id))REGNUM.delete(id);const used=new Set(REGNUM.values());let n=1;while(used.has(n))n++;REGNUM.set(a.id,n);return n}
 function regByNum(n){for(const a of state.armies){if(a.fac!==ME||!count(a.units)||a.aboard)continue;if(regNum(a)===n)return a}return null}
@@ -3188,6 +3248,7 @@ function runOne(t){const say=vsay;
   if(/^(arrete d ecouter|coupe le micro|micro off|eteins le micro)\b/.test(t)){micStop();return say('Micro coupé. Cliquez sur « Micro » pour le rouvrir.','warn',false)}
   if(!$('#title').hidden){
     if(modalOpen&&/ferme|retour|ok|d accord|compris|revenir/.test(t)){closeModal();return say('Fermé.')}
+    if(/apprentissage|tutoriel|didacticiel|apprendre|debutant/.test(t)){if(modalOpen)closeModal();$('#t-tuto').click();return say('Apprentissage. Suivez la petite main.')}
     if(/nouvelle (campagne|partie)|nouveau jeu|commence|commencer|on commence|jouer|joue|lance la partie|demarre|demarrer|go|c est parti/.test(t)){if(modalOpen)closeModal();$('#t-new').click();return say('Nouvelle campagne. Le temps est en pause : dites « reprends » pour le lancer.')}
     if(/repren|continu|charge|ancienne partie|sauvegarde/.test(t)){if($('#t-load').hidden)return say('Aucune campagne sauvegardée. Dites « nouvelle campagne ».','warn');$('#t-load').click();return say('Campagne reprise.')}
     if(/autre carte|nouvelle carte|change (la|de) carte/.test(t)){$('#o-reroll').click();return say('Autre carte.')}
@@ -3253,7 +3314,7 @@ function runGameVoice(t){const say=vsay;
   // régiments numérotés
   const nr=nr0;
   if(nr.nums.length){const NL=nr.nums.map(regByNum).filter(Boolean);if(!NL.length)return say(`Il n’y a pas de régiment numéro ${nr.nums.join(', ')}.`,'warn');const tt=nr.rest;
-    if(/elior rejoin/.test(t)){const e=state.armies.find(a=>a.fac===ME&&a.elior);if(!e||ME!=='A')return say('Élior n’est pas en campagne.','warn');if(cheb(e,NL[0])>1)return say(`Élior doit être juste à côté du régiment ${nr.nums[0]}.`,'warn');doCmd({c:'act',a:'ejoin',ids:[NL[0].id]});return say(`Élior rejoint le régiment ${nr.nums[0]}.`)}
+    if(/elior rejoin/.test(t)){const e=state.armies.find(a=>a.fac===ME&&a.elior);if(!e||ME!=='A')return say('Gabor n’est pas en campagne.','warn');if(cheb(e,NL[0])>1)return say(`Gabor doit être juste à côté du régiment ${nr.nums[0]}.`,'warn');doCmd({c:'act',a:'ejoin',ids:[NL[0].id]});return say(`Gabor rejoint le régiment ${nr.nums[0]}.`)}
     setSel({kind:'regs',ids:NL.map(a=>a.id)});if(/^(suis|suivez|suivre|camera sur|filme)\b/.test(t)){camFollow=NL[0].id;return say(`La vue suit le régiment ${nr.nums[0]}.`)}
     if(!tt.trim()||/^(montre|montre moi|selectionne|choisis|prends|ou est|ou sont|trouve)\b/.test(tt)&&tt.split(' ').length<=3){centerOn(NL[0].x,NL[0].y);return say(`Régiment${NL.length>1?'s':''} ${nr.nums.join(', ')} : ${grp(NL)}.`,'ok','Prêts.')}
     return runRegs(NL,tt,say)}
@@ -3288,7 +3349,7 @@ function runRegs(L,t,say){say=say||vsay;
   if(/posture normale|\bnormal\b/.test(t)){act('stance',{k:'normal'});return say(`${who} en posture normale.`)}
   if(/embuscade|cachez vous|cache toi|cachez les/.test(t)){act('ambush');return say(L.some(a=>a.ambush)?`${who} en embuscade.`:'Une embuscade se tend en forêt ou dans le marais.',L.some(a=>a.ambush)?'ok':'warn')}
   if(/fleches? (enflammees?|de feu)|tirez le feu|mettez le feu|flammes|enflamme/.test(t)){if(!L.some(a=>a.k==='archers'))return say('Seuls les archers tirent des flèches enflammées.','warn');act('fire');return say(L.find(a=>a.k==='archers').fire?'Flèches enflammées !':'Flèches ordinaires.')}
-  if(/harangu|discours|encourage|motive|galvanise/.test(t)){const e=state.armies.find(a=>a.fac===ME&&a.elior);if(!e||ME!=='A')return say('Élior n’est pas en campagne.','warn');doCmd({c:'act',a:'harangue',ids:[e.id]});return say('Élior harangue ses troupes : pour Arenseuille !')}
+  if(/harangu|discours|encourage|motive|galvanise/.test(t)){const e=state.armies.find(a=>a.fac===ME&&a.elior);if(!e||ME!=='A')return say('Gabor n’est pas en campagne.','warn');doCmd({c:'act',a:'harangue',ids:[e.id]});return say('Gabor harangue ses troupes : pour Arenseuille !')}
   if(/\b(charge[sz]?|charger|au galop)\b/.test(t)&&L.some(a=>a.k==='cavl'||a.k==='cavh')&&!findPlace(t)){let n=0;for(const a of L)if((a.k==='cavl'||a.k==='cavh')&&(a.chargeCD||0)<=state.time&&chargeTarget(a)){doCmd({c:'act',a:'charge',ids:[a.id]});n++}if(n)return say('Chargez !','ok','Chargez !');const e=nearestEnemy(L);if(e){doCmd({c:'order',ids,x:e.x,y:e.y,en:e.id,tg:'',pace:0});return say(`Trop loin pour charger : ${who} foncent sur ${les(e)}.`,'ok','À l’attaque !')}return say('Aucun ennemi visible à distance de charge.','warn')}
   if(/pill/.test(t)){let n=0;for(const a of L){const r=raidTarget(a);if(r&&!((r.ravagedUntil||0)>state.time)){doCmd({c:'act',a:'raid',ids:[a.id],sid:r.id});n++}}if(n)return say(`${n} régiment${n>1?'s':''} se mettent à piller.`);const p=findPlace(t);if(p&&!p.err&&p.set&&p.set.owner!==ME)return moveTo(L,p,say,' Redites « pillez » une fois sur place.');return say('Rien à piller juste à côté de ces troupes.','warn')}
   if(/sabot|sapez|grenier|incendi/.test(t)){const E=L.filter(a=>a.k==='eclair');if(!E.length)return say('Seuls les éclaireurs sabotent.','warn');const a=E[0],tg=sabTarget(a);if(!tg)return say('Approchez les éclaireurs à 2 cases d’une place ennemie.','warn');doCmd({c:'act',a:/grenier|incendi/.test(t)?'sabf':'sabw',ids:[a.id],sid:tg.id});return say('Les éclaireurs se glissent vers '+tg.name+'.')}
@@ -3363,17 +3424,197 @@ $('#o-seed').value=titleOpts.seed;
 $('#o-seed').addEventListener('change',()=>{const v=parseInt($('#o-seed').value,10);if(v>0){titleOpts.seed=v;previewMap()}});
 $('#o-reroll').onclick=()=>{titleOpts.seed=Math.floor(Math.random()*90000)+10000;$('#o-seed').value=titleOpts.seed;previewMap()};
 function previewMap(){newGame(titleOpts.seed,titleOpts.size,titleOpts.diff,true);cam.z=.62;const c=state.settlements.find(s=>s.owner==='A'&&s.type==='chateau');centerOn(c.x+10,c.y-4)}
-function showTitle(){try{if(!WALL)cmdOpen(false)}catch(e){}if(NET.on)leaveNet(true);ME='A';running=false;setSpeed(0);setSel(null);$('#title').hidden=false;$('#t-load').hidden=!hasSave();$('#top').style.visibility='hidden';$('#chron').hidden=true;$('#mm-wrap').hidden=true;previewMap()}
+function showTitle(){try{tutoHide()}catch(e){}try{if(!WALL)cmdOpen(false)}catch(e){}if(NET.on)leaveNet(true);ME='A';running=false;setSpeed(0);setSel(null);$('#title').hidden=false;$('#t-load').hidden=!hasSave();$('#top').style.visibility='hidden';$('#chron').hidden=true;$('#mm-wrap').hidden=true;previewMap()}
 function startPlaying(){
   $('#title').hidden=true;$('#top').style.visibility='visible';$('#chron').hidden=false;$('#mm-wrap').hidden=false;running=true;resize();
   const c=state.settlements.find(s=>s.owner===ME&&s.type==='chateau');cam.z=1;if(c)centerOn(c.x+1,c.y+1);logDirty=true;updateHUD();netBadge();
 }
 $('#t-new').onclick=()=>{newGame(titleOpts.seed,titleOpts.size,titleOpts.diff,false);
-  log("Élior rassemble ses régiments autour du château. À l’est, derrière les montagnes, Haz-kan lève ses armées. Trois cols franchissent la chaîne ; une plage longe la mer au sud.",'info');
+  log("Gabor rassemble ses régiments autour du château. À l’est, derrière les montagnes, Haz-kan lève ses armées. Trois cols franchissent la chaîne ; une plage longe la mer au sud.",'info');
   log("Conseil : glissez le clic gauche pour encadrer vos régiments, puis clic droit pour les envoyer. Glissez le clic droit pour déplacer la carte. Le temps est en pause : appuyez sur 1× ou Espace.",'info');
   startPlaying();setSpeed(0);setSel({kind:'regs',ids:state.armies.filter(a=>a.fac==='A').map(a=>a.id)});toast("Le temps est en pause : lancez-le avec 1× ou Espace.");};
 $('#t-load').onclick=()=>{try{loadState(localStorage.getItem(SAVE_KEY));startPlaying();setSpeed(0);toast(`Campagne reprise au jour ${dayNum()}.`)}catch(e){toast("Cette sauvegarde vient d’une ancienne version et ne peut être reprise.")}};
 $('#t-help').onclick=showHelp;
+
+/* =========================================================================
+   APPRENTISSAGE (une dizaine de minutes)
+   Carte fixe, difficulté facile, Cartacan immobile. Une carte de conseils en haut
+   à gauche, une petite main qui montre où cliquer, une voix qui lit la consigne.
+   ========================================================================= */
+const TUTO_SEED=24680,TUTO_SIZE=80;
+let TV=true;try{TV=localStorage.getItem('arenseuille.tutovoice')!=='0'}catch(e){}
+let tutoCam=null,tutoSaid='',tutoAcc=0,tutoFlash=0,tutoKey='';
+const TOUCH=matchMedia('(hover:none)').matches;
+const tutoCastle=()=>state.settlements.find(s=>s.owner==='A'&&s.type==='chateau');
+const tutoVil=()=>state&&state.tuto?setById(state.tuto.vid):null;
+function tsay(t){if(!TV||!window.speechSynthesis)return;try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang='fr-FR';u.rate=1.02;const v=speechSynthesis.getVoices().find(v=>/^fr/i.test(v.lang));if(v)u.voice=v;speechSynthesis.speak(u)}catch(e){}}
+function tutoStart(){
+  newGame(TUTO_SEED,TUTO_SIZE,'facile',false);
+  const c=tutoCastle(),a=state.armies.find(r=>r.fac==='A'&&r.k==='milice');
+  let best=null;for(const s of state.settlements){if(s.owner!=='A'||s.type!=='village')continue;const p=findArmyPath(a,s.x,s.y);if(!p||p.length<6)continue;const sc=Math.abs(p.length-11);if(!best||sc<best.sc)best={s,p,sc}}
+  if(!best)for(const s of state.settlements){if(s.owner==='A'||s.type==='chateau'||s.type==='port')continue;const p=findArmyPath(a,s.x,s.y);if(p&&p.length>=6&&(!best||p.length<best.p.length))best={s,p}}
+  const v=best.s,p=best.p;
+  const mi=Math.min(4,Math.floor(p.length/3)),mk=p[mi];
+  let rp=p[p.length-3];for(const q of p.slice(mi+1)){if(cheb({x:q[0],y:q[1]},{x:mk[0],y:mk[1]})>=4&&cheb({x:q[0],y:q[1]},v)>=3){rp=q;break}}
+  v.owner='C';v.gar={milice:20};v.walls=.5;v.morale=60;v.queue=[];
+  state.tuto={step:0,vid:v.id,mk:[mk[0],mk[1]],rp:[rp[0],rp[1]],raid:[],ft:null};
+  visionDirty=true;updateVision();chunkCache.clear();overview=null;buildMinimapBase();
+  log("Apprentissage : Gabor rassemble ses régiments. Cartacan attend que vous soyez prêt.",'info');
+  startPlaying();setSpeed(0);setSel(null);cam.z=1;centerOn(c.x+2,c.y+1);state.tuto.story=0;tutoShow();
+}
+function tutoFarmTile(){const c=tutoCastle(),v=tutoVil();let best=null,bd=1e9;
+  for(let dy=-6;dy<=6;dy++)for(let dx=-6;dx<=6;dx++){const x=c.x+dx,y=c.y+dy;const r=Math.max(Math.abs(dx),Math.abs(dy));if(r<2)continue;if(canPlace('ferme',x,y))continue;const d=r+(v?-cheb({x,y},v)*.3:0)+hash2(x,y,5)*.2;if(d<bd){bd=d;best=[x,y]}}
+  return best}
+function tutoSpawnRaiders(){const T=state.tuto;if(T.raid.length)return;const[x,y]=T.rp;
+  const pos=spotsAround(x,y,['milice','archers'],'C',true);
+  const r1=newReg('C',pos[0][0],pos[0][1],'milice',45,'Pillards de Haz-kan'),r2=newReg('C',pos[1][0],pos[1][1],'archers',15,'Archers pillards');
+  for(const r of[r1,r2]){r.tuto=true;r.morale=70}T.raid=[r1.id,r2.id];
+  for(let dy=-2;dy<=2;dy++)for(let dx=-2;dx<=2;dx++){const X=x+dx,Y=y+dy;if(X>=0&&Y>=0&&X<N&&Y<N)state.explored[Y*N+X]=1}
+  log("Des pillards de Cartacan sortent des bois !",'war',r1);visionDirty=true;updateVision()}
+const raidersLeft=()=>state.tuto.raid.map(armyById).filter(a=>a&&count(a.units)&&a.routUntil<=state.time);
+const tutoSelCastle=()=>sel&&sel.kind==='set'&&tutoCastle()&&sel.id===tutoCastle().id;
+const castleHand=()=>{const c=tutoCastle();return{tile:[c.x,c.y],how:'clic'}};
+/* chaque étape : t titre, x() → [consigne, main], ok() → étape réussie, in() à l'entrée */
+const TSTEPS=[
+  {t:'Aux armes !',intro:true},
+  {t:'La carte',in(){tutoCam={x:cam.x,y:cam.y,z:cam.z}},
+    x:()=>[TOUCH?'Glissez le doigt pour déplacer la carte.':'Glissez le clic droit pour déplacer la carte. La molette zoome.',{drag:true,how:TOUCH?'glisser':'clic droit'}],
+    ok:()=>tutoCam&&(Math.hypot(cam.x-tutoCam.x,cam.y-tutoCam.y)*cam.z>120||Math.abs(cam.z-tutoCam.z)>.18)},
+  {t:'Un régiment',x:()=>{const a=state.armies.find(r=>r.fac==='A'&&r.k==='archers'&&count(r.units));return['Cliquez sur vos archers.',a?{army:a.id,how:'clic'}:null]},
+    ok:()=>{const L=selectedOwn();return L.length===1&&L[0].k==='archers'}},
+  {t:'Plusieurs régiments',x:()=>{const c=tutoCastle();return[TOUCH?'Touchez « Cadre », puis glissez le doigt autour de vos régiments.':'Glissez le clic gauche autour de plusieurs régiments.',{drag:true,tile:[c.x+1,c.y],how:TOUCH?'glisser':'clic gauche'}]},
+    ok:()=>selectedOwn().length>=3},
+  {t:'Le temps',x:()=>['Le temps est en pause. Cliquez sur 1×.',{el:'#speed button[data-s="1"]',how:'clic'}],ok:()=>speed>0},
+  {t:'Marcher',x:()=>{const T=state.tuto;if(selectedOwn().length<2)return['Cliquez sur « Tous » pour choisir toute l’armée.',{el:'#b-all',how:'clic'}];
+      if(speed===0)return['Relancez le temps : 1×.',{el:'#speed button[data-s="1"]',how:'clic'}];
+      return[TOUCH?'Touchez « Déplacer », puis la croix dorée.':'Clic droit sur la croix dorée.',{tile:T.mk,how:TOUCH?'toucher':'clic droit'}]},
+    ok:()=>{const[x,y]=state.tuto.mk;return state.armies.filter(a=>a.fac==='A'&&count(a.units)&&Math.max(Math.abs(a.x-x),Math.abs(a.y-y))<=2).length>=2}},
+  {t:'Les éclaireurs',x:()=>{const e=state.armies.find(r=>r.fac==='A'&&r.k==='eclair'&&count(r.units));if(!e)return['',null];
+      const L=selectedOwn();if(!(L.length===1&&L[0].id===e.id))return['Cliquez sur vos éclaireurs.',{army:e.id,how:'clic'}];
+      return['Cliquez sur « Explorer seuls » : ils partent découvrir la carte.',{el:'#panel [data-act="explore"]',how:'clic'}]},
+    ok:()=>state.armies.some(r=>r.fac==='A'&&r.k==='eclair'&&r.explore)||!state.armies.some(r=>r.fac==='A'&&r.k==='eclair'&&count(r.units))},
+  {t:'La harangue',x:()=>{const e=eliorReg();if(!e)return['',null];const L=selectedOwn();
+      if(!(L.length===1&&L[0].id===e.id))return['Des ennemis rôdent. Cliquez sur les Gardes du roi, où se tient Gabor.',{army:e.id,how:'clic'}];
+      return['Cliquez sur « Harangue de Gabor » : le moral monte.',{el:'#panel [data-act="harangue"]',how:'clic'}]},
+    ok:()=>(state.elior.harT||0)>0||!eliorReg()},
+  {t:'Combattre',in:tutoSpawnRaiders,x:()=>{const L=raidersLeft();if(!L.length)return['Bien joué !',null];
+      if(selectedOwn().length<3)return['Cliquez sur « Tous » pour choisir toute l’armée.',{el:'#b-all',how:'clic'}];
+      if(speed===0)return['Relancez le temps : 2×.',{el:'#speed button[data-s="2"]',how:'clic'}];
+      return['Des pillards ! Clic droit sur eux pour attaquer.',{army:L[0].id,how:TOUCH?'toucher':'clic droit',foe:true}]},
+    ok:()=>state.tuto.raid.length&&!raidersLeft().length},
+  {t:'Le château',x:()=>['Cliquez sur votre château.',castleHand()],ok:tutoSelCastle},
+  {t:'Recruter',x:()=>tutoSelCastle()?['Cliquez sur « +10 » à la ligne Archers.',{el:'#panel [data-act="rec"][data-k="archers"][data-n="10"]',how:'clic'}]:['Cliquez sur votre château.',castleHand()],
+    ok:()=>{const c=tutoCastle();return c&&c.queue.length>0}},
+  {t:'Sortir les troupes',x:()=>{if(modalOpen){const any=[...document.querySelectorAll('#sheet input[type=range]')].some(e=>+e.value>0);return any?['Cliquez sur « Valider ».',{el:'#sheet [data-q="ok"]',how:'clic'}]:['Cliquez sur « Tout ».',{el:'#sheet [data-q="right"]',how:'clic'}]}
+      return tutoSelCastle()?['Les recrues vont dans la garnison. Cliquez sur « Former des régiments ».',{el:'#panel [data-act="form"]',how:'clic'}]:['Cliquez sur votre château.',castleHand()]},
+    ok:()=>!!state.tuto.formed},
+  {t:'La grande fête',x:()=>tutoSelCastle()?['Le peuple a eu peur. Offrez une « Grande fête » : cliquez sur « Décréter ».',{el:'#panel [data-act="decree"][data-k="fete"]',how:'clic'}]:['Cliquez sur votre château.',castleHand()],
+    ok:()=>decReady('A','fete')>0},
+  {t:'Bâtir',in(){state.tuto.ft=tutoFarmTile();state.tuto.st0=state.structures.filter(t=>t.owner==='A').length},x:()=>{const T=state.tuto;if(!(sel&&sel.kind==='build'))return['Cliquez sur « Bâtir ».',{el:'#b-build',how:'clic'}];
+      if(buildMode!=='ferme')return['Choisissez la ferme.',{el:'#panel .bitem[data-k="ferme"]',how:'clic'}];
+      if(!T.ft||canPlace('ferme',T.ft[0],T.ft[1]))T.ft=tutoFarmTile();
+      return['Cliquez sur la plaine marquée, près du château.',T.ft?{tile:T.ft,how:'clic'}:null]},
+    ok:()=>state.structures.filter(t=>t.owner==='A').length>(state.tuto.st0??99)},
+  {t:'Reprendre un village',in(){if(sel&&sel.kind==='build')setSel(null);buildMode=null},x:()=>{const v=tutoVil();if(!v)return['',null];
+      const sieging=state.armies.some(a=>a.fac==='A'&&count(a.units)&&(a.siege===v.id||(a.order&&a.order.t==='siege'&&a.order.sid===v.id)));
+      if(speed===0)return['Relancez le temps : 2×.',{el:'#speed button[data-s="2"]',how:'clic'}];
+      if(!sieging){if(selectedOwn().length<2)return[`Cartacan tient ${v.name}. Cliquez sur « Tous ».`,{el:'#b-all',how:'clic'}];
+        return[`Clic droit sur ${v.name} : vos troupes l’encerclent.`,{tile:[v.x,v.y],how:TOUCH?'toucher':'clic droit',foe:true}]}
+      if(state.armies.some(a=>a.fac==='A'&&a.siege===v.id&&a.assault))return['L’assaut est lancé. Accélérez le temps : 4×.',speed<4?{el:'#speed button[data-s="4"]',how:'clic'}:null];
+      if(sel&&sel.kind==='set'&&sel.id===v.id)return['Cliquez sur « Lancer l’assaut ».',{el:'#panel [data-act="sassault"]',how:'clic'}];
+      return[`Cliquez sur ${v.name}, puis « Lancer l’assaut ».`,{tile:[v.x,v.y],how:'clic',foe:true}]},
+    ok:()=>{const v=tutoVil();return v&&v.owner==='A'}},
+  {t:'Victoire !',end:true}
+];
+function tutoNearCastle(){const c=tutoCastle();return[c.x+1,c.y]}
+function tutoNearMarker(){const L=state.armies.filter(a=>a.fac==='A'&&count(a.units)&&!a.aboard&&!isShip(a.k));if(!L.length)return tutoNearCastle();
+  const[mx,my]=state.tuto.mk;L.sort((p,q)=>cheb(p,{x:mx,y:my})-cheb(q,{x:mx,y:my}));return[L[0].x,L[0].y]}
+function tutoEv(c){if(!state||!state.tuto)return;if(c.c==='act'&&c.a==='form')state.tuto.formed=true}
+function tutoGo(i){const T=state.tuto;if(!T)return;T.step=Math.min(i,TSTEPS.length-1);T.autoCam=true;tutoKey='';tutoSaid='';const S=TSTEPS[T.step];try{S.in&&S.in()}catch(e){console.error(e)}tutoRender()}
+function tutoShow(){if(state.tuto&&state.tuto.story!=null){$('#tuto').hidden=true;$('#tstory').hidden=false;storyRender();return}$('#tuto').hidden=false;tutoKey='';tutoSaid='';tutoRender()}
+function tutoHide(){$('#tuto').hidden=true;$('#tstory').hidden=true;$('#thand').hidden=true;try{speechSynthesis.cancel()}catch(e){}}
+function tutoQuit(){if(!state||!state.tuto)return;tutoHide();showTitle()}
+function tutoFree(){state.tuto=null;tutoHide();setSel(null);toast('Haz-kan s’éveille : la guerre commence pour de bon.','war');log('L’apprentissage est fini. Cartacan se met en mouvement.','war')}
+function tutoRender(){
+  const T=state&&state.tuto;if(!T)return;const S=TSTEPS[T.step],n=TSTEPS.length-2;const box=$('#tuto');
+  const head=`<div class="tt-top"><span class="eyebrow">APPRENTISSAGE${S.intro||S.end?'':` · ${T.step} / ${n}`}</span><button class="tt-v ${TV?'on':''}" data-t="voice" title="${TV?'Couper la voix':'Lire les consignes à voix haute'}" aria-label="Voix">${TV?'🔊':'🔈'}</button></div>
+    <div class="tt-bar"><b style="width:${Math.round(Math.min(T.step,n)/n*100)}%"></b></div><h3>${esc(S.t)}</h3>`;
+  if(S.intro){if(tutoKey==='intro')return;const v=tutoVil();box.innerHTML=head+`<p>Voici comment commander. En une dizaine de minutes, vous apprendrez à faire marcher vos régiments, explorer, combattre, recruter, bâtir et libérer ${v?esc(v.name):'le village'}.</p><p>Une <b>petite main</b> vous montre où cliquer ; la <b>voix</b> lit les consignes (🔊).</p>`;box.innerHTML+=`<div class="tt-acts"><button class="btn primary" data-t="go">Commencer</button><button class="btn" data-t="quit">Quitter</button></div>`;
+    tutoKey='intro';const say='Voici comment commander. Suivez la petite main, puis cliquez sur Commencer.';if(tutoSaid!==say){tutoSaid=say;tsay(say)}return}
+  if(S.end){if(tutoKey==='end')return;const v=tutoVil();box.innerHTML=head+`<p>${v?esc(v.name)+' est libéré. ':''}Vous savez l’essentiel. Plus tard, essayez les postures, les embuscades, les décrets du château, la mer et les ordres à la voix : tout est dans les <b>Règles</b>.</p><div class="tt-acts"><button class="btn primary" data-t="free" title="Cartacan se met en mouvement ; cette partie remplacera votre sauvegarde">Continuer cette partie</button><button class="btn" data-t="new">Nouvelle campagne</button><button class="btn" data-t="rules">Règles</button></div>`;
+    tutoKey='end';const say='Victoire ! Vous savez l’essentiel. Continuez cette partie, ou commencez une vraie campagne.';if(tutoSaid!==say){tutoSaid=say;tsay(say)}return}
+  const[txt]=S.x();const key=T.step+'|'+txt;if(key===tutoKey)return;tutoKey=key;
+  box.innerHTML=head+`<p class="tt-do">${esc(txt)}</p><div class="tt-acts"><button class="btn" data-t="skip">Passer l’étape</button><button class="btn" data-t="quit">Quitter</button></div>`;
+  if(tutoSaid!==txt){tutoSaid=txt;tsay(txt)}
+}
+$('#tuto').addEventListener('click',e=>{const b=e.target.closest('[data-t]');if(!b||!state||!state.tuto)return;const k=b.dataset.t;
+  if(k==='voice'){TV=!TV;try{localStorage.setItem('arenseuille.tutovoice',TV?'1':'0')}catch(err){}if(!TV)try{speechSynthesis.cancel()}catch(err){}tutoKey='';tutoSaid=TV?'':tutoSaid;tutoRender();return}
+  if(k==='go'||k==='skip'){tutoGo(state.tuto.step+1);return}
+  if(k==='quit'){tutoQuit();return}
+  if(k==='free'){tutoFree();return}
+  if(k==='new'){tutoHide();showTitle();return}
+  if(k==='rules'){showHelp();return}});
+$('#t-tuto').onclick=tutoStart;
+/* l'histoire du début : trois pages lues à voix haute, la carte défile derrière */
+const SHIELD=(f,em)=>`<svg viewBox="0 0 80 92" aria-hidden="true"><path d="M8 6h64v36c0 24-15 38-32 46C23 80 8 66 8 42z" fill="${f}" stroke="#2b2219" stroke-width="3"/><path d="M14 12h52v30c0 19-12 31-26 38-14-7-26-19-26-38z" fill="none" stroke="rgba(255,240,200,.45)" stroke-width="1.5"/>${em}</svg>`;
+const STORY=[
+  {e:'IL ÉTAIT UNE FOIS…',t:'Le royaume d’Arenseuille',svg:()=>SHIELD('#3f72bf','<circle cx="40" cy="40" r="11" fill="#e9c35f"/><g stroke="#e9c35f" stroke-width="3" stroke-linecap="round">'+[0,45,90,135,180,225,270,315].map(a=>{const r=a*Math.PI/180;return`<line x1="${40+Math.cos(r)*16}" y1="${40+Math.sin(r)*16}" x2="${40+Math.cos(r)*23}" y2="${40+Math.sin(r)*23}"/>`}).join('')+'</g>'),
+    p:()=>`Entre la Mer d’Ambre et les grandes montagnes s’étend Arenseuille : des blés dorés, des forêts où rôdent les loups, des rivières où tournent les moulins. Depuis son château aux tours bleues, le jeune roi Gabor veille sur ses villages, et le peuple l’aime.`,
+    cam:()=>{const c=tutoCastle();return[c.x,c.y,.85]}},
+  {e:'L’OMBRE DE L’EST',t:'Haz-kan de Cartacan',svg:()=>SHIELD('#b23b32','<path d="M48 22a20 20 0 1 0 0 36a15 15 0 1 1 0-36z" fill="#e9c35f"/><circle cx="52" cy="40" r="3" fill="#e9c35f"/>'),
+    p:()=>{const v=tutoVil();return`Mais derrière les cols enneigés s’étend Cartacan, pays de déserts rouges et d’oasis. Son roi, Haz-kan, a juré de soumettre l’ouest. Cette nuit, ses pillards ont surgi des bois et se sont emparés de ${v?v.name:'nos villages'}. Partout, les cloches sonnent l’alarme.`},
+    cam:()=>{const v=tutoVil();return v?[v.x,v.y,.95]:null}},
+  {e:'VOTRE SERMENT',t:'Le chef de guerre',svg:()=>SHIELD('#5b4a72','<g stroke="#e9c35f" stroke-width="4" stroke-linecap="round"><line x1="24" y1="24" x2="56" y2="62"/><line x1="56" y1="24" x2="24" y2="62"/></g><g stroke="#e9c35f" stroke-width="3"><line x1="19" y1="54" x2="31" y2="66"/><line x1="61" y1="54" x2="49" y2="66"/></g>'),
+    p:()=>{const v=tutoVil();return`Gabor a rassemblé ses gardes, ses archers et ses chevaliers devant le château. Il lui manque un chef de guerre : vous. Chassez les pillards, libérez ${v?v.name:'le village'}… Un jour, vous franchirez les montagnes pour abattre Haz-kan dans sa citadelle. Le royaume compte sur vous.`},
+    cam:()=>{const c=tutoCastle();return[c.x+2,c.y+1,1.05]}}
+];
+function tsayLong(t){if(!TV||!window.speechSynthesis)return;try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang='fr-FR';u.rate=.95;const v=speechSynthesis.getVoices().find(v=>/^fr/i.test(v.lang));if(v)u.voice=v;speechSynthesis.speak(u)}catch(e){}}
+function storyRender(){const T=state.tuto,i=T.story,P=STORY[i],last=i===STORY.length-1;const txt=P.p();
+  $('#tstory').innerHTML=`<div class="st-card st-anim" role="dialog" aria-label="${esc(P.t)}">${P.svg()}<button class="tt-v ${TV?'on':''}" data-s="voice" aria-label="Voix" title="${TV?'Couper la voix':'Lire à voix haute'}">${TV?'🔊':'🔈'}</button>
+    <div class="eyebrow">${P.e}</div><h2>${esc(P.t)}</h2><p>${esc(txt)}</p>
+    <div class="st-foot"><span class="st-dots">${STORY.map((_,k)=>`<i class="${k===i?'on':''}"></i>`).join('')}</span><button class="btn" data-s="skip">Passer l’histoire</button><button class="btn primary" data-s="next">${last?'Prendre le commandement':'Suite ›'}</button></div></div>`;
+  const c=P.cam();if(c){cam.z=c[2];centerOn(c[0],c[1])}
+  tsayLong(P.t+'. '+txt)}
+function storyEnd(){const T=state.tuto;T.story=null;$('#tstory').hidden=true;tutoShow()}
+$('#tstory').addEventListener('click',e=>{const b=e.target.closest('[data-s]');if(!b||!state||!state.tuto)return;const k=b.dataset.s;
+  if(k==='voice'){TV=!TV;try{localStorage.setItem('arenseuille.tutovoice',TV?'1':'0')}catch(err){}if(!TV){try{speechSynthesis.cancel()}catch(err){}}storyRender();return}
+  if(k==='skip'){storyEnd();return}
+  if(k==='next'){if(state.tuto.story>=STORY.length-1)storyEnd();else{state.tuto.story++;storyRender()}}});
+
+/* la main : se pose sur la cible, ou au bord de l'écran en pointant vers elle */
+function tutoTarget(h){
+  if(!h)return null;
+  if(h.el){const e=document.querySelector(h.el);if(!e||!e.offsetParent)return null;let r=e.getBoundingClientRect();if(!r.width)return null;
+    const box=e.closest('#panel,.sheet');if(box){const b=box.getBoundingClientRect();if(r.bottom>b.bottom-4||r.top<b.top+4){e.scrollIntoView({block:'center'});r=e.getBoundingClientRect()}}return{x:r.left+r.width*.5,y:r.top+r.height*.62,dom:true}}
+  if(h.army){const a=armyById(h.army);if(!a||!count(a.units))return null;const[wx,wy]=regPos(a);const[sx,sy]=w2s(wx,wy-6);return{x:sx,y:sy}}
+  if(h.tile){const[wx,wy]=tileWorld(h.tile[0],h.tile[1]);const[sx,sy]=w2s(wx,wy);return{x:sx,y:sy}}
+  if(h.drag)return{x:vw/2,y:vh/2};return null}
+function tutoTick(dt){
+  const T=state&&state.tuto,H=$('#thand');
+  if(T&&!$('#tuto').hidden){const b=Math.round($('#top').getBoundingClientRect().bottom+8)+'px';if($('#tuto').style.top!==b)$('#tuto').style.top=b}
+  if(T&&T.story!=null&&running){if(!H.hidden)H.hidden=true;cam.x+=dt*7;cam.y-=dt*2;return}
+  if(!T||!running||$('#tuto').hidden){if(!H.hidden)H.hidden=true;return}
+  const S=TSTEPS[T.step];
+  tutoAcc+=dt;if(tutoAcc>.2){tutoAcc=0;
+    if(tutoFlash>0){tutoFlash-=.2;if(tutoFlash<=0)tutoGo(T.step+1)}
+    else if(S.ok&&S.ok()){tutoFlash=1;$('#tuto').classList.add('ok');setTimeout(()=>$('#tuto').classList.remove('ok'),900);const p=$('#tuto .tt-do');if(p)p.innerHTML='✓ Bien !';tutoKey='done';tsay('Bien !')}
+    else tutoRender()}
+  if(S.intro||S.end||tutoFlash>0||!S.x){H.hidden=true;return}
+  const[,h]=S.x();let p=tutoTarget(h);
+  if(T.autoCam&&h&&(h.tile||h.army)&&!h.drag&&p){T.autoCam=false;if(p.x<60||p.x>vw-60||p.y<110||p.y>vh-60){const a=h.army&&armyById(h.army);const t=a?[a.x,a.y]:h.tile;centerOn(t[0],t[1]);p=tutoTarget(h)}}
+  if(!p){H.hidden=true;return}
+  const m=40,inX=p.x>m&&p.x<vw-m&&p.y>m+40&&p.y<vh-m;let x=p.x,y=p.y,ang=0;
+  if(!p.dom&&!inX){x=clamp(p.x,m+10,vw-m-10);y=clamp(p.y,m+70,vh-m-30);ang=Math.atan2(p.y-y,p.x-x)*180/Math.PI+90}
+  H.hidden=false;H.style.transform=`translate(${x}px,${y}px)`;H.querySelector('.th-rot').style.transform=`rotate(${ang}deg)`;
+  H.classList.toggle('drag',!!h.drag);H.classList.toggle('far',!p.dom&&!inX);H.classList.toggle('foe',!!h.foe);
+  const lab=!p.dom&&!inX?'par ici':(h.how||'');const L=H.querySelector('.th-lab');if(L.textContent!==lab)L.textContent=lab;
+}
+/* anneau pulsant sous la cible sur la carte */
+function tutoDraw(tm){const T=state&&state.tuto;if(!T||!running||$('#tuto').hidden)return;const S=TSTEPS[T.step];
+  const z=cam.z,pul=.5+.5*Math.sin(tm*5);
+  const ring=(sx,sy,col)=>{ctx.save();ctx.strokeStyle=col;ctx.lineWidth=2.5;ctx.globalAlpha=.55+.45*pul;ctx.beginPath();ctx.ellipse(sx,sy,(TW/2+6+pul*6)*z,(TH/2+3+pul*3)*z,0,0,7);ctx.stroke();ctx.restore()};
+  if(T.step>=4&&T.step<=5){const[wx,wy]=tileWorld(T.mk[0],T.mk[1]);const[sx,sy]=w2s(wx,wy);ctx.save();const hw=TW/2*z,hh=TH/2*z;ctx.strokeStyle='#f0cd6e';ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(sx-hw*.5,sy-hh*.5);ctx.lineTo(sx+hw*.5,sy+hh*.5);ctx.moveTo(sx+hw*.5,sy-hh*.5);ctx.lineTo(sx-hw*.5,sy+hh*.5);ctx.stroke();ctx.restore();ring(sx,sy,'#f0cd6e')}
+  if(S.x&&!S.intro&&!S.end){const[,h]=S.x();if(h&&!h.el&&!h.drag){const p=tutoTarget(h);if(p)ring(p.x,p.y+(h.army?6*z:0),h.foe?'#ff7a6b':'#f0cd6e')}}}
 
 let last=performance.now(),uiAcc=0,mmAcc=0,panAcc=0,panelHover=false;
 $('#panel').addEventListener('pointerenter',()=>panelHover=true);$('#panel').addEventListener('pointerleave',()=>panelHover=false);
@@ -3390,13 +3631,13 @@ function frame(now){
       if(panAcc>.7&&running){panAcc=0;if(sel&&!panelHover&&!(document.activeElement&&document.activeElement.closest&&document.activeElement.closest('#panel')))renderPanel()}
       mmAcc+=dt;if(mmAcc>.4){mmAcc=0;drawMinimap()}
     }
-    render(tm);
+    render(tm);tutoTick(dt);
   }catch(err){console.error(err)}
   requestAnimationFrame(frame);
 }
 function boot(data){
   resize();
-  if(data&&data.save){try{loadState(data.save);startPlaying();if(data.cam)Object.assign(cam,data.cam);setSpeed(0);requestAnimationFrame(frame);return}catch(e){}}
+  if(data&&data.save){try{loadState(data.save);startPlaying();if(state.tuto)tutoShow();if(data.cam)Object.assign(cam,data.cam);setSpeed(0);requestAnimationFrame(frame);return}catch(e){}}
   showTitle();requestAnimationFrame(frame);
 }
 try{window.claude?.hot?.snapshot?.(()=>({save:state&&!state.preview?serialize():null,cam:{...cam}}))}catch(e){}
