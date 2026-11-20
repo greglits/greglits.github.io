@@ -1,0 +1,4 @@
+.rst-content img { border: 1px solid #e1e4e5; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,.08); margin: 6px 0 18px; }
+.rst-content a.btn { margin: 4px 0 18px; }
+.rst-content dl dt { font-weight: 700; margin-top: 12px; }
+.wy-side-nav-search, .wy-nav-top { background-color: #1f5f5b; }
