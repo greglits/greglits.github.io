@@ -1,4 +1,4 @@
-# Manuel de QDA-md Étude 0.2.1
+# Manuel de QDA-md Étude 0.2.2
 
 
 
@@ -12,7 +12,7 @@ _Version Markdown complète du manuel. La version en ligne contient les mêmes p
 
 Toute l’application tient dans **un seul fichier HTML**. Il n’y a rien à installer : un double-clic l’ouvre dans le navigateur, elle fonctionne hors ligne et **aucune donnée n’est envoyée sur internet**.
 
-[⬇ Télécharger QDA-md Étude 0.2.1](QDA-md-Etude.html)
+[⬇ Télécharger QDA-md Étude 0.2.2](QDA-md-Etude-0.2.2.html)
 
 ![Espace de travail de QDA-md Étude](img/espace-de-travail.png)
 
@@ -36,7 +36,7 @@ Toute l’application tient dans **un seul fichier HTML**. Il n’y a rien à in
 2. Prise en main rapide avec le projet d’exemple — dix minutes.
 3. Préparer vos retranscriptions avant de les importer.
 
-> **Version** — Ce manuel décrit la version **0.2.1** (novembre 2026). QDA-md Étude est la version pédagogique de QDA-md, un outil de codage qualitatif pour la recherche.
+> **Version** — Ce manuel décrit la version **0.2.2** (novembre 2026). QDA-md Étude est la version pédagogique de QDA-md, un outil de codage qualitatif pour la recherche.
 
 
 ---
@@ -46,7 +46,7 @@ Toute l’application tient dans **un seul fichier HTML**. Il n’y a rien à in
 
 ### Télécharger
 
-Téléchargez le fichier [`QDA-md-Etude.html`](QDA-md-Etude.html) et rangez-le dans un dossier de votre ordinateur, par exemple le dossier de votre mémoire. **C’est tout** : il n’y a ni programme à installer, ni compte à créer, ni connexion nécessaire.
+Téléchargez le fichier [`QDA-md-Etude-0.2.2.html`](QDA-md-Etude-0.2.2.html) (le numéro de version fait partie du nom) et rangez-le dans un dossier de votre ordinateur, par exemple le dossier de votre mémoire. **C’est tout** : il n’y a ni programme à installer, ni compte à créer, ni connexion nécessaire.
 
 Pour ouvrir l’application, **double-cliquez sur le fichier** : il s’ouvre dans votre navigateur.
 
@@ -63,6 +63,8 @@ L’application fonctionne dans tous les navigateurs récents, mais **l’enregi
 
 > **Conseil** — Utilisez **Chrome ou Edge** pour un travail de longue haleine comme un mémoire : l’enregistrement automatique évite de se retrouver avec `projet (1).qda.md`, `projet (2).qda.md`…
 
+> **Ordinateur partagé** — En salle informatique, choisissez sur la page d’accueil **« Effacer les données de ce navigateur quand on ferme QDA-md Étude ? » → Oui**. Voir Données et confidentialité.
+
 L’indicateur à côté du bouton « Enregistrer » dit toujours où vous en êtes : **✓ Enregistré** (vert) ou **● Non enregistré** (orange).
 
 ### Votre identifiant de codeur
@@ -71,7 +73,7 @@ L’indicateur à côté du bouton « Enregistrer » dit toujours où vous en ê
 
 ### Mettre à jour
 
-Pour passer à une nouvelle version, remplacez simplement l’ancien fichier `QDA-md-Etude.html` par le nouveau. Vos projets (`.qda.md`) sont des fichiers séparés : ils ne sont pas touchés.
+Pour passer à une nouvelle version, remplacez simplement l’ancien fichier (par exemple `QDA-md-Etude-0.2.1.html`) par le nouveau, et supprimez l’ancien pour ne pas les confondre. Vos projets (`.qda.md`) sont des fichiers séparés : ils ne sont pas touchés.
 
 > **N’utilisez qu’une seule version** — Une version plus ancienne peut ouvrir un projet créé avec une version plus récente, mais elle ignore les informations qu’elle ne connaît pas et les **effacerait à l’enregistrement**. Dans un groupe, tout le monde doit utiliser la même version.
 
@@ -239,7 +241,7 @@ Un même passage peut recevoir plusieurs codes, et deux passages codés peuvent 
 
 ### Retirer un code
 
-Sous chaque paragraphe, les **étiquettes** montrent les codes appliqués. **Survolez** une étiquette pour voir le passage concerné ; cliquez sur **×** pour retirer le code. Toute opération peut être annulée avec `Ctrl+Z` (rétablie avec `Ctrl+Y`).
+Sous chaque paragraphe, les **étiquettes** montrent les codes appliqués ; dès que le projet compte plusieurs codeurs, chaque étiquette indique aussi qui a codé (`@zoe`). **Survolez** une étiquette pour voir le passage concerné ; cliquez sur **×** pour retirer le code. Toute opération peut être annulée avec `Ctrl+Z` (rétablie avec `Ctrl+Y`).
 
 ### Questions et réponses
 
@@ -250,6 +252,7 @@ Les questions de l’intervieweur·euse apparaissent **en pointillés**. On ne l
 ### Se repérer
 
 - **Filtres** en haut du document : paragraphes portant le code actif, paragraphes pas encore codés, un locuteur précis (focus group).
+- **Afficher** (en bas de la colonne des codes) : tous les codeurs, seulement vos codages, ou ceux d’un·e autre codeur·euse — voir Travailler à plusieurs.
 - **Recherche** dans tout le corpus (colonne de gauche) : un clic sur un résultat ouvre le paragraphe.
 - **Mémo du document** (📝) : impressions, contexte de l’entretien, premières pistes d’analyse.
 - La **barre d’avancement** de chaque document compte les réponses codées.
@@ -331,7 +334,7 @@ Le **double codage** est un exercice central de l’apprentissage : deux personn
 
 ### 0. Coder chacun·e de son côté
 
-Chacun·e travaille dans **sa copie du projet**, avec **son propre identifiant**. Cochez **N’afficher que mes codages** (en bas de la colonne des codes) pour ne pas être influencé·e par les codages déjà présents.
+Chacun·e travaille dans **sa copie du projet**, avec **son propre identifiant**. Dans le menu **Afficher** (en bas de la colonne des codes), choisissez **mes codages — codage à l’aveugle** pour ne pas être influencé·e par les codages déjà présents.
 
 > **Partir d’une même base** — Le plus simple : une personne crée le projet, importe les entretiens, écrit les premières définitions (et éventuellement verrouille l’arbre), puis envoie une copie du fichier à l’autre.
 
@@ -355,7 +358,13 @@ L’onglet **3. Codage de consensus** présente chaque point à trancher — un 
 
 ![Codage de consensus](img/consensus.png)
 
-Pour **n’afficher que le consensus**, prenez temporairement l’identifiant `consensus` (« Codeur @ ») et cochez « N’afficher que mes codages » — sans oublier de reprendre votre identifiant ensuite.
+### Afficher le codage d’une personne
+
+Le menu **Afficher** propose : **tous les codeurs**, **mes codages**, ou n’importe quel codeur du projet — y compris **@consensus**. Vous continuez à coder sous votre propre identifiant ; un rappel s’affiche sous le menu, car vos nouveaux codages restent invisibles tant qu’un autre codeur est affiché.
+
+![Menu Afficher](img/afficher-codeur.png)
+
+Pour **retoucher** le consensus lui-même, prenez temporairement l’identifiant `consensus` (« Codeur @ »), puis reprenez le vôtre.
 
 
 ---
@@ -468,11 +477,23 @@ Consensus
 Pour éviter les pertes, le navigateur garde aussi :
 
 - une **reprise du travail non enregistré** (proposée sur la page d’accueil après une fermeture accidentelle) ;
-- jusqu’à **20 sauvegardes automatiques** par projet (menu **Exporter › Sauvegardes automatiques…**), que l’on peut rouvrir ou télécharger.
+- jusqu’à **20 sauvegardes automatiques** par projet, que l’on peut rouvrir ou télécharger ;
+- la liste des projets récents, votre identifiant et vos réglages.
 
-Ces copies contiennent le **texte complet des entretiens**. Elles sont enregistrées **sur le disque**, dans le profil du navigateur, et restent après la fermeture de l’onglet. Les sites web ordinaires n’y ont pas accès, mais **d’autres fichiers HTML ouverts depuis l’ordinateur dans le même navigateur** pourraient les lire, et toute personne utilisant la même session de l’ordinateur peut les retrouver.
+Les copies contiennent le **texte complet des entretiens**. Elles sont enregistrées **sur le disque**, dans le profil du navigateur, et restent après la fermeture de l’onglet. Les sites web ordinaires n’y ont pas accès, mais **d’autres fichiers HTML ouverts depuis l’ordinateur dans le même navigateur** pourraient les lire, et toute personne utilisant la même session de l’ordinateur peut les retrouver.
 
-> **Sur un ordinateur partagé (salle informatique)** — Après votre séance, effacez ces données : dans Chrome, **Paramètres › Confidentialité et sécurité › Effacer les données de navigation**, cochez « Cookies et autres données des sites ». Un bouton « Effacer les données de ce navigateur » est prévu dans une prochaine version.
+### Effacer les données du navigateur à la fermeture
+
+La page d’accueil et le menu **Exporter › Sauvegardes et données du navigateur…** posent la question : **« Effacer les données de ce navigateur quand on ferme QDA-md Étude ? »**
+
+- **Non** — sur votre ordinateur personnel : copies de secours et reprise du travail restent disponibles.
+- **Oui** — sur un **ordinateur partagé** ou avec des **données sensibles** : les données existantes sont effacées immédiatement, **aucune copie n’est plus gardée** pendant le travail, et identifiant, réglages et projets récents sont effacés à la fermeture. Seul ce choix lui-même est mémorisé.
+
+![Sauvegardes et données du navigateur](img/donnees-navigateur.png)
+
+Le bouton **Effacer maintenant les données de ce navigateur** fait le ménage à tout moment. Vos **fichiers projet** ne sont jamais touchés.
+
+> **Avec « Oui », seul votre fichier compte** — Sans copie de secours, un travail non enregistré est perdu si l’onglet se ferme. Avec Chrome ou Edge, l’enregistrement automatique dans le fichier protège ; avec Firefox ou Safari, enregistrez souvent.
 
 ### Bonnes pratiques
 
@@ -489,7 +510,7 @@ Ces copies contiennent le **texte complet des entretiens**. Elles sont enregistr
 ## Questions fréquentes
 
 **Je ne retrouve pas mon travail.**
-:   Rouvrez votre fichier `.qda.md` avec **Ouvrir un projet**. Avec Firefox ou Safari, ouvrez le **dernier** fichier téléchargé. Sinon, regardez la page d’accueil (« Un travail non enregistré a été retrouvé ») et **Exporter › Sauvegardes automatiques…**.
+:   Rouvrez votre fichier `.qda.md` avec **Ouvrir un projet**. Avec Firefox ou Safari, ouvrez le **dernier** fichier téléchargé. Sinon, regardez la page d’accueil (« Un travail non enregistré a été retrouvé ») et **Exporter › Sauvegardes et données du navigateur…** (sauf si vous avez choisi d’effacer les données à la fermeture).
 
 **L’indicateur reste sur « ● Non enregistré ».**
 :   Avec Firefox ou Safari, c’est normal tant que vous n’avez pas cliqué sur **Enregistrer**. Avec Chrome ou Edge, cliquez sur Enregistrer une fois pour choisir l’emplacement du fichier ; ensuite l’enregistrement est automatique.
@@ -506,8 +527,8 @@ Ces copies contiennent le **texte complet des entretiens**. Elles sont enregistr
 **Je ne peux plus créer de code.**
 :   L’arbre est **verrouillé** (🔒 en haut de la colonne des codes). Demandez le code de déverrouillage à la personne qui a préparé le projet.
 
-**Le nom du codeur n’apparaît pas sur certaines étiquettes.**
-:   Il n’est affiché que lorsque le paragraphe a été codé par plusieurs codeurs. Survolez une étiquette : l’info-bulle indique toujours le codeur. L’affichage systématique est prévu dans une prochaine version.
+**Je ne vois plus mes nouveaux codages.**
+:   Le menu **Afficher** (en bas de la colonne des codes) montre peut-être le codage d’un·e autre codeur·euse. Choisissez « tous les codeurs » ou « mes codages ».
 
 **Puis-je ouvrir mon projet dans MaxQDA ou NVivo ?**
 :   Pas directement pour l’instant. Les exports CSV et Markdown sont lisibles partout ; un export au format d’échange REFI-QDA est envisagé.
