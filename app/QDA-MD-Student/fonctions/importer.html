@@ -110,6 +110,8 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#apres-limport">Après l’import</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#importer-un-projet-qda-md">Importer un projet QDA-md</a>
+    </li>
     </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="coder.html">Coder</a>
@@ -170,6 +172,10 @@
                   <li class="toctree-l1"><a class="reference internal" href="../concepts/format.html">Le fichier projet et glossaire</a>
     <ul>
     <li class="toctree-l2"><a class="reference internal" href="../concepts/format.html#ce-quil-faut-savoir">Ce qu’il faut savoir</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../concepts/format.html#un-fichier-ou-un-dossier">Un fichier ou un dossier</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../concepts/format.html#projets-crees-avec-une-version-anterieure">Projets créés avec une version antérieure</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="../concepts/format.html#glossaire">Glossaire</a>
     </li>
@@ -240,6 +246,15 @@
 <h2 id="apres-limport">Après l’import<a class="headerlink" href="#apres-limport" title="Permanent link">¶</a></h2>
 <p>Le bouton <strong>👥 Locuteurs</strong> du document permet à tout moment de renommer ou fusionner des locuteurs, de changer leur rôle, de compléter leurs caractéristiques, et d’attribuer après coup les paragraphes restés sans locuteur. Les codages déjà faits sont conservés. Pour corriger un seul paragraphe, <strong>cliquez sur le nom du locuteur</strong> au-dessus du texte.</p>
 <p><img alt="Dialogue Locuteurs" src="../img/locuteurs.png" /></p>
+<h2 id="importer-un-projet-qda-md">Importer un projet QDA-md<a class="headerlink" href="#importer-un-projet-qda-md" title="Permanent link">¶</a></h2>
+<p>L’onglet <strong>Projet QDA-md</strong> de la fenêtre <strong>＋ Importer</strong> ajoute au projet ouvert un projet entier :</p>
+<ul>
+<li>un <strong>dossier</strong> de projet QDA-md (version de recherche) ou un projet adoq exporté en dossier, qui contient <code>arbre.md</code> et <code>donnees/</code> ;</li>
+<li>une <strong>archive <code>.zip</code></strong> de ce dossier ;</li>
+<li>un autre fichier <strong><code>.qda.md</code></strong>.</li>
+</ul>
+<p>Un aperçu indique ce qui sera ajouté : documents, codes, codages. Rien n’est effacé dans votre projet : un entretien déjà présent reçoit seulement les codages qui lui manquent, et un code déjà présent garde sa définition. L’import est noté dans le journal de l’arbre de codes.</p>
+<p>Les projets de l’ancien format QDA-md (0.9) sont convertis au passage. Les notes placées sous les codes de leur arbre deviennent des mémos de codes.</p>
               
             </div>
           </div><footer>
@@ -252,7 +267,7 @@
 
   <div role="contentinfo">
     <!-- Copyright etc -->
-      <p>adoq QDA 0.3.1 — Grégoire Lits, UCLouvain</p>
+      <p>adoq QDA 0.4.1 — Grégoire Lits, UCLouvain</p>
   </div>
 
   Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.

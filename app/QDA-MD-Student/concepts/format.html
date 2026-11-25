@@ -110,6 +110,8 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="../fonctions/importer.html#apres-limport">Après l’import</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="../fonctions/importer.html#importer-un-projet-qda-md">Importer un projet QDA-md</a>
+    </li>
     </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../fonctions/coder.html">Coder</a>
@@ -171,6 +173,10 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#ce-quil-faut-savoir">Ce qu’il faut savoir</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#un-fichier-ou-un-dossier">Un fichier ou un dossier</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#projets-crees-avec-une-version-anterieure">Projets créés avec une version antérieure</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#glossaire">Glossaire</a>
     </li>
     </ul>
@@ -221,10 +227,11 @@
               
                 <h1 id="le-fichier-projet-qdamd">Le fichier projet <code>.qda.md</code><a class="headerlink" href="#le-fichier-projet-qdamd" title="Permanent link">¶</a></h1>
 <p>Un projet est un <strong>simple fichier texte</strong> au format Markdown. On peut l’ouvrir dans le Bloc-notes, TextEdit, VS Code ou Obsidian pour voir comment le codage est noté. L’application le relit et l’écrit ; un humain peut le lire, et même le corriger à la main.</p>
+<p>Le format s’appelle <strong>QDA 1</strong>. Il est commun à adoq QDA et à <strong>QDA-md</strong>, la version de recherche : un projet passe de l’un à l’autre sans conversion.</p>
 <pre><code class="language-markdown">---
-qda-md-etude: 2
+qda-format: 1
+id: memoire-info-2026
 titre: Mémoire — rapport à l’information
-id: 3f2a…
 ---
 
 # Arbre de codes
@@ -235,9 +242,10 @@ id: 3f2a…
 
 # Documents
 
-## Entretien 1 — Julie
+## Entretien avec Julie
+document:: E01
 
-&gt; [!meta]- Fiche de l’entretien
+&gt; [!meta]- Fiche de l'entretien
 &gt; date:: 2026-02-14
 &gt; lieu:: Bruxelles
 
@@ -245,7 +253,8 @@ id: 3f2a…
 &gt; - Zoé :: intervieweur
 &gt; - Julie :: répondant :: âge: 24 ; genre: F
 
-### §2 · Julie
+### E01-002
+locuteur:: Julie
 
 Ils sont à la solde des politiciens, c’est évident.
 
@@ -255,12 +264,33 @@ Ils sont à la solde des politiciens, c’est évident.
 <h2 id="ce-quil-faut-savoir">Ce qu’il faut savoir<a class="headerlink" href="#ce-quil-faut-savoir" title="Permanent link">¶</a></h2>
 <ul>
 <li><strong>Le texte des entretiens n’est jamais modifié</strong> par le codage. Chaque codage cite le passage codé ; <code>[2]</code> désigne la deuxième occurrence d’une même citation ; <code>(paragraphe entier)</code> code tout le paragraphe.</li>
+<li><strong>Chaque document a un code</strong> (<code>E01</code>, <code>FG1</code>), modifiable dans <strong>ⓘ Fiche</strong>, et <strong>chaque paragraphe un identifiant stable</strong> (<code>E01-002</code>). Renommer un document ou un locuteur ne change pas ces identifiants : un lien Obsidian comme <code>[[mon-projet.qda#E01-002]]</code> reste valable.</li>
 <li><strong>Chaque code a un identifiant</strong> (<code>#mefiance</code>) qui ne change pas quand on le renomme.</li>
-<li>D’autres sections apparaissent au besoin : <code># Mémos des codes</code>, <code># Décisions de consensus</code>, <code># Journal de l’arbre de codes</code>.</li>
-<li>Une citation qui ne se retrouve plus dans le texte est signalée <strong>⚠</strong> mais jamais perdue ; une ligne illisible est conservée telle quelle.</li>
-<li>La syntaxe des codages et de l’arbre est commune avec <strong>QDA-md</strong>, la version de recherche.</li>
-<li>La première ligne de l’en-tête, <code>qda-md-etude: 2</code>, garde l’ancien nom du logiciel : c’est ce qui permet d’ouvrir indifféremment les projets créés avant et après le changement de nom.</li>
+<li>Chaque paragraphe tient sur <strong>une seule ligne</strong>. Une ligne qui pourrait être lue comme autre chose que du texte (elle commence par <code>-</code>, <code>#</code>, <code>1.</code>…) est précédée d’une barre oblique inverse <code>\</code>, retirée à la lecture.</li>
+<li>D’autres sections apparaissent au besoin : <code># Mémos des codes</code>, <code># Décisions de consensus</code>, <code># Journal de l'arbre de codes</code>. Un paragraphe peut aussi porter un mémo (<code>&gt; [!memo]-</code>), affiché sous son texte.</li>
+<li>Une citation qui ne se retrouve plus dans le texte est signalée <strong>⚠</strong> mais jamais perdue ; une ligne illisible est conservée telle quelle. Ce que le logiciel ne connaît pas (un champ, un encadré, une section ajoutés par QDA-md ou à la main) est <strong>recopié à l’identique</strong>.</li>
 </ul>
+<h2 id="un-fichier-ou-un-dossier">Un fichier ou un dossier<a class="headerlink" href="#un-fichier-ou-un-dossier" title="Permanent link">¶</a></h2>
+<p>Par défaut, adoq QDA travaille sur <strong>un seul fichier</strong> <code>.qda.md</code>. Le même projet peut aussi prendre la forme d’un <strong>dossier</strong>, celle qu’utilise QDA-md :</p>
+<pre><code>mon-projet/
+  arbre.md          ← l’en-tête et les sections du projet
+  donnees/
+    E01.md          ← un fichier par entretien
+    E02.md
+    FG1.md
+</code></pre>
+<ul>
+<li><strong>Exporter › Projet en dossier</strong> télécharge ce dossier dans une archive <code>.zip</code>.</li>
+<li><strong>Importer › Projet QDA-md</strong> fait le chemin inverse : il lit un dossier, une archive <code>.zip</code> ou un autre fichier <code>.qda.md</code>, et ajoute son contenu au projet ouvert.</li>
+</ul>
+<p>Le passage de l’un à l’autre ne perd rien : découper un fichier en dossier puis le réunir redonne le même fichier.</p>
+<h2 id="projets-crees-avec-une-version-anterieure">Projets créés avec une version antérieure<a class="headerlink" href="#projets-crees-avec-une-version-anterieure" title="Permanent link">¶</a></h2>
+<p>Un projet créé avec QDA-md Étude ou adoq QDA 0.3 (en-tête <code>qda-md-etude: 2</code>) est <strong>converti à l’ouverture</strong>, après confirmation : chaque document reçoit un code (<code>D01</code>, <code>D02</code>…) et chaque paragraphe un identifiant (<code>D01-004</code>). Le texte et le codage ne changent pas. Une copie de l’ancien fichier est gardée dans les sauvegardes du navigateur, et peut être téléchargée.</p>
+<div class="admonition warning">
+<p class="admonition-title">Après la conversion</p>
+<p>N’ouvrez plus le projet avec adoq QDA 0.3 ou une version antérieure : elles ne comprennent pas le format QDA 1 et abîmeraient le fichier en l’enregistrant.</p>
+</div>
+<p>Les projets de <strong>QDA-md 0.9</strong> (version de recherche, ancien format) s’importent aussi par <strong>Importer › Projet QDA-md</strong>. Les notes placées sous les codes de leur arbre deviennent des <strong>mémos</strong> de codes ; leur définition reste à écrire.</p>
 <h2 id="glossaire">Glossaire<a class="headerlink" href="#glossaire" title="Permanent link">¶</a></h2>
 <dl>
 <dt>Code</dt>
@@ -270,7 +300,9 @@ Ils sont à la solde des politiciens, c’est évident.
 <dt>Segment, codage</dt>
 <dd>Un passage précis auquel un ou plusieurs codes ont été appliqués, par un codeur donné.</dd>
 <dt>Locuteur</dt>
-<dd>La personne qui prend la parole dans un paragraphe ; son rôle est intervieweur·euse ou répondant·e.</dd>
+<dd>La personne qui prend la parole dans un paragraphe ; son rôle est intervieweur·euse, répondant·e, participant·e (focus group) ou autre.</dd>
+<dt>Code du document, identifiant de paragraphe</dt>
+<dd>Repères stables du format QDA 1 (<code>E01</code>, <code>E01-004</code>), qui ne dépendent ni du titre ni de la position.</dd>
 <dt>Kappa de Cohen</dt>
 <dd>Mesure de l’accord entre deux codeurs, corrigée de l’accord attendu par le hasard (1 = accord parfait, 0 = pas mieux que le hasard).</dd>
 <dt>Consensus</dt>
@@ -288,7 +320,7 @@ Ils sont à la solde des politiciens, c’est évident.
 
   <div role="contentinfo">
     <!-- Copyright etc -->
-      <p>adoq QDA 0.3.1 — Grégoire Lits, UCLouvain</p>
+      <p>adoq QDA 0.4.1 — Grégoire Lits, UCLouvain</p>
   </div>
 
   Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
