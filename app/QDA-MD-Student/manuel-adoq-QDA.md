@@ -1,4 +1,4 @@
-# Manuel d’adoq QDA 0.4.2
+# Manuel d’adoq QDA 0.4.3
 
 
 
@@ -14,7 +14,7 @@ _Version Markdown complète du manuel. La version en ligne contient les mêmes p
 
 Toute l’application tient dans **un seul fichier HTML**. Il n’y a rien à installer : un double-clic l’ouvre dans le navigateur, elle fonctionne hors ligne et **aucune donnée n’est envoyée sur internet**.
 
-[⬇ Télécharger adoq QDA 0.4.2](adoq-QDA-0.4.2.html)
+[⬇ Télécharger adoq QDA 0.4.3](adoq-QDA-0.4.3.html)
 
 ![Espace de travail d’adoq QDA](img/espace-de-travail.png)
 
@@ -38,7 +38,7 @@ Toute l’application tient dans **un seul fichier HTML**. Il n’y a rien à in
 2. Prise en main rapide avec le projet d’exemple — dix minutes.
 3. Préparer vos retranscriptions avant de les importer.
 
-> **Version** — Ce manuel décrit la version **0.4.2** (novembre 2026). Depuis la 0.4, adoq QDA adopte le **format QDA 1**, commun avec QDA-md. Jusqu’à la version 0.2.2, adoq QDA s’appelait **QDA-md Étude** ; les projets créés avant la 0.4 sont convertis à l’ouverture (voir Le fichier projet). C’est la version pédagogique de QDA-md, un outil de codage qualitatif pour la recherche.
+> **Version** — Ce manuel décrit la version **0.4.3** (novembre 2026). Depuis la 0.4, adoq QDA adopte le **format qda.md** (version 1), commun avec QDA-md. Jusqu’à la version 0.2.2, adoq QDA s’appelait **QDA-md Étude** ; les projets créés avant la 0.4 sont convertis à l’ouverture (voir Le fichier projet). C’est la version pédagogique de QDA-md, un outil de codage qualitatif pour la recherche.
 
 
 ---
@@ -48,7 +48,7 @@ Toute l’application tient dans **un seul fichier HTML**. Il n’y a rien à in
 
 ### Télécharger
 
-Téléchargez le fichier [`adoq-QDA-0.4.2.html`](adoq-QDA-0.4.2.html) (le numéro de version fait partie du nom) et rangez-le dans un dossier de votre ordinateur, par exemple le dossier de votre mémoire. **C’est tout** : il n’y a ni programme à installer, ni compte à créer, ni connexion nécessaire.
+Téléchargez le fichier [`adoq-QDA-0.4.3.html`](adoq-QDA-0.4.3.html) (le numéro de version fait partie du nom) et rangez-le dans un dossier de votre ordinateur, par exemple le dossier de votre mémoire. **C’est tout** : il n’y a ni programme à installer, ni compte à créer, ni connexion nécessaire.
 
 Pour ouvrir l’application, **double-cliquez sur le fichier** : il s’ouvre dans votre navigateur.
 
@@ -438,7 +438,7 @@ Pour chaque étudiant·e : la part des réponses codées, le nombre de codages e
 
 Un projet est un **simple fichier texte** au format Markdown. On peut l’ouvrir dans le Bloc-notes, TextEdit, VS Code ou Obsidian pour voir comment le codage est noté. L’application le relit et l’écrit ; un humain peut le lire, et même le corriger à la main.
 
-Le format s’appelle **QDA 1**. Il est commun à adoq QDA et à **QDA-md**, la version de recherche : un projet passe de l’un à l’autre sans conversion.
+Le format s’appelle **qda.md**, version 1 : sa version est indiquée en tête du fichier (`qda-format: 1`). Il est commun à adoq QDA et à **QDA-md**, la version de recherche : un projet passe de l’un à l’autre sans conversion.
 
 ```markdown
 ---
@@ -506,7 +506,7 @@ Le passage de l’un à l’autre ne perd rien : découper un fichier en dossier
 
 Un projet créé avec QDA-md Étude ou adoq QDA 0.3 (en-tête `qda-md-etude: 2`) est **converti à l’ouverture**, après confirmation : chaque document reçoit un code (`D01`, `D02`…) et chaque paragraphe un identifiant (`D01-004`). Le texte et le codage ne changent pas. Une copie de l’ancien fichier est gardée dans les sauvegardes du navigateur, et peut être téléchargée.
 
-> **Après la conversion** — N’ouvrez plus le projet avec adoq QDA 0.3 ou une version antérieure : elles ne comprennent pas le format QDA 1 et abîmeraient le fichier en l’enregistrant.
+> **Après la conversion** — N’ouvrez plus le projet avec adoq QDA 0.3 ou une version antérieure : elles ne comprennent pas le format qda.md et abîmeraient le fichier en l’enregistrant.
 
 Les projets de **QDA-md 0.9** (version de recherche, ancien format) s’importent aussi par **Importer › Projet QDA-md**. Les notes placées sous les codes de leur arbre deviennent des **mémos** de codes ; leur définition reste à écrire.
 
@@ -525,7 +525,7 @@ Locuteur
 :   La personne qui prend la parole dans un paragraphe ; son rôle est intervieweur·euse, répondant·e, participant·e (focus group) ou autre.
 
 Code du document, identifiant de paragraphe
-:   Repères stables du format QDA 1 (`E01`, `E01-004`), qui ne dépendent ni du titre ni de la position.
+:   Repères stables du format qda.md (`E01`, `E01-004`), qui ne dépendent ni du titre ni de la position.
 
 Kappa de Cohen
 :   Mesure de l’accord entre deux codeurs, corrigée de l’accord attendu par le hasard (1 = accord parfait, 0 = pas mieux que le hasard).

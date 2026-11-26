@@ -229,7 +229,7 @@
               
                 <h1 id="le-fichier-projet-qdamd">Le fichier projet <code>.qda.md</code><a class="headerlink" href="#le-fichier-projet-qdamd" title="Permanent link">¶</a></h1>
 <p>Un projet est un <strong>simple fichier texte</strong> au format Markdown. On peut l’ouvrir dans le Bloc-notes, TextEdit, VS Code ou Obsidian pour voir comment le codage est noté. L’application le relit et l’écrit ; un humain peut le lire, et même le corriger à la main.</p>
-<p>Le format s’appelle <strong>QDA 1</strong>. Il est commun à adoq QDA et à <strong>QDA-md</strong>, la version de recherche : un projet passe de l’un à l’autre sans conversion.</p>
+<p>Le format s’appelle <strong>qda.md</strong>, version 1 : sa version est indiquée en tête du fichier (<code>qda-format: 1</code>). Il est commun à adoq QDA et à <strong>QDA-md</strong>, la version de recherche : un projet passe de l’un à l’autre sans conversion.</p>
 <pre><code class="language-markdown">---
 qda-format: 1
 id: memoire-info-2026
@@ -290,7 +290,7 @@ Ils sont à la solde des politiciens, c’est évident.
 <p>Un projet créé avec QDA-md Étude ou adoq QDA 0.3 (en-tête <code>qda-md-etude: 2</code>) est <strong>converti à l’ouverture</strong>, après confirmation : chaque document reçoit un code (<code>D01</code>, <code>D02</code>…) et chaque paragraphe un identifiant (<code>D01-004</code>). Le texte et le codage ne changent pas. Une copie de l’ancien fichier est gardée dans les sauvegardes du navigateur, et peut être téléchargée.</p>
 <div class="admonition warning">
 <p class="admonition-title">Après la conversion</p>
-<p>N’ouvrez plus le projet avec adoq QDA 0.3 ou une version antérieure : elles ne comprennent pas le format QDA 1 et abîmeraient le fichier en l’enregistrant.</p>
+<p>N’ouvrez plus le projet avec adoq QDA 0.3 ou une version antérieure : elles ne comprennent pas le format qda.md et abîmeraient le fichier en l’enregistrant.</p>
 </div>
 <p>Les projets de <strong>QDA-md 0.9</strong> (version de recherche, ancien format) s’importent aussi par <strong>Importer › Projet QDA-md</strong>. Les notes placées sous les codes de leur arbre deviennent des <strong>mémos</strong> de codes ; leur définition reste à écrire.</p>
 <h2 id="glossaire">Glossaire<a class="headerlink" href="#glossaire" title="Permanent link">¶</a></h2>
@@ -304,7 +304,7 @@ Ils sont à la solde des politiciens, c’est évident.
 <dt>Locuteur</dt>
 <dd>La personne qui prend la parole dans un paragraphe ; son rôle est intervieweur·euse, répondant·e, participant·e (focus group) ou autre.</dd>
 <dt>Code du document, identifiant de paragraphe</dt>
-<dd>Repères stables du format QDA 1 (<code>E01</code>, <code>E01-004</code>), qui ne dépendent ni du titre ni de la position.</dd>
+<dd>Repères stables du format qda.md (<code>E01</code>, <code>E01-004</code>), qui ne dépendent ni du titre ni de la position.</dd>
 <dt>Kappa de Cohen</dt>
 <dd>Mesure de l’accord entre deux codeurs, corrigée de l’accord attendu par le hasard (1 = accord parfait, 0 = pas mieux que le hasard).</dd>
 <dt>Consensus</dt>
@@ -322,7 +322,7 @@ Ils sont à la solde des politiciens, c’est évident.
 
   <div role="contentinfo">
     <!-- Copyright etc -->
-      <p>adoq QDA 0.4.2 — Grégoire Lits, UCLouvain</p>
+      <p>adoq QDA 0.4.3 — Grégoire Lits, UCLouvain</p>
   </div>
 
   Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
