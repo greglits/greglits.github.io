@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>adoq QDA — Grégoire Lits</title>
+  <meta name="description" content="adoq QDA est un logiciel libre pour apprendre le codage qualitatif d'entretiens : un seul fichier HTML, hors ligne, des projets en texte lisible au format qda.md.">
+  <link rel="canonical" href="https://gregoirelits.eu/fr/adoqQDA.html">
+  <link rel="alternate" hreflang="en" href="https://gregoirelits.eu/en/adoqQDA.html">
+  <link rel="alternate" hreflang="fr" href="https://gregoirelits.eu/fr/adoqQDA.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="adoq QDA — Analyse de données qualitatives">
+  <meta property="og:description" content="Un logiciel libre pour apprendre le codage qualitatif d'entretiens : un seul fichier HTML, hors ligne, des projets en texte lisible.">
+  <meta property="og:url" content="https://gregoirelits.eu/fr/adoqQDA.html">
+  <meta property="og:image" content="https://gregoirelits.eu/app/adoqQDA/img/espace-de-travail.png">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:site_name" content="Grégoire Lits">
+  <meta property="article:published_time" content="2026-11-26">
+  <meta property="article:author" content="Grégoire Lits">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="fediverse:creator" content="@Glits@mamot.fr">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/atom+xml" title="Flux RSS" href="https://gregoirelits.eu/atom-fr.xml">
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/base.css">
+
+  <!-- Mise en forme propre aux pages adoq QDA (fr/en) : en-tête avec logo,
+       capture d'écran encadrée, bloc de liens principaux en monospace,
+       référence à citer. À reporter dans base.css si réutilisé ailleurs. -->
+  <style>
+    .app-head {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      margin-bottom: var(--space-2);
+    }
+    .app-head img { width: 4.5rem; height: auto; flex: 0 0 auto; }
+    .app-head h1 { margin: 0; }
+    .app-head .tagline {
+      font-family: var(--font-head);
+      font-size: var(--text-sm);
+      color: var(--ink-soft);
+      margin: 0.2em 0 0;
+    }
+    .lead { font-size: var(--text-lg); line-height: 1.45; }
+    .shot { margin: var(--space-3) 0; }
+    .shot img {
+      display: block;
+      border: 1px solid var(--rule);
+      border-radius: 3px;
+    }
+    .shot figcaption {
+      font-size: var(--text-sm);
+      color: var(--ink-soft);
+      text-align: center;
+      margin-top: var(--space-1);
+    }
+    .actions {
+      list-style: none;
+      padding: var(--space-2);
+      margin: var(--space-3) 0;
+      background: var(--bg-soft);
+      border-left: 3px solid var(--accent);
+      font-family: var(--font-head);
+      font-size: var(--text-sm);
+    }
+    .actions li { margin: 0.3em 0; }
+    .actions strong { font-size: var(--text-base); }
+    .cite {
+      font-size: var(--text-sm);
+      color: var(--ink-soft);
+      padding-left: var(--space-2);
+      border-left: 3px solid var(--rule);
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+  <header class="site-head">
+    <div>
+      <p class="name"><a href="/fr/index.html">Grégoire Lits</a></p>
+      <p class="role">Sociologue des médias et du numérique · UCLouvain</p>
+    </div>
+    <nav class="lang" aria-label="Langue">
+      <a aria-current="true">fr</a> · <a href="/en/adoqQDA.html" hreflang="en">en</a>
+    </nav>
+  </header>
+  <nav class="site-nav" aria-label="Navigation principale">
+    <a href="/fr/recherche.html">Recherches</a>
+    <a href="/fr/publications.html">Publications</a>
+    <a href="/fr/cours.html">Enseignements</a>
+    <a href="/fr/blog.html">Carnet</a>
+    <a href="/fr/press.html">Presse</a>
+    <a href="/fr/about.html">À propos</a>
+  </nav>
+  <main id="main">
+    <div class="app-head">
+      <img src="/app/adoqQDA/img/adoq-logo.svg" alt="" width="72" height="72">
+      <div>
+        <h1>adoq QDA</h1>
+        <p class="tagline">Analyse de données qualitatives · logiciel libre</p>
+      </div>
+    </div>
+
+    <p class="lead">
+      Un logiciel pour <strong>apprendre le codage qualitatif d'entretiens</strong>,
+      pensé pour les étudiant·es et leurs enseignant·es.
+    </p>
+
+    <p>
+      On y importe ses retranscriptions, on surligne des passages, on leur
+      attribue des codes, on organise ces codes en arbre et on compare son
+      codage avec celui d'un·e collègue. Ce sont les gestes de base de
+      l'analyse qualitative assistée par ordinateur, réunis dans un outil
+      volontairement simple.
+    </p>
+
+    <p>
+      Toute l'application tient dans <strong>un seul fichier HTML</strong> :
+      rien à installer, pas de compte à créer. Un double-clic l'ouvre dans le
+      navigateur, elle fonctionne hors ligne et aucune donnée n'est envoyée
+      sur internet.
+    </p>
+
+    <ul class="actions">
+      <li><strong><a href="/app/adoqQDA/demarrer/installer.html">⬇ Télécharger adoq QDA</a></strong></li>
+      <li><a href="/app/adoqQDA/index.html">Lire la documentation</a></li>
+      <li><a href="https://github.com/MiiL-UCLouvain/adoqQDA">Code source de l'application (GitHub)</a></li>
+      <li><a href="https://github.com/MiiL-UCLouvain/qdamd-format">Spécification du format qda.md (GitHub)</a></li>
+    </ul>
+
+    <figure class="shot">
+      <img src="/app/adoqQDA/img/espace-de-travail.png" alt="L'espace de travail d'adoq QDA : la liste des entretiens, le texte codé au centre et l'arbre de codes à droite." loading="lazy">
+      <figcaption>L'espace de travail d'adoq QDA.</figcaption>
+    </figure>
+
+    <h2>Ce qui le distingue</h2>
+    <ul class="list-bullets">
+      <li><strong>Un projet = un fichier texte</strong> (<code>.qda.md</code>), lisible dans n'importe quel éditeur. Le codage n'est pas enfermé dans une boîte noire : on voit exactement ce qui a été noté.</li>
+      <li><strong>Questions et réponses distinguées</strong> ; les locuteurs ont un pseudo et des caractéristiques (âge, genre, profession…).</li>
+      <li><strong>Une grille d'analyse tracée</strong> : chaque création, fusion ou déplacement de code est consigné dans un journal, avec son motif.</li>
+      <li><strong>Coder à deux</strong> : mesure de l'accord entre codeurs (kappa de Cohen) et construction d'un codage de consensus.</li>
+      <li><strong>Vue enseignant</strong> pour suivre le travail d'un groupe d'étudiant·es.</li>
+    </ul>
+
+    <h2>Pour qui ?</h2>
+    <p>
+      adoq QDA convient pour découvrir l'analyse qualitative, préparer un
+      mémoire avec une dizaine ou une trentaine d'entretiens, analyser des
+      focus groups ou enseigner la méthode. Il n'est en revanche pas conçu
+      pour les grands corpus d'équipes de recherche professionnelles : il
+      laisse volontairement de côté le travail simultané, la gestion des
+      droits d'accès, le codage audio et vidéo et les requêtes avancées.
+    </p>
+
+    <h2>Un format ouvert : qda.md</h2>
+    <p>
+      Les projets sont enregistrés au <strong>format qda.md</strong>, un
+      format Markdown en texte brut pour les données qualitatives codées.
+      Un même fichier contient les textes, l'arbre de codes, les codages,
+      les mémos et l'historique de la grille. Chaque codage est une ligne
+      lisible, signée par son codeur et liée à une citation exacte. Le
+      fichier s'édite aussi dans <a href="https://obsidian.md/">Obsidian</a>
+      et ne dépend d'aucun logiciel particulier. Ce format est partagé avec
+      QDA-md, l'outil de codage qualitatif pour la recherche dont adoq QDA
+      est la version pédagogique.
+    </p>
+    <p>
+      La spécification, les exemples et l'application sont publiés sous
+      licence <a href="https://interoperable-europe.ec.europa.eu/collection/eupl/eupl-text-eupl-12">EUPL-1.2</a>.
+    </p>
+
+    <h2>Citer</h2>
+    <p class="cite">
+      Lits, G. (2026). <em>qda.md: An open, readable and durable format for
+      coded qualitative data</em> (working paper, version 1).
+      UCLouvain, Media Innovation and Intelligibility Lab.
+    </p>
+
+    <p class="meta" style="margin-top: var(--space-3);">
+      adoq QDA est développé au Media Innovation and Intelligibility Lab
+      (MiiL) de l'UCLouvain.
+    </p>
+  </main>
+  <ul class="signature" aria-hidden="true">
+    <li class="y"></li><li class="o"></li><li class="r"></li>
+    <li class="m"></li><li class="c"></li><li class="b"></li>
+  </ul>
+  <footer class="site-foot">
+    <p><a href="/fr/about.html">À propos de ce site</a> · <a href="https://gregoirelits.eu/atom-fr.xml">RSS</a> · <a href="https://mamot.fr/@Glits" rel="me">Mastodon</a> · <a href="https://scholar.google.com/citations?user=EwVIe_4AAAAJ">Google Scholar</a></p>
+    <p>Dernière mise à jour : 2026-11-26.</p>
+  </footer>
+</body>
+</html>
