@@ -132,6 +132,8 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#definition-et-memo">Définition et mémo</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#origine-des-codes-inductif-ou-deductif">Origine des codes : inductif ou déductif</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#le-journal-de-larbre">Le journal de l’arbre</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#verrouiller-larbre">Verrouiller l’arbre</a>
@@ -253,6 +255,10 @@
 <td>Écrire la <strong>définition</strong></td>
 </tr>
 <tr>
+<td>🧭</td>
+<td>Noter l’<strong>origine</strong> du code : inductive ou déductive</td>
+</tr>
+<tr>
 <td>🗒</td>
 <td>Écrire le <strong>mémo</strong> du code</td>
 </tr>
@@ -272,6 +278,21 @@
 <li>La <strong>définition</strong> dit <em>quand appliquer le code</em> : ce qu’il désigne, un exemple typique, ce qui n’en relève pas. Elle garantit un codage constant et rend la comparaison entre codeurs possible. Un <strong>point orange</strong> signale un code sans définition.</li>
 <li>Le <strong>mémo</strong> recueille vos <em>réflexions d’analyse</em> sur ce code : interprétations, hypothèses, liens avec vos lectures, cas limites. Il évolue librement.</li>
 </ul>
+<h2 id="origine-des-codes-inductif-ou-deductif">Origine des codes : inductif ou déductif<a class="headerlink" href="#origine-des-codes-inductif-ou-deductif" title="Permanent link">¶</a></h2>
+<p>Un code peut naître de deux façons :</p>
+<ul>
+<li><strong>inductif</strong> : il est apparu en lisant les entretiens, sans avoir été prévu ;</li>
+<li><strong>déductif</strong> : il vient de la théorie, d’une hypothèse ou de la question de recherche, et on l’a cherché dans les données.</li>
+</ul>
+<p>Le bouton <strong>🧭</strong> permet de le noter, avec, si on veut, la théorie ou l’auteur·e de référence d’un code déductif. Une pastille apparaît devant le nom du code : <strong>I</strong> pour inductif, <strong>D</strong> pour déductif ; le survol rappelle la théorie. L’origine est reprise dans le livre de codes exporté.</p>
+<p>Distinguer les deux aide à voir ce que l’analyse doit à la théorie de départ et ce qu’elle doit aux données. C’est aussi la première étape du codage abductif, que propose QDA-md, la version de recherche.</p>
+<p>Dans le fichier, l’origine est écrite sous le code, comme dans QDA-md :</p>
+<pre><code class="language-markdown">- Stratégies de vérification #verification
+  origine:: deductif
+  theorie:: Wardle
+  &gt; La personne décrit ce qu'elle fait pour vérifier une information.
+</code></pre>
+<p>Changer l’origine est noté dans le journal. Comme la définition, elle ne peut plus être modifiée quand l’arbre est verrouillé.</p>
 <h2 id="le-journal-de-larbre">Le journal de l’arbre<a class="headerlink" href="#le-journal-de-larbre" title="Permanent link">¶</a></h2>
 <p>Le bouton <strong>Journal</strong> liste toutes les opérations sur l’arbre — création, renommage, définition, imbrication, fusion, suppression — avec la date et l’auteur·e. Un <strong>motif</strong> peut être indiqué au moment de la fusion ou de la suppression, ou ajouté ensuite. Au moment de rédiger, ce journal permet de raconter comment votre grille d’analyse s’est construite.</p>
 <p><img alt="Journal de l’arbre" src="../img/journal.png" /></p>
@@ -294,7 +315,7 @@
 
   <div role="contentinfo">
     <!-- Copyright etc -->
-      <p>adoq QDA 0.4.1 — Grégoire Lits, UCLouvain</p>
+      <p>adoq QDA 0.4.2 — Grégoire Lits, UCLouvain</p>
   </div>
 
   Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.

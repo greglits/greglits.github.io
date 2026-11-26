@@ -1,4 +1,4 @@
-# Manuel d’adoq QDA 0.4.1
+# Manuel d’adoq QDA 0.4.2
 
 
 
@@ -14,7 +14,7 @@ _Version Markdown complète du manuel. La version en ligne contient les mêmes p
 
 Toute l’application tient dans **un seul fichier HTML**. Il n’y a rien à installer : un double-clic l’ouvre dans le navigateur, elle fonctionne hors ligne et **aucune donnée n’est envoyée sur internet**.
 
-[⬇ Télécharger adoq QDA 0.4.1](adoq-QDA-0.4.1.html)
+[⬇ Télécharger adoq QDA 0.4.2](adoq-QDA-0.4.2.html)
 
 ![Espace de travail d’adoq QDA](img/espace-de-travail.png)
 
@@ -38,7 +38,7 @@ Toute l’application tient dans **un seul fichier HTML**. Il n’y a rien à in
 2. Prise en main rapide avec le projet d’exemple — dix minutes.
 3. Préparer vos retranscriptions avant de les importer.
 
-> **Version** — Ce manuel décrit la version **0.4.1** (novembre 2026). Depuis la 0.4, adoq QDA adopte le **format QDA 1**, commun avec QDA-md. Jusqu’à la version 0.2.2, adoq QDA s’appelait **QDA-md Étude** ; les projets créés avant la 0.4 sont convertis à l’ouverture (voir Le fichier projet). C’est la version pédagogique de QDA-md, un outil de codage qualitatif pour la recherche.
+> **Version** — Ce manuel décrit la version **0.4.2** (novembre 2026). Depuis la 0.4, adoq QDA adopte le **format QDA 1**, commun avec QDA-md. Jusqu’à la version 0.2.2, adoq QDA s’appelait **QDA-md Étude** ; les projets créés avant la 0.4 sont convertis à l’ouverture (voir Le fichier projet). C’est la version pédagogique de QDA-md, un outil de codage qualitatif pour la recherche.
 
 
 ---
@@ -48,7 +48,7 @@ Toute l’application tient dans **un seul fichier HTML**. Il n’y a rien à in
 
 ### Télécharger
 
-Téléchargez le fichier [`adoq-QDA-0.4.1.html`](adoq-QDA-0.4.1.html) (le numéro de version fait partie du nom) et rangez-le dans un dossier de votre ordinateur, par exemple le dossier de votre mémoire. **C’est tout** : il n’y a ni programme à installer, ni compte à créer, ni connexion nécessaire.
+Téléchargez le fichier [`adoq-QDA-0.4.2.html`](adoq-QDA-0.4.2.html) (le numéro de version fait partie du nom) et rangez-le dans un dossier de votre ordinateur, par exemple le dossier de votre mémoire. **C’est tout** : il n’y a ni programme à installer, ni compte à créer, ni connexion nécessaire.
 
 Pour ouvrir l’application, **double-cliquez sur le fichier** : il s’ouvre dans votre navigateur.
 
@@ -287,6 +287,7 @@ Les codes sont rangés en **arbre** : un code peut avoir des sous-codes. Cliquez
 | ＋ | Ajouter un **sous-code** |
 | ✎ | **Renommer** (l’identifiant dans le fichier ne change pas : les codages restent attachés) |
 | 📝 | Écrire la **définition** |
+| 🧭 | Noter l’**origine** du code : inductive ou déductive |
 | 🗒 | Écrire le **mémo** du code |
 | ⤵ | **Fusionner** dans un autre code : tous ses codages passent au code choisi |
 | 🗑 | **Supprimer** : ses codages sont retirés, ses sous-codes remontent d’un niveau |
@@ -297,6 +298,28 @@ Les codes sont rangés en **arbre** : un code peut avoir des sous-codes. Cliquez
 
 - La **définition** dit *quand appliquer le code* : ce qu’il désigne, un exemple typique, ce qui n’en relève pas. Elle garantit un codage constant et rend la comparaison entre codeurs possible. Un **point orange** signale un code sans définition.
 - Le **mémo** recueille vos *réflexions d’analyse* sur ce code : interprétations, hypothèses, liens avec vos lectures, cas limites. Il évolue librement.
+
+### Origine des codes : inductif ou déductif
+
+Un code peut naître de deux façons :
+
+- **inductif** : il est apparu en lisant les entretiens, sans avoir été prévu ;
+- **déductif** : il vient de la théorie, d’une hypothèse ou de la question de recherche, et on l’a cherché dans les données.
+
+Le bouton **🧭** permet de le noter, avec, si on veut, la théorie ou l’auteur·e de référence d’un code déductif. Une pastille apparaît devant le nom du code : **I** pour inductif, **D** pour déductif ; le survol rappelle la théorie. L’origine est reprise dans le livre de codes exporté.
+
+Distinguer les deux aide à voir ce que l’analyse doit à la théorie de départ et ce qu’elle doit aux données. C’est aussi la première étape du codage abductif, que propose QDA-md, la version de recherche.
+
+Dans le fichier, l’origine est écrite sous le code, comme dans QDA-md :
+
+```markdown
+- Stratégies de vérification #verification
+  origine:: deductif
+  theorie:: Wardle
+  > La personne décrit ce qu'elle fait pour vérifier une information.
+```
+
+Changer l’origine est noté dans le journal. Comme la définition, elle ne peut plus être modifiée quand l’arbre est verrouillé.
 
 ### Le journal de l’arbre
 
@@ -456,7 +479,7 @@ Ils sont à la solde des politiciens, c’est évident.
 
 - **Le texte des entretiens n’est jamais modifié** par le codage. Chaque codage cite le passage codé ; `[2]` désigne la deuxième occurrence d’une même citation ; `(paragraphe entier)` code tout le paragraphe.
 - **Chaque document a un code** (`E01`, `FG1`), modifiable dans **ⓘ Fiche**, et **chaque paragraphe un identifiant stable** (`E01-002`). Renommer un document ou un locuteur ne change pas ces identifiants : un lien Obsidian comme `[[mon-projet.qda#E01-002]]` reste valable.
-- **Chaque code a un identifiant** (`#mefiance`) qui ne change pas quand on le renomme.
+- **Chaque code a un identifiant** (`#mefiance`) qui ne change pas quand on le renomme. Sous la ligne du code peuvent venir des champs, comme son origine (`origine:: inductif` ou `origine:: deductif`, et `theorie::`), puis sa définition (lignes `>`).
 - Chaque paragraphe tient sur **une seule ligne**. Une ligne qui pourrait être lue comme autre chose que du texte (elle commence par `-`, `#`, `1.`…) est précédée d’une barre oblique inverse `\`, retirée à la lecture.
 - D’autres sections apparaissent au besoin : `# Mémos des codes`, `# Décisions de consensus`, `# Journal de l'arbre de codes`. Un paragraphe peut aussi porter un mémo (`> [!memo]-`), affiché sous son texte.
 - Une citation qui ne se retrouve plus dans le texte est signalée **⚠** mais jamais perdue ; une ligne illisible est conservée telle quelle. Ce que le logiciel ne connaît pas (un champ, un encadré, une section ajoutés par QDA-md ou à la main) est **recopié à l’identique**.
