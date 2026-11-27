@@ -1,0 +1,10 @@
+.rst-content img { border: 1px solid #e1e4e5; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,.08); margin: 6px 0 18px; }
+.rst-content a.btn { margin: 4px 0 18px; }
+.rst-content dl dt { font-weight: 700; margin-top: 12px; }
+.wy-side-nav-search, .wy-nav-top { background-color: #1f5f5b; }
+
+.wy-side-nav-search a.adoq-brand { display: block; color: #fff; text-decoration: none; }
+.wy-side-nav-search a.adoq-brand img.logo { display: block; margin: 0 auto 6px; width: 96px; height: auto; background: #fff; border-radius: 10px; padding: 6px 8px; }
+.wy-side-nav-search .adoq-name { display: block; font-size: 1.35em; font-weight: 700; }
+.wy-side-nav-search .adoq-name b { color: #E1F5EE; font-size: .7em; letter-spacing: .5px; }
+.wy-side-nav-search .adoq-sub { display: block; font-size: .8em; opacity: .9; margin-top: 2px; }

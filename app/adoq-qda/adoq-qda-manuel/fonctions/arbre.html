@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Grégoire Lits" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>L’arbre de codes - adoq QDA — Manuel</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link href="../extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "L\u2019arbre de codes";
+        var mkdocs_page_input_path = "fonctions/arbre.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+<link rel="icon" type="image/svg+xml" href="../img/adoq-icon.svg">
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+<a href="../index.html" class="adoq-brand">
+  <img src="../img/adoq-logo.svg" class="logo" alt="">
+  <span class="adoq-name">adoq <b>QDA</b></span>
+  <span class="adoq-sub">Analyse de données qualitatives</span>
+</a>
+<div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" aria-label="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../index.html">Accueil</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../index.html#adoq-qda-peut-vous-aider-si-vous">adoq QDA peut vous aider si vous…</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../index.html#ce-qui-le-distingue">Ce qui le distingue</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../index.html#un-logiciel-libre-un-format-ouvert">Un logiciel libre, un format ouvert</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../index.html#comment-commencer">Comment commencer ?</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Démarrer</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../demarrer/installer.html">Installer et ouvrir</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../demarrer/installer.html#telecharger">Télécharger</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../demarrer/installer.html#quel-navigateur">Quel navigateur ?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../demarrer/installer.html#votre-identifiant-de-codeur">Votre identifiant de codeur</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../demarrer/installer.html#mettre-a-jour">Mettre à jour</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../demarrer/prise-en-main.html">Prise en main rapide</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../demarrer/prise-en-main.html#1-ouvrir-le-projet-dexemple">1. Ouvrir le projet d’exemple</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../demarrer/prise-en-main.html#2-coder-un-passage">2. Coder un passage</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../demarrer/prise-en-main.html#3-organiser-les-codes">3. Organiser les codes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../demarrer/prise-en-main.html#4-relire-ses-extraits">4. Relire ses extraits</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../demarrer/prise-en-main.html#5-explorer-le-focus-group">5. Explorer le focus group</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../demarrer/prise-en-main.html#6-enregistrer">6. Enregistrer</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../demarrer/preparer-retranscription.html">Préparer ses retranscriptions</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../demarrer/preparer-retranscription.html#formats-acceptes">Formats acceptés</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../demarrer/preparer-retranscription.html#un-paragraphe-par-prise-de-parole">Un paragraphe par prise de parole</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../demarrer/preparer-retranscription.html#la-regle-des-locuteurs">La règle des locuteurs</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../demarrer/preparer-retranscription.html#anonymiser-avant-dimporter">Anonymiser avant d’importer</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Fonctionnalités</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="importer.html">Importer des entretiens</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="importer.html#locuteurs">Locuteurs</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="importer.html#pseudo-et-caracteristiques">Pseudo et caractéristiques</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="importer.html#fiche-de-lentretien">Fiche de l’entretien</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="importer.html#apres-limport">Après l’import</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="importer.html#importer-un-projet-qda-md">Importer un projet QDA-md</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="coder.html">Coder</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="coder.html#appliquer-un-code">Appliquer un code</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="coder.html#plusieurs-codes-chevauchements">Plusieurs codes, chevauchements</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="coder.html#retirer-un-code">Retirer un code</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="coder.html#questions-et-reponses">Questions et réponses</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="coder.html#se-reperer">Se repérer</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">L’arbre de codes</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#definition-et-memo">Définition et mémo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#origine-des-codes-inductif-ou-deductif">Origine des codes : inductif ou déductif</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#le-journal-de-larbre">Le journal de l’arbre</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#verrouiller-larbre">Verrouiller l’arbre</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="extraits-exports.html">Extraits et exports</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="extraits-exports.html#extraits-dun-code">Extraits d’un code</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="extraits-exports.html#le-menu-exporter">Le menu Exporter</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="a-plusieurs.html">Travailler à plusieurs</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="a-plusieurs.html#0-coder-chacune-de-son-cote">0. Coder chacun·e de son côté</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="a-plusieurs.html#1-fusionner-la-copie-dune-collegue">1. Fusionner la copie d’un·e collègue</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="a-plusieurs.html#2-mesurer-laccord">2. Mesurer l’accord</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="a-plusieurs.html#3-construire-un-codage-de-consensus">3. Construire un codage de consensus</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="a-plusieurs.html#afficher-le-codage-dune-personne">Afficher le codage d’une personne</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="enseignant.html">Vue enseignant</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="enseignant.html#un-scenario-de-travaux-pratiques">Un scénario de travaux pratiques</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Concepts</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../concepts/format.html">Le fichier projet et glossaire</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../concepts/format.html#pourquoi-un-format-ouvert">Pourquoi un format ouvert ?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../concepts/format.html#a-quoi-ressemble-un-projet">À quoi ressemble un projet</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../concepts/format.html#ce-quil-faut-savoir">Ce qu’il faut savoir</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../concepts/format.html#un-fichier-ou-un-dossier">Un fichier ou un dossier</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../concepts/format.html#projets-crees-avec-une-version-anterieure">Projets créés avec une version antérieure</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../concepts/format.html#glossaire">Glossaire</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">FAQ</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../faq/confidentialite.html">Données et confidentialité</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../faq/confidentialite.html#ou-sont-mes-donnees">Où sont mes données ?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../faq/confidentialite.html#les-copies-gardees-par-le-navigateur">Les copies gardées par le navigateur</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../faq/confidentialite.html#effacer-les-donnees-du-navigateur-a-la-fermeture">Effacer les données du navigateur à la fermeture</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../faq/confidentialite.html#bonnes-pratiques">Bonnes pratiques</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../faq/questions.html">Questions fréquentes</a>
+    <ul>
+    </ul>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../a-propos.html">À propos, licence et citation</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../a-propos.html#auteur">Auteur</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../a-propos.html#code-source">Code source</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../a-propos.html#licence">Licence</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../a-propos.html#citer-adoq-qda-et-le-format-qdamd">Citer adoq QDA et le format qda.md</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">adoq QDA — Manuel</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html" class="icon icon-home" aria-label="Documents"></a></li>
+          <li class="breadcrumb-item">Fonctionnalités</li>
+      <li class="breadcrumb-item active">L’arbre de codes</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="larbre-de-codes">L’arbre de codes<a class="headerlink" href="#larbre-de-codes" title="Permanent link">¶</a></h1>
+<p>Les codes sont rangés en <strong>arbre</strong> : un code peut avoir des sous-codes. Cliquez sur un code pour le rendre <strong>actif</strong> et afficher ses actions.</p>
+<p><img alt="Arbre de codes" src="../img/arbre.png" /></p>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Effet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>≡</td>
+<td>Voir les <strong>extraits</strong> du code (aussi par double-clic)</td>
+</tr>
+<tr>
+<td>＋</td>
+<td>Ajouter un <strong>sous-code</strong></td>
+</tr>
+<tr>
+<td>✎</td>
+<td><strong>Renommer</strong> (l’identifiant dans le fichier ne change pas : les codages restent attachés)</td>
+</tr>
+<tr>
+<td>📝</td>
+<td>Écrire la <strong>définition</strong></td>
+</tr>
+<tr>
+<td>🧭</td>
+<td>Noter l’<strong>origine</strong> du code : inductive ou déductive</td>
+</tr>
+<tr>
+<td>🗒</td>
+<td>Écrire le <strong>mémo</strong> du code</td>
+</tr>
+<tr>
+<td>⤵</td>
+<td><strong>Fusionner</strong> dans un autre code : tous ses codages passent au code choisi</td>
+</tr>
+<tr>
+<td>🗑</td>
+<td><strong>Supprimer</strong> : ses codages sont retirés, ses sous-codes remontent d’un niveau</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réorganiser</strong> : glissez un code sur un autre — au milieu de la ligne pour l’y ranger comme sous-code, au-dessus ou en dessous pour le placer à côté. La zone « Déposer ici… » le remet au premier niveau.</p>
+<h2 id="definition-et-memo">Définition et mémo<a class="headerlink" href="#definition-et-memo" title="Permanent link">¶</a></h2>
+<ul>
+<li>La <strong>définition</strong> dit <em>quand appliquer le code</em> : ce qu’il désigne, un exemple typique, ce qui n’en relève pas. Elle garantit un codage constant et rend la comparaison entre codeurs possible. Un <strong>point orange</strong> signale un code sans définition.</li>
+<li>Le <strong>mémo</strong> recueille vos <em>réflexions d’analyse</em> sur ce code : interprétations, hypothèses, liens avec vos lectures, cas limites. Il évolue librement.</li>
+</ul>
+<h2 id="origine-des-codes-inductif-ou-deductif">Origine des codes : inductif ou déductif<a class="headerlink" href="#origine-des-codes-inductif-ou-deductif" title="Permanent link">¶</a></h2>
+<p>Un code peut naître de deux façons :</p>
+<ul>
+<li><strong>inductif</strong> : il est apparu en lisant les entretiens, sans avoir été prévu ;</li>
+<li><strong>déductif</strong> : il vient de la théorie, d’une hypothèse ou de la question de recherche, et on l’a cherché dans les données.</li>
+</ul>
+<p>Le bouton <strong>🧭</strong> permet de le noter, avec, si on veut, la théorie ou l’auteur·e de référence d’un code déductif. Une pastille apparaît devant le nom du code : <strong>I</strong> pour inductif, <strong>D</strong> pour déductif ; le survol rappelle la théorie. L’origine est reprise dans le livre de codes exporté.</p>
+<p>Distinguer les deux aide à voir ce que l’analyse doit à la théorie de départ et ce qu’elle doit aux données. C’est aussi la première étape du codage abductif, que propose QDA-md, la version de recherche.</p>
+<p>Dans le fichier, l’origine est écrite sous le code, comme dans QDA-md :</p>
+<pre><code class="language-markdown">- Stratégies de vérification #verification
+  origine:: deductif
+  theorie:: Wardle
+  &gt; La personne décrit ce qu'elle fait pour vérifier une information.
+</code></pre>
+<p>Changer l’origine est noté dans le journal. Comme la définition, elle ne peut plus être modifiée quand l’arbre est verrouillé.</p>
+<h2 id="le-journal-de-larbre">Le journal de l’arbre<a class="headerlink" href="#le-journal-de-larbre" title="Permanent link">¶</a></h2>
+<p>Le bouton <strong>Journal</strong> liste toutes les opérations sur l’arbre — création, renommage, définition, imbrication, fusion, suppression — avec la date et l’auteur·e. Un <strong>motif</strong> peut être indiqué au moment de la fusion ou de la suppression, ou ajouté ensuite. Au moment de rédiger, ce journal permet de raconter comment votre grille d’analyse s’est construite.</p>
+<p><img alt="Journal de l’arbre" src="../img/journal.png" /></p>
+<h2 id="verrouiller-larbre">Verrouiller l’arbre<a class="headerlink" href="#verrouiller-larbre" title="Permanent link">¶</a></h2>
+<p>Le bouton <strong>🔓 Verrouiller</strong> fige l’arbre : on peut encore coder avec les codes existants et écrire des mémos, mais plus créer, renommer, définir, déplacer, fusionner ou supprimer de codes. Un <strong>code de déverrouillage</strong> est facultatif.</p>
+<p>C’est utile quand l’enseignant·e distribue un <strong>livre de codes imposé</strong>, ou quand un binôme a stabilisé son arbre avant de coder chacun de son côté.</p>
+<div class="admonition warning">
+<p class="admonition-title">Un verrou pédagogique</p>
+<p>Le fichier projet reste un texte modifiable à la main : le verrou évite les modifications par erreur, pas un contournement volontaire. N’utilisez <strong>jamais</strong> un vrai mot de passe comme code de déverrouillage.</p>
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
+        <a href="coder.html" class="btn btn-neutral float-left" title="Coder"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+        <a href="extraits-exports.html" class="btn btn-neutral float-right" title="Extraits et exports">Suivant <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>adoq QDA 0.4.3 — Grégoire Lits, MiiL, UCLouvain — licence EUPL-1.2</p>
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/MiiL-UCLouvain/adoqQDA" class="fa fa-code-fork" style="color: #fcfcfc"> MiiL-UCLouvain/adoqQDA</a>
+        </span>
+    
+    
+      <span><a href="coder.html" style="color: #fcfcfc">&laquo; Précédent</a></span>
+    
+    
+      <span><a href="extraits-exports.html" style="color: #fcfcfc">Suivant &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
