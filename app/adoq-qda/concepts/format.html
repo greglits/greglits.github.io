@@ -50,6 +50,8 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="../index.html#ce-qui-le-distingue">Ce qui le distingue</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="../index.html#un-logiciel-libre-un-format-ouvert">Un logiciel libre, un format ouvert</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="../index.html#comment-commencer">Comment commencer ?</a>
     </li>
     </ul>
@@ -173,6 +175,10 @@
               <ul class="current">
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">Le fichier projet et glossaire</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#pourquoi-un-format-ouvert">Pourquoi un format ouvert ?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#a-quoi-ressemble-un-projet">À quoi ressemble un projet</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#ce-quil-faut-savoir">Ce qu’il faut savoir</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#un-fichier-ou-un-dossier">Un fichier ou un dossier</a>
@@ -203,6 +209,20 @@
     </ul>
                   </li>
               </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../a-propos.html">À propos, licence et citation</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../a-propos.html#auteur">Auteur</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../a-propos.html#code-source">Code source</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../a-propos.html#licence">Licence</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../a-propos.html#citer-adoq-qda-et-le-format-qdamd">Citer adoq QDA et le format qda.md</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
       </div>
     </div>
     </nav>
@@ -230,6 +250,18 @@
                 <h1 id="le-fichier-projet-qdamd">Le fichier projet <code>.qda.md</code><a class="headerlink" href="#le-fichier-projet-qdamd" title="Permanent link">¶</a></h1>
 <p>Un projet est un <strong>simple fichier texte</strong> au format Markdown. On peut l’ouvrir dans le Bloc-notes, TextEdit, VS Code ou Obsidian pour voir comment le codage est noté. L’application le relit et l’écrit ; un humain peut le lire, et même le corriger à la main.</p>
 <p>Le format s’appelle <strong>qda.md</strong>, version 1 : sa version est indiquée en tête du fichier (<code>qda-format: 1</code>). Il est commun à adoq QDA et à <strong>QDA-md</strong>, la version de recherche : un projet passe de l’un à l’autre sans conversion.</p>
+<h2 id="pourquoi-un-format-ouvert">Pourquoi un format ouvert ?<a class="headerlink" href="#pourquoi-un-format-ouvert" title="Permanent link">¶</a></h2>
+<p>Les logiciels d’analyse qualitative enferment souvent le travail de codage dans des fichiers que seul le logiciel sait lire. Si le logiciel change, devient payant ou disparaît, le codage devient difficile à relire, à partager ou à archiver. Le format qda.md propose une autre voie : un projet de codage écrit en <strong>Markdown</strong>, c’est-à-dire en texte brut.</p>
+<ul>
+<li><strong>Lisible par un humain.</strong> Le fichier s’ouvre dans n’importe quel éditeur de texte. On y lit l’arbre de codes, chaque codage (une ligne signée par son codeur, liée à une citation exacte), les mémos et le journal de la grille.</li>
+<li><strong>Utilisable dans Obsidian.</strong> Les encadrés repliables cachent le codage quand on veut lire le texte seul, et chaque paragraphe a un identifiant auquel on peut faire un lien.</li>
+<li><strong>Traitable par un programme sans ambiguïté.</strong> La structure est décrite dans une spécification publique : un autre logiciel, ou un script, peut lire et écrire les mêmes fichiers.</li>
+<li><strong>Le texte des entretiens n’est jamais modifié</strong> par le codage : chaque codage désigne son passage par une citation, pas par une position.</li>
+<li><strong>Un fichier ou un dossier</strong>, au choix : tout le projet dans un seul fichier, ou un fichier par document et un fichier commun pour l’arbre de codes. On passe de l’un à l’autre sans rien perdre.</li>
+<li><strong>Pérenne et transparent.</strong> Un fichier texte reste lisible dans des décennies. Il se dépose tel quel dans un entrepôt de données, avec le corpus, ce qui rend l’analyse vérifiable et réutilisable, dans l’esprit de la science ouverte.</li>
+</ul>
+<p>Le format est présenté en détail, avec ses raisons et ses limites, dans le document de travail de <a href="../a-propos.html#citer-adoq-qda-et-le-format-qdamd">Lits (2026)</a>. Sa spécification est publiée sur <a href="https://github.com/MiiL-UCLouvain/qdamd-format">github.com/MiiL-UCLouvain/qdamd-format</a>.</p>
+<h2 id="a-quoi-ressemble-un-projet">À quoi ressemble un projet<a class="headerlink" href="#a-quoi-ressemble-un-projet" title="Permanent link">¶</a></h2>
 <pre><code class="language-markdown">---
 qda-format: 1
 id: memoire-info-2026
@@ -322,7 +354,7 @@ Ils sont à la solde des politiciens, c’est évident.
 
   <div role="contentinfo">
     <!-- Copyright etc -->
-      <p>adoq QDA 0.4.3 — Grégoire Lits, UCLouvain</p>
+      <p>adoq QDA 0.4.3 — Grégoire Lits, MiiL, UCLouvain — licence EUPL-1.2</p>
   </div>
 
   Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
@@ -337,6 +369,10 @@ Ils sont à la solde des politiciens, c’est évident.
 
   <div class="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/MiiL-UCLouvain/adoqQDA" class="fa fa-code-fork" style="color: #fcfcfc"> MiiL-UCLouvain/adoqQDA</a>
+        </span>
     
     
       <span><a href="../fonctions/enseignant.html" style="color: #fcfcfc">&laquo; Précédent</a></span>

@@ -32,6 +32,14 @@ Toute l’application tient dans **un seul fichier HTML**. Il n’y a rien à in
 - **Les questions et les réponses sont distinguées**, les locuteurs ont un pseudo et des caractéristiques (âge, genre, profession…).
 - **La construction de la grille d’analyse est tracée** : chaque création, fusion ou déplacement de code est noté dans un journal, avec son motif.
 
+### Un logiciel libre, un format ouvert
+
+adoq QDA est créé par **Grégoire Lits**, chercheur au **Media Innovation and Intelligibility Lab (MiiL)** de l’UCLouvain. Il est publié sous licence libre **EUPL-1.2** (*European Union Public Licence*, version 1.2).
+
+- Code source de l’application : [github.com/MiiL-UCLouvain/adoqQDA](https://github.com/MiiL-UCLouvain/adoqQDA)
+- Format qda.md : [github.com/MiiL-UCLouvain/qdamd-format](https://github.com/MiiL-UCLouvain/qdamd-format) — pourquoi ce format, voir Le fichier projet
+- Pour citer adoq QDA et le format : voir À propos, licence et citation
+
 ### Comment commencer ?
 
 1. Installer et ouvrir l’application — deux minutes.
@@ -440,6 +448,21 @@ Un projet est un **simple fichier texte** au format Markdown. On peut l’ouvrir
 
 Le format s’appelle **qda.md**, version 1 : sa version est indiquée en tête du fichier (`qda-format: 1`). Il est commun à adoq QDA et à **QDA-md**, la version de recherche : un projet passe de l’un à l’autre sans conversion.
 
+### Pourquoi un format ouvert ?
+
+Les logiciels d’analyse qualitative enferment souvent le travail de codage dans des fichiers que seul le logiciel sait lire. Si le logiciel change, devient payant ou disparaît, le codage devient difficile à relire, à partager ou à archiver. Le format qda.md propose une autre voie : un projet de codage écrit en **Markdown**, c’est-à-dire en texte brut.
+
+- **Lisible par un humain.** Le fichier s’ouvre dans n’importe quel éditeur de texte. On y lit l’arbre de codes, chaque codage (une ligne signée par son codeur, liée à une citation exacte), les mémos et le journal de la grille.
+- **Utilisable dans Obsidian.** Les encadrés repliables cachent le codage quand on veut lire le texte seul, et chaque paragraphe a un identifiant auquel on peut faire un lien.
+- **Traitable par un programme sans ambiguïté.** La structure est décrite dans une spécification publique : un autre logiciel, ou un script, peut lire et écrire les mêmes fichiers.
+- **Le texte des entretiens n’est jamais modifié** par le codage : chaque codage désigne son passage par une citation, pas par une position.
+- **Un fichier ou un dossier**, au choix : tout le projet dans un seul fichier, ou un fichier par document et un fichier commun pour l’arbre de codes. On passe de l’un à l’autre sans rien perdre.
+- **Pérenne et transparent.** Un fichier texte reste lisible dans des décennies. Il se dépose tel quel dans un entrepôt de données, avec le corpus, ce qui rend l’analyse vérifiable et réutilisable, dans l’esprit de la science ouverte.
+
+Le format est présenté en détail, avec ses raisons et ses limites, dans le document de travail de Lits (2026). Sa spécification est publiée sur [github.com/MiiL-UCLouvain/qdamd-format](https://github.com/MiiL-UCLouvain/qdamd-format).
+
+### À quoi ressemble un projet
+
 ```markdown
 ---
 qda-format: 1
@@ -607,6 +630,35 @@ Le bouton **Effacer maintenant les données de ce navigateur** fait le ménage �
 
 **Puis-je modifier le texte d’un entretien après l’import ?**
 :   Pas dans l’application. Pour corriger une coquille, on peut modifier le texte dans le fichier `.qda.md` avec un éditeur de texte ; un codage dont la citation ne se retrouve plus est signalé ⚠ sans être perdu.
+
+
+---
+
+
+## À propos, licence et citation
+
+### Auteur
+
+adoq QDA est créé par **Grégoire Lits**, chercheur au **Media Innovation and Intelligibility Lab (MiiL)** de l’UCLouvain (Institut Langage et Communication).
+
+Jusqu’à la version 0.2.2, le logiciel s’appelait *QDA-md Étude*. « adoq » vient d’*analyse de données qualitatives* ; QDA est l’abréviation anglaise de la même expression (*qualitative data analysis*).
+
+### Code source
+
+- **Application** : [github.com/MiiL-UCLouvain/adoqQDA](https://github.com/MiiL-UCLouvain/adoqQDA). On y trouve le code, les tests, les versions à télécharger et le journal des versions. C’est aussi là que l’on signale un problème ou que l’on propose une amélioration.
+- **Format qda.md** : [github.com/MiiL-UCLouvain/qdamd-format](https://github.com/MiiL-UCLouvain/qdamd-format). On y trouve la spécification du format et des projets d’exemple.
+
+### Licence
+
+adoq QDA est publié sous la licence **EUPL-1.2** (*European Union Public Licence*, version 1.2), une licence libre de l’Union européenne. Vous pouvez utiliser le logiciel, l’étudier, le modifier et le redistribuer ; une version modifiée et redistribuée doit rester sous une licence compatible et mentionner les auteurs d’origine. Le texte complet est sur le site de la [Commission européenne](https://interoperable-europe.ec.europa.eu/collection/eupl/eupl-text-eupl-12) et dans le fichier `LICENSE` du dépôt.
+
+### Citer adoq QDA et le format qda.md
+
+Si vous utilisez adoq QDA ou le format qda.md dans un travail (mémoire, article, rapport), citez le document de travail qui présente le format :
+
+> Lits, G. (2026). *qda.md : un format ouvert, lisible et pérenne pour les données qualitatives codées* (Working paper du MiiL 1). [https://hdl.handle.net/2078.5/282719](https://hdl.handle.net/2078.5/282719)
+
+Dans un mémoire, il est aussi utile de préciser la version du logiciel utilisée (elle figure dans le nom du fichier, par exemple `adoq-QDA-0.4.3.html`) et de joindre ou de déposer le fichier projet `.qda.md` : il contient l’arbre de codes, les codages et le journal de la grille, ce qui rend l’analyse vérifiable.
 
 
 ---
