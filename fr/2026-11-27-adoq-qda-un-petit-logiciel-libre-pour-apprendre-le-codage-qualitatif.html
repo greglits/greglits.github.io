@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>adoq QDA : un petit logiciel libre pour apprendre le codage qualitatif (et une expérience avec l&#x27;IA) — Grégoire Lits</title>
+  <meta name="description" content="adoq QDA : un petit logiciel libre pour apprendre le codage qualitatif (et une expérience avec l&#x27;IA)">
+  <link rel="canonical" href="https://gregoirelits.eu/fr/2026-11-27-adoq-qda-un-petit-logiciel-libre-pour-apprendre-le-codage-qualitatif.html">
+  <link rel="alternate" hreflang="fr" href="https://gregoirelits.eu/fr/2026-11-27-adoq-qda-un-petit-logiciel-libre-pour-apprendre-le-codage-qualitatif.html">
+  <link rel="alternate" hreflang="en" href="https://gregoirelits.eu/en/2026-11-27-adoq-qda-a-small-free-tool-for-learning-qualitative-coding.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="adoq QDA : un petit logiciel libre pour apprendre le codage qualitatif (et une expérience avec l&#x27;IA)">
+  <meta property="og:description" content="adoq QDA : un petit logiciel libre pour apprendre le codage qualitatif (et une expérience avec l&#x27;IA)">
+  <meta property="og:url" content="https://gregoirelits.eu/fr/2026-11-27-adoq-qda-un-petit-logiciel-libre-pour-apprendre-le-codage-qualitatif.html">
+  <meta property="og:image" content="https://gregoirelits.eu/files/chalet.png">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:site_name" content="Grégoire Lits">
+  <meta property="article:published_time" content="2026-11-27">
+  <meta property="article:author" content="Grégoire Lits">
+  <meta property="article:modified_time" content="2026-11-27">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="fediverse:creator" content="@Glits@mamot.fr">
+  
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+  <link rel="alternate" type="application/atom+xml" title="Flux RSS" href="https://gregoirelits.eu/atom-fr.xml">
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/base.css">
+</head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+  <header class="site-head">
+    <div>
+      <p class="name"><a href="/fr/index.html">Grégoire Lits</a></p>
+      <p class="role">Sociologue des médias et du numérique · UCLouvain</p>
+    </div>
+    <nav class="lang" aria-label="Langue">
+      <a aria-current="true">fr</a> · <a href="/en/2026-11-27-adoq-qda-a-small-free-tool-for-learning-qualitative-coding.html" hreflang="en">en</a>
+    </nav>
+  </header>
+  <nav class="site-nav" aria-label="Navigation principale">
+    <a href="/fr/recherche.html">Recherches</a>
+    <a href="/fr/publications.html">Publications</a>
+    <a href="/fr/cours.html">Enseignements</a>
+    <a href="/fr/blog.html">Carnet</a>
+    <a href="/fr/press.html">Presse</a>
+    <a href="/fr/about.html">À propos</a>
+  </nav>
+  <main id="main">
+    <article class="post">
+      <h1>adoq QDA : un petit logiciel libre pour apprendre le codage qualitatif (et une expérience avec l&#x27;IA)</h1>
+      <p class="post-meta">27 novembre 2026 · 6 min de lecture</p>
+<p>Je mets aujourd'hui en ligne <strong>adoq QDA</strong>, un logiciel libre d'analyse de données qualitatives. « adoq » reprend les initiales d'<em>analyse de données qualitatives</em>, QDA dit la même chose en anglais (<em>qualitative data analysis</em>), et le logo est un petit poisson dont les écailles sont des lignes de texte surlignées... comme des passages codés.</p>
+
+<p><img src="https://gregoirelits.eu/files/optimized/logoaqoqqda.png" alt="Le petit poisson qui sert de logo a adoq QAD" /></p>
+
+<p>C'est un outil conçu d'abord pour <strong>apprendre</strong> le codage qualitatif : pour les étudiant·es qui découvrent l'analyse d'entretiens ou veulent réaliser un travail ou leur mémoire en analyse qualitative, et pour les enseignant·es qui les accompagnent. C'est aussi, et je le dis d'emblée, le résultat d'une expérimentation sur l'usage de l'IA dans la recherche qualitative. J'y reviens plus bas.</p>
+
+<ul>
+<li>Le code source de l'application : <a href="https://github.com/MiiL-UCLouvain/adoqQDA">github.com/MiiL-UCLouvain/adoqQDA</a></li>
+<li>Le manuel et le téléchargement : <a href="https://gregoirelits.eu/app/adoq-qda/">https://gregoirelits.eu/app/adoq-qda/</a></li>
+<li>Essayer l'app en ligne : <a href="https://gregoirelits.eu/app/adoq-qda/adoq-QDA-0.4.3.html">https://gregoirelits.eu/app/adoq-qda/adoq-QDA-0.4.3.html</a></li>
+</ul>
+
+<h2>Qu'est-ce que ça fait ?</h2>
+
+<p>Tout le logiciel tient dans <strong>un seul fichier HTML</strong> (qui contient environ 2500 lignes de javaScript). Un double-clic l'ouvre dans le navigateur : rien à installer, pas de serveur, pas de cloud, pas de compte, travail hors ligne, ce qui est essentiel si on souhaite qu'une centaine d'étudiante.s équipés d'ordinateurs et de compétences informatiques divers puissent directement utiliser l'app.  Important aussi, aucune donnée ne quitte l'ordinateur. Quand on travaille sur des entretiens, ce n'est pas un détail.</p>
+
+<p>On y retrouve les gestes de base du codage qualitatif :</p>
+
+<ul>
+<li>importer des entretiens (.txt, .docx, ou un corpus au format Iramuteq) ;</li>
+<li>sélectionner un passage et lui attribuer un ou plusieurs codes, avec des chevauchements possibles ;</li>
+<li>construire un arbre de codes, le réorganiser, fusionner ou scinder des codes, rédiger définitions et mémos ;</li>
+<li>distinguer les locuteurs (intervieweur·euse, répondant·e, participant·es d'un focus group) ;</li>
+<li>exporter les extraits par code, un livre de codes, des tableaux pour un tableur ou SPSS.</li>
+</ul>
+
+<p><img src="https://gregoirelits.eu/files/optimized/screen-adoq-qda.png" alt="Capture d'écran d'adoq QDA" /></p>
+
+<p>Et quelques fonctions plus directement pédagogiques : un <strong>journal de l'arbre de codes</strong>, tenu automatiquement, qui garde la trace de chaque création, fusion ou suppression (avec son motif) ; un <strong>verrou</strong> de l'arbre, pour passer d'une phase exploratoire à une phase de codage systématique ; le <strong>travail à deux ou en groupe</strong> (fusion des copies, kappa de Cohen, codage de consensus) ; et une <strong>vue enseignant</strong> pour suivre le travail de tout un groupe. Bref, ce qu'on demande d'habitude d'expliciter dans un chapitre méthodologique, l'outil aide à le documenter en cours de route.</p>
+
+<p>adoq QDA n'est pas pensé pour de grands corpus traités par des équipes de recherche professionnelles, et il laisse volontairement de côté le travail simultané, les droits d'accès, l'audio et la vidéo ou les requêtes avancées. Mais il est suffisamment robuste (je pense, les premiers tests en situation réelle permettront de le montrer) pour analyser plusieurs dizaines d'entretiens. </p>
+
+<h2>Un format ouvert, lisible par un humain</h2>
+
+<p>La grande différence d'adoq QDA avec les autres logiciels libre d'anlayse qualitative est le format de données sur lequel il repose. Un projet adoq QDA est un simple <strong>fichier texte</strong> (<code>.qda.md</code>), lisible dans n'importe quel éditeur ou dans Obsidian. Le texte des entretiens n'est jamais modifié : le codage est écrit en clair sous chaque paragraphe, par exemple :</p>
+
+<p>```</p>
+
+<blockquote>
+  <p>[!codage]-
+  - #defiance #dependance-politique @gl : « à la solde des politiciens »
+  ```</p>
+</blockquote>
+
+<p>Les données ne sont donc pas enfermées dans un logiciel : on peut les relire, les corriger à la main, les archiver, et les rouvrir dans dix ans sans se demander si l'éditeur existe encore. Ce format, baptisé <strong>qda.md</strong>, est la base de l'app et permet la vérification du travail de codage par un humain (sans utilisation de logiciel) et la manipulation des données par software d'analyse . Je l'ai décrit dans un working paper : Lits, G. (2026). <em>qda.md : un format ouvert, lisible et pérenne pour les données qualitatives codées</em> (Working paper du MiiL 1). <a href="https://hdl.handle.net/2078.5/282719">hdl.handle.net/2078.5/282719</a>. La spécification est sur <a href="https://github.com/MiiL-UCLouvain/qdamd-format">github.com/MiiL-UCLouvain/qdamd-format</a>.</p>
+
+<p>Le logiciel est distribué sous licence <strong>EUPL-1.2</strong>.</p>
+
+<h2>Une expérimentation sur l'IA et la recherche qualitative</h2>
+
+<p>En 2024, je racontais ici comment j'avais demandé à ChatGPT d'écrire les scripts Python qui génèrent ce site, et je me demandais s'il était <a href="https://gregoirelits.eu/fr/2024-04-16-Apprendre-a-coder.html">encore utile d'apprendre à coder</a>. Ma réponse était oui : sans compréhension du code, on devient dépendant de l'outil, et ce sont nos connaissances préalables qui permettent de lui poser les bonnes questions.</p>
+
+<p>adoq QDA pousse l'expérience beaucoup plus loin. Le logiciel (et sa version de recherche, QDA-md, qui intègre notamment le codage abductif et l'analyse de la saturation) a été développé en un peu plus d'un mois, entièrement en dialogue avec un modèle d'IA, Claude (Opus 5.5 effort modéré). Je n'ai pas écrit moi-même les lignes de JavaScript (je n'en serais pas capable actuellement).</p>
+
+<p>Ce que j'ai fait, en revanche : définir le format qda.md, décider de ce que l'outil devait faire et surtout de ce qu'il ne devait pas faire, exiger des tests (un fichier ouvert puis enregistré doit rester identique à l'octet près), commander un audit de sécurité, essayer l'outil sur de vrais corpus, et trancher, version après version. Autrement dit, l'expertise ne disparaît pas : elle se déplace de l'écriture du code vers sa spécification et sa vérification. Et cette expertise-là, c'est largement celle du chercheur en méthodes qualitatives, pas celle du développeur.</p>
+
+<p>Faut-il donc toujours apprendre à coder ? Je maintiens que oui... mais peut-être plus tant pour écrire du code (quoique si le logiciel se diffuse, j'imagine mal que le code ne soit pas revu par un humain à un moment) que pour savoir quoi demander et être capable de juger ce qu'on obtient. Je reste aussi conscient d'un petit paradoxe, qui fait écho à ce que j'écrivais sur <a href="https://gregoirelits.eu/fr/2025-06-17-IA-et-dispersion-des-expertises.html">l'IA et la dispersion des expertises</a> : j'ai utilisé une banque centralisée d'expertise pour construire un outil dont le principe est justement que les données restent chez soi, dans un format que personne ne contrôle. Quant à savoir si ce code vieillira bien... aucune idée, et c'est précisément pour ça que le format, lui, a été pensé pour survivre au logiciel.</p>
+
+<h2>Tout retour est le bienvenu</h2>
+
+<p>adoq QDA en est à sa version 0.4.3 et est encore un prototype fonctionnel. C'est jeune, et c'est précisément le moment où les retours sont les plus utiles. Si vous êtes enseignant·e, étudiant·e ou chercheur·e et que vous l'essayez, n'hésitez pas à me dire ce qui coince, ce qui n'est pas clair, ce qui manque, ou comment vous l'utilisez en cours. Vous pouvez ouvrir une <em>issue</em> sur <a href="https://github.com/MiiL-UCLouvain/adoqQDA">le dépôt GitHub</a> ou simplement m'écrire.</p>
+      <p class="post-updated">Mis à jour le 27 novembre 2026.</p>
+    </article>
+    <nav class="post-nav" aria-label="Navigation entre billets">
+      <a href="/fr/2026-10-26-Un-ecosysteme-informationnel-sous-pression.html">← Billet précédent</a>
+    </nav>
+
+  </main>
+  <ul class="signature" aria-hidden="true">
+    <li class="y"></li><li class="o"></li><li class="r"></li>
+    <li class="m"></li><li class="c"></li><li class="b"></li>
+  </ul>
+  <footer class="site-foot">
+    <p><a href="/fr/about.html">À propos de ce site</a> · <a href="https://gregoirelits.eu/atom-fr.xml">RSS</a> · <a href="https://mamot.fr/@Glits" rel="me">Mastodon</a> · <a href="https://scholar.google.com/citations?user=EwVIe_4AAAAJ">Google Scholar</a></p>
+
+  </footer>
+</body>
+</html>
