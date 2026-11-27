@@ -4,7 +4,7 @@
   <link href="https://gregoirelits.eu/en/blog.html"/>
   <link rel="self" href="https://gregoirelits.eu/atom-en.xml"/>
   <id>https://gregoirelits.eu/en/</id>
-  <updated>2026-11-27T13:43:06.869504+00:00</updated>
+  <updated>2026-11-27T13:48:19.549772+00:00</updated>
   <author><name>Grégoire Lits</name></author>
   <entry>
     <title>adoq QDA: a small free tool for learning qualitative coding (and an experiment with AI)</title>
@@ -74,6 +74,8 @@
 &lt;h2&gt;All feedback is welcome&lt;/h2&gt;
 
 &lt;p&gt;adoq QDA is at version 0.4.3 and is still a working prototype. It is young, and this is exactly when feedback is most useful. If you are a teacher, student or researcher and you try it out, don&#x27;t hesitate to tell me what gets stuck, what is unclear, what is missing, or how you use it in your teaching. You can open an &lt;em&gt;issue&lt;/em&gt; on &lt;a href=&quot;https://github.com/MiiL-UCLouvain/adoqQDA&quot;&gt;the GitHub repository&lt;/a&gt; or simply write to me.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;AI use statement:&lt;/strong&gt; this post was written and edited with the help of Claude (Opus 5.5 model).&lt;/p&gt;
 </content>
   </entry>
   <entry>

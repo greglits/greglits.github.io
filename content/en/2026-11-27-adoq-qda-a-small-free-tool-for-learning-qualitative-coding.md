@@ -68,3 +68,5 @@ So is it still worth learning to code? I still think so... but perhaps less for 
 ## All feedback is welcome
 
 adoq QDA is at version 0.4.3 and is still a working prototype. It is young, and this is exactly when feedback is most useful. If you are a teacher, student or researcher and you try it out, don't hesitate to tell me what gets stuck, what is unclear, what is missing, or how you use it in your teaching. You can open an *issue* on [the GitHub repository](https://github.com/MiiL-UCLouvain/adoqQDA) or simply write to me.
+
+**AI use statement:** this post was written and edited with the help of Claude (Opus 5.5 model).

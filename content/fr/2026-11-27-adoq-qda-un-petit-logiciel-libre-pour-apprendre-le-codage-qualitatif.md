@@ -68,3 +68,5 @@ Faut-il donc toujours apprendre à coder ? Je maintiens que oui... mais peut-êt
 ## Tout retour est le bienvenu
 
 adoq QDA en est à sa version 0.4.3 et est encore un prototype fonctionnel. C'est jeune, et c'est précisément le moment où les retours sont les plus utiles. Si vous êtes enseignant·e, étudiant·e ou chercheur·e et que vous l'essayez, n'hésitez pas à me dire ce qui coince, ce qui n'est pas clair, ce qui manque, ou comment vous l'utilisez en cours. Vous pouvez ouvrir une *issue* sur [le dépôt GitHub](https://github.com/MiiL-UCLouvain/adoqQDA) ou simplement m'écrire.
+
+Déclaration sur l'usage de l'IA : ce post a été rédigé et édité avec l'aide de Claude (modèle Opus 5.5)
